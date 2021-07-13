@@ -35,7 +35,7 @@ $(function(){
 $("#").load("");
 })
 </script>
-<link rel="stylesheet" href="/coding/submit/org/book.css"/>
+<link rel="stylesheet" href="book.css"/>
 <style type="text/css">
 </style>
 </head>
