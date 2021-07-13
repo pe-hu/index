@@ -5,12 +5,13 @@ function h($str) {
 $title = (string)filter_input(INPUT_POST, 'title');
 $contents = (string)filter_input(INPUT_POST, 'contents');
 $tag = (string)filter_input(INPUT_POST, 'tag');
-$label = (string)filter_input(INPUT_POST, 'label');
+$url = (string)filter_input(INPUT_POST, 'url');
+$link = (string)filter_input(INPUT_POST, 'link');
 
 $fp = fopen('think.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$title, $contents, $tag, $label,]);
+    fputcsv($fp, [$title, $contents, $tag, $url, $link,]);
     rewind($fp);
 }
 
