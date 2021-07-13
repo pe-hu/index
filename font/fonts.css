@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'secretcrane';
+        src: url('/jp/cm/font/aa/secretcrane.eot');
+        src: url('/jp/cm/font/aa/secretcrane.eot?#iefix') format('embedded-opentype'),
+           url('/jp/cm/font/aa/secretcrane.woff') format('woff'),
+           url('/jp/cm/font/aa/secretcrane.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'flower';
+	src: url(/jp/cm/font/aa/flower.ttf);
+}
+@font-face {
+	font-family: 'kaochomex';
+	src: url(/jp/cm/font/kn/kaochomex.ttf);
+}

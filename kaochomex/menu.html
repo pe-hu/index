@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="/css/menu.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Menu | Kaori Nakao</title>
+<style type="text/css">
+#profile,
+#up,
+#show,
+#merch,
+#mobile_open
+{font-family:;}
+#profile_o b,
+#up_o b,
+#show_o b,
+#merch_o b,
+#mobile_o b
+{opacity: 0;}
+#profile:hover + #profile_o b,
+#up:hover + #up_o b,
+#show:hover + #show_o b,
+#merch:hover + #merch_o b,
+#mobile_open a:hover + #mobile_o b
+{opacity: 1;}
+</style>
+</head>
+<body>
+<div id="menu">
+<div id="header">
+<div><a href="/jp/cm/kaochomex/cv/" id="profile" class="tab">Kaori Nakao</a><span id="profile_o" class="check"><b>✔</b></span></div>
+<div><a href="/jp/cm/kaochomex/works/" id="show" class="tab">My Piece</a><span id="show_o" class="check"><b>✔</b></span></div>
+<div><a href="/jp/cm/kaochomex/think/" id="up" class="tab">Think Book</a><span id="up_o" class="check"><b>✔</b></span></div>
+</div>
+
+<div id="mobile_open"><a onclick="obj=document.getElementById('mobile_menu').style; obj.display=(obj.display=='none')?'block':'none';" class="tab">Menu</a><span id="mobile_o" class="check"><b>✔</b></span></div>
+</div>
+
+<div id="mobile_menu" style="display:none;">
+<div id="inside">
+<div><a href="/jp/cm/kaochomex/cv/" id="profile" class="tab">Kaori Nakao</a><span id="profile_o" class="check"><b>✔</b></span></div>
+<div><a href="/jp/cm/kaochomex/works/" id="show" class="tab">My Piece</a><span id="show_o" class="check"><b>✔</b></span></div>
+<div><a href="/jp/cm/kaochomex/think/" id="up" class="tab">Think Book</a><span id="up_o" class="check"><b>✔</b></span></div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+body {padding:0; margin:0;}
+ul {padding:0; margin:0.25rem 0;}
+li {list-style: none;}
+h2 {margin:1rem 0 0; padding:0; font-size:1.25rem;}
+hr {border:hidden; margin-bottom:5%;}
+#header {
+  padding:1rem;
+  font-size:2rem;
+  display: flex;
+  position:relative;
+  z-index:100;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#header a {
+  color:#000;
+  text-decoration:none;
+}
+#header a:hover {
+  cursor:pointer;
+  color:#ccc;
+	text-shadow:0.1rem 0.1rem #000;
+  border-bottom:2px solid #000;
+}
+#org {
+  position:relative;
+  top:0;
+  z-index:10;
+  padding:1rem 1rem;
+  background-color:rgb (255,255,255,0.5);
+}
+#org ul {
+  position:relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+#org .label {
+  display: inline-block;
+  margin:0.25rem;
+  padding:0.25rem;
+  font-size:2.5rem;
+  color: #000;
+  border-radius:0.5rem;
+}
+#org .weight .label,
+#org .size .label {
+  font-size: 1.25rem;
+  border:0.1rem solid #eee;
+}
+#org .sub {
+  position:absolute;
+  font-size: 1.5rem;
+  right:0; top:0;
+  font-family: "MS Serif", "Times New Roman";
+}
+#org .note {
+  font-size:0.75rem;
+  margin:1rem 0 0.5rem;
+  width:100%;
+}
+#org .note b {
+  width:100%;
+  text-align:center;
+  display:inline-block;
+  margin-bottom:0.5rem;
+  font-size:125%;
+  color:#fff;
+	text-shadow:0.1rem 0.1rem #000;
+}
+#org .label:hover {
+  cursor:pointer;
+  color:#fff;
+  background-color:#eee;
+	text-shadow:0.1rem 0.1rem #000;
+}
+#org textarea {
+  font-size:1.5rem;
+  border:0.1rem solid;
+  border-radius:0.5rem;
+  width:100%; height:2.2rem;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked + label {
+  color:#fff;
+  background-color:#eee;
+	text-shadow:0.1rem 0.1rem #fff;
+}
+.reset a, button {
+  display:inline-block;
+  font-size:1.5rem;
+  text-align:center;
+  padding:0.25rem 0.75rem;
+  margin: 0.25rem 0;
+  background: #fff;
+  text-shadow:0.1rem 0.1rem #fff;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius:0.5rem;
+}
+.reset button {width:100%;}
+.reset a:hover, button:hover {
+  color:#fff;
+  background: #eee;
+	text-shadow:0.1rem 0.1rem #000;
+}
+.list {
+  top:0;
+  display:block;
+  position:relative;
+  width:100%;
+}
+.list #inside {
+  position:relative;
+  padding:1rem 5%;
+  width:90%;
+  overflow:auto;
+  display:block;
+}
+.list #inside ul {
+  display:flex;
+  align-content:flex-end;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+}
+.list #inside li {
+  position:relative;
+  white-space:pre-wrap;
+  padding:1rem;
+}
+.list .must {font-weight:900;}
+.list .should {font-weight:700;}
+.list .can {font-weight:500;}
+.list .may {font-weight:300;}
+.list .could {font-weight:200;}
+.list .cant {font-weight:100;}
+
+.list .positive {font-size:250%;}
+.list .negative {font-size:50%;}
+.list .both {font-size:200%;}
+.list .neither {font-size:100%;}
+.list .unknown {font-size:150%;}
+
+.is-hide,
+.nothing,
+.none
+{display:none;}
+
+#how {
+  position:fixed;
+  z-index:100;
+	font-size:1rem;
+  width:80%; height:80vh;
+  top:0; left:0;
+  background-color:rgba(255,255,255,0.75);
+  top: 55%; left: 50%;
+  -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%);
+}
+#how iframe {width:100%; height:100%;
+ border:none;}
