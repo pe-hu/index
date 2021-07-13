@@ -31,21 +31,43 @@ fclose($fp);
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title> ORG | Think Book </title>
+<title>My Piece | Kaori Nakao</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="org.js"></script>
+<script src="/jp/cm/show/org.js"></script>
 <script type="text/javascript">
 $(function(){
-$("#menu").load("../menu/");
+$("#menu").load("/jp/cm/kaochomex/menu.html");
+$("#cv_link").load("/jp/cm/kaochomex/cv/link.php");
 })
 </script>
 <script type="text/javascript">
 </script>
-<link rel="stylesheet" type="text/css" href="book.css"/>
-<link rel="stylesheet" type="text/css" href="../cv/greating.css"/>
+<link rel="stylesheet" type="text/css" href="/jp/cm/show/book.css"/>
+<link rel="stylesheet" type="text/css" href="/jp/cm/cv/greating.css"/>
 <style type="text/css">
-.list li span {
-  animation:2s ease-in infinite fontmotion;
+#org h1,
+.list .date,
+.list .title
+{font-family: "Yuppy TC","HGP創英角ゴシックUB", cursive;}
+.list .date {
+  font-size:125%;
+  padding:0 2.5% 0 0;
+  width:20%;
+  display:inline-block;
+  float:left;
+  pointer-events: none;
+}
+.list .title {
+  font-size:150%;
+  width:75%;
+  right:0;
+  display:inline-block;
+  white-space:nowrap;
+  text-decoration:none;
+  pointer-events: none;
+}
+.list li:hover {
+  transform:scale(1.5)
 }
 </style>
 </head>
@@ -99,6 +121,7 @@ $("#menu").load("../menu/");
 </li>
 <?php endif; ?>
 </ul>
+<div id="cv_link"></div>
 </div>
 </body>
 </html>
