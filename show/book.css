@@ -50,13 +50,14 @@ hr {border:hidden; margin-bottom:5%;}
   display: flex;
   flex-wrap: wrap;
 }
-#org .label {
+#org .label,
+.reset-button {
   display: inline-block;
   background-color:#fff;
   text-shadow:0.1rem 0.1rem #fff;
   margin:0.25rem;
   padding:0.25rem 0.5rem;
-  font-size:2.5rem;
+  font-size:1rem;
   color: #000;
   border-radius:0.5rem;
   transition:1.5s all;
@@ -108,7 +109,7 @@ hr {border:hidden; margin-bottom:5%;}
 	border:0.1rem solid;
 	border-radius:0.5rem;
 }
-.reset a, .reset-button, button {
+.reset a, button {
   display:block;
   font-size:1.5rem;
   text-align:center;
@@ -142,22 +143,12 @@ button:hover {
   font-size:1.5rem;
   position:relative;
   clear:both;
-  padding:1rem 2rem;
+  padding:1rem 0;
   transition:.5s all;
 }
 .list li:hover {
-  font-size:250%;
+  font-size:150%;
   z-index:0;
-}
-.list li span,
-.list li p {
-  position:relative;
-  z-index:1;
-  pointer-events:none;
-}
-.list li p {
-  font-size:75%;
-  margin:0.25rem 0 0;
 }
 .list li a {
   position: absolute;
@@ -169,8 +160,19 @@ button:hover {
   height:100%;
   text-indent:-999px;
 }
-#howto {
-  border-top:2px dotted;
-  font-size:1rem;
-  padding:1.25rem;
+.list li span,
+.list li p {
+  position:relative;
+  z-index:1;
+  pointer-events:none;
+}
+.list li p {
+  font-size:75%;
+  margin:0.25rem 0 0;
+	animation: marquee 10s linear infinite;
+  width:100vw;
+}
+@keyframes marquee {
+	from {left:100%;}
+	to {left:-100%;}
 }
