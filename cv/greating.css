@@ -50,7 +50,7 @@
 
 #cv_link {padding:2.5% 0;}
 #cv_link p {
-  font-size:1rem;
+  font-size:1.5rem;
   line-height:200%;
 }
 #cv_link a {
@@ -61,7 +61,7 @@
   border-bottom: 0.25vw dotted #000;
 }
 #cv_link b {
-  font-size:2vw;
+  font-size:1.5rem;
   background:#000;
   color:#fff;
   font-weight:500;
