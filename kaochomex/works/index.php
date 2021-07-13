@@ -26,63 +26,102 @@ flock($fp, LOCK_UN);
 fclose($fp);
 
 ?>
-<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="/css/calendar.css"/>
-<link rel="stylesheet" type="text/css" href="/css/menu.css"/>
-<link rel="stylesheet" type="text/css" href="/css/welcome.css"/>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>My Piece | Kaori Nakao</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script src="/jp/cm/show/org.js"></script>
 <script type="text/javascript">
 $(function(){
 $("#menu").load("/jp/cm/kaochomex/menu.html");
+$("#cv_link").load("/jp/cm/kaochomex/cv/link.php");
 })
 </script>
+<script type="text/javascript">
+</script>
+<link rel="stylesheet" type="text/css" href="/jp/cm/show/book.css"/>
+<link rel="stylesheet" type="text/css" href="/jp/cm/cv/greating.css"/>
 <style type="text/css">
-#calendar {font-family: "Yuppy TC","HGP創英角ゴシックUB", cursive;}
-#calendar .title,
-#calendar .info
+#org h1,
+.list .date,
+.list .title
 {font-family: "Yuppy TC","HGP創英角ゴシックUB", cursive;}
+.list .date {
+  font-size:100%;
+  padding:0 2.5% 0 0;
+  width:20%;
+  display:inline-block;
+  float:left;
+  pointer-events: none;
+}
+.list .title {
+  font-size:125%;
+  width:75%;
+  right:0;
+  display:inline-block;
+  white-space:nowrap;
+  text-decoration:none;
+  pointer-events: none;
+}
+.list li:hover {
+  transform:scale(1.25)
+}
 </style>
-<title>My Piece | Kaori Nakao</title>
 </head>
 <body>
 <div id="menu"></div>
-<div id="calendar" class="refine">
+
+<div id="greating">
+<form id="org">
 <h1>My Piece</h1>
-  <input id="refine-0" type="radio" name="category" checked><span class="refine-0"><b>✔</b></span>
-  <label class="refine-btn all" for="refine-0">ALL</label>
-  <input  id="refine-1" type="radio" name="category"><span class="refine-1"><b>✔</b></span>
-  <label class="refine-btn a" for="refine-1">Idea</label>
-  <input id="refine-2" type="radio" name="category"><span class="refine-2"><b>✔</b></span>
-  <label class="refine-btn b" for="refine-2">Join</label>
-  <input id="refine-3" type="radio" name="category"><span class="refine-3"><b>✔</b></span>
-  <label class="refine-btn c" for="refine-3">Activity</label>
-  <input id="refine-4" type="radio" name="category"><span class="refine-4"><b>✔</b></span>
-  <label class="refine-btn d" for="refine-4">Residency</label>
-<hr/>
+<div class="search-box tag">
+<ul>
+<li>
+<input type="radio" name="tag" value="Idea" id="Idea">
+<label for="Idea" class="label">Idea</label></li>
+<li>
+<input type="radio" name="tag" value="Join" id="Join">
+<label for="Join" class="label">Join</label></li>
+<li>
+<input type="radio" name="tag" value="Activity" id="Activity">
+<label for="Activity" class="label">Activity</label></li>
+<li>
+<input type="radio" name="tag" value="Residency" id="Residency">
+<label for="Residency" class="label">Residency</label></li>
+</ul>
+</div>
+<div class="reset">
+<input type="reset" name="reset" value="View All" class="reset-button">
+</div>
+</form>
+
+<ul class="list">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
-<div id="<?=h($row[5])?>" class="refine-teims <?=h($row[4])?>">
-<p class="date"><?=h($row[0])?></p>
-<p class="title"><u><?=h($row[1])?></u></p>
-<marquee class="info" scrollamount="15"><?=h($row[2])?></marquee>
-<a class="link" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
-</div>
+<li class="list_item list_toggle" data-tag="<?=h($row[4])?>">
+<span>
+  <b class="date"><?=h($row[0])?></b>
+  <u class="title"><?=h($row[1])?></u>
+</span>
+<p><?=h($row[2])?></p>
+<a style="display:<?=h($row[3])?>;" href="<?=h($row[5])?>" target="_blank" rel="noopener noreferrer"></a>
+</li>
 <?php endforeach; ?>
 <?php else: ?>
-<div id="" class="refine-teims">
-<p class="date">Sub</p>
-<p class="title"><u>Title</u></p>
-<marquee class="info" scrollamount="15">Information</marquee>
-<a class="link" target="_blank" rel="noopener noreferrer"></a>
-</div>
+<li class="list_item list_toggle">
+<span>
+  <b class="date">Title</b>
+  <u class="title">contents</u>
+</span>
+<p>Information</p>
+<a style="display:none;" class="link" href="" target="_blank" rel="noopener noreferrer"></a>
+</li>
 <?php endif; ?>
+</ul>
+<div id="cv_link"></div>
 </div>
 </body>
 </html>
