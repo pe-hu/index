@@ -1,3 +1,23 @@
+#greating {
+  position: fixed;
+  bottom:0; left:0;
+  margin:2.5%;
+  width:95%; height:90%;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+::-webkit-scrollbar{
+  width:5vw;
+}
+::-webkit-scrollbar-track{
+  border-radius: 5vw;
+  border:0.5vw solid;
+}
+::-webkit-scrollbar-thumb{
+  background:#000;
+  border-radius: 5vw;
+}
+
 #cv {
   font-size:5vw;
   padding:2.5vh 5%;

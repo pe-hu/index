@@ -62,7 +62,7 @@ $("#menu").load("../menu/");
 </ul>
 </div>
 <div class="reset">
-<input type="reset" name="reset" value="RESET" class="reset-button">
+<input type="reset" name="reset" value="全部見る" class="reset-button">
 </div>
 </form>
 
