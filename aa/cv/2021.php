@@ -82,7 +82,7 @@ $("#link").load("/jp/cm/aa/cv/link.php");
 <div id="cv">
 <div class="aa">
 hi i'm Ayumi Akutagawa.<br/>
-i’m the owner of <a class="abi" href="http://abi.pe.hu/" target="_blank" rel="noopener noreferrer">abi the best items</a>.
+i’m the owner of <a class="abi" href="http://newlifecollection.com/?ca=32" target="_blank" rel="noopener noreferrer">abi the best items</a>.
 <p class="abi_popup">is the shop of the best used clothes<br/>
 and stuff i found.</p>
 
