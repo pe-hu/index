@@ -54,13 +54,13 @@ $("#cv_link").load("/jp/cm/aa/cv/link.php");
 <link rel="stylesheet" type="text/css" href="/jp/cm/font/fonts.css"/>
 <style type="text/css">
 #org h1,
-#org .date,
-#org .title
+.list .date,
+.list .title
 {font-family: flower;}
-.list li span {
+.list li {
   animation:2s ease-in infinite fontmotion;
 }
-#org .date {
+.list .date {
   font-size:125%;
   padding:0 2.5%;
   width:20%;
@@ -68,7 +68,7 @@ $("#cv_link").load("/jp/cm/aa/cv/link.php");
   float:left;
   pointer-events: none;
 }
-#org .title {
+.list .title {
   font-size:150%;
   width:75%;
   right:0;
@@ -77,13 +77,13 @@ $("#cv_link").load("/jp/cm/aa/cv/link.php");
   text-decoration:none;
   pointer-events: none;
 }
-#org p span {
-  width: 20vw; height:20vw;
-  margin:0 2.5vw 0 0;
+.list p span {
+  width: 10vw;
+  margin:0 5vw 0 0;
   position: relative;
   display: inline-block;
 }
-#org p span img {width: 100%;}
+.list p span img {width: 100%;}
 </style>
 </head>
 <body>
@@ -119,13 +119,13 @@ $("#cv_link").load("/jp/cm/aa/cv/link.php");
   <u class="title">contents</u>
 </span>
 <p>
-<span class="have"><img src="http://vg.pe.hu/jp/logo.png"></span>
-<span class="have"><img src="http://vg.pe.hu/jp/logo.png"></span>
-<span class="have"><img src="http://vg.pe.hu/jp/logo.png"></span>
-<span class="none"><img src="http://vg.pe.hu/jp/logo.png"></span>
-<span class="none"><img src="http://vg.pe.hu/jp/logo.png"></span>
+<span style="display:have;"><img src="http://vg.pe.hu/jp/logo.png"></span>
+<span style="display:have;"><img src="http://vg.pe.hu/jp/logo.png"></span>
+<span style="display:have;"><img src="http://vg.pe.hu/jp/logo.png"></span>
+<span style="display:none;"><img src="http://vg.pe.hu/jp/logo.png"></span>
+<span style="display:none;"><img src="http://vg.pe.hu/jp/logo.png"></span>
 </p>
-<a style="display: <?=h($row[4])?>;" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
+<a style="display:<?=h($row[4])?>;" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
 </li>
 <?php endif; ?>
 </ul>
