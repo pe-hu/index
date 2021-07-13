@@ -1,0 +1,89 @@
+#cv {
+  font-size:5vw;
+  padding:2.5vh 5%;
+  font-family:"MS Mincho";
+  letter-spacing:0.05rem;
+  border-bottom: 1px dotted #000;
+}
+#cv a {
+  display:inline-block;
+  color:#000;
+  padding:1%;
+  text-decoration:none;
+  filter: blur(1.25vw);
+  -webkit-filter: blur(1.25vw);
+  transition: all 1500ms ease;
+}
+#cv a:hover {
+  cursor:pointer;
+  filter: blur(0);
+  -webkit-filter: blur(0);
+  transform: scale(1.5,1.5);
+  transition: all 1000ms ease;
+}
+#cv .jp {
+  font-size:45%;
+  line-height:150%;
+  font-style:italic;
+  margin:0;
+  padding-bottom:5vw;
+}
+#cv .jp a {color:blue;}
+
+#cv_link {padding:2.5%;}
+#cv_link p {
+  font-size:2vw;
+  line-height:200%;
+}
+#cv_link a {
+  color:#000;
+  text-decoration:none;
+  padding:0.25vw 0;
+  margin-right:2vw;
+  border-bottom: 0.25vw dotted #000;
+}
+#cv_link b {
+  font-size:2vw;
+  background:#000;
+  color:#fff;
+  font-weight:500;
+  padding:0.5vw 1vw;
+  margin-right:2vw;
+}
+
+input[type="email"] {
+  width:50vw;
+  font-size:2vw;
+  margin-right:0.5vw;
+  padding:0.5vw;
+}
+input[type="submit"] {
+  font-size:2vw;
+  padding:0.5vw;
+}
+.clear {
+  display:inline-block;
+}
+
+@keyframes blurin {
+  0% {
+    filter: blur(1.25vw);
+    transform: scale(1,1);
+    background-color:rgba(255,255,255,0);
+  }
+  100% {
+    filter: blur(0);
+    transform: scale(1.5,1.5);
+    background-color:rgba(255,255,255,0.75);
+  }
+}
+@keyframes blurout {
+  0% {
+    filter: blur(0);
+    transform: scale(1.5,1.5);
+  }
+  100% {
+    filter: blur(1.25vw);
+    transform: scale(1,1);
+  }
+}
