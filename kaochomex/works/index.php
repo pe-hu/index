@@ -67,7 +67,7 @@ $("#cv_link").load("/jp/cm/kaochomex/cv/link.php");
   pointer-events: none;
 }
 .list li:hover {
-  transform:scale(1.25)
+  transform:scale(1 1.25)
 }
 </style>
 </head>
