@@ -61,6 +61,9 @@ $("#menu").load("../menu/");
 <label for="two" class="label">応用例</label></li>
 </ul>
 </div>
+<div class="reset">
+<input type="reset" name="reset" value="RESET" class="reset-button">
+</div>
 </form>
 
 <ul class="list">
