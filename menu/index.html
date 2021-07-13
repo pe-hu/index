@@ -8,7 +8,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <title>Menu | Your Name</title>
 <style type="text/css">
-#cv,
+#about,
 #show,
 #etc,
 #mobile_open
@@ -18,17 +18,20 @@
 <body>
 <div id="menu">
 <div id="header">
-<div><a href="../cv/" id="cv" class="tab">About</a><span id="cv_o" class="check"><b>✔</b></span></div>
-<div><a href="../works/" id="show" class="tab">Works</a><span id="show_o" class="check"><b>✔</b></span></div>
+<div><a href="../cv/" id="about" class="tab">About</a><span id="about_o" class="check"><b>✔</b></span></div>
+<div><a href="../show/" id="show" class="tab">Works</a><span id="show_o" class="check"><b>✔</b></span></div>
 <div><a href="../etc/" id="etc" class="tab">Etc,</a><span id="show_o" class="check"><b>✔</b></span></div>
 </div>
 
-<div id="mobile_open"><a onclick="obj=document.getElementById('mobile_menu').style; obj.display=(obj.display=='none')?'block':'none';" class="tab">Menu</a><span id="mobile_o" class="check"><b>✔</b></span></div>
+<div id="mobile_open">
+<a onclick="obj=document.getElementById('mobile_menu').style; obj.display=(obj.display=='none')?'block':'none';" class="tab">Menu</a>
+<span id="mobile_o" class="check"><b>✔</b></span>
+</div>
 </div>
 
 <div id="mobile_menu" style="display:none;">
 <div id="inside">
-<div><a href="../cv/" id="cv" class="tab">About</a><span id="cv_o" class="check"><b>✔</b></span></div>
+<div><a href="../cv/" id="about" class="tab">About</a><span id="about_o" class="check"><b>✔</b></span></div>
 <div><a href="../works/" id="show" class="tab">Works</a><span id="show_o" class="check"><b>✔</b></span></div>
 <div><a href="../etc/" id="etc" class="tab">Etc,</a><span id="etc_o" class="check"><b>✔</b></span></div>
 </div>

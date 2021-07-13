@@ -1,5 +1,4 @@
-#menu,
-#top {
+#menu {
   position:fixed;
   top:0; left:0;
   z-index: 500;
@@ -67,13 +66,13 @@
   opacity:1;
 }
 
-#cv_o b,
+#about_o b,
 #show_o b,
 #etc_o b,
 #mobile_o b
 {opacity: 0;}
 
-#cv:hover + #cv_o b,
+#about:hover + #about_o b,
 #show:hover + #show_o b,
 #etc:hover + #etc_o b,
 #mobile_open a:hover + #mobile_o b
