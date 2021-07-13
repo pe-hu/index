@@ -107,7 +107,7 @@ $("#cv_link").load("/jp/cm/kaochomex/cv/link.php");
   <u class="title"><?=h($row[1])?></u>
 </span>
 <p><?=h($row[2])?></p>
-<a style="display:<?=h($row[3])?>;" href="<?=h($row[5])?>" target="_blank" rel="noopener noreferrer"></a>
+<a style="display:<?=h($row[5])?>;" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
 </li>
 <?php endforeach; ?>
 <?php else: ?>

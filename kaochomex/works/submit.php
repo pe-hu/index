@@ -72,7 +72,7 @@ $("#menu").load("/jp/cm/kaochomex/menu.html");
 <textarea name="info" rows="7.5" required></textarea></p>
 <p>Link
 <select name="href" required>
-<option value="link">Yes</option>
+<option value="block">Yes</option>
 <option value="none">None</option>
 </select><br/>
 <input type="url" name="link"></p>
