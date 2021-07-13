@@ -5,12 +5,13 @@ function h($str) {
 $title = (string)filter_input(INPUT_POST, 'title');
 $contents = (string)filter_input(INPUT_POST, 'contents');
 $tag = (string)filter_input(INPUT_POST, 'tag');
-$label = (string)filter_input(INPUT_POST, 'label');
+$url = (string)filter_input(INPUT_POST, 'url');
+$link = (string)filter_input(INPUT_POST, 'link');
 
 $fp = fopen('think.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$title, $contents, $tag, $label,]);
+    fputcsv($fp, [$title, $contents, $tag, $url, $link,]);
     rewind($fp);
 }
 
@@ -54,17 +55,14 @@ $("#").load("");
 <input type="radio" name="tag" value="two" id="two">
 <label for="two" class="label">応用例</label></li>
 </ul>
-</div>
-<div class="search-box status">
-<ul>
-<li>
-<input type="radio" name="label" value="a" id="a">
-<label for="a" class="label">完成</label></li>
-<li>
-<input type="radio" name="label" value="b" id="b">
-<label for="b" class="label">制作中</label></li>
-</ul>
-<p><textarea name="contents" placeholder="about this" required></textarea></p>
+<p>Link
+<select name="link" required>
+<option value="block">Yes</option>
+<option value="none">None</option>
+</select><br/>
+<input type="url" name="url" placeholder="URL" required></p>
+</select></p>
+<p><textarea name="contents" placeholder="コメント" required></textarea></p>
 </div>
 <div class="reset">
 <button type="submit">Submit | 投稿する</button>
