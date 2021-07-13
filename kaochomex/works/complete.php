@@ -30,7 +30,7 @@ fclose($fp);
 <html lang="ja">
 <head>
 <meta charset="UTF-8" />
-<meta http-equiv="refresh" content="1;URL=/jp/cm/kaochomex/works/">
+<meta http-equiv="refresh" content="1;URL=/jp/cm/kaochomex/works/submit.php">
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="/css/calendar.css"/>
