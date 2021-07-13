@@ -72,14 +72,14 @@ $("#menu").load("../menu/");
 <li class="list_item list_toggle" data-tag="<?=h($row[2])?>">
 <span><?=h($row[0])?></span>
 <p><?=h($row[1])?></p>
-<a class="<?=h($row[4])?>" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
+<a style="display: <?=h($row[4])?>;" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
 <li class="list_item list_toggle" data-tag="<?=h($row[2])?>">
 <span>Title</span>
 <p>contents</p>
-<a class="<?=h($row[4])?>" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
+<a style="display: <?=h($row[4])?>;" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
 </li>
 <?php endif; ?>
 </ul>

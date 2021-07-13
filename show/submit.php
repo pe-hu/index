@@ -60,7 +60,7 @@ $("#").load("");
 <option value="block">Yes</option>
 <option value="none">None</option>
 </select><br/>
-<input type="url" name="url" placeholder="URL" required></p>
+<input type="url" name="url" placeholder="URL"></p>
 </select></p>
 <p><textarea name="contents" placeholder="コメント" required></textarea></p>
 </div>
