@@ -109,7 +109,7 @@ $("#cv_link").load("/jp/cm/aa/cv/link.php");
 <span style="display: <?=h($row[9])?>;"><img src="<?=h($row[10])?>"></span>
 <span style="display: <?=h($row[11])?>;"><img src="<?=h($row[12])?>"></span>
 </p>
-<a style="display: <?=h($row[4])?>;" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
+<a style="display: <?=h($row[3])?>;" href="<?=h($row[2])?>" target="_blank" rel="noopener noreferrer"></a>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
@@ -125,7 +125,7 @@ $("#cv_link").load("/jp/cm/aa/cv/link.php");
 <span style="display:none;"><img src="http://vg.pe.hu/jp/logo.png"></span>
 <span style="display:none;"><img src="http://vg.pe.hu/jp/logo.png"></span>
 </p>
-<a style="display:<?=h($row[4])?>;" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
+<a style="display:<?=h($row[3])?>;" href="<?=h($row[2])?>" target="_blank" rel="noopener noreferrer"></a>
 </li>
 <?php endif; ?>
 </ul>
