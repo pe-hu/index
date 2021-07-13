@@ -52,17 +52,9 @@ $("#menu").load("../menu/");
 <div id="greating">
 <form id="org">
 <div class="search-box tag">
-<ul>
-<li>
-<input type="radio" name="tag" value="one" id="one">
-<label for="one" class="label">使用例</label></li>
-<li>
-<input type="radio" name="tag" value="two" id="two">
-<label for="two" class="label">応用例</label></li>
-</ul>
 </div>
 <div class="reset">
-<input type="reset" name="reset" value="全部見る" class="reset-button">
+<input type="reset" name="reset" value="使用例" class="reset-button">
 </div>
 </form>
 

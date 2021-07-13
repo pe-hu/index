@@ -50,10 +50,10 @@ $("#").load("");
 <ul>
 <li>
 <input type="radio" name="tag" value="one" id="one">
-<label for="one" class="label">使用例</label></li>
+<label for="one" class="label">1</label></li>
 <li>
 <input type="radio" name="tag" value="two" id="two">
-<label for="two" class="label">応用例</label></li>
+<label for="two" class="label">2</label></li>
 </ul>
 <p>Link
 <select name="link" required>
