@@ -16,9 +16,7 @@ hr {border:hidden; margin-bottom:5%;}
   font-size:1.5rem;
   display: flex;
   width:95%;
-  top:0; left:0;
-  position:absolute;
-  z-index:100;
+  position:relative;
   flex-direction: row;
   justify-content: space-between;
 }

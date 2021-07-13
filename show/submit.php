@@ -41,7 +41,7 @@ $("#").load("");
 </head>
 <body>
 <div id="header">
-<a href="../show/" target="_parent">ORG</a>
+<a href="../show/" target="_parent">Show</a>
 <a href="submit.php" target="_parent">Submit</a>
 </div>
 <form action="complete.php" id="org" method="post" target="_parent">
