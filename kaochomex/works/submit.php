@@ -64,18 +64,18 @@ $("#menu").load("/jp/cm/kaochomex/menu.html");
   <input id="refine-4" type="radio" name="category" value="d" required><span class="refine-4"><b>✔</b></span>
   <label class="refine-btn d" for="refine-4">Residency</label>
 <hr/>
-<p>Sub<br/>
-<input type="text" name="sub" required></p>
-<p>Title<br/>
-<input type="name" name="title" required></p>
-<p>About<br/>
-<textarea name="info" rows="7.5" required></textarea></p>
-<p>Link
+<p>日付<br/>
+<input type="text" name="sub" placeholder="日付を入力" required></p>
+<p>題名<br/>
+<input type="name" name="title" placeholder="活動名を入力" required></p>
+<p>説明<br/>
+<textarea name="info" placeholder="活動について、25字前後で簡単に説明" required></textarea></p>
+<p>リンク
 <select name="href" required>
-<option value="block">Yes</option>
-<option value="none">None</option>
+<option value="block">ある</option>
+<option value="none">ない</option>
 </select><br/>
-<input type="url" name="link"></p>
+<input type="url" name="link" placeholder="活動に関連するウェブサイトなどのURLを入力"></p>
 <button type="submit">Submit</button>
 </form>
 </section>
