@@ -27,9 +27,9 @@ $("#").load("");
 <body>
 <div id="cv_link">
 <p><b>Email</b>abi.the.best.items@gmail.com</p>
-<p><b>Matrix</b>
-<a href="https://www.instagram.com/abi_the_best_items/" target="_blank" rel="noopener noreferrer">Instagram</a>
-<a href="http://newlifecollection.com/?ca=32" target="_blank" rel="noopener noreferrer">now on sale</a></p>
+<p><b>Instagram</b>
+<a href="https://www.instagram.com/abi_the_best_items/" target="_blank" rel="noopener noreferrer">@abi_the_best_items</a>
+</p>
 </div>
 </body>
 </html>
