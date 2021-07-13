@@ -57,12 +57,9 @@ $("#cv_link").load("/jp/cm/aa/cv/link.php");
 .list .date,
 .list .title
 {font-family: flower;}
-.list li {
-  animation:2s ease-in infinite fontmotion;
-}
 .list .date {
   font-size:125%;
-  padding:0 2.5%;
+  padding:0 2.5% 0 0;
   width:20%;
   display:inline-block;
   float:left;
