@@ -80,17 +80,17 @@ $("#cv_link").load("/jp/cm/kaochomex/cv/link.php");
 <div class="search-box tag">
 <ul>
 <li>
-<input type="radio" name="tag" value="Idea" id="Idea">
-<label for="Idea" class="label">Idea</label></li>
+<input type="radio" name="tag" value="a" id="a">
+<label for="a" class="label">Idea</label></li>
 <li>
-<input type="radio" name="tag" value="Join" id="Join">
-<label for="Join" class="label">Join</label></li>
+<input type="radio" name="tag" value="b" id="b">
+<label for="b" class="label">Join</label></li>
 <li>
-<input type="radio" name="tag" value="Activity" id="Activity">
-<label for="Activity" class="label">Activity</label></li>
+<input type="radio" name="tag" value="c" id="c">
+<label for="c" class="label">Activity</label></li>
 <li>
-<input type="radio" name="tag" value="Residency" id="Residency">
-<label for="Residency" class="label">Residency</label></li>
+<input type="radio" name="tag" value="d" id="d">
+<label for="d" class="label">Residency</label></li>
 </ul>
 </div>
 <div class="reset">
