@@ -34,7 +34,7 @@ fclose($fp);
 <script type="text/javascript">
 $(function(){
 $("#menu").load("../menu/");
-$("#menu").load("../cv/link.html");
+$("#cv_link").load("../cv/link.html");
 })
 </script>
 <script type="text/javascript">
@@ -76,6 +76,7 @@ $("#menu").load("../cv/link.html");
 </li>
 <?php endif; ?>
 </ul>
+<div id="cv_link"></div>
 </div>
 </body>
 </html>
