@@ -12,8 +12,9 @@ $("#link").load("/jp/cm/kaochomex/cv/link.php");
 })
 </script>
 <style type="text/css">
+#cv,
 #cv .jp {
-{font-family: "Yuppy TC","HGP創英角ゴシックUB", cursive;}
+font-family: "Yuppy TC","HGP創英角ゴシックUB", cursive;
 }
 </style>
 <title>2020 | Kaori Nakao</title>
