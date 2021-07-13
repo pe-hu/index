@@ -49,32 +49,20 @@ $("#").load("");
 <ul>
 <li>
 <input type="radio" name="tag" value="one" id="one">
-<label for="one" class="label">1</label></li>
+<label for="one" class="label">使用例</label></li>
 <li>
 <input type="radio" name="tag" value="two" id="two">
-<label for="two" class="label">2</label></li>
-<li>
-<input type="radio" name="tag" value="three" id="three">
-<label for="three" class="label">3</label></li>
-<li>
-<input type="radio" name="tag" value="four" id="four">
-<label for="four" class="label">4</label></li>
-<li>
-<input type="radio" name="tag" value="five" id="five">
-<label for="five" class="label">5</label></li>
+<label for="two" class="label">応用例</label></li>
 </ul>
 </div>
 <div class="search-box status">
 <ul>
 <li>
 <input type="radio" name="label" value="a" id="a">
-<label for="a" class="label">A</label></li>
+<label for="a" class="label">完成</label></li>
 <li>
 <input type="radio" name="label" value="b" id="b">
-<label for="b" class="label">B</label></li>
-<li>
-<input type="radio" name="label" value="c" id="c">
-<label for="c" class="label">C</label></li>
+<label for="b" class="label">制作中</label></li>
 </ul>
 <p><textarea name="contents" placeholder="about this" required></textarea></p>
 </div>
