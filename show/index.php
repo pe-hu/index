@@ -5,12 +5,13 @@ function h($str) {
 $title = (string)filter_input(INPUT_POST, 'title');
 $contents = (string)filter_input(INPUT_POST, 'contents');
 $tag = (string)filter_input(INPUT_POST, 'tag');
-$label = (string)filter_input(INPUT_POST, 'label');
+$url = (string)filter_input(INPUT_POST, 'url');
+$link = (string)filter_input(INPUT_POST, 'link');
 
 $fp = fopen('think.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$title, $contents, $tag, $label,]);
+    fputcsv($fp, [$title, $contents, $tag, $url, $link,]);
     rewind($fp);
 }
 
@@ -37,7 +38,8 @@ $("#menu").load("../menu/");
 </script>
 <script type="text/javascript">
 </script>
-<link rel="stylesheet" href="book.css"/>
+<link rel="stylesheet" type="text/css" href="book.css"/>
+<link rel="stylesheet" type="text/css" href="../cv/greating.css"/>
 <style type="text/css">
 .list li span {
   animation:2s ease-in infinite fontmotion;
@@ -47,6 +49,7 @@ $("#menu").load("../menu/");
 <body>
 <div id="menu"></div>
 
+<div id="greating">
 <form id="org">
 <div class="search-box tag">
 <ul>
@@ -58,35 +61,25 @@ $("#menu").load("../menu/");
 <label for="two" class="label">応用例</label></li>
 </ul>
 </div>
-<div class="search-box status">
-<ul>
-<li>
-<input type="radio" name="label" value="a" id="a">
-<label for="a" class="label">完成</label></li>
-<li>
-<input type="radio" name="label" value="b" id="b">
-<label for="b" class="label">制作中</label></li>
-</ul>
-</div>
-<div class="reset">
-<input type="reset" name="reset" value="全部見る" class="reset-button">
-</div>
 </form>
 
 <ul class="list">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
-<li id="<?=h($row[3])?>" class="list_item list_toggle" data-tag="<?=h($row[2])?>" data-label="<?=h($row[3])?>">
+<li class="list_item list_toggle" data-tag="<?=h($row[2])?>"">
 <span><?=h($row[0])?></span>
 <p><?=h($row[1])?></p>
+<a class="<?=h($row[4])?>" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
-<li id="<?=h($row[3])?>" class="list_item list_toggle" data-tag="<?=h($row[2])?>" data-label="<?=h($row[3])?>">
+<li class="list_item list_toggle" data-tag="<?=h($row[2])?>">
 <span>Title</span>
 <p>contents</p>
+<a class="<?=h($row[4])?>" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
 </li>
 <?php endif; ?>
 </ul>
+</div>
 </body>
 </html>
