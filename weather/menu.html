@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="/css/menu.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title>Menu | Shoji Funakawa </title>
+<style type="text/css">
+#profile,
+#up,
+#show,
+#mobile_open
+{font-family: Arial, Helvetica Neue, Helvetica, sans-serif;}
+#profile_o b,
+#up_o b,
+#show_o b,
+#mobile_o b
+{opacity: 0;}
+#profile:hover + #profile_o b,
+#up:hover + #up_o b,
+#show:hover + #show_o b,
+#mobile_open a:hover + #mobile_o b
+{opacity: 1;}
+</style>
+</head>
+<body>
+<div id="menu">
+<div id="header">
+<a href="/jp/" class="tab" id="top">∧° ┐</a>
+<div><a href="/jp/cm/weather/cv/" id="profile" class="tab">Shoji Funakawa</a><span id="profile_o" class="check"><b>✔</b></span></div>
+<div><a href="/jp/cm/weather/show/" id="up" class="tab">Show</a><span id="up_o" class="check"><b>✔</b></span></div>
+<div><a href="/jp/cm/weather/ing/" id="show" class="tab">Weathering with</a><span id="show_o" class="check"><b>✔</b></span></div>
+</div>
+
+<div id="mobile_open"><a onclick="obj=document.getElementById('mobile_menu').style; obj.display=(obj.display=='none')?'block':'none';" class="tab">Menu</a><span id="mobile_o" class="check"><b>✔</b></span></div>
+</div>
+
+<div id="mobile_menu" style="display:none;">
+<div id="inside">
+<div><a href="cv/" id="profile" class="tab">Shoji Funakawa</a><span id="profile_o" class="check"><b>✔</b></span></div>
+<div><a href="show/" id="up" class="tab">Performance</a><span id="up_o" class="check"><b>✔</b></span></div>
+<div><a href="ing/" id="show" class="tab">Weathering with</a><span id="show_o" class="check"><b>✔</b></span></div>
+</div>
+</div>
+</body>
+</html>
