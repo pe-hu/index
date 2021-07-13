@@ -50,7 +50,7 @@ $("#cv_link").load("/jp/cm/kaochomex/cv/link.php");
 .list .title
 {font-family: "Yuppy TC","HGP創英角ゴシックUB", cursive;}
 .list .date {
-  font-size:125%;
+  font-size:100%;
   padding:0 2.5% 0 0;
   width:20%;
   display:inline-block;
@@ -58,7 +58,7 @@ $("#cv_link").load("/jp/cm/kaochomex/cv/link.php");
   pointer-events: none;
 }
 .list .title {
-  font-size:150%;
+  font-size:125%;
   width:75%;
   right:0;
   display:inline-block;
@@ -67,7 +67,7 @@ $("#cv_link").load("/jp/cm/kaochomex/cv/link.php");
   pointer-events: none;
 }
 .list li:hover {
-  transform:scale(1.5)
+  transform:scale(1.25)
 }
 </style>
 </head>
