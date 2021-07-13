@@ -51,20 +51,6 @@
   margin-right:2vw;
 }
 
-input[type="email"] {
-  width:50vw;
-  font-size:2vw;
-  margin-right:0.5vw;
-  padding:0.5vw;
-}
-input[type="submit"] {
-  font-size:2vw;
-  padding:0.5vw;
-}
-.clear {
-  display:inline-block;
-}
-
 @keyframes blurin {
   0% {
     filter: blur(1.25vw);
