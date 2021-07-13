@@ -69,7 +69,7 @@ $("#menu").load("../menu/");
 <ul class="list">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
-<li class="list_item list_toggle" data-tag="<?=h($row[2])?>"">
+<li class="list_item list_toggle" data-tag="<?=h($row[2])?>">
 <span><?=h($row[0])?></span>
 <p><?=h($row[1])?></p>
 <a class="<?=h($row[4])?>" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
