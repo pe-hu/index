@@ -55,6 +55,7 @@ $("#menu").load("/jp/cm/kaochomex/menu.html");
 <h1>/works/submit.php</h1>
 <section id="submit" class="refine">
 <form action="complete.php" method="post">
+<p>※ 活動形態を下記から選択</p>
   <input id="refine-1" type="radio" name="category" value="a" required><span class="refine-1"><b>✔</b></span>
   <label class="refine-btn a" for="refine-1">Idea</label>
   <input id="refine-2" type="radio" name="category" value="b" required><span class="refine-2"><b>✔</b></span>
