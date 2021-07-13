@@ -71,31 +71,31 @@ $("#menu").load("/jp/cm/aa/menu.html");
 <input type="name" name="link" required></p>
 <p>image 1
 <select name="have_1" required>
-<option value="have">Have</option>
+<option value="block">Have</option>
 <option value="none">None</option>
 </select><br/>
 <input type="name" name="img_1"></p>
 <p>image 2
 <select name="have_2" required>
-<option value="have">Have</option>
+<option value="block">Have</option>
 <option value="none">None</option>
 </select><br/>
 <input type="name" name="img_2"></p>
 <p>image 3
 <select name="have_3" required>
-<option value="have">Have</option>
+<option value="block">Have</option>
 <option value="none">None</option>
 </select><br/>
 <input type="name" name="img_3"></p>
 <p>image 4
 <select name="have_4" required>
-<option value="have">Have</option>
+<option value="block">Have</option>
 <option value="none">None</option>
 </select><br/>
 <input type="name" name="img_4"></p>
 <p>image 5
 <select name="have_5" required>
-<option value="have">Have</option>
+<option value="block">Have</option>
 <option value="none">None</option>
 </select><br/>
 <input type="name" name="img_5"></p>

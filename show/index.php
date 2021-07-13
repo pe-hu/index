@@ -55,7 +55,7 @@ $("#cv_link").load("../cv/link.html");
 <div class="search-box tag">
 </div>
 <div class="reset">
-<input type="reset" name="reset" value="使用例" class="reset-button">
+<input type="reset" name="reset" value="このテンプレートが使われたウェブサイト一覧" class="reset-button">
 </div>
 </form>
 
