@@ -81,6 +81,9 @@ $("#cv_link").load("/jp/cm/aa/cv/link.php");
   display: inline-block;
 }
 .list p span img {width: 100%;}
+.list li:hover {
+  transform:scale(1.5)
+}
 </style>
 </head>
 <body>
