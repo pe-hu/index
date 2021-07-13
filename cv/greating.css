@@ -19,11 +19,9 @@
 }
 
 #cv {
-  font-size:5vw;
-  padding:2.5vh 5%;
-  font-family:"MS Mincho";
+  font-size:2rem;
+  padding:2.5vh 0;
   letter-spacing:0.05rem;
-  border-bottom: 1px dotted #000;
 }
 #cv a {
   display:inline-block;
@@ -46,13 +44,13 @@
   line-height:150%;
   font-style:italic;
   margin:0;
-  padding-bottom:5vw;
+  padding-bottom:1rem;
 }
 #cv .jp a {color:blue;}
 
 #cv_link {padding:2.5% 0;}
 #cv_link p {
-  font-size:2vw;
+  font-size:1rem;
   line-height:200%;
 }
 #cv_link a {
