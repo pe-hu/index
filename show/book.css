@@ -35,8 +35,7 @@ hr {border:hidden; margin-bottom:5%;}
 }
 #org, 
 .list {
-  width:100%;
-  max-width:45rem;
+  width:95%;
   margin:auto;
 }
 #org {
@@ -75,13 +74,15 @@ hr {border:hidden; margin-bottom:5%;}
 }
 #org p {font-size:1rem; margin:0.5rem 0 0;}
 #org input[type="text"],
+#org input[type="url"],
 #org textarea {
   font-size:1rem;
   border:2px solid;
   border-radius:0.5rem;
   padding:1.25%; margin:1.25%;
 }
-#org input[type="text"] {
+#org input[type="text"],
+#org input[type="url"] {
   width:88%;
 }
 #org textarea {
@@ -100,6 +101,12 @@ hr {border:hidden; margin-bottom:5%;}
   color:#fff;
   background-color:#eee;
   text-shadow:0.1rem 0.1rem #000;
+}
+#org select {
+	margin:1vw;
+	padding:0.5%;
+	border:0.1rem solid;
+	border-radius:0.5rem;
 }
 .reset a, .reset-button, button {
   display:block;
