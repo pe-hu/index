@@ -34,6 +34,7 @@ fclose($fp);
 <script type="text/javascript">
 $(function(){
 $("#menu").load("../menu/");
+$("#menu").load("../cv/link.html");
 })
 </script>
 <script type="text/javascript">
