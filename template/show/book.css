@@ -171,7 +171,7 @@ hr {border:hidden; margin-bottom:5%;}
   font-size:75%;
   margin:0.25rem 0 0;
 	animation: marquee 10s linear infinite;
-  width:100vw;
+  width:100%;
 }
 @keyframes marquee {
 	from {left:100%;}
