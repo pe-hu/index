@@ -49,13 +49,13 @@ $("#menu").load("/jp/cm/kaochomex/menu.html");
   top:7.5%; left:2.5%;
   z-index:10;
   padding:0.5rem;
-font-family: "Yuppy TC","HGP創英角ゴシックUB", cursive;
+  font-family: "Yuppy TC","HGP創英角ゴシックUB", cursive;
   background-color:rgb (255,255,255,0.5);
 }
 .book {
   display:block;
   position:relative;
-font-family: "Yuppy TC","HGP創英角ゴシックUB", cursive;
+  font-family: "Yuppy TC","HGP創英角ゴシックUB", cursive;
   width:100%;
   height:100vh;
 }
