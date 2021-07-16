@@ -61,9 +61,11 @@ $("#menu").load("/jp/cm/kaochomex/menu.html");
 }
 .book #think {
   position:absolute;
-  padding:10vh 2.5% 1vh;
+  bottom:0;
+  right:0;
+  padding:0 2.5% 2.5%;
   width:95%;
-  min-height:88vh;
+  min-height:90vh;
   display:flex;
 	align-content:flex-start;
 	flex-direction:row-reverse;
