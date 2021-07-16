@@ -22,6 +22,6 @@ const contents = [
   
   window.setInterval(function(){
       sentenceGenerator();
-  }, 100);
+  }, 500);
   
   sentenceGenerator();
