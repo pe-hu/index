@@ -37,7 +37,7 @@ button:hover {
   transition:.5s all;
 }
 .list li:hover {
-  transform:scale(1.25);
+  transform:scale(1 1.25);
   z-index:0;
 }
 
