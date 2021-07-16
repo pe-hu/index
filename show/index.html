@@ -1,0 +1,63 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> ORG | Think Book </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="org.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#menu").load("../menu/");
+$("#cv_link").load("../cv/link.html");
+})
+</script>
+<script type="text/javascript">
+</script>
+<link rel="stylesheet" type="text/css" href="book.css"/>
+<link rel="stylesheet" type="text/css" href="../cv/greating.css"/>
+<style type="text/css">
+.list li span {
+  animation:2s ease-in infinite fontmotion;
+}
+</style>
+</head>
+<body>
+<div id="menu"></div>
+
+<div id="greating">
+<form id="org">
+<div class="search-box tag">
+</div>
+<div class="reset">
+<input type="reset" name="reset" value="このテンプレートが使われたウェブサイト一覧" class="reset-button">
+</div>
+</form>
+
+<ul class="list">
+<li class="list_item list_toggle" data-tag="one">
+<span>∧° ┐ | creative, community space</span>
+<p>このテンプレートの基のなったウェブサイト</p>
+<a style="display: block;" href="http://vg.pe.hu/jp/" target="_blank" rel="noopener noreferrer"></a>
+</li>
+<li class="list_item list_toggle" data-tag="one">
+<span>Sorry for the delay in sending</span>
+<p>このテンプレートを使って制作したウェブサイト</p>
+<a style="display: block;" href="https://sorryforthedelayinsending.glitch.me" target="_blank" rel="noopener noreferrer"></a>
+</li>
+<li class="list_item list_toggle" data-tag="one">
+<span>hi i&#039;m Ayumi Akutagawa.</span>
+<p>ペフ・運営メンバー 芥川亜由弥 のプロフィールページ</p>
+<a style="display: block;" href="http://vg.pe.hu/jp/cm/aa/" target="_blank" rel="noopener noreferrer"></a>
+</li>
+<li class="list_item list_toggle" data-tag="one">
+<span>Think Book | Kaori Nakao </span>
+<p>ペフ・運営メンバー 中尾香織 のプロフィールページ</p>
+<a style="display: block;" href="http://vg.pe.hu/jp/cm/kaochomex/" target="_blank" rel="noopener noreferrer"></a>
+</li>
+</ul>
+
+<div id="cv_link"></div>
+</div>
+</body>
+</html>
