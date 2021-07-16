@@ -71,12 +71,14 @@
 
 #about_o b,
 #show_o b,
+#up_o b,
 #etc_o b,
 #mobile_o b
 {opacity: 0;}
 
 #about:hover + #about_o b,
 #show:hover + #show_o b,
+#up:hover + #up_o b,
 #etc:hover + #etc_o b,
 #mobile_open a:hover + #mobile_o b
 {opacity: 1;}
