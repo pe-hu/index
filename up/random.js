@@ -1,12 +1,12 @@
 const contents = [
-    '<img src="/jp/cm/random/img/001.png">',
-    '<img src="/jp/cm/random/img/002.png">',
-    '<img src="/jp/cm/random/img/003.png">',
-    '<img src="/jp/cm/random/img/004.png">',
-    '<img src="/jp/cm/random/img/005.png">',
-    '<img src="/jp/cm/random/img/006.png">',
-    '<img src="/jp/cm/random/img/007.png">',
-    '<img src="/jp/cm/random/img/008.png">',
+    '<img src="/jp/cm/up/img/001.png">',
+    '<img src="/jp/cm/up/img/002.png">',
+    '<img src="/jp/cm/up/img/003.png">',
+    '<img src="/jp/cm/up/img/004.png">',
+    '<img src="/jp/cm/up/img/005.png">',
+    '<img src="/jp/cm/up/img/006.png">',
+    '<img src="/jp/cm/up/img/007.png">',
+    '<img src="/jp/cm/up/img/008.png">',
   ];
   
   function randomContents(contentsArray) {
