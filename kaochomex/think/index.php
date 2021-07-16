@@ -34,7 +34,7 @@ fclose($fp);
 <link rel="stylesheet" type="text/css" href="/css/welcome.css"/>
 <link rel="stylesheet" type="text/css" href="/css/menu.css"/>
 <link rel="stylesheet" type="text/css" href="/css/greating.css"/>
-<link rel="stylesheet" href="org.css"/>
+<link rel="stylesheet" href="/jp/cm/kaochomex/think/org.css"/>
 <script type="text/javascript">
 $(function(){
 $("#menu").load("/jp/cm/kaochomex/menu.html");
