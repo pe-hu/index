@@ -37,7 +37,10 @@ button:hover {
   transition:.5s all;
 }
 .list li:hover {
-  transform:scale(1, 1.25);
+  color:#fff;
+  background:#eee;
+  text-shadow:0.1rem 0.1rem #000;
+  transform:scale(1, 1.5);
   z-index:0;
 }
 
