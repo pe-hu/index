@@ -42,9 +42,6 @@ $("#cv_link").load("../cv/link.html");
 <link rel="stylesheet" type="text/css" href="book.css"/>
 <link rel="stylesheet" type="text/css" href="../cv/greating.css"/>
 <style type="text/css">
-.list li span {
-  animation:2s ease-in infinite fontmotion;
-}
 </style>
 </head>
 <body>
