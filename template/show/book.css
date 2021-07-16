@@ -170,8 +170,8 @@ hr {border:hidden; margin-bottom:5%;}
 .list li p {
   font-size:75%;
   margin:0.25rem 0 0;
-	animation: marquee 10s linear infinite;
   width:100%;
+  animation: marquee 10s linear infinite;
 }
 @keyframes marquee {
 	from {left:100%;}
