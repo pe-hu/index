@@ -20,7 +20,7 @@
 
 #cv {
   font-size:1.5rem;
-  padding:2.5vh 0;
+  padding:0;
   letter-spacing:0.05rem;
 }
 #cv a {
@@ -48,7 +48,7 @@
 }
 #cv .jp a {color:blue;}
 
-#cv_link {padding:2.5% 0;}
+#cv_link {padding:2.5% 0 0;}
 #cv_link p {
   font-size:1rem;
   line-height:200%;
