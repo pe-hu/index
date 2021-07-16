@@ -1,3 +1,46 @@
+#org .label,
+.reset-button {
+  display: inline-block;
+  background-color:#fff;
+  text-shadow:0.1rem 0.1rem #fff;
+  margin:0.25rem;
+  padding:0.25rem 0.5rem;
+  font-size:1rem;
+  color: #000;
+  border-radius:0.5rem;
+  transition:1.5s all;
+}
+#org .status .label {
+  font-size: 1.25rem;
+  border:2px solid #eee;
+}
+#org .label:hover {
+  cursor:pointer;
+  color:#fff;
+  background-color:#eee;
+  text-shadow:0.1rem 0.1rem #000;
+  transition:.5s all;
+}
+.reset a:hover,
+.reset-button:hover,
+button:hover {
+  color:#fff;
+  background:#eee;
+  text-shadow:0.1rem 0.1rem #000;
+  transition:.5s all;
+}
+.list li {
+  font-size:1.5rem;
+  position:relative;
+  clear:both;
+  padding:1rem 0;
+  transition:.5s all;
+}
+.list li:hover {
+  transform:scale(1.25)
+  z-index:0;
+}
+
 body {padding:0; margin:0; overflow-x:hidden;}
 ul {padding:0; margin:0.25rem 0;}
 li {list-style: none;}
@@ -41,35 +84,11 @@ hr {border:hidden; margin-bottom:5%;}
   top:0;
   z-index:2;
   padding:2.5% 2.5% 0;
-  margin-bottom:-2.5rem;
 }
 #org ul {
   position:relative;
   display: flex;
   flex-wrap: wrap;
-}
-#org .label,
-.reset-button {
-  display: inline-block;
-  background-color:#fff;
-  text-shadow:0.1rem 0.1rem #fff;
-  margin:0.25rem;
-  padding:0.25rem 0.5rem;
-  font-size:1rem;
-  color: #000;
-  border-radius:0.5rem;
-  transition:1.5s all;
-}
-#org .status .label {
-  font-size: 1.25rem;
-  border:2px solid #eee;
-}
-#org .label:hover {
-  cursor:pointer;
-  color:#fff;
-  background-color:#eee;
-  text-shadow:0.1rem 0.1rem #000;
-  transition:.5s all;
 }
 #org p {font-size:1rem; margin:0.5rem 0 0;}
 #org input[type="text"],
@@ -121,14 +140,6 @@ hr {border:hidden; margin-bottom:5%;}
   width:100%;
   transition:1s all;
 }
-.reset a:hover,
-.reset-button:hover,
-button:hover {
-  color:#fff;
-  background:#eee;
-  text-shadow:0.1rem 0.1rem #000;
-  transition:.5s all;
-}
 
 .list {
   position:relative;
@@ -136,17 +147,6 @@ button:hover {
   padding:0 0 2rem;
   display:flex;
   flex-direction:column-reverse;
-}
-.list li {
-  font-size:1.5rem;
-  position:relative;
-  clear:both;
-  padding:1rem 0;
-  transition:.5s all;
-}
-.list li:hover {
-  font-size:150%;
-  z-index:0;
 }
 .list li a {
   position: absolute;
