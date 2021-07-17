@@ -58,6 +58,7 @@ $("#menu").load("/jp/cm/kaochomex/menu.html");
   font-family: "Yuppy TC","HGP創英角ゴシックUB", cursive;
   width:100%;
   height:100vh;
+  overflow:auto;
 }
 .book #think {
   position:absolute;
