@@ -42,43 +42,6 @@ $("#menu").load("/jp/cm/kaochomex/menu.html");
 
 </script>
 <style type="text/css">
-#org .label, .reset a, button
-  {font-size:0.9rem;}
-#org {
-  position:fixed;
-  top:7.5%; left:2.5%;
-  z-index:10;
-  padding:0.5rem;
-  font-family: "Yuppy TC","HGP創英角ゴシックUB", cursive;
-  background-color:rgb (255,255,255,0.5);
-}
-.book {
-  display:block;
-  position:relative;
-  font-family: "Yuppy TC","HGP創英角ゴシックUB", cursive;
-  width:100%;
-  height:100vh;
-  overflow:auto;
-}
-.book #think {
-  position:absolute;
-  bottom:0;
-  right:0;
-  padding:0 2.5% 2.5%;
-  width:95%;
-  min-height:90vh;
-  display:flex;
-	align-content:flex-start;
-	flex-direction:row-reverse;
-  flex-wrap: wrap-reverse;
-}
-.book #think li {
-  position:relative;
-  white-space:pre-wrap;
-  font-size:0.75rem;
-  border:#ccc solid 1px;
-  padding:0.2rem;
-}
 </style>
 </head>
 <body>
