@@ -37,7 +37,6 @@ fclose($fp);
 <script type="text/javascript">
 $(function(){
 $("#menu").load("/jp/cm/kaochomex/menu.html");
-$("#cv_link").load("/jp/cm/kaochomex/cv/link.php");
 })
 </script>
 <script type="text/javascript">
@@ -121,7 +120,6 @@ $("#cv_link").load("/jp/cm/kaochomex/cv/link.php");
 </li>
 <?php endif; ?>
 </ul>
-<div id="cv_link"></div>
 </div>
 </body>
 </html>
