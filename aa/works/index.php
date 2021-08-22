@@ -84,6 +84,14 @@ $("#cv_link").load("/jp/cm/aa/cv/link.php");
 .list li:hover {
   transform:scale(1.5)
 }
+.list li p {
+  animation: marquee 10s linear infinite;
+  width:100vw;
+}
+@keyframes marquee {
+	from {left:100%;}
+	to {left:-100%;}
+}
 </style>
 </head>
 <body>
