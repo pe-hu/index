@@ -167,10 +167,4 @@ button:hover {
 .list li p {
   font-size:75%;
   margin:0.25rem 0 0;
-	animation: marquee 10s linear infinite;
-  width:100vw;
-}
-@keyframes marquee {
-	from {left:100%;}
-	to {left:-100%;}
 }
