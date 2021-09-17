@@ -1,0 +1,125 @@
+#top {position: absolute; top:0; left:0; width: 100%;}
+#top h2 {font-family: "YuGothic","Yu Gothic","游ゴシック体", "Arial"; font-size:2vw; font-weight: 500;}
+#top h3 {font-family: "Arial"; font-size:3.5vw; font-weight: 500;}
+#top h3 span {float:right; display: block;}
+#top i {font-family:"Times New Roman"; font-style: italic; font-weight: 555; padding-right:0.5vw;}
+.pehu {font-family: "ＭＳ 明朝","MS Mincho";}
+a {color: #000; text-decoration: none;}
+.big {font-family: "Arial"; font-size:3.5vw; font-weight: 500; padding: 0 5vw;}
+#out {position: relative; top:0; width: auto; float:right; z-index:100; padding:1vw 3vw; margin:0 5vw;  font-size:2vw;}
+#out h3 {font-family: "Arial"; font-size:2.5vw; font-weight: 500; margin-top:2.5em;}
+#out a, #future h2 a, #we h2 a {border: solid 0.2vw #000; padding:2vw; text-decoration: none;}
+a:hover { color: #fff; background-color: red; }
+#out h1, #index h1 {font-family: "Arial"; font-size:3.5vw; line-height: 5vw; font-weight: 500;}
+#index {position: relative; top:0; left:0; width: auto; clear:both; padding:0;}
+#index h2 {padding:2vw; font-size:2.5vw; color: red; text-align:center;}
+#images {overflow: hidden;}
+:root {
+  --numOfListA: 24;
+  --imgW: 125px;
+  --imgH: var(--imgH);
+  --mBetweenImg: 0px;
+}
+.loop_wrap {
+  display: flex;
+  font-size: 0;
+  animation: slideshow 24s linear infinite;
+}
+.loop_wrap img {
+  width: var(--imgW);
+  height:  var(--imgH);
+}
+.slider-img + .slider-img {margin-left: var(--mBetweenImg);}
+@keyframes slideshow {100% {transform: translateX(calc((var(--numOfListA) * var(--imgW) + var(--mBetweenImg) * var(--numOfListA)) * -1));}}
+
+.folder {
+	font-size:2.5vw;
+	position: relative;
+	width: 0.8em;
+	height: 0.4em;
+	
+	margin:0 1vw 4vw;
+	background-color: #39a9d6;
+	border-radius: 0.1em 0.1em 0 0;
+}
+.folder::before {
+	content: "";
+	position: absolute;
+	top: 0.3em;
+	left: 0;
+	width: 1.6em;
+	height: 1.1em;
+	background-color: #39a9d6;
+	border-radius: 0 0.1em 0.1em 0.1em;
+}
+.link a { margin-left:1vw; font-size:1.5vw; border: solid 0.1vw red; padding:0.5vw 0.25vw;}
+.usb {color: red; float:right;display: block;}
+#files {padding-left:1vw;}
+#files span {padding-right:1.5vw; font-size:2vw; padding-bottom:0.5vw; display: inline-block;}
+.icon {height:3vw; padding-right:0.5vw;}
+.contents {margin-left:5.5vw; width:12em;}
+#index p, #we p, #are p, #future p {padding-bottom:1em;}
+#we, #are, #future {position: relative; top:0; left:0; width: auto; clear:both; padding:1vw 5vw;}
+.sample {width:45vw; height: 500px; border: none; padding-bottom:1em;}
+.bff {width:80vw; height: 500px; padding:1em 5vw 0; border: none;}
+.text {font-size:1.5vw; padding:0 2vw 2em; width:85vw; margin:1em 0; float:right; border-radius: 2.5vw; background-color: #fff; font-family: "ＭＳ 明朝","MS Mincho";}
+.text p {font-size:2.5vw;}
+.note {font-size:2vw; width:90%; padding:0 5%;}
+.credit {font-size:2vw; width:50vw; margin:5vw auto ; padding:0 auto;}
+.title {font-size:2.5vw;}
+.as {width:25vw; display: inline-block;}
+#we {font-size:1.25vw; padding:2.5em 5vw 0.25em;}
+#we img {padding-top:2.5em;}
+#we h2 {text-align: center; font-size:2.5vw; padding:2em 0; clear:both;}
+#are h1, #future h1 {font-size:4.5vw; color: #fff; font-family: "Times New Roman"; font-style: italic;}
+#are h2 {text-align: center; font-size:1.5vw; clear:both;}
+.message {padding:1em 0 0;}
+#future p {font-size:2vw; text-align: center;}
+#future h2 {text-align: center; font-size:3.4vw; padding:1em; clear:both;}
+#are {background-color: #eee; padding-bottom:2.2vw}
+#future {background: linear-gradient(-90deg, #b3cbf6, #FFC778, #eee);}
+.more {float:right; font-size:2vw;margin:-5vw 0 0; border:solid 0.1vw red; padding:0 0.5vw;}
+.info {font-size:2vw; padding:2.5vw; margin:1vw 0 2.5vw; border:solid 0.1vw;}
+.info ol, .info ul { margin:-2.5vw 0 5vw;}
+.css-hidden{ backface-visibility : hidden;}
+.css-front,
+.css-back{
+  position: absolute; z-index:0;
+  width: 100%;
+  border: 1px solid #00000000;
+}
+.css-back {transform: rotateY(180deg);}
+.css-rotate {max-width: 45vw; transform-style: preserve-3d; margin-left:5vw; pointer-events: none;}
+.css-animation {animation: rotate 5s linear infinite;}
+@keyframes rotate {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+@media screen and (max-width: 1025px){
+#index {padding-top:1vw;}
+#we {font-size:1vw;}
+#we h2 {font-size:5vw;}
+#are h2 {font-size:2.5vw;}
+#future h2 {font-size:4vw;}
+.css-rotate {max-width: 60vw;}
+:root {--imgW: 50px; --imgH:68px;}
+.text {font-size:1.5vw; width:90%; padding:2em 5vw; margin:1em 0;}
+.note {font-size:3vw;}
+.sample {width:80vw; height: 300px;}
+.bff {height: 250px;}
+.css-animation {animation: rotate 0s linear infinite;}
+}
+@media screen and (max-width: 500px){
+#top h2 {font-size:3vw;}
+#we h2 {font-size:5vw;}
+.css-rotate {max-width: 65vw;}
+:root {--imgW: 50px; --imgH:68px;}
+.text {width: 80vw;}
+.text, .note {font-size:1vw;}
+.sample {width:250px; height: 300px;}
+.bff {height: 400px;}
+.credit {width:60vw; font-size:3vw;}
+}
+
+#menu {position: relative; font-size:1.1rem; width: 100%; top:1vw; right:0; padding: 0; z-index: 1000;}
