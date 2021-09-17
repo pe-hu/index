@@ -1,0 +1,249 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width">
+<script type="text/javascript">
+$(function(){
+})
+</script>
+<title>∧° ┐ | creative, community space</title>
+<style>
+html, body {font-size: 1vw; height: 100%; font-family: "ＭＳ 明朝","MS Mincho"; letter-spacing: 0.05rem;}
+a {color: #000; text-decoration: none;}
+li a {color: orange; font-size: 2vw; padding: 5px; margin-right: 20px; border: 1px solid orange;}
+a:hover {color: #033330; background-color: #fff; font-style:oblique;}
+b {font-size: 3vw; font-weight: normal;}
+u {font-size: 150%;}
+ul {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap:         wrap;
+  -webkit-align-items: normal; /* Safari */
+  align-items: normal;
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+.month li {font-size: 1vw; float: left; width: auto; padding: 0 2% 2%; background-color:rgba(255,255,255,0.5);}
+.date li {font-size: 1vw; float: left; width: 10%; padding: 2%; background-color:rgba(255,255,255,0.5);}
+.date li:nth-child(7n) {color: red;}
+.date li:nth-child(7n-1) {color: blue;}
+.red {font-size: 2vw; background-color: red;}
+.cafe {font-size: 1.25vw; color: #fff; background-color: red;}
+.shop {font-size: 1.25vw; color: #000; background-color: yellow;}
+.gallery {font-size: 1.25vw; color: #fff; background-color: blue;}
+.show {font-size: 1.25vw; color: blue; background-color: #fff;}
+.pickup {font-size: 1.25vw; color: #000; background-color: #fff; margin: 0 -10px; padding: 10px; border: 5px solid red; border-radius: 100px;}
+.event {font-size: 1.25vw; ccolor: #000; background-color: #fff; margin: -5px; padding: 10px; border: 2.5px dotted #000;}
+.dis {color: green; background-color: #fff;}
+.price {font-size: 1vw; line-height: 1.5vw; margin: 10px 0; padding: 3px; border: 1px solid #000;}
+.hour {font-size: 0.9vw; color: #000; font-weight: bolder;}
+.close {font-size: 2.5vw; text-align: center;}
+hr {clear:both; border: 0 none; padding:0;}
+
+bottom {position: relative; z-index: 1; bottom:0;}
+#title {position: fixed; right:0; font-size: 2vw; padding: 0 2%; float: right;}
+table {padding: 0 1em; margin-bottom: 1em;}
+.here a {background-color: #fff;}
+#menu a {color: black; text-decoration: none; border: 1px solid black; padding: 0.5em 1em;}
+#menu a:hover, .floor li a:hover {color: red; background-color: #fff; border: 1px solid red;}
+h1 {font-size: 2vw; font-weight: normal;}
+</style>
+</head>
+<body>
+<hedder>
+<ul class="month">
+<li><h1><b>6月<br>June</b></h1></li>
+<li><h1>FEATURED</h1>
+- 8(sat) <a href="http://vg.pe.hu/2f/ns1.html">NS1</a>
+4(tue) <a href="http://vg.pe.hu/2f/ns1.html">F</a>
+7(fri) <a href="http://vg.pe.hu/2f/ns1.html">C</a>
+14-15(fri/sat) <a href="http://vg.pe.hu/2f/ns1.html">K</a>
+22(sat) <a href="">川口貴大/古池寿浩/船川翔司/江崎將史</a>
+17-29 <a href="http://vg.pe.hu/2f/fs1.html">FS1</a>
+</li>
+</ul>
+<!--
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p><span class="close">Closed</span></p>
+  <div class="pickup">_pm -</br><p><u>title</u></p><span class="price">¥___</span></div>
+  <p class="event">_pm -</br>title</p>
+  <p class="dis">8pm -</br><u>Discussion</u></p>
+  
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>3pm - 8pm</u></span></p>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>1pm - 6pm</u></span></p>
+
+  <p><span class="gallery">2F Gallery</span><br><span class="show">3pm - 8pm</span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">1pm - 6pm</span></p>
+  <span class="show">title<br/>by name, name</span>
+  
+  <p class="show"><span class="close">→</span></p>
+
+-->
+<ul class="date">
+<li><b>_</b></li>
+<li><b>_</b></li>
+<li><b>_</b></li>
+<li><b>_</b></li>
+<li><b>_</b></li>
+<li><b>1</b>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>1pm - 6pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">1pm - 6pm</show></p>
+  <p class="show"><span class="close">→</span></p>
+</li>
+<li><b>2</b>
+  <p><span class="close">Closed</span></p>
+  <p class="event">[Members only]</br>遠足</p>
+</li>
+<li><b>3</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>1pm - 6pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">1pm - 6pm</show></p>
+  <p class="show"><span class="close">→</span></p>
+</li>
+<li><b>4</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>1pm - 6pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">1pm - 6pm</show></p>
+  <p class="show"><span class="close">→</span></p>
+  <div class="pickup">7pm -</br><p><u>合法F制作</u></p></div>
+</li>
+<li><b>5</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>1pm - 6pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">1pm - 6pm</show></p>
+  <p class="show"><span class="close">→</span></p>
+</li>
+<li><b>6</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>1pm - 6pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">1pm - 6pm</show></p>
+  <p class="show"><span class="close">→</span></p>
+  <p class="dis">8pm -</br><u>Discussion</u></p>
+</li>
+<li><b>7</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>1pm - 6pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">1pm - 6pm</show></p>
+  <p class="show"><span class="close">→</span></p>
+  <div class="pickup">7pm -</br><p><u>合法C遊び/違法C遊び</u></p></div>
+</li>
+<li><b>8</b>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>1pm - 6pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">1pm - 6pm</show></p>
+  <span class="show">NS1<br/>by Nicholas Strobelt, Joseph Torres, Yuu Takamizawa</span>
+  <p><span class="gallery">LAST DAY</show></p>
+</li>
+<li><b>9</b>
+  <p><span class="close">Closed</span></p>
+</li>
+<li><b>10</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+</li>
+<li><b>11</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p class="event">8pm -</br>巨大植物調査</p>
+</li>
+<li><b>12</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+</li>
+<li><b>13</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p class="dis">8pm -</br><u>Discussion</u></p>
+</li>
+<li><b>14</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <div class="pickup">7pm -</br><p><u>K 製造</u></p><span class="price">参加費 : 0.002 BTC</span></div>
+</li>
+<li><b>15</b>
+  <div class="pickup">5am -</br><p><u>K Party</u></p><span class="price">1 BAANG! : 0.00001 BTC</span></div>
+  <p><span class="close">Closed</span></p>
+</li>
+<li><b>16</b>
+  <p><span class="close">Closed</span></p>
+</li>
+<li><b>17</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>3pm - 8pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">3pm - 8pm</show></p>
+  <span class="show">FS1<br/>by 天気 | 🐴</span>
+</li>
+<li><b>18</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>3pm - 8pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">3pm - 8pm</show></p>
+  <p class="show"><span class="close">→</span></p>
+</li>
+<li><b>19</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>3pm - 8pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">3pm - 8pm</show></p>
+  <p class="show"><span class="close">→</span></p>
+</li>
+<li><b>20</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>3pm - 8pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">3pm - 8pm</show></p>
+  <p class="show"><span class="close">→</span></p>
+  <p class="dis">8pm -</br><u>Discussion</u></p>
+</li>
+<li><b>21</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>3pm - 8pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">3pm - 8pm</show></p>
+  <p class="show"><span class="close">→</span></p>
+  <p class="event">8pm -</br>あくちゃんに聞きたい50のこと</p>
+</li>
+<li><b>22</b>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>1pm - 6pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">1pm - 6pm</show></p>
+  <p class="show"><span class="close">→</span></p>
+  <div class="pickup">7:30pm -</br><p><u>川口貴大/古池寿浩/船川翔司/江崎將史</u></p><span class="price">name your price</span></div>
+</li>
+<li><b>23</b>
+  <p><span class="close">Closed</span></p>
+</li>
+<li><b>24</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>3pm - 8pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">3pm - 8pm</show></p>
+  <p class="show"><span class="close">→</span></p>
+</li>
+<li><b>25</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>3pm - 8pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">3pm - 8pm</show></p>
+  <p class="show"><span class="close">→</span></p>
+</li>
+<li><b>26</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>3pm - 8pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">3pm - 8pm</show></p>
+  <p class="show"><span class="close">→</span></p>
+</li>
+<li><b>27</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>3pm - 8pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">3pm - 8pm</show></p>
+  <p class="show"><span class="close">→</span></p>
+  <p class="dis">8pm -</br><u>Discussion</u></p>
+</li>
+<li><b>28</b>
+  <p><span class="cafe">1F Cafe</span><span class="hour"><br><u>12:00 - 6pm</u></span></p>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>3pm - 8pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">3pm - 8pm</show></p>
+  <p class="show"><span class="close">→</span></p>
+</li>
+<li><b>29</b>
+  <p><span class="shop">2F Shop</span><span class="hour"><br><u>1pm - 6pm</u></span></p>
+  <p><span class="gallery">2F Gallery</span><br><span class="show">1pm - 6pm</show></p>
+  <span class="show">FS1<br/>by 天気 | 🐴</span>
+  <p><span class="gallery">LAST DAY</show></p>
+</li>
+<li><b>30</b>
+  <p><span class="close">Closed</span></p>
+</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/pehu/logo.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<title>Beauty Spot in ∧°┐</title>
+<script type="text/javascript">
+$(function(){
+$("#menu").load("../menu.html");
+})
+</script>
+<style type="text/css">
+h2 {font-size: 2em; font-family: "ＭＳ 明朝","MS Mincho"; text-align: center; font-weight: normal; letter-spacing: 0.04rem;}
+      @font-face {
+        font-family: 'Fetamont-I2H77s3TbG';
+        src: url('Fetamont-I2H77s3TbG.eot');
+        src: url('Fetamont-I2H77s3TbG.eot?#iefix') format('embedded-opentype'),
+           url('Fetamont-I2H77s3TbG.woff') format('woff'),
+           url('Fetamont-I2H77s3TbG.ttf') format('truetype'),
+           url('Fetamont-I2H77s3TbG.svg#Fetamont-I2H77s3TbG') format('svg');
+      }
+
+#open{
+opacity:0.9;
+font-family: "Mv Boli";
+position:absolute;
+z-index: 2;
+top: 95vh;
+height:100vh;
+right: 0; bottom:0;
+width: 100%;
+color: #000;
+background-color: yellow;
+}
+
+.marquee {font-size: 5vw; padding: 0; margin: 0.5em 1em; overflow:hidden;}
+.marquee p {
+color: #fff;
+    text-shadow: 3px 3px 1px #000,
+    -2px 2px 1px #000,
+    2px -2px 1px #000,
+    -2px -2px 1px #000;
+  margin:0;
+  padding-left:100%;
+  display:inline-block;
+  white-space:nowrap;
+  animation-name:marquee;
+  animation-duration:20s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}
+
+@keyframes marquee {
+  from { transform:translate(0);     }
+  to   { transform:translate(-100%); }
+}
+
+
+  /* WebKit and Opera browsers */
+  @-webkit-keyframes spinner {
+    from { -webkit-transform: rotateY(0deg);    }
+    to   { -webkit-transform: rotateY(-360deg); }
+  }
+
+  /* all other browsers */
+  @keyframes spinner {
+    from {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    to {
+      -moz-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-360deg);
+    }
+  }
+#menu {position:absolute; z-index:100%; bottom:0;}
+#stage {
+z-index: 3;
+position:Fixed;
+pointer-events: none;
+top: 0;
+right: 0;
+    margin: auto 15%;
+    -webkit-perspective: 70%;
+    -moz-perspective: 70%;
+    -ms-perspective: 70%;
+    perspective: 70%;
+    display:table;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  #spinner {
+    -webkit-animation-name: spinner;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+#info {z-index:100;}
+#act, #info, #text {position: fixed; bottom: 5%; height: auto; list-style-type: none;}
+#act{color: pink; top: 0; right: 0; padding: 0 1%;
+font-family: "ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro"; font-size: 4vw; z-index: 1; background-color: rgba(255,255,255,0.5);}
+#act a:hover{color: #DDFFFF; background-color: pink;}
+.store{color: pink; font-size: 6vw;}
+.name{color: #DDFFFF; font-size: 4vw;}
+#info{padding: 0 1%; letter-spacing: 0.2vw; font-size: 4vw; text-align: center; pointer-events: none;
+background-color: #BA2636;
+color: #fff;
+z-index: 2;
+font-family:'Fetamont-I2H77s3TbG';}
+#info .h1{font-size: 10vw; letter-spacing: -0.1vw;}
+.f{font-family: 'Savoye LET',sans-serif; font-size: 10vw;}
+#text {margin: 0;
+animation: 0.99s linear infinite blink_effect;}
+@keyframes blink_effect {
+    0% {visibility: hidden;}
+    50% {visibility: hidden;}
+    100% {visibility: visible;}
+}
+.items {
+  font-family: "ＭＳ 明朝","MS Mincho"; letter-spacing: 0.03rem;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap:         wrap;
+  -webkit-justify-content: space-evenly; /* Safari */
+  justify-content:         space-evenly;
+  -webkit-align-items: normal; /* Safari */
+  align-items: normal;
+margin: 0 0 4vw;
+padding: 0;
+list-style-type: none;
+font-size: 1.5vw; 
+}
+.items li {color: #000; float: left; width: 326px; padding: 0.5em 4vw; margin: 0 0.5em 5vw;}
+.items li:last-of-type {width: 725px;}
+</style>
+</head>
+<body>
+<section>
+  <ul>
+    <li id="text">
+<img src="https://instagram.foko1-1.fna.fbcdn.net/vp/7a78eda025fa09079e690ff80e439ca4/5DA81A7E/t51.2885-15/e35/p1080x1080/65313309_704512259986821_5857537578243135903_n.jpg?_nc_ht=instagram.foko1-1.fna.fbcdn.net" width="100%">
+</li>
+    <li id="info">
+<span class="h1"><u>Beauty<br/>Spot</u></span>
+<p><b>Opening Hours</b></p>
+<p><b>Weekday</b><br/>3pm - 8pm<br />
+<b>Saturday</b><br/>1pm - 6pm<br />
+<b>Sunday, Holiday</b><br/>Irregular Open</p>
+<p>in ∧°┐</p>
+<span class="f">2F</span>
+    </li>
+    <li id="act">
+<p><b>Co-Store Owner 提協</b><br />
+<p><a class="store" href="https://www.instagram.com/abi_the_best_items/">abi</a></p>
+<p><a class="store" href="https://www.instagram.com/purevoyage_/">PURE VOYAGE</a></p>
+<p><span class="store">tbpj</span></p>
+    </li>
+  </ul>
+</section>
+<div id="stage">
+<p id="spinner" style="text-align: center;">
+<img src="bs.png" width="100%">
+</p>
+</div>
+<div id="open">
+<div class="marquee">
+<p>Yo! Sup, Beauty spot is here. We selling Zine, Book, Cassette, CD, Record, Vintage and Original Clothes, Small Item and etc for get more fuckin beauty. can't wait to see your beauty spot. Let's make beauty spot and be beauty together</p>
+</div>
+<div id="menu"></div>
+</div>
+
+<script>
+$(function(){
+    $(window).scroll(function(){
+    var y = $(this).scrollTop();
+    var scale1 = y * 0.001 + 0.5;
+    $("#act").css('transform','scale(' + scale1 + ')');
+    var scale2 = y * (-0.001) + 2;
+    $("#text").css('transform','scale(' + scale2 + ')');
+    var scale3 = y * (-0) + 1;
+    $("#open").css('transform','scale(' + scale3 + ')');
+    var rotate1 = y * (-0.001) + 1;
+    $("#info").css('transform','rotate(' + y + 'deg) scale(' + rotate1 + ')');
+    });
+});
+</script>
+</body>
+</html>

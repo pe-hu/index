@@ -1,0 +1,7 @@
+empty,0,mon
+open,1,tue,yes,yes,none,topic,yes,time,title,price,none
+open,2,wed,none,none,pre,topic,none,time,title,price,none
+open,3,thu,yes,yes,run,,none,time,title,price,yes
+close,4,fri,none,none,none,,none,time,price,none
+open,5,sat,none,none,last,topic,none,time,title,price,none
+open,6,sun,none,none,none,,pickup,time,title,price,none

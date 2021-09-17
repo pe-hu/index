@@ -1,0 +1,30 @@
+open,1,mon,yes,yes,none,none,none,none,none,none,none
+open,2,tue,yes,yes,none,none,none,none,none,none,none
+open,3,wed,yes,yes,none,none,yes,7:30pm-,聞け！電子音楽の夜明けを！,自由料金制,none
+open,4,thu,yes,yes,yes,Best Friends from France 2019,none,none,none,none,none
+open,5,fri,yes,yes,run,,yes,6pm-,夜のお花見,無料,none
+open,6,sat,yes,yes,run,,none,time,title,price,none
+open,7,sun,none,none,none,none,yes,,遠足,members only,none
+open,8,mon,yes,yes,run,,yes,8pm-,20 min: continuously by Le makeup,自由料金制,none
+open,9,tue,yes,yes,run,,none,none,none,none,none
+open,10,wed,yes,yes,run,,none,none,none,none,none
+open,11,thu,yes,yes,run,,none,none,none,none,yes
+open,12,fri,yes,yes,run,,yes,8pm-,れんれんに聞きたい50のこと,無料,none
+open,13,sat,yes,yes,run,,none,time,title,price,none
+close,14,sun,none,none,none,none,none,time,title,price,none
+open,15,mon,yes,yes,run,,none,none,none,none,none
+open,16,tue,yes,yes,yes,"Signed Curtain by Jean-Philippe Bretin, Vanessa Dziuba",none,none,none,none,none
+open,17,wed,yes,yes,run,,none,none,none,none,none
+open,18,thu,yes,yes,run,,none,none,none,none,yes
+open,19,fri,yes,yes,run,,yes,8pm-,れんれんに聞きたい50のこと,無料,none
+open,20,sat,yes,yes,run,,none,time,title,price,none
+close,21,sun,none,none,none,none,none,time,title,price,none
+open,22,mon,yes,yes,run,,yes,7pm-,書道と陶芸,無料,none
+open,23,tue,yes,yes,run,,none,none,none,none,none
+open,24,wed,yes,yes,run,,none,none,none,none,none
+open,25,thu,yes,yes,run,,none,none,none,none,yes
+open,26,fri,yes,yes,run,,pickup,7pm-,#26APR19FRI,¥2000-,none
+open,27,sat,yes,yes,yes,"フランスのカード by Sammy Stein, Séverine Bascouert",none,none,none,none,none
+open,28,sun,yes,yes,run,,none,none,none,none,none
+open,29,sun,yes,yes,run,,none,none,none,none,none
+open,30,sun,yes,yes,last,"Best Friends from France 2019",yes,6pm-,closeing party,無料,none
