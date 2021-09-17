@@ -1,60 +1,42 @@
-<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="menu/style.css"/>
-<link rel="stylesheet" type="text/css" href="cv/greating.css"/>
-<link rel="stylesheet" type="text/css" href="up/random.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/coding/cover/style.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/coding/js/randomcolor.js"></script>
+<title> Index | creative-community.space </title>
 <script type="text/javascript">
 $(function(){
-$("#cv").load("cv/2021.html");
-$("#cv_link").load("cv/link.html");
+	jQuery('#left').css({'background':getRumRgba()});
+	jQuery('#right').css({'background':getRumRgba()});
+});
+
+$(function(){
+    $("#hello").load("hello.html");
+    $("#right").load("motto.html");
 })
 </script>
 <style type="text/css">
-#cv_link {
-    position: fixed;
-    bottom:0;
+@font-face {
+  font-family: "NewYork";
+  src: url("/coding/fontbook/NewYork.otf");
 }
-#greating {z-index: 1;}
-#random {z-index: 0;}
+#title {font-family:"NewYork";}
+.pehu {font-family: "SimSong", "MS Mincho", serif;}
 </style>
-<title>index | Your Name</title>
 </head>
 <body>
-    <div id="menu">
-    <div id="header">
-    <div><a href="cv/" id="about" class="tab">About</a><span id="about_o" class="check"><b>✔</b></span></div>
-    <div><a href="show/" id="show" class="tab">Samples</a><span id="show_o" class="check"><b>✔</b></span></div>
-    <div><a href="up/" id="up" class="tab">Images</a><span id="up_o" class="check"><b>✔</b></span></div>
-    <div><a href="template/" id="etc" class="tab" target="_blank" rel="noopener noreferrer">Demo</a><span id="etc_o" class="check"><b>✔</b></span></div>
-    </div>
-    
-    <div id="mobile_open">
-    <a onclick="obj=document.getElementById('mobile_menu').style; obj.display=(obj.display=='none')?'block':'none';" class="tab">Menu</a>
-    <span id="mobile_o" class="check"><b>✔</b></span>
-    </div>
-    </div>
-    
-    <div id="mobile_menu" style="display:none;">
-    <div id="inside">
-    <div><a href="cv/" id="about" class="tab">About</a><span id="about_o" class="check"><b>✔</b></span></div>
-    <div><a href="show/" id="show" class="tab">Samples</a><span id="show_o" class="check"><b>✔</b></span></div>
-    <div><a href="up/" id="up" class="tab">Images</a><span id="up_o" class="check"><b>✔</b></span></div>
-    <div><a href="template/" id="etc" class="tab" target="_blank" rel="noopener noreferrer">Demo</a><span id="etc_o" class="check"><b>✔</b></span></div>
-    </div>
-    </div>
-
-<div id="greating">
-<div id="cv"></div>
-<div id="cv_link"></div>
+<h1 id="title"><span class="pehu">∧°┐</span> | creative-community.space</h1>
+<div id="cover">
+<div id="left">
+<div id="hello"></div>
 </div>
-<div class="page">
-<div class="random"></div>
+<div id="right"></div>
 </div>
-<script src="up/random.js" type="text/javascript"></script>
+<div class="popup" id="support" style="display:none;">
+<p><iframe src="/support/"></iframe></p>
+<span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
+</div>
 </body>
 </html>
