@@ -31,7 +31,7 @@ fclose($fp);
 $(function(){
 })
 </script>
-<title>Update | New Life Collection</title>
+<title>Update | 大 chotto crazy</title>
 <style>
 #other {
   font-size: 2vw; padding:2.5% 0;
