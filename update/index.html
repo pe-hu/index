@@ -1,0 +1,58 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="icon" href="/jp/logo.png">
+<link rel="stylesheet" type="text/css" href="/css/menu.css"/>
+<link rel="stylesheet" type="text/css" href="/css/greating.css"/>
+<link rel="stylesheet" type="text/css" href="/jp/cm/support.css"/>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#menu").load("/jp/about/menu.html");
+$("#link").load("/jp/about/link.php");
+$("#tobe").load("/jp/update/tobe.php");
+$("#topics").load("/jp/update/topics.php");
+$("#projects").load("/jp/update/projects.html");
+$("#paypal").load("/jp/cm/support.html");
+})
+</script>
+<style type="text/css">
+body {margin:0; overflow-x:hidden;}
+#cv {font-family:"Arial";}
+#cv i {
+  font-family:"Times New Roman", serif;
+  font-style:italic;
+  font-size:110%;
+}
+#are {
+  position:absolute;
+  bottom:0; left:0;
+  height:90vh;
+  margin:2.5%;
+}
+#we {padding:5% 0;}
+#topics {padding:7.5% 0;}
+</style>
+<title>∧° ┐ | creative, community space</title>
+</head>
+<body>
+<div id="menu"></div>
+<div id="greating">
+<div id="are">
+<div id="tobe"></div>
+<div id="cv">
+<p>We are The <i>Community</i> of Try to <i>Create</i> The <i>Space</i> for do the things that want to do.</p>
+<p class="jp" style="font-style: normal;">わたしたちは、実現したいことを快適に実現するための場所・環境をつくり、こ・こ・ろ・豊かな新しい生活を提案する団体です。</p>
+<div id="projects"></div>
+</div>
+<div id="topics"></div>
+<div id="paypal"></div>
+<div id="link"></div>
+</div>
+</div>
+</body>
+</html>
