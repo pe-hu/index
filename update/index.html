@@ -22,11 +22,41 @@ $("#link").load("/jp/about/link.php");
 </script>
 <style type="text/css">
 body {margin:0; overflow-x:hidden;}
-#cv {font-family:"Arial";}
-#cv i {
-  font-family:"Times New Roman", serif;
+
+#cv {
+  font-family:"Arial";
+}
+#cv {
+  font-size:4.5vw;
+  padding:2.5vh 2.5%;
+  margin: auto;
+  width:85%;
+  font-family:"MS Mincho";
+  letter-spacing:0.05rem;
+}
+#cv a {
+  display:inline-block;
+  color:#000;
+  padding:1%;
+  border:none;
+  text-decoration:none;
+  filter: blur(1.25vw);
+  -webkit-filter: blur(1.25vw);
+  transition: all 1500ms ease;
+}
+#cv a:hover {
+  cursor:pointer;
+  filter: blur(0);
+  -webkit-filter: blur(0);
+  transform: scale(1.5,1.5);
+  transition: all 1000ms ease;
+}
+#cv .jp {
+  font-size:45%;
+  line-height:150%;
   font-style:italic;
-  font-size:110%;
+  margin:0;
+  padding-bottom:5vw;
 }
 #are {
   position:absolute;
@@ -36,6 +66,7 @@ body {margin:0; overflow-x:hidden;}
 }
 #we {padding:5% 0;}
 #topics {padding:7.5% 0;}
+
 </style>
 <title>∧° ┐ | creative, community space</title>
 </head>
