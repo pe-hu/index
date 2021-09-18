@@ -27,7 +27,7 @@
   text-align:center;
 }
 #inside .check {
-  margin-right:7.5vw;
+  margin-right:2.5vw;
 }
 #inside .check:before {
 	content:'[';
