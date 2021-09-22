@@ -2,15 +2,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <title> ∧° ┐ | creative, community space </title>
-<script type="text/javascript">
-$(function(){
-    $("#tobe").load("update/tobe.php");
-    $("#menu").load("menu/");
-    $("#motto").load("motto.html");
-})
-</script>
 <style type="text/css">
 #motto #main {
   max-height: 90vw;
@@ -19,8 +11,16 @@ $(function(){
 </style>
 </head>
 <body>
-  <div id="tobe"></div>
   <div id="menu"></div>
   <div id="motto"></div>
+  <div id="tobe"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+      $("#menu").load("menu/");
+      $("#motto").load("motto.html");
+      $("#tobe").load("update/tobe.php");
+  })
+  </script>
 </body>
 </html>
