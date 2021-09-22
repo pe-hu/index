@@ -2,23 +2,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/coding/cover/style.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <title> ∧° ┐ | creative, community space </title>
 <script type="text/javascript">
 $(function(){
-    $("#hello").load("hello.html");
-    $("#motto").load("motto.html");
-    $("#menu").load("menu/");
     $("#tobe").load("update/tobe.php");
+    $("#menu").load("menu/");
+    $("#motto").load("motto.html");
 })
 </script>
 <style type="text/css">
-@font-face {
-  font-family: "NewYork";
-  src: url("/coding/fontbook/NewYork.otf");
-}
-#title {font-family:"NewYork";}
 #motto #main {
   max-height: 90vw;
 }
@@ -26,20 +19,8 @@ $(function(){
 </style>
 </head>
 <body>
-<h1 id="title"><span class="pehu">∧°┐</span> | creative, community space</h1>
-<div id="cover">
-<div id="left">
-<div id="tobe"></div>
-<div id="hello"></div>
-</div>
-<div id="right">
-<div id="motto"></div>
-<div id="menu"></div>
-</div>
-</div>
-<div class="popup" id="support" style="display:none;">
-<p><iframe src="/support/"></iframe></p>
-<span class="close" onclick="obj=document.getElementById('support').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
-</div>
+  <div id="tobe"></div>
+  <div id="menu"></div>
+  <div id="motto"></div>
 </body>
 </html>
