@@ -59,7 +59,7 @@ $(function(){
   background:#eee;
 }
 #app .online {
-  color:#fff;
+  border:1px solid #fff;
   background:#fff;
 }
 </style>
