@@ -33,7 +33,7 @@ $(function(){
 </script>
 <title>Update | 大切にすることを大切にするための場所</title>
 <style>
-#other {
+#app {
   font-size: 2vw; padding:2.5% 0;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
