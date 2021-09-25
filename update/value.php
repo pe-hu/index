@@ -37,7 +37,7 @@ $(function(){
   font-size: 2vw; padding:2.5% 0;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
-#other span {
+#app span {
   display:inline;
   text-decoration:none;
   padding:0.5vw 1vw;
@@ -46,21 +46,26 @@ $(function(){
   transition: all 1500ms ease;
 }
 
-#other span {
+#app span {
   line-height:222%;
   margin:0.5vw 1vw 0.5vw 0;
 }
-#other .exhibition {
+#app .exhibition {
   border:1px solid #000;
+  background:#fff;
 }
-#other .publication {
+#app .publication {
   color:#000;
   background:#eee;
+}
+#app .online {
+  color:#fff;
+  background:#fff;
 }
 </style>
 </head>
 <body>
-<div id="other">
+<div id="app">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <span class="<?=h($row[0])?>">
