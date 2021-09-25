@@ -52,6 +52,7 @@ $(function(){
 }
 #other .max {
   border:1px solid #000;
+  background:#fff;
 }
 #other .event {
   color:#000;
