@@ -50,12 +50,15 @@ $(function(){
   line-height:222%;
   margin:0.5vw 1vw 0.5vw 0;
 }
-#other .show {
+#other .max {
   border:1px solid #000;
 }
-#other .etc {
+#other .event {
   color:#000;
   background:#eee;
+}
+#other .online {
+  border:1px solid #fff;
 }
 </style>
 </head>
