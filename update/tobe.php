@@ -54,9 +54,14 @@ $(function(){
   transition: all 1000ms ease;
 }
 
-.app a {
+.collaboration a {
   color:#fff;
   background:red;
+  border:solid #000 1px;
+}
+.app a {
+  color:#000;
+  background:#fff;
   border:solid red 1px;
 }
 .qa a {
