@@ -33,40 +33,63 @@ $(function(){
 </script>
 <title>∧° ┐ | creative, community space</title>
 <style>
-#other {
+#tobe {
   font-size: 2vw; padding:2.5%;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
-#other a {
-  display:inline;
+#tobe u,
+#tobe a {
+  display:inline-block;
+  text-decoration:none;
+  line-height:222%;
+  padding:0vw 1vw;
+  margin:0.5vw 1vw 0.5vw 0;
+  transform: scale(1,1);
+  transition: all 500ms ease;
+}
+#tobe a:hover {
   text-decoration:none;
   padding:0.5vw 1vw;
-  filter: blur(1);
-  -webkit-filter: blur(1);
-  transition: all 1500ms ease;
+  transform: scale(1,1.1);
+  transition: all 1000ms ease;
 }
 
-#other a,
-#other u {
-  line-height:222%;
-  margin:0.5vw 1vw 0.5vw 0;
-}
-.work a {
+.app a {
   color:#fff;
   background:red;
+  border:solid red 1px;
 }
-.members a {
+.qa a {
   color:#000;
-  background:yellow;
+  background:#fff;
+  border:solid #000 1px;
 }
-.etc a {
+.nlc a {
   color:#000;
-  background:#eee;
+  background: linear-gradient(-90deg, #b3cbf6, #FFC778, #eee);
+  background-size: 400% 400%;
+  animation: gradientBG 5s ease infinite;
 }
+@keyframes gradientBG {
+0% {background-position: 0% 50%;}
+50% {background-position: 100% 50%;}
+100% {background-position: 0% 50%;}
+}
+
+.cc a {
+  color:#D24117;
+  background:#f6d435;
+  border:solid #25AF5A 1px;
+}
+.pp a {
+  color:#fff;
+  background:#f3c5c6;
+}
+
 </style>
 </head>
 <body>
-<div id="other">
+<div id="tobe">
 <u>お知らせ Topics</u>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
