@@ -33,11 +33,11 @@ $(function(){
 </script>
 <title>Update | ichoose</title>
 <style>
-#other {
+#qa {
   font-size: 2vw; padding:2.5% 0;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
-#other span {
+#qa span {
   display:inline;
   text-decoration:none;
   padding:0.5vw 1vw;
@@ -46,21 +46,26 @@ $(function(){
   transition: all 1500ms ease;
 }
 
-#other span {
+#qa span {
   line-height:222%;
   margin:0.5vw 1vw 0.5vw 0;
 }
-#other .exhibition {
+#qa .exhibition {
   border:1px solid #000;
+  background:#fff;
 }
-#other .website {
+#qa .website {
   color:#000;
   background:#eee;
+}
+#qa .march {
+  border:1px solid #fff;
+  background:#fff;
 }
 </style>
 </head>
 <body>
-<div id="other">
+<div id="qa">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <span class="<?=h($row[0])?>">

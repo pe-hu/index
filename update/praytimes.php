@@ -33,11 +33,11 @@ $(function(){
 </script>
 <title>Update | プレイタイムズ</title>
 <style>
-#other {
+#pp {
   font-size: 2vw; padding:2.5% 0;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
-#other span {
+#pp span {
   display:inline;
   text-decoration:none;
   padding:0.5vw 1vw;
@@ -46,21 +46,22 @@ $(function(){
   transition: all 1500ms ease;
 }
 
-#other span {
+#pp span {
   line-height:222%;
   margin:0.5vw 1vw 0.5vw 0;
 }
-#other .pray {
+#pp .pray {
   border:1px solid #000;
+  background:#fff;
 }
-#other .play {
+#pp .play {
   color:#000;
   background:#eee;
 }
 </style>
 </head>
 <body>
-<div id="other">
+<div id="pp">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <span class="<?=h($row[0])?>">
