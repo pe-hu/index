@@ -33,11 +33,11 @@ $(function(){
 </script>
 <title>Update | 大 chotto crazy</title>
 <style>
-#other {
+#cc {
   font-size: 2vw; padding:2.5% 0;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
-#other span {
+#cc span {
   display:inline;
   text-decoration:none;
   padding:0.5vw 1vw;
@@ -46,26 +46,26 @@ $(function(){
   transition: all 1500ms ease;
 }
 
-#other span {
+#cc span {
   line-height:222%;
   margin:0.5vw 1vw 0.5vw 0;
 }
-#other .max {
+#cc .max {
   border:1px solid #000;
   background:#fff;
 }
-#other .event {
+#cc .event {
   color:#000;
   background:#eee;
 }
-#other .online {
+#cc .online {
   border:1px solid #fff;
   background:#fff;
 }
 </style>
 </head>
 <body>
-<div id="other">
+<div id="cc">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <span class="<?=h($row[0])?>">
