@@ -59,6 +59,7 @@ $(function(){
 }
 #other .online {
   border:1px solid #fff;
+  background:#fff;
 }
 </style>
 </head>
