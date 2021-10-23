@@ -1,5 +1,4 @@
 const p = [
-    'Pass',
     'Peacefully',
     'Powerful',
     'People',
@@ -11,7 +10,6 @@ const p = [
 ];
 
 const e = [
-    'End',
     'Emotionally',
     'Energetic',
     'Exercise',
@@ -41,7 +39,6 @@ const u = [
     'Universe',
     'Us',
     'Unconditional',
-    'Underdog',
 ];
 
 function randomWord(wordArray) {
