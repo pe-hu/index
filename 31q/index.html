@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <title>31 Questions for daily life</title>
+    <style type="text/css">
+      .cover {background-image: url(a.png);}
+      .a {background-image: url(002.jpg);}
+      .b {background-image: url(003.jpg);}
+      .c {background-image: url(004.jpg);}
+      .back {background-image: url(b.png);}
+      .end {background-image: url(005.jpeg);}
+
+      body {font-family: "Times New Roman", "Times", serif;}
+      .info span {display:inline-block;}
+      .title {padding-right: 15vw;}
+      .by {width:5vw; padding-right: 1vw;}
+      .as {width:15vw; padding-right: 0;}
+      .name {padding: 5vh 10vw;}
+
+      .library li img {width:100%;}
+      .library li {background-size: 80%;}
+
+      .buy a:hover {color: #000;}
+      .library::-webkit-scrollbar-thumb,
+      .library li::-webkit-scrollbar-thumb{
+        background: #000;
+      }
+
+      @media screen and (max-width: 1100px){
+        .value {
+          font-size:2.5vw;
+        }
+      }
+    </style>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/publication/preview.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/publication/scrollable.js"></script>
+
+  </head>
+  <body>
+    <ul class="mousedragscrollable library">
+      <li class="cover"></li>
+
+      <li>
+        <div class="contents">
+        <p>
+          <span class="title info">
+          31 Questions for daily life
+          </span>
+          <span class="by">by</span>
+          </p>
+          <span class="by">2</span>
+          <span class="by">Q's</span>
+          <span class="by"></span>
+          <span class="as"></span>
+          <span class="as"></span>
+          <span class="">Ayami Konishi</span>
+          <br/>
+          <span class="by">5</span>
+          <span class="by">Q's</span>
+          <span class="by">&</span>
+          <span class="as">Translation</span>
+          <span class="as"></span>
+          <span class="">Ayumi Akutagawa</span>
+          <br/>
+          <span class="by">2</span>
+          <span class="by">Q's</span>
+          <span class="by">&</span>
+          <span class="as">Translation</span>
+          <span class="as"></span>
+          <span class="">Haruka Numoto</span>
+          <br/>
+          <span class="by">4</span>
+          <span class="by">Q's</span>
+          <span class="by"></span>
+          <span class="as"></span>
+          <span class="as"></span>
+          <span class="">Kaori Nakao</span>
+          <br/>
+          <span class="by">3</span>
+          <span class="by">Q's</span>
+          <span class="by"></span>
+          <span class="as"></span>
+          <span class="as"></span>
+          <span class="">Kazutaka Tsutsui</span>
+          <br/>
+          <span class="by">15</span>
+          <span class="by">Q's</span>
+          <span class="by">&</span>
+          <span class="as">Design</span>
+          <span class="as">Edit</span>
+          <span class="">Kazuma Sasajima</span>
+          <p>
+          <span class="by">Font</span>
+          <span class="by"></span>
+          <span class="by"></span>
+          <span class="as">Times Dot</span>
+          <span class="as">　　　by</span>
+          <span class="">Laurel Schwults</span>
+          </p>
+          <p>
+          <span class="by">First</span>
+          <span class="by">Edition</span>
+          <span class="by"></span>
+          <span class="as">March 29th</span>
+          <span class="as">2020</span>
+          <span class="">100　　copies</span>
+        </p>
+        </div>
+      </li>
+
+      <li>
+        <div class="contents">
+          <script language="javascript" src="daily.js"></script>
+          <script language="javascript">
+          daily();
+          </script>
+        </div>
+      </li>
+
+      <li class="a"></li>
+      <li class="b"></li>
+      <li class="c"></li>
+
+      <li class="back">
+        <div class="outside">
+        <span class="buy">
+        <a href="http://newlifecollection.com/ca19/6/p-r-s/" target="_parent">BUY</a>
+        </span>
+        </div>
+      </li>
+
+      <li class="end"></li>
+      
+    </ul>
+  </body>
+
+  <script>$(".mousedragscrollable").mousedragscrollable();</script>
+
+</html>
