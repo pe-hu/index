@@ -7,6 +7,7 @@ const p = [
     'Pensive',
     'Possible',
     'Paradise',
+    'Participatory',
 ];
 
 const e = [
@@ -18,6 +19,7 @@ const e = [
     'Earth',
     'Everything',
     'Elementary',
+    'Experimental',
 ];
 
 const h = [
@@ -30,6 +32,7 @@ const h = [
     'Halo',
     'Honestly',
     'Homie',
+    'Heartful',
 ]
 
 const u = [
@@ -39,6 +42,7 @@ const u = [
     'Universe',
     'Us',
     'Unconditional',
+    'Understand',
 ];
 
 function randomWord(wordArray) {
