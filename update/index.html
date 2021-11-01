@@ -54,38 +54,15 @@ body {margin:0; overflow-x:hidden;}
 #we {padding:5% 0;}
 #topics {padding:7.5% 0;}
 
-#credit {
-  position: fixed;
-  top:0;
-  width:95%;
-  margin:0 2.5%;
-  font-size:1.5vw;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap:wrap;
-  z-index: 100;
-}
-#credit a {
-  color:#000;
-  text-decoration: none;
-}
-.pehu {font-family: "MS Mincho", "SimSong", serif;}
 </style>
 <title>∧° ┐ | creative, community space</title>
 </head>
 <body>
 
-<div id="credit">
-<p>今まで　</p>
-<p><a href="/pehu/" class="pehu">∧° ┐ | creative, community space</a></p>
-<p>Up till now</p>
-</div>
 
 <div id="greating">
 <div id="are">
 <div id="cv">
-<p>We are The <i>Community</i> of Try to <i>Create</i> The <i>Spaces</i> to do the things that we want to do.</p>
-<p class="jp" style="font-style: normal;">わたしたちは、実現したいことを快適に実現するための場所・環境をつくり、こ・こ・ろ・豊かな新しい生活を提案する団体です。</p>
 <div id="projects"></div>
 </div>
 <div id="paypal"></div>
@@ -97,7 +74,7 @@ body {margin:0; overflow-x:hidden;}
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
-$("#projects").load("projects.html");
+$("#projects").load("/pehu/update/projects.html");
 $("#paypal").load("/support/");
 })
 </script>
