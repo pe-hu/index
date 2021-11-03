@@ -2,11 +2,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="わたしたちは、実現したいことを快適に実現するための場所・環境をつくり、こ・こ・ろ・豊かな新しい生活を提案する団体です。">
 <title> ∧° ┐ | creative, community space </title>
+<link rel="stylesheet" type="text/css" href="change.css" />
 <style type="text/css">
-#motto #main {
-  max-height: 90vw;
+#menu {
+  font-family: "MS Mincho", "SimSong", serif;
 }
+
 #tobe {
   width:95%;
   margin: auto;
@@ -40,24 +43,42 @@
 </style>
 </head>
 <body>
-<div id="tobe"></div>
+<div id="menu">
+<div class="pehu">∧° ┐</span></div>
+<div><a class="tab" href="#weare">We are</a><span class="check"><b>✔</b></span></div>
+<div><a class="tab" href="#motto">Motto</a><span class="check"><b>✔</b></span></div>
+<div><a class="tab" href="#update">Up till now</a><span class="check"><b>✔</b></span></div>
+</div>
 
+<div id="top">
+<div id="tobe"></div>
 <div id="cv">
 <p>We are The <i>Community</i> of Try to <i>Create</i> The <i>Spaces</i> to do the things that we want to do.</p>
 <p class="jp" style="font-style: normal;">わたしたちは、実現したいことを快適に実現するための場所・環境をつくり、こ・こ・ろ・豊かな新しい生活を提案する団体です。</p>
 </div>
+</div>
 
-<div id="motto"></div>
+<div id="weare" class="change">We are</div>
+<div id="motto" class="change"></div>
+<div id="update" class="change"></div>
 
-<div id="link"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript">
-  $(function(){
+$(function(){$('.change').hide();$('.tab').on('click',function(){$('.change').not($($(this).attr('href'))).hide();$($(this).attr('href')).fadeToggle(1000);});});
+
+$(function(){
       $("#tobe").load("update/tobe.php");
-      $("#link").load("link.html");
-      $("#motto").load("motto/motto.html");
-  })
-  </script>
+      $("#weare").load("weare/");
+      $("#motto").load("motto/");
+      $("#update").load("update/");
+})
+
+$('a[href^="#"]').click(function(){
+   var href= $(this).attr("href");
+   var target = $(href == "#" || href == "" ? 'html' : href);
+   return false;
+ });
+</script>
 </body>
 </html>
