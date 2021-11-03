@@ -1,0 +1,61 @@
+body  {
+  padding: 0;
+  margin: 0;
+}
+#menu {
+  position:fixed;
+  width:95%;
+  top:0;
+  z-index:100;
+  margin:1.25% 2.5%;
+  font-size:1.5vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
+.tab {
+  color:#000;
+  text-decoration:none;
+  transition: all 500ms ease;
+}
+.tab:hover,
+.check b {
+  cursor: pointer;
+  color:blue;
+  transition: all 500ms ease;
+}
+.check {
+  float:left;
+  display:inline-block;
+  margin-right:1.5vw;
+  text-align:center;
+}
+.check:before {
+  content:'[';
+  opacity:1;
+}
+.check:after {
+  content:']';
+  opacity:1;
+}
+.check b {
+  opacity: 0;
+  transition: all 1000ms ease;
+}
+.tab:hover + .check b {
+  opacity: 1;
+  transition: all 1000ms ease;
+}
+
+#top,
+.change {
+  position:absolute;
+  margin-top:5vw;
+}
+.change {
+  z-index:5;
+  display:block;
+  background:#fff;
+  width:100%;
+  min-height:100vh;
+}
