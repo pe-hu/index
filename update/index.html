@@ -61,6 +61,7 @@ body {margin:0; overflow-x:hidden;}
 
 
 <div id="greating">
+<div id="topics"></div>
 <div id="are">
 <div id="cv">
 <div id="projects"></div>
@@ -74,6 +75,7 @@ body {margin:0; overflow-x:hidden;}
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
+$("#topics").load("/pehu/update/tobe.php");
 $("#projects").load("/pehu/update/projects.html");
 $("#paypal").load("/support/");
 })
