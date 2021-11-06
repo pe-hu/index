@@ -1,13 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <title>Motto | P E H U is</title>
-    <style type="text/css">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<title>Motto | P E H U is</title>
+<style type="text/css">
 
       .cover {background-image: url(/pehu/motto/screen.gif);}
       .frame {background-image: url(/pehu/motto/frame.gif);}
@@ -28,10 +29,17 @@
       .library li::-webkit-scrollbar-thumb{
         background: #000;
       }
-      option {
-        padding: 1vw 2vw;
+      .words {
+        border: solid 1px;
+        height:25vw;
+        overflow-y:scroll;
+      }
+      .words span {
+        display:block;
+        text-align:center;
+        padding: 5vw 0;
         font-family: 'Times New Roman', serif;
-        font-size: 2vw;
+        font-size: 7.5vw;
       }
       .new::after {
         content: "New";
@@ -72,187 +80,164 @@
       }
     </style>
 
-    <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="https://creative-community.space/publication/preview.css" />
+<link rel="stylesheet" href="https://creative-community.space/publication/preview.css" />
 
-    <!-- Import the webpage's javascript file -->
-    <script src="https://creative-community.space/publication/scrollable.js"></script>
-
-  </head>
-  <body>
-    <ul class="mousedragscrollable library">
-
-      <li>
-        <div class="contents">
-          <div class="value">
-          <h1 class="info center">P E H U is</h1>
-          </div>
-        <p class="center">
-        <span class="">Screen</span>
-        <span class="">Printing</span>
-        </p>
-        <p class="center"><a class="collection" href="https://newlifecollection.com/?ca=88">View The Collection</a></p>
-        <p class="center">ペフに似合う言葉を集め、集まった言葉たちのスクリーン版を制作します。</p>
-        </div>
-      </li>
-
-      <li class="sample"></li>
-
-      <li>
-        <div class="contents">
-          <h2 class="center">Printing Fee</h2>
-          <p class="center"><b class="name white">¥1,500</b></p>
-          <p class="center">
-          <span class="name white">P E H U から始まる言葉を1つずつ 計4回の印刷代（＋テストプリント1回）</span>
-          <br/>
-          <span class="name white">※ 印刷する素材を購入される場合は別途素材料要</span>
-          </p>
-        </div>
-      </li>
-
-      <li class="cover"></li>
-
-      <li>
-        <div class="contents">
-          <h2>1</h2>
-          <br/>
-          <p>
-          <span class="name">P E H U から始まる言葉たちの中から好きな言葉を一つずつ選ぶ</span>
-          </p>
-          <p>
-          <span class="by">Choose words that you like from the words for P E H U one by one</span>
-          </p>   
-        </div>
-      </li>
-
-      <li class="frame">
-        <div class="contents">
-        <p class="center">
-        <span class="white">Screen Size<br/>width 17 cm (Inner dia. 14.5cm)<br/>height 12 cm (Inner dia. 9.5cm)</span>
-        </p>
-        <p class="center">
-        <span class="white">Per characte<br/>width 1~2 cm / height 1.5~2cm</span>
-        </p>
-        </div>
-      </li>
-
-      <li>
-        <div class="contents">
-          <h2>2021.10.30</h2>
-          <br/>
-          <p>
-          <span class="name">P E H U から始まる 各4つの言葉のスクリーン版を制作しました</span>
-          </p>
-          <p>
-          <span class="by">We made screens the words for P E H U, 4 each</span>
-          </p>
-        </div>
-      </li>
-
-      <li class="p">
-        <div class="contents">
-          <select name="p" size="4">
-          <option value="Pensive" class="">Pensive</option>
-          <option value="People" class="">People</option>
-          <option value="Powerful" class="">Powerful</option>
-          <option value="Peacefully" class="">Peacefully</option>
-          </select>
-        </div>
-      </li>
-
-      <li class="e">
-        <div class="contents">
-          <select name="e" size="4">
-          <option value="Exercise" class="">Exercise</option>
-          <option value="Everything" class="">Everything</option>
-          <option value="Emotionally" class="">Emotionally</option>
-          <option value="Energetic" class="">Energetic</option>
-          </select>
-        </div>
-      </li>
-
-      <li class="h">
-        <div class="contents">
-          <select name="h" size="4">
-            <option value="Home" class="">Home</option>
-          <option value="Honestly" class="">Honestly</option>
-          <option value="Healthy" class="">Healthy</option>
-          <option value="Happily" class="">Happily</option>
-          </select>
-        </div>
-      </li>
-
-      <li class="u">
-        <div class="contents">
-          <select name="u" size="4">
-          <option value="Universe" class="">Universe</option>
-          <option value="Us" class="">Us</option>
-          <option value="Usefully" class="">Usefully</option>
-          <option value="Unity" class="">Unity</option>
-          </select>
-        </div>
-      </li>
-
-      <li>
-        <div class="contents">
-          <h2>2</h2>
-          <br/>
-          <p>
-          <span class="name">言葉を印刷するシルクスクリーン用水性インクの色を選ぶ</span>
-          </p>
-          <p>
-          <span class="by">Select the color of Ink for Silkscreen Printing</span>
-          </p>   
-        </div>
-      </li>
-
-      <li class="ink">
-        <div class="contents">
-        <p class="center">
-        <span class="white">Ink Colors</span>
-        </p>
-        <p class="center">
-        <span class="white">Black</span>
-        <span class="white">Gray</span>
-        <span class="white">Blue</span>
-        <span class="white">Red</span>
-        <span class="white">Neon Pink</span>
-        </p>
-        </div>
-      </li>
-
-      <li>
-        <div class="contents">
-          <h2>3</h2>
-          <br/>
-          <p>
-          <span class="name">あなたが持参したものやこちらで用意した素材に言葉を印刷する</span>
-          </p>
-          <p>
-          <span class="by">Let's printing the words on the stuff that you bring or bought from us.</span>
-          </p>   
-        </div>
-      </li>
-
-      <li class="print"></li>
-
-      <li>
-        <div class="contents">
-          <h2 class="center">Members Only</h2>
-          <p class="center"><b class="name white">¥1,000</b></p>
-          <p class="center">
-          <span class="name white">コミュニティ会員の皆様には、割引価格にて印刷サービスをご提供いたます。</span><br/>
-          <span class="name white">※ 会員証明として、ご希望の箇所にオリジナル油性スタンプを刻印させていただきます。</span>
-          </p>
-          <p class="center"><a href="https://pehu.cart.fc2.com/signup">Become a Member</a></p>
-        </div>
-      </li>
-
-      <li class="members"></li>
-      
-    </ul>
-  </body>
-
-  <script>$(".mousedragscrollable").mousedragscrollable();</script>
-
+<script src="https://creative-community.space/publication/scrollable.js"></script>
+</head>
+<body>
+<ul class="mousedragscrollable library">
+<li>
+<div class="contents">
+<div class="value">
+<h1 class="info center">P E H U is</h1>
+</div>
+<p class="center">
+<span class="">Screen</span>
+<span class="">Printing</span>
+</p>
+<p class="center"><a class="collection" href="https://newlifecollection.com/?ca=88">View The Collection</a></p>
+<p class="center">ペフに似合う言葉を集め、集まった言葉たちのスクリーン版を制作します。</p>
+</div>
+</li>
+<li class="sample"></li>
+<li>
+<div class="contents">
+<h2 class="center">Printing Fee</h2>
+<p class="center"><b class="name white">¥1,500</b></p>
+<p class="center">
+<span class="name white">P E H U から始まる言葉を1つずつ 計4回の印刷代（＋テストプリント1回）</span>
+<br/>
+<span class="name white">※ 印刷する素材を購入される場合は別途素材料要</span>
+</p>
+</div>
+</li>
+<li class="cover"></li>
+<li>
+<div class="contents">
+<h2>1</h2>
+<br/>
+<p>
+<span class="name">P E H U から始まる言葉たちの中から好きな言葉を一つずつ選ぶ</span>
+</p>
+<p>
+<span class="by">Choose words that you like from the words for P E H U one by one</span>
+</p>
+</div>
+</li>
+<li class="frame">
+<div class="contents">
+ <p class="center">
+<span class="white">Screen Size<br/>width 17 cm (Inner dia. 14.5cm)<br/>height 12 cm (Inner dia. 9.5cm)</span>
+</p>
+<p class="center">
+<span class="white">Per characte<br/>width 1~2 cm / height 1.5~2cm</span>
+</p>
+</div>
+</li>
+<li>
+<div class="contents">
+<h2>2021.10.30</h2>
+<br/>
+<p>
+<span class="name">P E H U から始まる 各4つの言葉のスクリーン版を制作しました</span>
+</p>
+<p>
+<span class="by">We made screens the words for P E H U, 4 each</span>
+</p>
+</div>
+</li>
+<li class="p">
+<div class="contents">
+<p class="words">
+<span>Pensive</span>
+<span>People</span>
+<span>Powerful</span>
+<span>Peacefully</span>
+</p>
+</div>
+</li>
+<li class="e">
+<div class="contents">
+<p class="words">
+<span>Exercise</span>
+<span>Everything</span>
+<span>Emotionally</span>
+<span>Energetic</span>
+</p>
+</div>
+</li>
+<li class="h">
+<div class="contents">
+<p class="words">
+<span>Home</span>
+<span>Honestly</span>
+<span>Healthy</span>
+<span>Happily</span>
+</p>
+</div>
+</li>
+<li class="u">
+<div class="contents">
+<p class="words">
+<span>Universe</span>
+<span>Us</span>
+<span>Usefully</span>
+<span>Unity</span>
+</p>
+</div>
+</li>
+<li>
+<div class="contents">
+<h2>2</h2>
+<br/>
+<p>
+<span class="name">言葉を印刷するシルクスクリーン用水性インクの色を選ぶ</span>
+</p>
+<p>
+<span class="by">Select the color of Ink for Silkscreen Printing</span>
+</p>
+</div>
+</li>
+<li class="ink">
+<div class="contents">
+<p class="center">
+<span class="white">Ink Colors</span>
+</p>
+<p class="center">
+<span class="white">Black</span>
+<span class="white">Gray</span>
+<span class="white">Blue</span>
+<span class="white">Red</span>
+<span class="white">Neon Pink</span>
+</p>
+</div>
+</li>
+<li>
+<div class="contents">
+<h2>3</h2>
+<br/>
+<p>
+<span class="name">あなたが持参したものやこちらで用意した素材に言葉を印刷する</span>
+</p>
+<p>
+<span class="by">Let's printing the words on the stuff that you bring or bought from us.</span>
+</p>
+</div>
+</li>
+<li class="print"></li>
+<li>
+<div class="contents">
+<h2 class="center">Members Only</h2>
+<p class="center"><b class="name white">¥1,000</b></p>
+<p class="center">
+<span class="name white">コミュニティ会員の皆様には、割引価格にて印刷サービスをご提供いたます。</span><br/>
+<span class="name white">※ 会員証明として、ご希望の箇所にオリジナル油性スタンプを刻印させていただきます。</span>
+</p>
+<p class="center"><a href="https://pehu.cart.fc2.com/signup">Become a Member</a></p>
+</div>
+</li>
+<li class="members"></li>
+</ul>
+</body>
+<script>$(".mousedragscrollable").mousedragscrollable();</script>
 </html>
