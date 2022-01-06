@@ -8,7 +8,7 @@ $type = (string)filter_input(INPUT_POST, 'type'); // $_POST['type']
 $info = (string)filter_input(INPUT_POST, 'onfo'); // $_POST['info']
 $url = (string)filter_input(INPUT_POST, 'url'); // $_POST['url']
 
-$fp = fopen('topic.csv', 'a+b');
+$fp = fopen('chottocrazy.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$type, $info, $url]);
@@ -31,7 +31,7 @@ fclose($fp);
 $(function(){
 })
 </script>
-<title>Update | creative-community.space</title>
+<title>Update | 大 chotto crazy</title>
 <style>
 #cc {
   font-size: 2vw; padding:2.5% 0;
@@ -50,11 +50,11 @@ $(function(){
   line-height:222%;
   margin:0.5vw 1vw 0.5vw 0;
 }
-#cc .show {
+#cc .max {
   border:1px solid #000;
   background:#fff;
 }
-#cc .program {
+#cc .event {
   color:#000;
   background:#eee;
 }
