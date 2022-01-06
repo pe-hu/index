@@ -44,12 +44,12 @@
 </head>
 <body>
 <div id="menu">
-<div class="pehu">∧° ┐</span></div>
 <div><a class="tab" href="#publication">Publication</a><span class="check"><b>✔</b></span></div>
 <div><a class="tab" href="#update">Up till now</a><span class="check"><b>✔</b></span></div>
 </div>
 
 <div id="top">
+<div id="menu"></div>
 <div id="tobe"></div>
 <div id="cv">
 <p>We are The <i>Community</i> of Try to <i>Create</i> The <i>Spaces</i> to do the things that we want to do.</p>
@@ -68,6 +68,7 @@
 $(function(){$('.change').hide();$('.tab').on('click',function(){$('.change').not($($(this).attr('href'))).hide();$($(this).attr('href')).fadeToggle(1000);});});
 
 $(function(){
+      $("#menu").load("update/menu.html");
       $("#tobe").load("update/tobe.php");
       $("#motto").load("motto/motto.html");
       $("#link").load("link.html");
