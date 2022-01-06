@@ -51,15 +51,15 @@ $(function(){
   line-height:222%;
   margin:0.5vw 1vw 0.5vw 0;
 }
-.work a {
+.art a {
   color:#fff;
   background:red;
 }
-.popup a {
+.shop a {
   color:#000;
   background:yellow;
 }
-.collaboration a {
+.event a {
   color:#000;
   background:#eee;
 }
