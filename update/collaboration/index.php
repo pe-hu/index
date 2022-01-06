@@ -37,20 +37,6 @@ $(function(){
   font-size: 2vw; padding:5% 2.5% 1.25%;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
-#other a {
-  display:inline;
-  text-decoration:none;
-  padding:0.5vw 1vw;
-  filter: blur(1);
-  -webkit-filter: blur(1);
-  transition: all 1500ms ease;
-}
-
-#other a,
-#other u {
-  line-height:222%;
-  margin:0.5vw 1vw 0.5vw 0;
-}
 .art a {
   color:#fff;
   background:red;
