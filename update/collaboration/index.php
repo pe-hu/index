@@ -31,7 +31,7 @@ fclose($fp);
 $(function(){
 })
 </script>
-<title>Update | creative-community.space</title>
+<title>∧° ┐ | creative, community space</title>
 <style>
 #other {
   font-size: 2vw; padding:5% 2.5% 1.25%;
