@@ -64,11 +64,11 @@
 $(function(){$('.change').hide();$('.tab').on('click',function(){$('.change').not($($(this).attr('href'))).hide();$($(this).attr('href')).fadeToggle(1000);});});
 
 $(function(){
-      $("#projects").load("menu.html");
-      $("#motto").load("motto/motto.html");
-      $("#link").load("link.html");
-      $("#publication").load("publication.html");
-      $("#update").load("update/");
+      $("#projects").load("/pehu/menu.html");
+      $("#motto").load("/pehu/motto/motto.html");
+      $("#link").load("/pehu/link.html");
+      $("#publication").load("/pehu/publication.html");
+      $("#update").load("/pehu/update/");
 })
 
 $('a[href^="#"]').click(function(){
