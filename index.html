@@ -46,17 +46,18 @@
 <body>
 <div id="header">
 <div><a class="tab" href="#publication">Publication</a><span class="check"><b>✔</b></span></div>
-<div><a class="tab" href="update/">Up till now</a><span class="check"><b>✔</b></span></div>
+<div><a class="tab" href="#update">Up till now</a><span class="check"><b>✔</b></span></div>
 </div>
 
 <div id="top">
-<div id="present"></div>
 <div id="projects"></div>
+<div id="present"></div>
 <div id="motto"></div>
 <div id="link"></div>
 </div>
 
 <div id="publication" class="change"></div>
+<div id="update" class="change"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -69,6 +70,7 @@ $(function(){
       $("#motto").load("/pehu/motto/motto.html");
       $("#link").load("/pehu/link.html");
       $("#publication").load("/pehu/publication.html");
+      $("#update").load("/pehu/update/");
 })
 
 $('a[href^="#"]').click(function(){
