@@ -9,13 +9,10 @@ body {margin:0; overflow-x:hidden;}
 
 #cv {
   font-family:"Arial";
-}
-#cv {
   font-size:4.5vw;
   padding:2.5vw 2.5%;
   margin: auto;
   width:85%;
-  font-family:"MS Mincho";
   letter-spacing:0.05rem;
 }
 #cv i {
@@ -54,6 +51,70 @@ body {margin:0; overflow-x:hidden;}
 #we {padding:5% 0;}
 #topics {padding:7.5% 0;}
 
+hr {
+  clear:both;
+  border: 0 none;
+  padding: 1vw;
+}
+#full {
+  font-size:2vw;
+  margin:0; padding:0;
+  list-style-type:none;
+  margin-bottom:7.5vw;
+}
+#full #center {
+  font-size:125%;
+  margin:5vw 5vw 2.5vw;
+  text-align: center;
+  font-family:"YuGothic","Yu Gothic";
+  font-weight: 500;
+}
+#full .more {
+  position:relative;
+  padding:2.5vw 5vw;
+}
+#full .more s {
+  text-decoration:none;
+  font-size:75%;
+}
+#full .more a {
+  position: absolute;
+  padding:0; margin:0;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent:-999px;
+}
+#full .more a:hover {
+  cursor:pointer;
+  background-color:rgba(225,225,225,0.25);
+}
+.symbol,
+.date {
+  font-size:75%;
+  position:absolute;
+}
+.symbol {right:5vw;}
+.date {left:5vw;}
+#complete:after {
+  content:"Complete";
+  color:red;
+  font-size:2.5vw;
+  position:absolute;
+  top:50%; left:50%;
+  z-index:10;
+  pointer-events:none;
+  padding:2.5%; margin:0;
+  transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+}
+
+@media screen and (max-width: 750px){
+  #full li {font-size: 75%;}
+}
+
+@media screen and (max-width: 900px){
+}
 </style>
 <title>∧° ┐ | creative, community space</title>
 </head>
@@ -64,7 +125,64 @@ body {margin:0; overflow-x:hidden;}
     <p>We are The <i>Community</i> of Try to <i>Create</i> The <i>Spaces</i> to do the things that we want to do.</p>
     <p class="jp" style="font-style: normal;">わたしたちは、実現したいことを快適に実現するための場所・環境をつくり、こ・こ・ろ・豊かな新しい生活を提案する団体です。</p>
     <hr/>
-    <div id="past"></div>
+    <ul id="full">
+    
+    <li id="center">
+    gallary, community space
+    <span class="date">12.16.2017</span>
+    <span class="symbol">4.30.2018</span>
+    </li>
+    <li class="more" id="complete">
+    <p>中尾香織・ささじまかずまが、ギャラリー・コミュニティスペース ペフを設立</p>
+    <p>半年間に8の展覧会と28のコミュニティイベントを開催</p>
+    <a href="http://vg.pe.hu/1f/"></a>
+    </li>
+    
+    <li id="center">
+    creative, community space
+    <span class="date">1.6.2019</span>
+    <span class="symbol">9.15.2019</span>
+    </li>
+    <li class="more" id="complete">
+    <p>ギャラリー・コミュニティスペースの運営を通して出会った素晴らしい仲間たちを運営メンバーに加え、誰もが自由にやりたいことをやるクリエイティブ・コミュニティスペースを開業</p>
+    <p>カフェ・フリースペースでは38のコミュニティイベントなどを、ギャラリースペースでは12の展覧会を開催。加えて、7のレジデンスプログラムや会員向けデジタルマガジンの発行などを実施</p>
+    <a href="/pehu/nishitemma/"></a>
+    </li>
+    
+    <li id="center">
+    音ビル
+    <span class="date">4.1.2019</span>
+    <span class="symbol">3.31.2022</span>
+    </li>
+    <li class="more">
+    <p>おおさか創造千島財団の創造的場づくり助成を受け、大阪・北加賀屋のシェアスタジオ「音ビル」にて「やりたいことを快適に実現するための方法」 を実施</p>
+    <p>大切にすることを大切にするための本・This USB Card is The Digital Magazineなどの出版物を発表。ichoose・大 chotto crazyなどのプロジェクトを運営</p>
+    <a href="https://chishima-foundation.com/topics/grant/cultivation_2022.html"></a>
+    </li>
+    
+    <li id="center">
+    New Life Collection
+    <span class="date">3.11.2020</span>
+    <span class="symbol">Work in Progress</span>
+    </li>
+    <li class="more">
+    <p>こ・こ・ろ・豊かな新しい生活を集めるオウンドメディアを開設</p>
+    <div id="nlc"></div>
+    <a href="https://newlifecollection.com/"></a>
+    </li>
+    
+    <li id="center">
+    creative-community.space
+    <span class="date">9.27.2021</span>
+    <span class="symbol">Work in Progress</span>
+    </li>
+    <li class="more">
+    <p>誰にでもできることを自分らしく行うことの美しさを形にするコミュニティサイトを開設</p>
+    <div id="cc"></div>
+    <a href="https://creative-community.space/"></a>
+    </li>
+    </ul>
+    <div id="join"></div>
   </div>
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
@@ -111,7 +229,9 @@ body {margin:0; overflow-x:hidden;}
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
-      $("#past").load("/pehu/update/topics.html");
+$("#nlc").load("/pehu/update/nlc/index.php");
+$("#cc").load("/pehu/update/cc/index.php");
+$("#join").load("/pehu/update/collaboration/index.php");
 })
 </script>
 </body>
