@@ -234,6 +234,8 @@ hr {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
+$(function(){$('.change').hide();$('.tab').on('click',function(){$('.change').not($($(this).attr('href'))).hide();$($(this).attr('href')).fadeToggle(1000);});});
+
 $(function(){
 $("#publication").load("/pehu/publication.html");
 $("#nlc").load("/pehu/update/nlc/index.php");
