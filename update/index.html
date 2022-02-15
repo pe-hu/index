@@ -3,9 +3,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="/pehu/index.css" />
 <link rel="icon" href="/pehu//logo.png">
 <style type="text/css">
-body {margin:0; overflow-x:hidden;}
+#header {font-family: "MS Mincho", "SimSong", serif;}
 
 #cv {
   font-family:"Arial";
@@ -119,6 +120,11 @@ hr {
 <title>∧° ┐ | creative, community space</title>
 </head>
 <body>
+<div id="header">
+<div><a class="tab" href="#publication">Publication</a><span class="check"><b>✔</b></span></div>
+<div><a class="tab" href="/pehu/update/">Up till now</a><span class="check"><b>✔</b></span></div>
+</div>
+<div id="publication" class="change"></div>
 <div id="greating">
 <div id="are">
   <div id="cv">
@@ -229,6 +235,7 @@ hr {
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
+$("#publication").load("/pehu/publication.html");
 $("#nlc").load("/pehu/update/nlc/index.php");
 $("#cc").load("/pehu/update/cc/index.php");
 $("#join").load("/pehu/update/collaboration/index.php");
