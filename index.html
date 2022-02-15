@@ -45,10 +45,7 @@
 </style>
 </head>
 <body>
-<div id="header">
-<div><a class="tab" href="/pehu/publication.html">Publication</a><span class="check"><b>✔</b></span></div>
-<div><a class="tab" href="/pehu/update/">Up till now</a><span class="check"><b>✔</b></span></div>
-</div>
+<div id="header"></div>
 
 <div id="top">
 <div id="motto"></div>
@@ -59,12 +56,10 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
-
-$(function(){$('.change').hide();$('.tab').on('click',function(){$('.change').not($($(this).attr('href'))).hide();$($(this).attr('href')).fadeToggle(1000);});});
-
 $(function(){
-      $("#motto").load("/pehu/motto/motto.html");
-      $("#link").load("/pehu/link.html");
+  $("#header").load("/pehu/header.html");
+  $("#motto").load("/pehu/motto/motto.html");
+  $("#link").load("/pehu/link.html");
 })
 </script>
 </body>

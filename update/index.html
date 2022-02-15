@@ -120,10 +120,7 @@ hr {
 <title>∧° ┐ | creative, community space</title>
 </head>
 <body>
-<div id="header">
-<div><a class="tab" href="/pehu/publication.html">Publication</a><span class="check"><b>✔</b></span></div>
-<div><a class="tab" href="/pehu/update/">Up till now</a><span class="check"><b>✔</b></span></div>
-</div>
+<div id="header"></div>
 <div id="publication" class="change"></div>
 <div id="greating">
 <div id="are">
@@ -233,9 +230,8 @@ hr {
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
-$(function(){$('.change').hide();$('.tab').on('click',function(){$('.change').not($($(this).attr('href'))).hide();$($(this).attr('href')).fadeToggle(1000);});});
-
 $(function(){
+$("#header").load("/pehu/header.html");
 $("#nlc").load("/pehu/update/nlc/index.php");
 $("#cc").load("/pehu/update/cc/index.php");
 $("#join").load("/pehu/update/collaboration/index.php");
