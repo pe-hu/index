@@ -46,7 +46,7 @@
 </head>
 <body>
 <div id="header">
-<div><a class="tab" href="#publication">Publication</a><span class="check"><b>✔</b></span></div>
+<div><a class="tab" href="/pehu/publication.html">Publication</a><span class="check"><b>✔</b></span></div>
 <div><a class="tab" href="/pehu/update/">Up till now</a><span class="check"><b>✔</b></span></div>
 </div>
 
@@ -65,14 +65,7 @@ $(function(){$('.change').hide();$('.tab').on('click',function(){$('.change').no
 $(function(){
       $("#motto").load("/pehu/motto/motto.html");
       $("#link").load("/pehu/link.html");
-      $("#publication").load("/pehu/publication.html");
 })
-
-$('a[href^="#"]').click(function(){
-   var href= $(this).attr("href");
-   var target = $(href == "#" || href == "" ? 'html' : href);
-   return false;
- });
 </script>
 </body>
 </html>

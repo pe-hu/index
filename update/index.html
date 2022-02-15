@@ -121,7 +121,7 @@ hr {
 </head>
 <body>
 <div id="header">
-<div><a class="tab" href="#publication">Publication</a><span class="check"><b>✔</b></span></div>
+<div><a class="tab" href="/pehu/publication.html">Publication</a><span class="check"><b>✔</b></span></div>
 <div><a class="tab" href="/pehu/update/">Up till now</a><span class="check"><b>✔</b></span></div>
 </div>
 <div id="publication" class="change"></div>
@@ -236,17 +236,10 @@ hr {
 $(function(){$('.change').hide();$('.tab').on('click',function(){$('.change').not($($(this).attr('href'))).hide();$($(this).attr('href')).fadeToggle(1000);});});
 
 $(function(){
-$("#publication").load("/pehu/publication.html");
 $("#nlc").load("/pehu/update/nlc/index.php");
 $("#cc").load("/pehu/update/cc/index.php");
 $("#join").load("/pehu/update/collaboration/index.php");
 })
-
-$('a[href^="#"]').click(function(){
-   var href= $(this).attr("href");
-   var target = $(href == "#" || href == "" ? 'html' : href);
-   return false;
- });
 </script>
 </body>
 </html>
