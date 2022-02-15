@@ -240,6 +240,12 @@ $("#nlc").load("/pehu/update/nlc/index.php");
 $("#cc").load("/pehu/update/cc/index.php");
 $("#join").load("/pehu/update/collaboration/index.php");
 })
+
+$('a[href^="#"]').click(function(){
+   var href= $(this).attr("href");
+   var target = $(href == "#" || href == "" ? 'html' : href);
+   return false;
+ });
 </script>
 </body>
 </html>
