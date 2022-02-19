@@ -9,16 +9,11 @@
 <title>Motto | P E H U is</title>
 <style type="text/css">
 
-      .ink {background-image: url(/pehu/motto/ink.gif);}
-      .print {background-image: url(/pehu/motto/print.gif);}
-      .members {background-image: url(/pehu/motto/members.gif);}
-      .cover {background-image: url(/pehu/motto/screen.gif);}
-      .frame {background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/13937555/original_b0763f0e4874ade6636c24eb1913ec89.gif?1636647342?bc=0);}
-      .sample {background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/13937550/original_4323ee0fcd4caecaa2e87226edb22ed5.gif?1636647328?bc=0);}
-      .p {background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/13937429/original_1eff986b7e35dd3e64d45b95a175ebe1.gif?1636646871?bc=0);}
-      .e {background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/13937434/original_8e33110918b812edd27f991eab7970eb.gif?1636646888?bc=0);}
-      .h {background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/13937438/original_14aec1c03293d7bebff0236832f9b1d5.gif?1636646896?bc=0);}
-      .u {background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/13937441/original_18995485a620cb0f15c53059505a50fa.gif?1636646901?bc=0);}
+      #ink {background-image: url(https://s3.amazonaws.com/arena_images-temp/uploads%2Fecd4bde9-6836-4571-8837-b65065c71dfa%2Fink.gif);}
+      #print {background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/15238967/original_18a7d385092a062d8d554d81d6766d92.gif?1645252286?bc=0);}
+      #members {background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/15238969/original_3f2240723a6af9208ace4406b922c27c.gif?1645252326?bc=0);}
+      #screen {background-image: url(https://s3.amazonaws.com/arena_images-temp/uploads%2Fecd4bde9-6836-4571-8837-b65065c71dfa%2Fscreen.gif);}
+      #frame {background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/13937555/original_b0763f0e4874ade6636c24eb1913ec89.gif?1636647342?bc=0);}
       .library li {
         background-size: 100%;
         font-family: "MS Mincho", "SimSong", serif;
@@ -49,6 +44,22 @@
         display: inline-block;
         font-style: oblique;
         vertical-align: super;
+      }
+      .randomImg {
+        overflow:hidden;
+        width:100%;
+        height:100vh;
+      }
+      .randomImg img,
+      .randomImg .bg img {
+        min-width:100%;
+        min-height:100%;
+        position: absolute;
+        z-index:-100;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        user-select:none;
+        pointer-events:none;
       }
       
 .collection {
@@ -101,7 +112,7 @@
 <p class="center">ペフに似合う言葉を集め、集まった言葉たちのスクリーン版を制作します。</p>
 </div>
 </li>
-<li class="sample"></li>
+<li id="sample" class="randomImg"></li>
 <li>
 <div class="contents">
 <h2 class="center">Printing Fee</h2>
@@ -113,7 +124,7 @@
 </p>
 </div>
 </li>
-<li class="cover"></li>
+<li id="screen"></li>
 <li>
 <div class="contents">
 <h2>1</h2>
@@ -126,7 +137,7 @@
 </p>
 </div>
 </li>
-<li class="p">
+<li id="p" class="randomImg">
 <div class="contents">
 <p class="words">
 <span class="new">Prender</span>
@@ -140,8 +151,9 @@
 <span>Peacefully</span>
 </p>
 </div>
+<span class="bg"></span>
 </li>
-<li class="e">
+<li id="e" class="randomImg">
 <div class="contents">
 <p class="words">
 <span class="new">Elusivo</span>
@@ -155,8 +167,9 @@
 <span>Everything</span>
 </p>
 </div>
+<span class="bg"></span>
 </li>
-<li class="h">
+<li id="h" class="randomImg">
 <div class="contents">
 <p class="words">
 <span class="new">Hacerlo</span>
@@ -170,8 +183,9 @@
 <span>Honestly</span>
 </p>
 </div>
+<span class="bg"></span>
 </li>
-<li class="u">
+<li id="u" class="randomImg">
 <div class="contents">
 <p class="words">
 <span class="new">Una</span>
@@ -185,8 +199,9 @@
 <span>Usefully</span>
 </p>
 </div>
+<span class="bg"></span>
 </li>
-<li class="frame">
+<li id="frame">
 <div class="contents">
  <p class="center">
 <span class="white">Screen Size<br/>width 17 cm (Inner dia. 14.5cm)<br/>height 12 cm (Inner dia. 9.5cm)</span>
@@ -208,7 +223,7 @@
 </p>
 </div>
 </li>
-<li class="ink">
+<li id="ink">
 <div class="contents">
 <p class="center">
 <span class="white">Ink Colors</span>
@@ -237,7 +252,7 @@
 </p>
 </div>
 </li>
-<li class="print"></li>
+<li id="print"></li>
 <li>
 <div class="contents">
 <h2 class="center">Members Only</h2>
@@ -249,8 +264,43 @@
 <p class="center"><a href="https://pehu.cart.fc2.com/signup">Become a Member</a></p>
 </div>
 </li>
-<li class="members"></li>
+<li id="members"></li>
 </ul>
 </body>
+<script>
+  const sampleImg = [
+    "https://64.media.tumblr.com/e3d2ec923286b767304267bb18a85cc0/045227d57abf3d5d-b8/s1280x1920/f5e9edba1688476ce456ddbb5e0d4a2350372c9a.jpg",
+    "https://64.media.tumblr.com/2d15d0a8944bd92b51acf7fa315151af/045227d57abf3d5d-04/s1280x1920/12591b42ee55faa90b3f16b91613a9823936a4bd.jpg",
+    "https://64.media.tumblr.com/fb8e56431a57321a9a7d40f21e003a89/08b2e297bb7d265c-bb/s500x750/1922c3cd04364f58c997377a2209eaa638677ec5.jpg",
+    "https://64.media.tumblr.com/fe96a88dfcad36e92136dd5c309a0cc8/8dbf5c60e9fa38b2-bb/s540x810/e79102fa40b5e54270b4b000c16e61ef101d71c6.jpg",
+    "https://64.media.tumblr.com/0fe32db535fe4b406d5692f448b8b9bb/6538fa9019186f03-24/s540x810/6d4d5fbf00604d29949dde360baaeb21575d2448.jpg",
+    "https://64.media.tumblr.com/54623179e9505f6f20f4257c9ad8178b/3c4c622bb4cdbf9a-92/s540x810/a0df9e25cd2d0c5dd91f1269af0c9286fe4a59ce.jpg",
+    "https://64.media.tumblr.com/c2146fd4ad0fec1416532752278c7b16/104f3ff28cf8d574-78/s400x600/bb005a8ea654afd4ce5f8b04de613e4cc377eeb0.jpg",
+    "https://64.media.tumblr.com/2f60f30703af52d50e44d29bec2aba87/cac262ee872955af-86/s540x810/3d02a8118e27ca945b72d15a3481bcf1e0eedd67.jpg",
+    "https://64.media.tumblr.com/25af540a07efd77249b0005eac8d710f/ebf59dce468fa887-3f/s540x810/b451bb7e04dc83d51cd80d029a2a77c699180f31.jpg",
+    "https://64.media.tumblr.com/c6d8a879199c55b86daba9329a6e374f/a053d6f9ee7b14e6-94/s540x810/dbf5223ee377130a3533ccd23555645433f4970b.jpg",
+    "https://64.media.tumblr.com/4407e51fbf07644d1bcdc4133881a15c/0bdfd40143d8f995-34/s540x810/02cceb7b9def697ea9bffb0462562213a0853810.jpg"
+  ];
+  
+  function sample(randomArray) {
+    var random =
+    randomArray[Math.floor(Math.random() * randomArray.length)];
+    console.log(random);
+    return random;
+  }
+  function imgGenerator() {
+    var img = `<img src="${sample(sampleImg)}">`;
+    document.querySelector("#sample").innerHTML = img;
+  }
+  window.setInterval(function() {
+    imgGenerator();
+  }, 1000);
+</script>
+
+<script src="js/p.js" defer></script>
+<script src="js/e.js" defer></script>
+<script src="js/h.js" defer></script>
+<script src="js/u.js" defer></script>
+
 <script>$(".mousedragscrollable").mousedragscrollable();</script>
 </html>
