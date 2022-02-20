@@ -219,6 +219,9 @@ function randomWord(wordArray) {
 
 function motto() {
     let sentence = `<span>${randomWord(p)}</span><br/><span>${randomWord(e)}</span><br/><span>${randomWord(h)}</span><br/><span>${randomWord(u)}</span>`;
+    
+    var sentenceTitle = `${randomWord(p)} ${randomWord(e)} ${randomWord(h)} ${randomWord(u)}`;
+    
     document.querySelector('.words').innerHTML = sentence;
     document.title = sentenceTitle;
 };
