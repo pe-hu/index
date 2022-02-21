@@ -46,8 +46,22 @@
 
   </head>
   <body>
+    <div id="top"></div>
     <ul class="mousedragscrollable library">
       <li class="cover"></li>
+
+      <li>
+        <div class="contents">
+          <script language="javascript" src="daily.js"></script>
+          <script language="javascript">
+          daily();
+          </script>
+        </div>
+      </li>
+
+      <li class="a"></li>
+      <li class="b"></li>
+      <li class="c"></li>
 
       <li>
         <div class="contents">
@@ -117,31 +131,17 @@
         </div>
       </li>
 
-      <li>
-        <div class="contents">
-          <script language="javascript" src="daily.js"></script>
-          <script language="javascript">
-          daily();
-          </script>
-        </div>
-      </li>
-
-      <li class="a"></li>
-      <li class="b"></li>
-      <li class="c"></li>
-
-      <li class="back">
-        <div class="outside">
-        <span class="buy">
-        <a href="/10q/" target="_parent">10Q</a>
-        </span>
-        </div>
-      </li>
-
       <li class="end"></li>
       
     </ul>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+    $("#top").load("/10q/howto.html");
+    })
+  </script>
 
   <script>$(".mousedragscrollable").mousedragscrollable();</script>
 
