@@ -1,7 +1,7 @@
 const sampleImg = [
-  "https://64.media.tumblr.com/fe96a88dfcad36e92136dd5c309a0cc8/8dbf5c60e9fa38b2-bb/s540x810/e79102fa40b5e54270b4b000c16e61ef101d71c6.jpg",
+  "https://64.media.tumblr.com/4e6732d2d16e73dec62af9c50f88adb7/94d44480072990f2-88/s1280x1920/8df18cd869ad760f2f586822bdf068b9640c4eee.jpg",
   "https://64.media.tumblr.com/0fe32db535fe4b406d5692f448b8b9bb/6538fa9019186f03-24/s540x810/6d4d5fbf00604d29949dde360baaeb21575d2448.jpg",
-  "https://64.media.tumblr.com/54623179e9505f6f20f4257c9ad8178b/3c4c622bb4cdbf9a-92/s540x810/a0df9e25cd2d0c5dd91f1269af0c9286fe4a59ce.jpg",
+  "https://64.media.tumblr.com/9eca0a1e97450f3ab8b17d57c1f84633/5a509c233c2f2bc1-f0/s1280x1920/957d14396e9addbe9aebee36d97a1055e9325fe3.jpg",
   "https://64.media.tumblr.com/c2146fd4ad0fec1416532752278c7b16/104f3ff28cf8d574-78/s400x600/bb005a8ea654afd4ce5f8b04de613e4cc377eeb0.jpg",
   "https://64.media.tumblr.com/2f60f30703af52d50e44d29bec2aba87/cac262ee872955af-86/s540x810/3d02a8118e27ca945b72d15a3481bcf1e0eedd67.jpg",
   "https://64.media.tumblr.com/25af540a07efd77249b0005eac8d710f/ebf59dce468fa887-3f/s540x810/b451bb7e04dc83d51cd80d029a2a77c699180f31.jpg",
