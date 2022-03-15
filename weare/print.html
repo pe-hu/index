@@ -99,10 +99,11 @@
 </div>
 </li>
 
+<li>
 <script type="text/javascript">
-var day = '<li id="day"></li>';
-var night = '<li id="night"></li>';
-var close = '<li id="close"></li>';
+var day = '<div id="day"></div>';
+var night = '<div id="night"></div>';
+var close = '<div id="close"></div>';
 
 var now = new Date();
 var hour = now.getHours();
@@ -120,6 +121,7 @@ else if(hour >= 21 && hour <= 23){
   document.write(close);
 }
 </script>
+</li>
 <li>
 <div class="contents">
 <div class="value">
