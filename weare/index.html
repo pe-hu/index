@@ -101,33 +101,35 @@
   <span class="">Book</span>
   <span class="">Binding</span>
   </p>
-  <p class="center"><a class="collection white" href="https://www.are.na/block/15587080">Download</a></p>/p>
+  <p class="center"><a class="collection white" href="https://www.are.na/block/15587080">Download</a></p>
   </div>
+  </li>
+  <li>
+    <script type="text/javascript">
+      var day = '<div id="day"></div>';
+      var night = '<div id="night"></div>';
+      var close = '<div id="close"></div>';
+      
+      var now = new Date();
+      var hour = now.getHours();
+      
+      if(hour >= 0 && hour <= 10){
+        document.write(close);
+      }
+      else if(hour >= 11 && hour <= 15){
+        document.write(day);
+      }
+      else if(hour >= 16 && hour <= 20){
+        document.write(night);
+      }
+      else if(hour >= 21 && hour <= 23){
+        document.write(close);
+      }
+    </script>
   </li>
   </ul>
 </div>
 
-<script type="text/javascript">
-  var day = '<div id="day"></div>';
-  var night = '<div id="night"></div>';
-  var close = '<div id="close"></div>';
-  
-  var now = new Date();
-  var hour = now.getHours();
-  
-  if(hour >= 0 && hour <= 10){
-    document.write(close);
-  }
-  else if(hour >= 11 && hour <= 15){
-    document.write(day);
-  }
-  else if(hour >= 16 && hour <= 20){
-    document.write(night);
-  }
-  else if(hour >= 21 && hour <= 23){
-    document.write(close);
-  }
-</script>
 <script>$(".mousedragscrollable").mousedragscrollable();</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
