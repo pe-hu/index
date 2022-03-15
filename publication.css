@@ -4,6 +4,7 @@
 #list a:hover {border:solid red; border-radius:50%;}
 .a1 {width:75vw;}
 .a3 {width:50vw;}
+.a4 {width:45vw;}
 .a5 {width:30vw;}
 .b5 {width:35vw;}
 .a6 {width:25vw;}
@@ -13,6 +14,7 @@
 @media screen and (max-width: 450px){
 .a1 {width:95vw;}
 .a3 {width:75vw;}
+.a4 {width:55vw;}
 .a5 {width:40vw;}
 .b5 {width:47.5vw;}
 .a6 {width:35vw;}
