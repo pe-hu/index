@@ -70,40 +70,6 @@
 <div id="theme"></div>
 <div id="print">
 <ul class="mousedragscrollable library">
-
-  <li>
-  <div class="contents">
-  <div class="value">
-  <h1 class="info center">We are</h1>
-  </div>
-  <p class="center"><a class="collection white" href="https://youtu.be/lc7dmu4G8oc">Official Audio</a></p>
-  <p class="">The Kinks "The Village Green Preservation Society" の歌詞を基に、ペフのテーマソングを制作しています。</p>
-  </div>
-  </li>
-  
-  <li>
-  <script type="text/javascript">
-  var day = '<div id="day"></div>';
-  var night = '<div id="night"></div>';
-  var close = '<div id="close"></div>';
-  
-  var now = new Date();
-  var hour = now.getHours();
-  
-  if(hour >= 0 && hour <= 10){
-    document.write(close);
-  }
-  else if(hour >= 11 && hour <= 15){
-    document.write(day);
-  }
-  else if(hour >= 16 && hour <= 20){
-    document.write(night);
-  }
-  else if(hour >= 21 && hour <= 23){
-    document.write(close);
-  }
-  </script>
-  </li>
   <li>
   <div class="contents">
   <div class="value">
@@ -138,6 +104,40 @@
   <span class="name white">※ 本・ノートの中身に使用する紙はご自身でご用意ください。</span>
   </p>
   </div>
+  </li>
+  
+  <li>
+  <div class="contents">
+  <div class="value">
+  <h1 class="info center">We are</h1>
+  </div>
+  <p class="center"><a class="collection white" href="https://youtu.be/lc7dmu4G8oc">Official Audio</a></p>
+  <p class="">The Kinks "The Village Green Preservation Society" の歌詞を基に、ペフのテーマソングを制作しています。</p>
+  </div>
+  </li>
+  
+  <li>
+  <script type="text/javascript">
+  var day = '<div id="day"></div>';
+  var night = '<div id="night"></div>';
+  var close = '<div id="close"></div>';
+  
+  var now = new Date();
+  var hour = now.getHours();
+  
+  if(hour >= 0 && hour <= 10){
+    document.write(close);
+  }
+  else if(hour >= 11 && hour <= 15){
+    document.write(day);
+  }
+  else if(hour >= 16 && hour <= 20){
+    document.write(night);
+  }
+  else if(hour >= 21 && hour <= 23){
+    document.write(close);
+  }
+  </script>
   </li>
   </ul>
 </div>
