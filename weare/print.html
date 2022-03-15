@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<title>We are | creative, community space ∧° ┐</title>
+<style type="text/css">
+
+      .library li {
+        background-size: 100%;
+        font-family: "MS Mincho", "SimSong", serif;
+      }
+      
+      .library::-webkit-scrollbar-thumb,
+      .library li::-webkit-scrollbar-thumb{
+        background: #000;
+      }
+      .library li .words {
+        border: solid 1px;
+        height:25vw;
+        overflow-y:scroll;
+        background-color: rgba(255,255,255,0.5);
+      }
+      .library li .words span {
+        display:block;
+        text-align:center;
+        padding: 5vw 0;
+        font-family: 'Times New Roman', serif;
+        font-size: 7.5vw;
+      }
+      .randomImg {
+        overflow:hidden;
+        width:100%;
+        height:100vh;
+      }
+      .randomImg img,
+      .randomImg .bg img {
+        min-width:100%;
+        min-height:100%;
+        position: absolute;
+        z-index:-100;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        user-select:none;
+        pointer-events:none;
+      }
+      
+.collection {
+  font-family: 'Times New Roman', serif;
+  font-weight:500;
+  line-height:200%;
+  padding:0 1vw;
+  font-stretch: condensed;
+  font-variant: common-ligatures tabular-nums;
+  display:inline-block;
+  transform: scale(1,1.1);
+  word-spacing: -.25ch;
+  color: #000;
+  border-radius:50%;
+  border:#000 solid 0.1vw;
+  text-decoration: none;
+}
+.white {background: #fff;}
+.library li h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Times New Roman", serif;
+}
+@media screen and (max-width: 1100px){
+  .value {
+    font-size:2.5vw;
+  }
+  option {
+    font-size: 4vw;
+  }
+  .library li {
+    max-height: 75vh;
+  }
+}
+</style>
+
+<link rel="stylesheet" href="https://creative-community.space/publication/preview.css" />
+
+<script src="https://creative-community.space/publication/scrollable.js"></script>
+</head>
+<body>
+<ul class="mousedragscrollable library">
+
+<li>
+<div class="contents">
+<div class="value">
+<h1 class="info center">We are</h1>
+</div>
+<p class="center"><a class="collection white" href="https://youtu.be/lc7dmu4G8oc">Official Audio</a></p>
+<p class="">The Kinks "The Village Green Preservation Society" の歌詞を基に、ペフのテーマソングを制作します。</p>
+</div>
+</li>
+
+<script type="text/javascript">
+var day = '<li id="day"></li>';
+var night = '<li id="night"></li>';
+var close = '<li id="close"></li>';
+
+var now = new Date();
+var hour = now.getHours();
+
+if(hour >= 0 && hour <= 10){
+  document.write(close);
+}
+else if(hour >= 11 && hour <= 15){
+  document.write(day);
+}
+else if(hour >= 16 && hour <= 20){
+  document.write(night);
+}
+else if(hour >= 21 && hour <= 23){
+  document.write(close);
+}
+</script>
+<li>
+<div class="contents">
+<div class="value">
+<h1 class="info center">D.I.Y Book Binding</h1>
+</div>
+<p class="center"><a class="collection white" href="https://www.instagram.com/p/CbHQnhgrxEo/">Sample</a></p>
+<p class="center">不要な紙をとじ太くんで製本し、ノートを作るためのブックカバーを制作しました。</p>
+</div>
+</li>
+</ul>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#day").load("https://creative-community.space/sp/day/weare/");
+$("#night").load("https://creative-community.space/sp/night/weare/");
+$("#close").load("https://creative-community.space/sp/close/weare/");
+})
+</script>
+
+<script>$(".mousedragscrollable").mousedragscrollable();</script>
+</html>
