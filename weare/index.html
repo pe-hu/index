@@ -74,6 +74,10 @@
 @media print{
 #index
 {display:none;}
+#theme {
+  max-height: 100vh;
+  overflow: hidden;
+}
 }
 </style>
 
@@ -163,7 +167,7 @@ $("#index").load("/pehu/menu.html");
 $("#day").load("https://creative-community.space/sp/day/weare/");
 $("#night").load("https://creative-community.space/sp/night/weare/");
 $("#close").load("https://creative-community.space/sp/close/weare/");
-$("#theme").load("https://creative-community.space/pehu/weare/theme.html");
+$("#theme").load("theme.html");
 })
 </script>
 </body>
