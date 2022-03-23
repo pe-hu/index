@@ -10,6 +10,11 @@
 #header {
   font-family: "MS Mincho", "SimSong", serif;
 }
+@font-face {
+  font-family: "MS Mincho";
+  src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
+}
+
 hr {border: none; padding: 2.5vw;}
 #top {
   width:100%;
@@ -63,10 +68,10 @@ hr {border: none; padding: 2.5vw;}
 $(function(){$('.change').hide();$('.tab').on('click',function(){$('.change').not($($(this).attr('href'))).hide();$($(this).attr('href')).fadeToggle(1000);});});
 
 $(function(){
-  $("#header").load("/pehu/header.html");
-  $("#motto").load("/pehu/motto/motto.html");
-  $("#newsletter").load("/pehu/newsletter.html");
-  $("#link").load("/pehu/link.html");
+  $("#header").load("header.html");
+  $("#motto").load("motto/motto.html");
+  $("#newsletter").load("newsletter.html");
+  $("#link").load("link.html");
 })
 </script>
 </body>
