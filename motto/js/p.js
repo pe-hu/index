@@ -9,7 +9,8 @@ const pImg = [
   "https://64.media.tumblr.com/72efb625131c51a2a55f747e40f27ada/2fbca05c95ed0b6f-6b/s2048x3072/3f06454c5d245b48345c6811339bcb7813213166.jpg",
   "https://64.media.tumblr.com/399ba1bf9ed0a5b85eb477ede4c4fe33/2fbca05c95ed0b6f-dd/s2048x3072/91398c5a0a42fe61c7cd354bd5772c0e15797d4e.jpg",
   "https://64.media.tumblr.com/98b87909b9e7480b2b30bdc7931149c0/2fbca05c95ed0b6f-5f/s2048x3072/e18142fa69eb1ef913d4add1e916055b1c66b165.jpg",
-  "https://64.media.tumblr.com/3bba5d21302d46bedc684f4c1c6aad65/0fa1e5ac22220269-ca/s2048x3072/4c51a750920099f0778633b2b79bb742833a04a1.jpg"
+  "https://64.media.tumblr.com/3bba5d21302d46bedc684f4c1c6aad65/0fa1e5ac22220269-ca/s2048x3072/4c51a750920099f0778633b2b79bb742833a04a1.jpg",
+  "https://64.media.tumblr.com/e5d257de4f27729dc5d1e685c44f7ebb/d1aa2e500fe5ef34-9b/s1280x1920/6f39720d0273a3161809a6aa3062bd2c678ac27e.jpg"
   ];
   
   function p(randomArray) {
