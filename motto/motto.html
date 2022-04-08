@@ -11,24 +11,10 @@
   src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
 }
 
-#main {
+#is {
   position:relative;
   height: 85vh;
   max-height:100vw;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  color: #000;
-}
-#main .words {
-  font-family: "Times New Roman", "Times", serif;
-  font-weight: normal;
-  text-align: center;
-  font-size: 4.5vw;
-  line-height:120%;
 }
 
 .everyone {
@@ -56,21 +42,15 @@
 .everyone
 {display:none;}
 
-#main {
+#is {
   max-height:82.5vh;
-}
-#main .words {
-  font-size: 7.5vw;
-  line-height:150%;
 }
 }
 </style>
 <title> ∧° ┐ | creative, community space </title>
 </head>
 <body>
-<div id="main">
-<div class="words">P E H U is</div>
-</div>
+<div id="is"></div>
 
 <div class="everyone">
 <p><a href="https://creative-community.space/pehu/motto/" target="_parent">Please Contact Us If You Found Some Words for P E H U :) </a></p>
@@ -78,190 +58,11 @@
 P E H U に似合う単語を見つけた方は、ぜひ私たちにご連絡ください。</p>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
-  const p = [
-    'Pan',
-    'Paradise',
-    'Pasible',
-    'Passion',
-    'Patient',
-    'Pradera',
-    'Pacífico',
-    'Particule',
-    'Participatory',
-    'Palabras',
-    'Palindrome',
-    'Peace',
-    'Peaceful',
-    'Peacefully',
-    'Peach',
-    'Pearl',
-    'Pebble',
-    'Pensive',
-    'Pentagon',
-    'People',
-    'Perchance',
-    'Perennial',
-    'Pero',
-    'Petit',
-    'Petunia',
-    'Piel',
-    'Piezas',
-    'Pil',
-    'Play',
-    'Powerful',
-    'Poetic',
-    'Porre',
-    'Pose',
-    'Possible',
-    'Possibly',
-    'Practical',
-    'Pretty',
-    'Préférés',
-    'Prender',
-    'Preocupo',
-    'Protected',
-    'Proyecto',
-    'Purple',
-    'Pursed',
-];
-
-const e = [
-  'Ease',
-  'Easy',
-  'Earth',
-  'Echo',
-  'Egg',
-  'Elástica',
-  'Elastic',
-  'Elegant',
-  'Elegy',
-  'Elementary',
-  'Eller',
-  'Else',
-  'Elskede',
-  'Elusive',
-  'Elusivo',
-  'Embarrassing',
-  'Emergent',
-  'Emmanuelle',
-  'Ember',
-  'Embraced',
-  'Emotionally',
-  'Emo',
-  'Empathy',
-  'Enchanted',
-  'Energetic',
-  'Energy',
-  'Entierro',
-  'Enjoy',
-  'Entrancing',
-  'Enthusiastic',
-  'Epitaph',
-  'Equipment',
-  'Eroding',
-  'Erratic',
-  'Essentially',
-  'Estatua',
-  'Euphoria',
-  'Exercise',
-  'Experimental',
-  'Extraordinary',
-  'Everything',
-  'Evil',
-  'Exacto',
-  'Existing',
-  'Exhumation',
-];
-
-const h = [
-  'Hacerlo',
-  'Halo',
-  'Haine',
-  'Hands',
-  'Håndskes',
-  'Happen',
-  'Happening',
-  'Happily',
-  'Happiness',
-  'Harmony',
-  'Have',
-  'Haze',
-  'Heart',
-  'Hearth',
-  'Heal',
-  'Healthy',
-  'Heartful',
-  'Here',
-  'Heroico',
-  'Held',
-  'Helpful',
-  'Hint',
-  'Hipo',
-  'Home',
-  'Hold',
-  'Holding',
-  'Holiness',
-  'Honest',
-  'Honestly',
-  'Homie',
-  'Horizon',
-  'Hue',
-  'Human',
-  'Humor',
-  'Hydro',
-]
-
-const u = [
-  'Utopia',
-  'Ufano',
-  'Ultralight',
-  'Ultra-nice',
-  'Una',
-  'Unafraid',
-  'Unconditional',
-  'Understand',
-  'Understanding',
-  'Underjordisk',
-  'Underwater',
-  'Undo',
-  'Unfolded',
-  'Unity',
-  'Unique',
-  'Universe',
-  'Untumbling',
-  'Unusual',
-  'Up to be',
-  'Update',
-  'Upon',
-  'Urbanity',
-  'Urkraft',
-  'Us',
-  'Usage',
-  'Usual',
-  'Useful',
-  'Usefully',
-  'Utopia',
-];
-
-function randomWord(wordArray) {
-    let word = wordArray[Math.floor(Math.random() * wordArray.length)];
-    console.log(word);
-    return word
-};
-
-function motto() {
-    let sentence = `<span>${randomWord(p)}</span><br/><span>${randomWord(e)}</span><br/><span>${randomWord(h)}</span><br/><span>${randomWord(u)}</span>`;
-    
-    var sentenceTitle = `${randomWord(p)} ${randomWord(e)} ${randomWord(h)} ${randomWord(u)}`;
-    
-    document.querySelector('.words').innerHTML = sentence;
-    document.title = sentenceTitle;
-};
-
-window.setInterval(function(){
-    motto();
-}, 2500);
+$(function(){
+      $("#is").load("/pehu/motto/all.html");
+})
 </script>
 </body>
 </html>
