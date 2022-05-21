@@ -62,6 +62,12 @@ $(function(){
   border:1px solid #fff;
   background:#fff;
 }
+        
+@media screen and (max-width: 750px) {
+#cc {
+  font-size: 1rem;
+}
+}
 </style>
 </head>
 <body>

@@ -63,6 +63,12 @@ $(function(){
   color:#000;
   background:#eee;
 }
+        
+        @media screen and (max-width: 750px) {
+        #other {
+          font-size: 1rem;
+        }
+        }
 </style>
 </head>
 <body>
