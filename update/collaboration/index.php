@@ -66,7 +66,7 @@ $(function(){
         
         @media screen and (max-width: 750px) {
         #other {
-          font-size: 1rem;
+          font-size: 0.75rem;
         }
         }
 </style>
