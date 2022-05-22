@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-<style type="text/css">
-      #credit {margin-top:10vw;}
-      #value {height: 90vh; padding: 0 5% 5vw;}
-      #value iframe {border: none; height: 100%; width: 100%;}
-</style>
-<title> P E H U is | MOTTO </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <style type="text/css">
+        #credit {
+            margin-top: 10vw;
+        }
+        
+        #value {
+            height: 90vh;
+            padding: 0 5% 5vw;
+        }
+        
+        #value iframe {
+            border: none;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <title> P E H U is | MOTTO </title>
 </head>
+
 <body>
 
-<div id="index"></div>
-<div id="credit"></div>
-<div id="value"><iframe src="/value/online/motto/"></iframe></div>
-<div id="print"></div>
+    <div id="index"></div>
+    <div id="credit"></div>
+    <div id="motto"></div>
+    <div id="value"><iframe src="/value/online/motto/"></iframe></div>
+    <div id="print"></div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-$(function(){
-      $("#index").load("/pehu/menu.html");
-      $("#credit").load("/pehu/motto/credit.html");
-      $("#print").load("/pehu/motto/print.html");
-})
-</script>
-<script src="js/p.js" defer></script>
-<script src="js/e.js" defer></script>
-<script src="js/h.js" defer></script>
-<script src="js/u.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#index").load("/pehu/menu.html");
+            $("#credit").load("/pehu/motto/credit.html");
+            $("#motto").load("/pehu/motto/motto.html");
+        })
+    </script>
 </body>
+
 </html>
