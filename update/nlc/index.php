@@ -54,11 +54,11 @@ $(function(){
   border:1px solid #000;
   background:#fff;
 }
-#nlc .website {
+#nlc .project {
   color:#000;
   background:#eee;
 }
-#nlc .project {
+#nlc .website {
   border:1px solid #fff;
   background:#fff;
 }
