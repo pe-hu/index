@@ -1,334 +1,362 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-<title>P E H U is | Screen Printing</title>
-<style type="text/css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <title>P E H U is | Screen Printing</title>
+    <style type="text/css">
+        #ink {
+            background-image: url(https://s3.amazonaws.com/arena_images-temp/uploads%2Fecd4bde9-6836-4571-8837-b65065c71dfa%2Fink.gif);
+        }
+        
+        #printing {
+            background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/15238967/original_18a7d385092a062d8d554d81d6766d92.gif?1645252286?bc=0);
+        }
+        
+        #members {
+            background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/15238969/original_3f2240723a6af9208ace4406b922c27c.gif?1645252326?bc=0);
+        }
+        
+        #screen {
+            background-image: url(https://s3.amazonaws.com/arena_images-temp/uploads%2Fecd4bde9-6836-4571-8837-b65065c71dfa%2Fscreen.gif);
+        }
+        
+        #frame {
+            background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/13937555/original_b0763f0e4874ade6636c24eb1913ec89.gif?1636647342?bc=0);
+        }
+        
+        .library li {
+            background-size: 100%;
+            font-family: "MS Mincho", "SimSong", serif;
+        }
+        
+        .library::-webkit-scrollbar-thumb,
+        .library li::-webkit-scrollbar-thumb {
+            background: #000;
+        }
+        
+        .library li .words {
+            border: solid 1px;
+            height: 25vw;
+            overflow-y: scroll;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .library li .words span {
+            display: block;
+            text-align: center;
+            padding: 5vw 0;
+            font-family: 'Times New Roman', serif;
+            font-size: 7.5vw;
+        }
+        
+        .new::after {
+            content: "New";
+            font-size: 25%;
+            background: #fff;
+            padding: 0.5vw 1vw;
+            margin-left: 2vw;
+            display: inline-block;
+            font-style: oblique;
+            vertical-align: super;
+        }
+        
+        .randomImg {
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .randomImg img,
+        .randomImg .bg img {
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            z-index: -100;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            user-select: none;
+            pointer-events: none;
+        }
+        
+        .collection {
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+            line-height: 200%;
+            padding: 0 1vw;
+            font-stretch: condensed;
+            font-variant: common-ligatures tabular-nums;
+            display: inline-block;
+            transform: scale(1, 1.1);
+            word-spacing: -.25ch;
+            color: #000;
+            border-radius: 50%;
+            border: #000 solid 0.1vw;
+            text-decoration: none;
+        }
+        
+        .white {
+            background: #fff;
+        }
+        
+        .library li h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            font-family: "Times New Roman", serif;
+        }
+        
+        @media screen and (max-width: 1100px) {
+            .value {
+                font-size: 2.5vw;
+            }
+            option {
+                font-size: 4vw;
+            }
+            .library li {
+                max-height: 75vh;
+            }
+        }
+    </style>
 
-      #ink {background-image: url(https://s3.amazonaws.com/arena_images-temp/uploads%2Fecd4bde9-6836-4571-8837-b65065c71dfa%2Fink.gif);}
-      #printing {background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/15238967/original_18a7d385092a062d8d554d81d6766d92.gif?1645252286?bc=0);}
-      #members {background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/15238969/original_3f2240723a6af9208ace4406b922c27c.gif?1645252326?bc=0);}
-      #screen {background-image: url(https://s3.amazonaws.com/arena_images-temp/uploads%2Fecd4bde9-6836-4571-8837-b65065c71dfa%2Fscreen.gif);}
-      #frame {background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/13937555/original_b0763f0e4874ade6636c24eb1913ec89.gif?1636647342?bc=0);}
-      .library li {
-        background-size: 100%;
-        font-family: "MS Mincho", "SimSong", serif;
-      }
-      
-      .library::-webkit-scrollbar-thumb,
-      .library li::-webkit-scrollbar-thumb{
-        background: #000;
-      }
-      .library li .words {
-        border: solid 1px;
-        height:25vw;
-        overflow-y:scroll;
-        background-color: rgba(255,255,255,0.5);
-      }
-      .library li .words span {
-        display:block;
-        text-align:center;
-        padding: 5vw 0;
-        font-family: 'Times New Roman', serif;
-        font-size: 7.5vw;
-      }
-      .new::after {
-        content: "New";
-        font-size: 25%;
-        background: #fff;
-        padding: 0.5vw 1vw;
-        margin-left: 2vw;
-        display: inline-block;
-        font-style: oblique;
-        vertical-align: super;
-      }
-      .randomImg {
-        overflow:hidden;
-        width:100%;
-        height:100vh;
-      }
-      .randomImg img,
-      .randomImg .bg img {
-        min-width:100%;
-        min-height:100%;
-        position: absolute;
-        z-index:-100;
-        top: 50%; left: 50%;
-        transform: translate(-50%, -50%);
-        user-select:none;
-        pointer-events:none;
-      }
-      
-.collection {
-  font-family: 'Times New Roman', serif;
-  font-weight:500;
-  line-height:200%;
-  padding:0 1vw;
-  font-stretch: condensed;
-  font-variant: common-ligatures tabular-nums;
-  display:inline-block;
-  transform: scale(1,1.1);
-  word-spacing: -.25ch;
-  color: #000;
-  border-radius:50%;
-  border:#000 solid 0.1vw;
-  text-decoration: none;
-}
-.white {background: #fff;}
-.library li h1 {
-  font-size: 2rem;
-  font-weight: 500;
-  font-family: "Times New Roman", serif;
-}
-@media screen and (max-width: 1100px){
-  .value {
-    font-size:2.5vw;
-  }
-  option {
-    font-size: 4vw;
-  }
-  .library li {
-    max-height: 75vh;
-  }
-}
-</style>
+    <link rel="stylesheet" href="https://creative-community.space/www/preview.css" />
 
-<link rel="stylesheet" href="https://creative-community.space/www/preview.css" />
-
-<script src="https://creative-community.space/www/scrollable.js"></script>
+    <script src="https://creative-community.space/www/scrollable.js"></script>
 </head>
+
 <body>
-<ul class="mousedragscrollable library">
-<li>
-<div class="contents">
-<div class="value">
-<h1 class="info center">P E H U is</h1>
-</div>
-<p class="center">
-<span class="">Screen</span>
-<span class="">Printing</span>
-</p>
-<p class="center"><a class="collection white" href="https://newlifecollection.com/?ca=88">View The Collection</a></p>
-<p class="center">ペフに似合う言葉を集め、集まった言葉たちのスクリーン版を制作します。</p>
-</div>
-</li>
-<li id="sample" class="randomImg"></li>
-<li>
-<div class="contents">
-<h2>1</h2>
-<br/>
-<p>
-<span class="name">P E H U から始まる4つの言葉を印刷するアイテムを選ぶ
+    <ul class="mousedragscrollable library">
+        <li>
+            <div class="contents">
+                <div class="value">
+                    <h1 class="info center">P E H U is</h1>
+                </div>
+                <p class="center">
+                    <span class="">Screen</span>
+                    <span class="">Printing</span>
+                </p>
+                <p class="center"><a class="collection white" href="https://newlifecollection.com/?ca=88">View The Collection</a></p>
+                <p class="center">ペフに似合う言葉を集め、集まった言葉たちのスクリーン版を制作します。</p>
+            </div>
+        </li>
+        <li id="sample" class="randomImg"></li>
+        <li>
+            <div class="contents">
+                <h2>1</h2>
+                <br/>
+                <p>
+                    <span class="name">P E H U から始まる4つの言葉を印刷するアイテムを選ぶ
 </span>
-</p>
-<p>
-<span class="by">Choose The Items for Screen Printing from Below Link.</span>
-<p class="center"><a class="collection" href="https://photos.app.goo.gl/n4LFEm9LGviRUAXu8">Items for Screen Printing</a></p>
-</p>
-</div>
-</li>
-<li id="screen"></li>
-<li>
-<div class="contents">
-<h2>2</h2>
-<br/>
-<p>
-<span class="name">P E H U から始まる言葉たちの中から好きな言葉を一つずつ選ぶ</span>
-</p>
-<p>
-<span class="by">Choose The Words that you like from the words for P E H U one by one</span>
-</p>
-</div>
-</li>
-<li id="p" class="randomImg">
-<div class="contents">
-<p class="words">
-<span class="new">Possibly</span>
-<span class="new">Petit</span>
-<span class="">Porre</span>
-<span class="">Prender</span>
-<span class="">Pasible</span>
-<span class="">Poetic</span>
-<span class="">Possible</span>
-<span class="">Practical</span>
-<span class="">Pensive</span>
-<span class="">People</span>
-<span class="">Powerful</span>
-<span class="">Peacefully</span>
-</p>
-</div>
-<span class="bg"></span>
-</li>
-<li id="e" class="randomImg">
-<div class="contents">
-<p class="words">
-<span class="new">Emergent</span>
-<span class="new">Egg</span>
-<span class="">Elskede</span>
-<span class="">Elusivo</span>
-<span class="">Elástica</span>
-<span class="">Earth</span>
-<span class="">Ease</span>
-<span class="">Elementary</span>
-<span class="">Emotionally</span>
-<span class="">Energetic</span>
-<span class="">Exercise</span>
-<span class="">Everything</span>
-</p>
-</div>
-<span class="bg"></span>
-</li>
-<li id="h" class="randomImg">
-<div class="contents">
-<p class="words">
-<span class="new">Hydro</span>
-<span class="new">Holding</span>
-<span class="">Have</span>
-<span class="">Hacerlo</span>
-<span class="">Heroico</span>
-<span class="">Holiness</span>
-<span class="">Heartful</span>
-<span class="">Happen</span>
-<span class="">Happily</span>
-<span class="">Healthy</span>
-<span class="">Home</span>
-<span class="">Honestly</span>
-</p>
-</div>
-<span class="bg"></span>
-</li>
-<li id="u" class="randomImg">
-<div class="contents">
-<p class="words">
-<span class="new">Utopia</span>
-<span class="new">Unfold</span>
-<span class="">Underjordisk</span>
-<span class="">Una</span>
-<span class="">Ufano</span>
-<span class="">Understand</span>
-<span class="">Usage</span>
-<span class="">Urbanity</span>
-<span class="">Unity</span>
-<span class="">Universe</span>
-<span class="">Us</span>
-<span class="">Usefully</span>
-</p>
-</div>
-<span class="bg"></span>
-</li>
-<li id="frame">
-<div class="contents">
- <p class="center">
-<span class="white">Screen Size<br/>width 17 cm (Inner dia. 14.5cm)<br/>height 12 cm (Inner dia. 9.5cm)</span>
-</p>
-<p class="center">
-<span class="white">Per characte<br/>width 1~2 cm / height 1.5~2cm</span>
-</p>
-</div>
-</li>
-<li>
-<div class="contents">
-<h2>3</h2>
-<br/>
-<p>
-<span class="name">言葉を印刷する位置・インクの色を選ぶ</span>
-</p>
-<p>
-<span class="by">Choose The Color of Ink and Tell Us The Position of Screen Printing</span>
-</p>
-</div>
-</li>
-<li id="ink">
-<div class="contents">
-<p class="center">
-<span class="white">Ink Colors</span>
-</p>
-<p class="center">
-<span class="white">Black</span>
-<span class="white">Gray</span>
-<span class="white">Red</span>
-<span class="white">Neon Pink</span>
-<span class="white">Sky Blue</span>
-<span class="white">Purple</span>
-<span class="white">Orange</span>
-<span class="white">Gold</span>
-<span class="white">White</span>
-</p>
-</div>
-</li>
-<li>
-<div class="contents">
-<h2 class="center">Printing Fee</h2>
-<p class="center"><b class="name white">¥1,000</b><br/>
-<u class="name">※ 別途印刷に使用するアイテム代</u></p>
-<p class="center">
-<span class="name">あなたが選んだ4つの言葉をあなたの選んだアイテムに印刷します。</span>
-</p>
-<p class="center">
-<span class="by">We will printing P E H U is Words on The Items That You Choose.</span>
-</p>
-</div>
-</li>
-<li id="printing"></li>
-<li>
-<div class="contents">
-<h2 class="center">How to Order</h2>
-<p class="center">
-<span class="name white">P E H U is スクリーン印刷の受注は、インスタグラムのダイレクトメッセージのみで受け付けております。</span><br/>
-</p>
-<p class="center"><a class="collection" href="https://www.instagram.com/pe_hu_/">@pe_hu_</a></p>
-<p>
-<span class="by">If You Want to Create Your Original P E H U is Item, Please contact us on Instagram :)</span>
-</p>
-</div>
-</li>
-<li id="members"></li>
-<li>
-<div class="contents">
-<h2 class="center">Screen Printing</h2>
-<p class="center"><a class="collection" href="/org/publication/">Members Only</a></p>
-<p class="center">
-<span class="name white">会員限定スクリーン印刷／製版サービス</span><br/>
-<span class="name white">※ P E H U is スクリーン印刷の他、オリジナルスクリーン版の製版も可能です。</span>
-</p>
-</div>
-</li>
-</ul>
+                </p>
+                <p>
+                    <span class="by">Choose The Items for Screen Printing from Below Link.</span>
+                    <p class="center"><a class="collection" href="https://photos.app.goo.gl/n4LFEm9LGviRUAXu8">Items for Screen Printing</a></p>
+                </p>
+            </div>
+        </li>
+        <li id="screen"></li>
+        <li>
+            <div class="contents">
+                <h2>2</h2>
+                <br/>
+                <p>
+                    <span class="name">P E H U から始まる言葉たちの中から好きな言葉を一つずつ選ぶ</span>
+                </p>
+                <p>
+                    <span class="by">Choose The Words that you like from the words for P E H U one by one</span>
+                </p>
+            </div>
+        </li>
+        <li id="p" class="randomImg">
+            <div class="contents">
+                <p class="words">
+                    <span class="new">Possibly</span>
+                    <span class="new">Petit</span>
+                    <span class="">Porre</span>
+                    <span class="">Prender</span>
+                    <span class="">Pasible</span>
+                    <span class="">Poetic</span>
+                    <span class="">Possible</span>
+                    <span class="">Practical</span>
+                    <span class="">Pensive</span>
+                    <span class="">People</span>
+                    <span class="">Powerful</span>
+                    <span class="">Peacefully</span>
+                </p>
+            </div>
+            <span class="bg"></span>
+        </li>
+        <li id="e" class="randomImg">
+            <div class="contents">
+                <p class="words">
+                    <span class="new">Emergent</span>
+                    <span class="new">Egg</span>
+                    <span class="">Elskede</span>
+                    <span class="">Elusivo</span>
+                    <span class="">Elástica</span>
+                    <span class="">Earth</span>
+                    <span class="">Ease</span>
+                    <span class="">Elementary</span>
+                    <span class="">Emotionally</span>
+                    <span class="">Energetic</span>
+                    <span class="">Exercise</span>
+                    <span class="">Everything</span>
+                </p>
+            </div>
+            <span class="bg"></span>
+        </li>
+        <li id="h" class="randomImg">
+            <div class="contents">
+                <p class="words">
+                    <span class="new">Hydro</span>
+                    <span class="new">Holding</span>
+                    <span class="">Have</span>
+                    <span class="">Hacerlo</span>
+                    <span class="">Heroico</span>
+                    <span class="">Holiness</span>
+                    <span class="">Heartful</span>
+                    <span class="">Happen</span>
+                    <span class="">Happily</span>
+                    <span class="">Healthy</span>
+                    <span class="">Home</span>
+                    <span class="">Honestly</span>
+                </p>
+            </div>
+            <span class="bg"></span>
+        </li>
+        <li id="u" class="randomImg">
+            <div class="contents">
+                <p class="words">
+                    <span class="new">Utopia</span>
+                    <span class="new">Unfold</span>
+                    <span class="">Underjordisk</span>
+                    <span class="">Una</span>
+                    <span class="">Ufano</span>
+                    <span class="">Understand</span>
+                    <span class="">Usage</span>
+                    <span class="">Urbanity</span>
+                    <span class="">Unity</span>
+                    <span class="">Universe</span>
+                    <span class="">Us</span>
+                    <span class="">Usefully</span>
+                </p>
+            </div>
+            <span class="bg"></span>
+        </li>
+        <li id="frame">
+            <div class="contents">
+                <p class="center">
+                    <span class="white">Screen Size<br/>width 17 cm (Inner dia. 14.5cm)<br/>height 12 cm (Inner dia. 9.5cm)</span>
+                </p>
+                <p class="center">
+                    <span class="white">Per characte<br/>width 1~2 cm / height 1.5~2cm</span>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="contents">
+                <h2>3</h2>
+                <br/>
+                <p>
+                    <span class="name">言葉を印刷する位置・インクの色を選ぶ</span>
+                </p>
+                <p>
+                    <span class="by">Choose The Color of Ink and Tell Us The Position of Screen Printing</span>
+                </p>
+            </div>
+        </li>
+        <li id="ink">
+            <div class="contents">
+                <p class="center">
+                    <span class="white">Ink Colors</span>
+                </p>
+                <p class="center">
+                    <span class="white">Black</span>
+                    <span class="white">Gray</span>
+                    <span class="white">Red</span>
+                    <span class="white">Neon Pink</span>
+                    <span class="white">Sky Blue</span>
+                    <span class="white">Purple</span>
+                    <span class="white">Orange</span>
+                    <span class="white">Gold</span>
+                    <span class="white">White</span>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="contents">
+                <h2 class="center">Printing Fee</h2>
+                <p class="center"><b class="name white">¥1,000</b><br/>
+                    <u class="name">※ 別途印刷に使用するアイテム代</u></p>
+                <p class="center">
+                    <span class="name">あなたが選んだ4つの言葉をあなたの選んだアイテムに印刷します。</span>
+                </p>
+                <p class="center">
+                    <span class="by">We will printing P E H U is Words on The Items That You Choose.</span>
+                </p>
+            </div>
+        </li>
+        <li id="printing"></li>
+        <li>
+            <div class="contents">
+                <h2 class="center">How to Order</h2>
+                <p class="center">
+                    <span class="name white">P E H U is スクリーン印刷の受注は、インスタグラムのダイレクトメッセージのみで受け付けております。</span><br/>
+                </p>
+                <p class="center"><a class="collection" href="https://www.instagram.com/pe_hu_/">@pe_hu_</a></p>
+                <p>
+                    <span class="by">If You Want to Create Your Original P E H U is Item, Please contact us on Instagram :)</span>
+                </p>
+            </div>
+        </li>
+        <li id="members"></li>
+        <li>
+            <div class="contents">
+                <h2 class="center">Screen Printing</h2>
+                <p class="center"><a class="collection" href="/org/publication/">Members Only</a></p>
+                <p class="center">
+                    <span class="name white">会員限定スクリーン印刷／製版サービス</span><br/>
+                    <span class="name white">※ P E H U is スクリーン印刷の他、オリジナルスクリーン版の製版も可能です。</span>
+                </p>
+            </div>
+        </li>
+    </ul>
 </body>
 <script>
-  const sampleImg = [
-  "https://64.media.tumblr.com/c81cd716fac612dfe5a82ec7a3f5ad99/cfd8a339484f562b-aa/s1280x1920/3e22fed4fd61e91e7c7292942e4d7a6ebea914a7.jpg",
-  "https://64.media.tumblr.com/d59e440a9c8d1c30b681b3a24b058e44/3188d47038292bfa-e4/s2048x3072/173affdd464a48ab8250c5a0e0f1e19bfc0201fd.jpg",
-  "https://64.media.tumblr.com/6f203cd43db883f658e315ee6023d250/3188d47038292bfa-d0/s2048x3072/c8afc155e11436317bf84aa64b3761ae86049b3a.jpg",
-  "https://64.media.tumblr.com/cff8c86e3459471fa57eee34bf779681/87a26d1280843eaa-b9/s2048x3072/020838c8986fc634703082db060efe9bf7828d3b.jpg",
-  "https://64.media.tumblr.com/4e6732d2d16e73dec62af9c50f88adb7/94d44480072990f2-88/s1280x1920/8df18cd869ad760f2f586822bdf068b9640c4eee.jpg",
-  "https://64.media.tumblr.com/a0d3b1cdc4a5e1f27c03411371314287/6538fa9019186f03-63/s1280x1920/f7da470dd2b397a54ce16bf820ce69cde2d48213.jpg",
-  "https://64.media.tumblr.com/9eca0a1e97450f3ab8b17d57c1f84633/5a509c233c2f2bc1-f0/s1280x1920/957d14396e9addbe9aebee36d97a1055e9325fe3.jpg",
-  "https://64.media.tumblr.com/c2146fd4ad0fec1416532752278c7b16/104f3ff28cf8d574-78/s1280x1920/2e76ed02601b7c2e12f31aa2bbd75f33ec90f3e1.jpg",
-  "https://64.media.tumblr.com/7efda6ca6d92e711bdb1dc02727facb7/5ae20060241d4299-cd/s1280x1920/c752e4f3b3809c9860dea987a6b7fa3ea52e523e.jpg",
-  "https://64.media.tumblr.com/5b5ddd0c4c09d60afb93c2eedc7b3efa/3c4c622bb4cdbf9a-90/s1280x1920/27a115c30bbd999b9c7ee049f8b42e0a01d6aebf.jpg",
-  "https://64.media.tumblr.com/f3567117390b5a706a1d24d8b40ff825/4e9af6abf3432ac1-e5/s1280x1920/009f2f0cd257c6d6950ae80c0107b4cf3844c724.jpg",
-  "https://64.media.tumblr.com/c6d8a879199c55b86daba9329a6e374f/a053d6f9ee7b14e6-94/s540x810/dbf5223ee377130a3533ccd23555645433f4970b.jpg",
-  "https://64.media.tumblr.com/4407e51fbf07644d1bcdc4133881a15c/0bdfd40143d8f995-34/s540x810/02cceb7b9def697ea9bffb0462562213a0853810.jpg"
-  ];
-  
-  function sample(randomArray) {
-    var random =
-    randomArray[Math.floor(Math.random() * randomArray.length)];
-    console.log(random);
-    return random;
-  }
-  function imgGenerator() {
-    var img = `<img src="${sample(sampleImg)}">`;
-    document.querySelector("#sample").innerHTML = img;
-  }
-  window.setInterval(function() {
-    imgGenerator();
-  }, 1000);
+    const sampleImg = [
+        "https://64.media.tumblr.com/c81cd716fac612dfe5a82ec7a3f5ad99/cfd8a339484f562b-aa/s1280x1920/3e22fed4fd61e91e7c7292942e4d7a6ebea914a7.jpg",
+        "https://64.media.tumblr.com/d59e440a9c8d1c30b681b3a24b058e44/3188d47038292bfa-e4/s2048x3072/173affdd464a48ab8250c5a0e0f1e19bfc0201fd.jpg",
+        "https://64.media.tumblr.com/6f203cd43db883f658e315ee6023d250/3188d47038292bfa-d0/s2048x3072/c8afc155e11436317bf84aa64b3761ae86049b3a.jpg",
+        "https://64.media.tumblr.com/cff8c86e3459471fa57eee34bf779681/87a26d1280843eaa-b9/s2048x3072/020838c8986fc634703082db060efe9bf7828d3b.jpg",
+        "https://64.media.tumblr.com/4e6732d2d16e73dec62af9c50f88adb7/94d44480072990f2-88/s1280x1920/8df18cd869ad760f2f586822bdf068b9640c4eee.jpg",
+        "https://64.media.tumblr.com/a0d3b1cdc4a5e1f27c03411371314287/6538fa9019186f03-63/s1280x1920/f7da470dd2b397a54ce16bf820ce69cde2d48213.jpg",
+        "https://64.media.tumblr.com/9eca0a1e97450f3ab8b17d57c1f84633/5a509c233c2f2bc1-f0/s1280x1920/957d14396e9addbe9aebee36d97a1055e9325fe3.jpg",
+        "https://64.media.tumblr.com/c2146fd4ad0fec1416532752278c7b16/104f3ff28cf8d574-78/s1280x1920/2e76ed02601b7c2e12f31aa2bbd75f33ec90f3e1.jpg",
+        "https://64.media.tumblr.com/7efda6ca6d92e711bdb1dc02727facb7/5ae20060241d4299-cd/s1280x1920/c752e4f3b3809c9860dea987a6b7fa3ea52e523e.jpg",
+        "https://64.media.tumblr.com/5b5ddd0c4c09d60afb93c2eedc7b3efa/3c4c622bb4cdbf9a-90/s1280x1920/27a115c30bbd999b9c7ee049f8b42e0a01d6aebf.jpg",
+        "https://64.media.tumblr.com/f3567117390b5a706a1d24d8b40ff825/4e9af6abf3432ac1-e5/s1280x1920/009f2f0cd257c6d6950ae80c0107b4cf3844c724.jpg",
+        "https://64.media.tumblr.com/c6d8a879199c55b86daba9329a6e374f/a053d6f9ee7b14e6-94/s540x810/dbf5223ee377130a3533ccd23555645433f4970b.jpg",
+        "https://64.media.tumblr.com/4407e51fbf07644d1bcdc4133881a15c/0bdfd40143d8f995-34/s540x810/02cceb7b9def697ea9bffb0462562213a0853810.jpg"
+    ];
+
+    function sample(randomArray) {
+        var random =
+            randomArray[Math.floor(Math.random() * randomArray.length)];
+        console.log(random);
+        return random;
+    }
+
+    function imgGenerator() {
+        var img = `<img src="${sample(sampleImg)}">`;
+        document.querySelector("#sample").innerHTML = img;
+    }
+    window.setInterval(function() {
+        imgGenerator();
+    }, 1000);
 </script>
 
 <script src="js/p.js" defer></script>
@@ -336,5 +364,8 @@
 <script src="js/h.js" defer></script>
 <script src="js/u.js" defer></script>
 
-<script>$(".mousedragscrollable").mousedragscrollable();</script>
+<script>
+    $(".mousedragscrollable").mousedragscrollable();
+</script>
+
 </html>
