@@ -1,88 +1,114 @@
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="わたしたちは、実現したいことを快適に実現するための場所・環境をつくり、こ・こ・ろ・豊かな新しい生活を提案する団体です。">
-<title> ∧° ┐ | creative, community space </title>
-<link rel="stylesheet" type="text/css" href="index.css" />
-<link rel="icon" href="logo.png">
-<style type="text/css">
-#header {
-  font-family: "MS Mincho", "SimSong", serif;
-}
-@font-face {
-  font-family: "MS Mincho";
-  src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
-}
-
-hr {border: none; padding: 2.5vw;}
-#top {
-  width:100%;
-  margin:7.5vw auto 2.5vw;
-}
-#tobe {
-  width:95%;
-  margin: auto;
-}
-#cv {
-  font-family:"Arial";
-}
-#cv {
-  font-size:4.5vw;
-  padding:2.5vw 2.5%;
-  margin: auto;
-  width:85%;
-  font-family:"MS Mincho";
-  letter-spacing:0.05rem;
-}
-#cv i {
-  font-family:"Times New Roman", serif;
-  font-style:italic;
-  font-size:110%;
-}
-#cv .jp {
-  font-size:45%;
-  line-height:150%;
-  font-style:italic;
-  margin:0;
-  padding-bottom:5vw;
-}
-.pehu {font-family: "MS Mincho", "SimSong", serif;}
-
-@media print{
-  #newsletter,
-  #header,
-  .everyone
-   {display:none;}
-   
-  .jp_title p {display: block;}
-  #qr, .printonly {display: inline-block;}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="わたしたちは、実現したいことを快適に実現するための場所・環境をつくり、こ・こ・ろ・豊かな新しい生活を提案する団体です。">
+    <title> ∧° ┐ | creative, community space </title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="icon" href="logo.png">
+    <style type="text/css">
+        #header {
+            font-family: "MS Mincho", "SimSong", serif;
+        }
+        
+        @font-face {
+            font-family: "MS Mincho";
+            src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
+        }
+        
+        hr {
+            border: none;
+            padding: 2.5vw;
+        }
+        
+        #top {
+            width: 100%;
+            margin: 7.5vw auto 2.5vw;
+        }
+        
+        #tobe {
+            width: 95%;
+            margin: auto;
+        }
+        
+        #cv {
+            font-family: "Arial";
+        }
+        
+        #cv {
+            font-size: 4.5vw;
+            padding: 2.5vw 2.5%;
+            margin: auto;
+            width: 85%;
+            font-family: "MS Mincho";
+            letter-spacing: 0.05rem;
+        }
+        
+        #cv i {
+            font-family: "Times New Roman", serif;
+            font-style: italic;
+            font-size: 110%;
+        }
+        
+        #cv .jp {
+            font-size: 45%;
+            line-height: 150%;
+            font-style: italic;
+            margin: 0;
+            padding-bottom: 5vw;
+        }
+        
+        .pehu {
+            font-family: "MS Mincho", "SimSong", serif;
+        }
+        
+        @media print {
+            #newsletter,
+            #header,
+            .everyone {
+                display: none;
+            }
+            .jp_title p {
+                display: block;
+            }
+            #qr,
+            .printonly {
+                display: inline-block;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<div id="header"></div>
+    <div id="header"></div>
 
-<div id="top">
-<div id="motto"></div>
-<div id="newsletter"></div>
-<hr/>
-<div id="link"></div>
-</div>
+    <div id="top">
+        <div id="motto"></div>
+        <div id="newsletter"></div>
+        <hr/>
+        <div id="link"></div>
+    </div>
 
-<div id="publication" class="change"></div>
+    <div id="publication" class="change"></div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.change').hide();
+            $('.tab').on('click', function() {
+                $('.change').not($($(this).attr('href'))).hide();
+                $($(this).attr('href')).fadeToggle(1000);
+            });
+        });
 
-$(function(){$('.change').hide();$('.tab').on('click',function(){$('.change').not($($(this).attr('href'))).hide();$($(this).attr('href')).fadeToggle(1000);});});
-
-$(function(){
-  $("#header").load("header.html");
-  $("#motto").load("motto/motto.html");
-  $("#newsletter").load("newsletter.html");
-  $("#link").load("link.html");
-})
-</script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#motto").load("motto/motto.html");
+            $("#newsletter").load("newsletter.html");
+            $("#link").load("link.html");
+        })
+    </script>
 </body>
+
 </html>

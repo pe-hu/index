@@ -10,18 +10,24 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <style type="text/css">
         #credit {
-            margin-top: 10vw;
+            margin-top: 4.5rem;
         }
         
         #value {
             height: 90vh;
-            padding: 0 5% 5vw;
+            padding: 0 0 5vw;
         }
         
         #value iframe {
             border: none;
             height: 100%;
             width: 100%;
+        }
+        
+        @media screen and (max-width: 750px) {
+            #credit {
+                margin-top: 10vw;
+            }
         }
     </style>
     <title> P E H U is | MOTTO </title>
@@ -38,9 +44,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(function() {
-            $("#index").load("/pehu/menu.html");
-            $("#credit").load("/pehu/motto/credit.html");
-            $("#motto").load("/pehu/motto/motto.html");
+            $("#index").load("../menu.html");
+            $("#credit").load("credit.html");
+            $("#motto").load("motto.html");
         })
     </script>
 </body>
