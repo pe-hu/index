@@ -9,9 +9,13 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <title>∧°┐ is a daily basis (DIARY)</title>
     <style type="text/css">
+        .ipagp {
+            font-family: ipagp;
+        }
+        
         @font-face {
-            font-family: ipag;
-            src: url(https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf)
+            font-family: ipagp;
+            src: url(https://creative-community.space/coding/fontbook/family/IPA/ipagp.ttf)
         }
         
         .cover {
@@ -68,20 +72,23 @@
             height: 95vh;
             list-style: none;
             white-space: normal;
-            background-size: 75%;
+            background-size: 55%;
             background-position: center;
             background-repeat: no-repeat;
         }
         
         .library li .contents {
             position: absolute;
-            font-family: "ipag", monospace;
             font-size: 1.25rem;
             line-height: 150%;
             top: 50%;
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+        }
+        
+        .library li:first-child {
+            font-family: "ipagp", monospace;
         }
         
         .library li .contents h1 {
