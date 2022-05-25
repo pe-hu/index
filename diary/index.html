@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <title>∧°┐ is a daily basis (DIARY)</title>
+    <style type="text/css">
+        @font-face {
+            font-family: ipag;
+            src: url(https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf)
+        }
+        
+        .cover {
+            background-image: url(image.jpg);
+        }
+        
+        .p {
+            background-image: url(01.jpg);
+        }
+        
+        .e {
+            background-image: url(02.jpg);
+        }
+        
+        .h {
+            background-image: url(03.jpg);
+        }
+        
+        .u {
+            background-image: url(04.jpg);
+        }
+        
+        .pehu {
+            font-family: "SimSong", "MS Mincho", serif;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .library {
+            padding: 0;
+            margin: 0;
+            white-space: nowrap;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .library>* {
+            display: inline-block;
+        }
+        
+        .library li {
+            position: relative;
+            width: 75rem;
+            max-width: 90vw;
+            height: 95vh;
+            list-style: none;
+            white-space: normal;
+            background-size: 75%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .library li .contents {
+            position: absolute;
+            font-family: "ipag", monospace;
+            font-size: 1.25rem;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        
+        .library li .contents h1 {
+            font-size: 2.5rem;
+        }
+        
+        .library li .contents p,
+        .library li .contents h1 {
+            text-align: center;
+        }
+        
+        .center {
+            width: 100%;
+            text-align: center;
+            padding: 5vh 0;
+        }
+        
+        .outside {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .buy a {
+            color: #000;
+            font-size: 15vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 15vh 15vw;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-decoration: none;
+        }
+        
+        .library::-webkit-scrollbar,
+        .library li::-webkit-scrollbar {
+            height: 4vh;
+            background: #fff;
+        }
+        
+        @media screen and (max-width: 750px) {}
+    </style>
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/www/scrollable.js"></script>
+
+</head>
+
+<body>
+    <div id="top"></div>
+    <ul class="mousedragscrollable library">
+
+        <li>
+            <div class="contents">
+                <p>
+                    <span class="pehu">∧°┐</span>
+                </p>
+                <p>is
+                    <br/> a daily basis
+                </p>
+                <br/>
+                <h1>（DIARY）</h1>
+                <br/>
+                <br/>Idea by
+                <br/>Laurel Schwulst</span>
+            </div>
+        </li>
+
+        <li class="p"></li>
+        <li class="e"></li>
+        <li class="h"></li>
+        <li class="u"></li>
+
+        <li class="cover">
+            <div class="outside">
+                <span class="buy">
+                    <a href="https://newlifecollection.com/ca2/6/p-r2-s/" target="_parent">BUY</a>
+                </span>
+            </div>
+        </li>
+
+    </ul>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+    jQuery.prototype.mousedragscrollable = function() {
+        let target; // 動かす対象
+        $(this).each(function(i, e) {
+            $(e).mousedown(function(event) {
+                event.preventDefault();
+                target = $(e); // 動かす対象
+                $(e).data({
+                    "down": true,
+                    "move": false,
+                    "x": event.clientX,
+                    "y": event.clientY,
+                    "scrollleft": $(e).scrollLeft(),
+                    "scrolltop": $(e).scrollTop(),
+                });
+                return false
+            });
+            // move後のlink無効
+            $(e).click(function(event) {
+                if ($(e).data("move")) {
+                    return false
+                }
+            });
+        });
+        // list要素内/外でのevent
+        $(document).mousemove(function(event) {
+            if ($(target).data("down")) {
+                event.preventDefault();
+                let move_x = $(target).data("x") - event.clientX;
+                let move_y = $(target).data("y") - event.clientY;
+                if (move_x !== 0 || move_y !== 0) {
+                    $(target).data("move", true);
+                } else {
+                    return;
+                };
+                $(target).scrollLeft($(target).data("scrollleft") + move_x);
+                $(target).scrollTop($(target).data("scrolltop") + move_y);
+                return false
+            }
+        }).mouseup(function(event) {
+            $(target).data("down", false);
+            return false;
+        });
+    }
+
+    $(".mousedragscrollable").mousedragscrollable();
+
+    $(".mousedragscrollable").mousedragscrollable();
+</script>
+
+</html>
