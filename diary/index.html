@@ -56,6 +56,11 @@
             display: inline-block;
         }
         
+        .library li:first-child {
+            width: 40rem;
+            max-width: 65vw;
+        }
+        
         .library li {
             position: relative;
             width: 75rem;
@@ -118,6 +123,11 @@
             background: #fff;
         }
         
+        .library::-webkit-scrollbar-thumb,
+        .library li::-webkit-scrollbar-thumb {
+            background: #000;
+        }
+        
         @media screen and (max-width: 750px) {}
     </style>
 
@@ -136,7 +146,7 @@
                     <span class="pehu">∧°┐</span>
                 </p>
                 <p>is
-                    <br/> a daily basis
+                    <br/>a daily basis
                 </p>
                 <br/>
                 <h1>（DIARY）</h1>
