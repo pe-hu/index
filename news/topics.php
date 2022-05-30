@@ -8,7 +8,7 @@ $type = (string)filter_input(INPUT_POST, 'type'); // $_POST['type']
 $info = (string)filter_input(INPUT_POST, 'onfo'); // $_POST['info']
 $url = (string)filter_input(INPUT_POST, 'url'); // $_POST['url']
 
-$fp = fopen('tobe.csv', 'a+b');
+$fp = fopen('topics.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$type, $info, $url]);
@@ -33,69 +33,47 @@ $(function(){
 </script>
 <title>∧° ┐ | creative, community space</title>
 <style>
-#tobe {
-  font-size: 2vw; padding:2.5%;
+#other {
+  font-size: 2vw; padding:5% 2.5% 1.25%;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
-#tobe u,
-#tobe a {
-  display:inline-block;
-  text-decoration:none;
-  line-height:222%;
-  padding:0vw 1vw;
-  margin:0.5vw 1vw 0.5vw 0;
-  transform: scale(1,1);
-  transition: all 500ms ease;
-}
-#tobe a:hover {
+#other a {
+  display:inline;
   text-decoration:none;
   padding:0.5vw 1vw;
-  transform: scale(1,1.1);
-  transition: all 1000ms ease;
+  filter: blur(1);
+  -webkit-filter: blur(1);
+  transition: all 1500ms ease;
 }
 
-.collaboration a {
+#other a,
+#other u {
+  line-height:222%;
+  margin:0.5vw 1vw 0.5vw 0;
+}
+.show a {
   color:#fff;
   background:red;
-  border:solid #000 1px;
 }
-.app a {
+.popup a {
   color:#000;
-  background:#fff;
-  border:solid red 1px;
+  background:yellow;
 }
-.qa a {
+.event a {
   color:#000;
-  background:#fff;
-  border:solid #000 1px;
+  background:#eee;
 }
-.nlc a {
-  color:#000;
-  background: linear-gradient(-90deg, #b3cbf6, #FFC778, #eee);
-  background-size: 400% 400%;
-  animation: gradientBG 5s ease infinite;
-}
-@keyframes gradientBG {
-0% {background-position: 0% 50%;}
-50% {background-position: 100% 50%;}
-100% {background-position: 0% 50%;}
-}
-
-.cc a {
-  color:#D24117;
-  background:#f6d435;
-  border:solid #25AF5A 1px;
-}
-.pp a {
-  color:#fff;
-  background:#f3c5c6;
-}
-
+        
+        @media screen and (max-width: 750px) {
+        #other {
+          font-size: 0.75rem;
+        }
+        }
 </style>
 </head>
 <body>
-<div id="tobe">
-<u>お知らせ Topics</u>
+<div id="other">
+<u>その他の活動　Other Works</u>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <span class="<?=h($row[0])?>">
