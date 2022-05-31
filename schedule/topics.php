@@ -178,10 +178,8 @@ fclose($fp);
   <label class="refine-btn show" for="refine-1">EXHIBITION</label>
   <input id="refine-2" type="radio" name="refine-btn"><span class="refine-2"><b>✔</b></span>
   <label class="refine-btn live" for="refine-2">LIVE/PERFORMANCE</label>
-  <input id="refine-3" type="radio" name="refine-btn"><span class="refine-3"><b>✔</b></span>
-  <label class="refine-btn dj" for="refine-3">DJ PARTY</label>
   <input id="refine-4" type="radio" name="refine-btn"><span class="refine-4"><b>✔</b></span>
-  <label class="refine-btn shop" for="refine-4">POP UP SHOP</label>
+  <label class="refine-btn shop" for="refine-4">POP-UP STORE</label>
   <input id="refine-5" type="radio" name="refine-btn"><span class="refine-5"><b>✔</b></span>
   <label class="refine-btn workshop" for="refine-5">WORKSHOP</label>
   <input id="refine-6" type="radio" name="refine-btn"><span class="refine-6"><b>✔</b></span>
@@ -194,7 +192,7 @@ fclose($fp);
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div id="contents" class="refine-teims<?=h($row[4])?>">
-<a class="<?=h($row[3])?>" href="<?=h($row[3])?>"></a>
+<a class="<?=h($row[5])?>" href="<?=h($row[3])?>"></a>
 <u><?=h($row[0])?></u>
 <p class="title"><?=h($row[1])?></p>
 <p class="info"><?=h($row[2])?></p>
