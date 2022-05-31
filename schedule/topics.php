@@ -40,6 +40,7 @@ fclose($fp);
   padding:1vw;
   margin:0.5vw;
   float:left;
+  font-family: "Arial", sans-serif;
 }
 #contents .title {
   font-style:italic;
