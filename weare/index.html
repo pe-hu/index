@@ -1,174 +1,193 @@
 <html lang="ja">
+
 <head>
-<title>We are | creative, community space ∧° ┐</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-<title>We are | creative, community space ∧° ┐</title>
-<style type="text/css">
-  .a {background-image: url(001.jpeg);}
-  .b {background-image: url(002.jpeg);}
-  .c {background-image: url(003.jpeg);}
+    <title>∧° ┐ | We are</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <style type="text/css">
+        .a {
+            background-image: url(001.jpeg);
+        }
+        
+        .b {
+            background-image: url(002.jpeg);
+        }
+        
+        .c {
+            background-image: url(003.jpeg);
+        }
+        
+        .library li {
+            background-size: 100%;
+            font-family: "MS Mincho", "SimSong", serif;
+        }
+        
+        .library li #day,
+        .library li #night,
+        .library li #close {
+            height: 100%;
+            overflow-y: scroll;
+        }
+        
+        .library::-webkit-scrollbar-thumb,
+        .library li::-webkit-scrollbar-thumb {
+            background: #000;
+        }
+        
+        .library li #day::-webkit-scrollbar,
+        .library li #night::-webkit-scrollbar,
+        .library li #close::-webkit-scrollbar {
+            width: 2.5vw;
+            background: #fff;
+        }
+        
+        .library li #day::-webkit-scrollbar-thumb,
+        .library li #night::-webkit-scrollbar-thumb,
+        .library li #close::-webkit-scrollbar-thumb {
+            background: #000;
+        }
+        
+        .collection {
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+            line-height: 200%;
+            padding: 0 1vw;
+            font-stretch: condensed;
+            font-variant: common-ligatures tabular-nums;
+            display: inline-block;
+            transform: scale(1, 1.1);
+            word-spacing: -.25ch;
+            color: #000;
+            border-radius: 50%;
+            border: #000 solid 0.1vw;
+            text-decoration: none;
+        }
+        
+        .white {
+            background: #fff;
+        }
+        
+        .library li h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            font-family: "Arial", sans-serif;
+        }
+        
+        @media screen and (max-width: 1100px) {
+            .value {
+                font-size: 2.5vw;
+            }
+            option {
+                font-size: 4vw;
+            }
+            .library li {
+                max-height: 75vh;
+            }
+        }
+        
+        @media print {
+            #index {
+                display: none;
+            }
+            #theme {
+                max-height: 100vh;
+                overflow: hidden;
+            }
+        }
+    </style>
 
-      .library li {
-        background-size: 100%;
-        font-family: "MS Mincho", "SimSong", serif;
-      }
-      .library li #day,
-      .library li #night,
-      .library li #close {
-        height: 100%;
-        overflow-y: scroll;
-      }
-      .library::-webkit-scrollbar-thumb,
-      .library li::-webkit-scrollbar-thumb{
-        background: #000;
-      }
-    
-      .library li #day::-webkit-scrollbar,
-      .library li #night::-webkit-scrollbar,
-      .library li #close::-webkit-scrollbar {
-        width: 2.5vw;
-        background: #fff;
-      }
-      .library li #day::-webkit-scrollbar-thumb,
-      .library li #night::-webkit-scrollbar-thumb,
-      .library li #close::-webkit-scrollbar-thumb {
-        background: #000;
-      }
-.collection {
-  font-family: 'Times New Roman', serif;
-  font-weight:500;
-  line-height:200%;
-  padding:0 1vw;
-  font-stretch: condensed;
-  font-variant: common-ligatures tabular-nums;
-  display:inline-block;
-  transform: scale(1,1.1);
-  word-spacing: -.25ch;
-  color: #000;
-  border-radius:50%;
-  border:#000 solid 0.1vw;
-  text-decoration: none;
-}
-.white {background: #fff;}
-.library li h1 {
-  font-size: 2rem;
-  font-weight: 500;
-  font-family: "Arial", sans-serif;
-}
-@media screen and (max-width: 1100px){
-  .value {
-    font-size:2.5vw;
-  }
-  option {
-    font-size: 4vw;
-  }
-  .library li {
-    max-height: 75vh;
-  }
-}
+    <link rel="stylesheet" href="https://creative-community.space/www/preview.css" />
 
-@media print{
-#index
-{display:none;}
-#theme {
-  max-height: 100vh;
-  overflow: hidden;
-}
-}
-</style>
-
-<link rel="stylesheet" href="https://creative-community.space/www/preview.css" />
-
-<script src="https://creative-community.space/www/scrollable.js"></script>
+    <script src="https://creative-community.space/www/scrollable.js"></script>
 </head>
-<body>
-<div id="index"></div>
-<div id="theme"></div>
-<div id="print">
-<ul class="mousedragscrollable library">
-  <li>
-  <div class="contents">
-  <div class="value">
-  <h1 class="info center">We are</h1>
-  </div>
-  <p class="center"><a class="collection white" href="https://youtu.be/lc7dmu4G8oc">Official Audio</a></p>
-  <p class="">The Kinks "The Village Green Preservation Society" の歌詞を基に制作した、ペフのテーマを印刷した横断幕</p>
-  </div>
-  </li>
-  <li>
-    <script type="text/javascript">
-      var day = '<div id="day"></div>';
-      var night = '<div id="night"></div>';
-      var close = '<div id="close"></div>';
-      
-      var now = new Date();
-      var hour = now.getHours();
-      
-      if(hour >= 0 && hour <= 10){
-        document.write(close);
-      }
-      else if(hour >= 11 && hour <= 15){
-        document.write(day);
-      }
-      else if(hour >= 16 && hour <= 20){
-        document.write(night);
-      }
-      else if(hour >= 21 && hour <= 23){
-        document.write(close);
-      }
-    </script>
-  </li>
-  <li>
-  <div class="contents">
-  <div class="value">
-  <h1 class="info center">Book Cover</h1>
-  </div>
-  <p class="center"><a class="collection white" href="https://www.are.na/block/15587080">Download</a></p>
-  <p class="center">
-  <span class="">for</span>
-  <span class="">D.I.Y</span>
-  <span class="">Book</span>
-  <span class="">Binding</span>
-  </p>
-  </div>
-  </li>
-  <li class="a"></li>
-  <li class="b"></li>
-  <li class="c"></li>
-  <li>
-  <div class="contents">
-  <p class="center">
-  <span class="name">会員限定とじ太くん製本サービス</span>
-  </p>
-  <h2 class="center">
-    <span class="">D.I.Y</span>
-    <span class="">Book</span>
-    <span class="">Binding</span>
-  </h2>
-  <p class="center"><a class="collection" href="/org/publication/">Members Only</a></p>
-  <p class="center">
-  <span class="name white">製本に必要な機材・設備／環境をご提供いたします。</span><br/>
-  <span class="name white">※ 本・ノートの中身に使用する紙はご自身でご用意ください。</span>
-  </p>
-  </div>
-  </li>
-  </ul>
-</div>
 
-<script>$(".mousedragscrollable").mousedragscrollable();</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-$(function(){
-$("#index").load("/pehu/menu.html");
-$("#day").load("https://creative-community.space/sp/day/weare/");
-$("#night").load("https://creative-community.space/sp/night/weare/");
-$("#close").load("https://creative-community.space/sp/close/weare/");
-$("#theme").load("theme.html");
-})
-</script>
+<body>
+    <div id="index"></div>
+    <div id="theme"></div>
+    <div id="print">
+        <ul class="mousedragscrollable library">
+            <li>
+                <div class="contents">
+                    <div class="value">
+                        <h1 class="info center">We are</h1>
+                    </div>
+                    <p class="center"><a class="collection white" href="https://youtu.be/lc7dmu4G8oc">Official Audio</a></p>
+                    <p class="">The Kinks "The Village Green Preservation Society" の歌詞を基に制作した、ペフのテーマを印刷した横断幕</p>
+                </div>
+            </li>
+            <li>
+                <script type="text/javascript">
+                    var day = '<div id="day"></div>';
+                    var night = '<div id="night"></div>';
+                    var close = '<div id="close"></div>';
+
+                    var now = new Date();
+                    var hour = now.getHours();
+
+                    if (hour >= 0 && hour <= 10) {
+                        document.write(close);
+                    } else if (hour >= 11 && hour <= 15) {
+                        document.write(day);
+                    } else if (hour >= 16 && hour <= 20) {
+                        document.write(night);
+                    } else if (hour >= 21 && hour <= 23) {
+                        document.write(close);
+                    }
+                </script>
+            </li>
+            <li>
+                <div class="contents">
+                    <div class="value">
+                        <h1 class="info center">Book Cover</h1>
+                    </div>
+                    <p class="center"><a class="collection white" href="https://www.are.na/block/15587080">Download</a></p>
+                    <p class="center">
+                        <span class="">for</span>
+                        <span class="">D.I.Y</span>
+                        <span class="">Book</span>
+                        <span class="">Binding</span>
+                    </p>
+                </div>
+            </li>
+            <li class="a"></li>
+            <li class="b"></li>
+            <li class="c"></li>
+            <li>
+                <div class="contents">
+                    <p class="center">
+                        <span class="name">会員限定とじ太くん製本サービス</span>
+                    </p>
+                    <h2 class="center">
+                        <span class="">D.I.Y</span>
+                        <span class="">Book</span>
+                        <span class="">Binding</span>
+                    </h2>
+                    <p class="center"><a class="collection" href="/org/publication/">Members Only</a></p>
+                    <p class="center">
+                        <span class="name white">製本に必要な機材・設備／環境をご提供いたします。</span><br/>
+                        <span class="name white">※ 本・ノートの中身に使用する紙はご自身でご用意ください。</span>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        $(".mousedragscrollable").mousedragscrollable();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#index").load("/pehu/menu.html");
+            $("#day").load("https://creative-community.space/sp/day/weare/");
+            $("#night").load("https://creative-community.space/sp/night/weare/");
+            $("#close").load("https://creative-community.space/sp/close/weare/");
+            $("#theme").load("theme.html");
+        })
+    </script>
 </body>
+
 </html>
