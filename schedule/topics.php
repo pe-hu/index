@@ -173,7 +173,7 @@ fclose($fp);
 #contents .title {
   margin:3vw 0 3vw;
   font-size:150%;
-  line-height:200%;
+  line-height:150%;
 }
 }
 </style>
