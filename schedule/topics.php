@@ -34,9 +34,9 @@ fclose($fp);
 #contents {
   position:relative;
   width:200px;
-  min-width:15vw;
+  min-width:17.5vw;
   height:200px;
-  min-height:15vw;
+  min-height:17.5vw;
   padding:1vw;
   margin:0.5vw;
   float:left;
