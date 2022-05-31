@@ -43,7 +43,8 @@ fclose($fp);
 }
 #contents .title {
   font-style:italic;
-  margin:0 0.5rem 0 0;
+  font-family:"Times New Roman", serif;
+  margin:1vw 0 0;
   font-size:125%;
 }
 #contents .info {
