@@ -151,9 +151,9 @@ fclose($fp);
 
 @media screen and (max-width: 750px){
   #contents {
-    width:200px;
+    width:150px;
     min-width:22.5vw;
-    height:200px;
+    height:150px;
     min-height:22.5vw;
   }
   .refine {
