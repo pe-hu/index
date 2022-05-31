@@ -166,6 +166,7 @@ fclose($fp);
     width:95%;
     margin:0 0 0.5rem;
     padding:2.5%;
+    font-size:125%;
     height:auto;
   }
 }
