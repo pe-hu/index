@@ -186,7 +186,7 @@ fclose($fp);
   <label class="refine-btn residency" for="refine-7">RESIDENCY</label>
   <input id="refine-8" type="radio" name="refine-btn"><span class="refine-8"><b>✔</b></span>
   <label class="refine-btn members" for="refine-8">MEMBERS ONLY</label>
-<hr/>
+
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div id="contents" class="refine-teims<?=h($row[4])?>">
