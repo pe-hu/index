@@ -169,6 +169,10 @@ fclose($fp);
     font-size:125%;
     height:auto;
   }
+#contents .title {
+  margin:2.5vw 0 1.5vw;
+  font-size:125%;
+}
 }
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
