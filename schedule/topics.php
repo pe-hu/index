@@ -33,8 +33,10 @@ fclose($fp);
 <style type="text/css">
 #contents {
   position:relative;
-  width:17.5vw;
-  height:17.5vw;
+  width:200px;
+  min-width:15vw;
+  height:200px;
+  min-height:15vw;
   padding:1vw;
   margin:0.5vw;
   float:left;
@@ -149,8 +151,10 @@ fclose($fp);
 
 @media screen and (max-width: 750px){
   #contents {
-  width:25vw;
-  height:25vw;
+    width:200px;
+    min-width:42.5vw;
+    height:200px;
+    min-height:42.5vw;
   }
   .refine {
     font-size:0.75rem;
@@ -158,10 +162,10 @@ fclose($fp);
 }
 @media screen and (max-width: 550px){
   #contents {
-  width:95%;
-  margin:0 0 0.5rem;
-  padding:2.5%;
-  height:auto;
+    width:95%;
+    margin:0 0 0.5rem;
+    padding:2.5%;
+    height:auto;
   }
 }
 </style>
