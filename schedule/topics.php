@@ -170,7 +170,7 @@ fclose($fp);
     height:auto;
   }
 #contents .title {
-  margin:3vw 0 2vw;
+  margin:3vw 0 3vw;
   font-size:125%;
 }
 }
