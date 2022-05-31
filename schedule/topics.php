@@ -152,9 +152,9 @@ fclose($fp);
 @media screen and (max-width: 750px){
   #contents {
     width:150px;
-    min-width:25vw;
+    min-width:30vw;
     height:150px;
-    min-height:25vw;
+    min-height:30vw;
   }
   .refine {
     font-size:0.75rem;
