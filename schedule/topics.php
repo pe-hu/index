@@ -97,13 +97,13 @@ fclose($fp);
   border:pink 0.1rem solid;
 }
 .community a {
-  border:green 0.1rem solid;
+  border:#000 0.1rem solid;
 }
 .dj a {
   border:gray 0.1rem solid;
 }
 .residency a {
-  border:#000 0.1rem solid;
+  border:green 0.1rem solid;
 }
 #refine-1:checked ~ .refine-teims:not(.show),
 #refine-2:checked ~ .refine-teims:not(.live),
