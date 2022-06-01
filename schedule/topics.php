@@ -93,14 +93,14 @@ fclose($fp);
 .shop a {
   border:gold 0.1rem solid;
 }
-.workshop a {
-  border:pink 0.1rem solid;
+.appointment a {
+  background-color:rgba(225,225,225,0.5);
 }
 .community a {
   border:#000 0.1rem solid;
 }
 .upcoming a {
-  box-shadow:#000 0.1rem 0.1rem 0.1rem;
+  box-shadow:#000 0.25rem 0.25rem 0.25rem;
 }
 .residency a {
   border:green 0.1rem solid;
@@ -109,7 +109,7 @@ fclose($fp);
 #refine-2:checked ~ .refine-teims:not(.live),
 #refine-3:checked ~ .refine-teims:not(.upcoming),
 #refine-4:checked ~ .refine-teims:not(.shop),
-#refine-5:checked ~ .refine-teims:not(.workshop),
+#refine-5:checked ~ .refine-teims:not(.appointment),
 #refine-6:checked ~ .refine-teims:not(.community),
 #refine-7:checked ~ .refine-teims:not(.residency),
 #refine-8:checked ~ .refine-teims:not(.members) {
@@ -193,6 +193,8 @@ fclose($fp);
   <label class="refine-btn all" for="refine-0">ALL</label>
   <input id="refine-3" type="radio" name="refine-btn"><span class="refine-3"><b>✔</b></span>
   <label class="refine-btn upcoming" for="refine-3">UPCOMING</label>
+  <input id="refine-5" type="radio" name="refine-btn"><span class="refine-5"><b>✔</b></span>
+  <label class="refine-btn appointment" for="refine-5">BY APPOINTMENT</label>
   <br/>
   <input id="refine-6" type="radio" name="refine-btn"><span class="refine-6"><b>✔</b></span>
   <label class="refine-btn community" for="refine-6">COMMUNITY EVENT</label>
