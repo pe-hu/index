@@ -42,6 +42,10 @@ fclose($fp);
   float:left;
   font-family: "Arial", sans-serif;
 }
+#contents u {
+  font-size:75%;
+  font-family: 'IBM Plex Mono', monospace;
+}
 #contents .title {
   font-style:italic;
   font-family:"Times New Roman", serif;
@@ -71,7 +75,7 @@ fclose($fp);
   font-size:1rem;
   line-height:150%;
   padding:0 2.5%;
-  font-family: "Arial", sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
 }
 .refine input[type=radio] {display:none;}
 .refine-btn {
@@ -114,6 +118,7 @@ fclose($fp);
 .refine b {
   display:inline-block;
   text-align:center;
+  font-family: "Arial", sans-serif;
 }
 .refine span:before {
 	content:'[';
