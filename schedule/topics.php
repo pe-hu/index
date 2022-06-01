@@ -200,7 +200,7 @@ fclose($fp);
   <input id="refine-4" type="radio" name="refine-btn"><span class="refine-4"><b>✔</b></span>
   <label class="refine-btn shop" for="refine-4">POP-UP STORE</label>
   <input id="refine-7" type="radio" name="refine-btn"><span class="refine-7"><b>✔</b></span>
-  <label class="refine-btn residency" for="refine-7">RESIDENCY</label>
+  <label class="refine-btn residency" for="refine-7">STUDIO</label>
   <input id="refine-8" type="radio" name="refine-btn"><span class="refine-8"><b>✔</b></span>
   <label class="refine-btn members" for="refine-8">MEMBERS ONLY</label>
 <hr/>
