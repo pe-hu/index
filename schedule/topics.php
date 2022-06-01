@@ -102,7 +102,7 @@ fclose($fp);
 .upcoming a {
   box-shadow:#000 0.25rem 0.25rem 0.25rem;
 }
-.residency a {
+.studio a {
   border:green 0.1rem solid;
 }
 #refine-1:checked ~ .refine-teims:not(.show),
@@ -111,7 +111,7 @@ fclose($fp);
 #refine-4:checked ~ .refine-teims:not(.shop),
 #refine-5:checked ~ .refine-teims:not(.appointment),
 #refine-6:checked ~ .refine-teims:not(.community),
-#refine-7:checked ~ .refine-teims:not(.residency),
+#refine-7:checked ~ .refine-teims:not(.studio),
 #refine-8:checked ~ .refine-teims:not(.members) {
   display: none;
 }
@@ -193,8 +193,6 @@ fclose($fp);
   <label class="refine-btn all" for="refine-0">ALL</label>
   <input id="refine-3" type="radio" name="refine-btn"><span class="refine-3"><b>✔</b></span>
   <label class="refine-btn upcoming" for="refine-3">UPCOMING</label>
-  <input id="refine-5" type="radio" name="refine-btn"><span class="refine-5"><b>✔</b></span>
-  <label class="refine-btn appointment" for="refine-5">BY APPOINTMENT</label>
   <input id="refine-8" type="radio" name="refine-btn"><span class="refine-8"><b>✔</b></span>
   <label class="refine-btn members" for="refine-8">MEMBERS ONLY</label>
   <br/>
@@ -205,7 +203,7 @@ fclose($fp);
   <input id="refine-2" type="radio" name="refine-btn"><span class="refine-2"><b>✔</b></span>
   <label class="refine-btn live" for="refine-2">LIVE/PERFORMANCE</label>
   <input id="refine-7" type="radio" name="refine-btn"><span class="refine-7"><b>✔</b></span>
-  <label class="refine-btn residency" for="refine-7">OPEN STUDIO</label>
+  <label class="refine-btn studio" for="refine-7">OPEN STUDIO</label>
   <input id="refine-4" type="radio" name="refine-btn"><span class="refine-4"><b>✔</b></span>
   <label class="refine-btn shop" for="refine-4">POP-UP STORE</label>
 <hr/>
