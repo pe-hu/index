@@ -191,7 +191,7 @@ fclose($fp);
 <div class="refine">
   <input id="refine-0" type="radio" name="refine-btn" checked><span class="refine-0"><b>✔</b></span>
   <label class="refine-btn all" for="refine-0">ALL</label>
-  <input id="refine-3" type="radio" name="refine-btn" checked><span class="refine-3"><b>✔</b></span>
+  <input id="refine-3" type="radio" name="refine-btn"><span class="refine-3"><b>✔</b></span>
   <label class="refine-btn upcoming" for="refine-3">UPCOMING</label>
   <br/>
   <input id="refine-6" type="radio" name="refine-btn"><span class="refine-6"><b>✔</b></span>
