@@ -124,13 +124,13 @@ fclose($fp);
 	content:'[';
   opacity:1;
   font-weight:500;
-  padding-right:0.5rem;
+  padding-right:0rem;
 }
 .refine span:after {
 	content:']';
   opacity:1;
   font-weight:500;
-  padding-left:0.5rem;
+  padding-left:0rem;
 }
 .refine input[type=radio]:checked + .refine-0 b,
 .refine input[type=radio]:checked + .refine-1 b,
