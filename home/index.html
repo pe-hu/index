@@ -1,0 +1,221 @@
+<html lang="ja">
+
+<head>
+    <title>∧° ┐ | Entertainment</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../index.css" />
+    <link rel="icon" href="/pehu/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+    <style type="text/css">
+        #header {
+            font-family: "MS Mincho", "SimSong", serif;
+        }
+        
+        hr {
+            clear: both;
+            border: 0 none;
+            padding: 1rem;
+        }
+        
+        #full {
+            font-size: 11px;
+            line-height: 150%;
+            font-family: 'IBM Plex Mono', monospace;
+            margin: 0;
+            padding: 2.5vw;
+            list-style-type: none;
+        }
+        
+        #full a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: dashed 1px;
+        }
+        
+        #full p {
+            margin: 0;
+            padding: 5.5px 0;
+        }
+        
+        .mousedragscrollable {
+            padding: 0;
+            margin: 1rem 0;
+            white-space: nowrap;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .mousedragscrollable p {
+            position: relative;
+            display: inline-block;
+            width: 75%;
+            max-width: 75vh;
+            height: 75vw;
+            max-height: 75vh;
+            white-space: normal;
+        }
+        
+        @media screen and (max-width: 750px) {
+            .symbol,
+            .date {
+                font-size: 45%;
+            }
+        }
+        
+        @media screen and (max-width: 1000px) {
+            .symbol,
+            .date {
+                font-size: 45%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <hr/>
+    <ul id="full">
+        <li id="center">
+            <span class="start">10.13.2021</span> -
+            <span class="end">Presents</span>
+            <p>Go Out<br/>行ったことのない場所へ行く</p>
+            <a href="https://creative-community.space/map/" target="_blank">creative-community.space/map/</a>
+        </li>
+        <li class="mousedragscrollable">
+            <p>a</p>
+            <p>b</p>
+            <p>c</p>
+            <p>d</p>
+            <p>e</p>
+        </li>
+        <hr/>
+        <li id="center">
+            <span class="start">3.29.2020</span> -
+            <span class="end">Presents</span>
+            <p>chotto crazy<br/>あなたの素晴らしいアイデアや創造的チャレンジをサポートします。</p>
+        </li>
+        <li class="mousedragscrollable">
+            <p>a</p>
+            <p>b</p>
+            <p>c</p>
+            <p>d</p>
+            <p>e</p>
+        </li>
+        <hr/>
+        <li id="center">
+            <span class="start">3.6.2020</span> -
+            <span class="end">Presents</span>
+            <p>プレイタイムズ<br/>a place of pray/play for us</p>
+            <a href="http://praytimes.pe.hu/" target="_blank">praytimes.pe.hu</a>
+        </li>
+        <li class="mousedragscrollable">
+            <p>a</p>
+            <p>b</p>
+            <p>c</p>
+            <p>d</p>
+            <p>e</p>
+        </li>
+        <hr/>
+        <li id="center">
+            <span class="start">9.1.2019</span> -
+            <span class="end">Presents</span>
+            <p>i choose<br/>The Answers are always inside of you</p>
+            <a href="http://ichoose.pe.hu/" target="_blank">ichoose.pe.hu</a>
+        </li>
+        <li class="mousedragscrollable">
+            <p>a</p>
+            <p>b</p>
+            <p>c</p>
+            <p>d</p>
+            <p>e</p>
+        </li>
+        <hr/>
+        <li id="center">
+            <span class="start">2.22.2019</span> -
+            <span class="end">Presents</span>
+            <p>大切にすることを大切にする<br/>valuing an act of valuing</p>
+            <a href="https://creative-community.space/value/index/" target="_blank">creative-community.space/value/index/</a>
+        </li>
+        <li class="mousedragscrollable">
+            <p>a</p>
+            <p>b</p>
+            <p>c</p>
+            <p>d</p>
+            <p>e</p>
+        </li>
+        <hr/>
+        <li id="center">
+            <span class="start">12.1.2018</span> -
+            <span class="end">Presents</span>
+            <p>#magicringmakefriendship<br/>FRIEND's HAPPY THOUGHT The World is Hand in Hand</p>
+        </li>
+        <li class="mousedragscrollable">
+            <p>a</p>
+            <p>b</p>
+            <p>c</p>
+            <p>d</p>
+            <p>e</p>
+        </li>
+    </ul>
+    <div id="newsletter"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("../header.html");
+            $("#newsletter").load("../newsletter.html");
+        })
+
+        jQuery.prototype.mousedragscrollable = function() {
+            let target; // 動かす対象
+            $(this).each(function(i, e) {
+                $(e).mousedown(function(event) {
+                    event.preventDefault();
+                    target = $(e); // 動かす対象
+                    $(e).data({
+                        "down": true,
+                        "move": false,
+                        "x": event.clientX,
+                        "y": event.clientY,
+                        "scrollleft": $(e).scrollLeft(),
+                        "scrolltop": $(e).scrollTop(),
+                    });
+                    return false
+                });
+                // move後のlink無効
+                $(e).click(function(event) {
+                    if ($(e).data("move")) {
+                        return false
+                    }
+                });
+            });
+            // list要素内/外でのevent
+            $(document).mousemove(function(event) {
+                if ($(target).data("down")) {
+                    event.preventDefault();
+                    let move_x = $(target).data("x") - event.clientX;
+                    let move_y = $(target).data("y") - event.clientY;
+                    if (move_x !== 0 || move_y !== 0) {
+                        $(target).data("move", true);
+                    } else {
+                        return;
+                    };
+                    $(target).scrollLeft($(target).data("scrollleft") + move_x);
+                    $(target).scrollTop($(target).data("scrolltop") + move_y);
+                    return false
+                }
+            }).mouseup(function(event) {
+                $(target).data("down", false);
+                return false;
+            });
+        }
+
+        $(".mousedragscrollable").mousedragscrollable();
+    </script>
+</body>
+
+</html>

@@ -8,6 +8,7 @@
     <style type="text/css">
         #header {
             font-family: "MS Mincho", "SimSong", serif;
+            line-height: 150%;
         }
         
         @media print {
@@ -24,11 +25,18 @@
                 font-size: 1rem;
             }
         }
+        
+        @media screen and (max-width: 750px) {
+            #header {
+                font-size: 2.5vw;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div><a class="tab" href="/pehu/publication/">Publication</a><span class="check"><b>✔</b></span></div>
+    <div><a class="tab" href="/pehu/home/">Entertainment</a><span class="check"><b>✔</b></span></div>
     <div><a class="tab" href="/pehu/schedule/">Happenings</a><span class="check"><b>✔</b></span></div>
     <div><a class="tab" href="/pehu/update/">Up till now</a><span class="check"><b>✔</b></span></div>
 </body>
