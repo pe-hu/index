@@ -24,9 +24,105 @@
             width: 100%;
         }
         
+        .pehu {
+            font-family: "MS Mincho", "SimSong", serif;
+        }
+        
+        @font-face {
+            font-family: "MS Mincho";
+            src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
+        }
+        
+        #menu {
+            font-size: 1.5rem;
+            width: 90%;
+            margin: 0 auto 10vw;
+        }
+        
+        #btn,
+        #motto #is {
+            transition: all 1000ms ease;
+            cursor: pointer;
+        }
+        
+        #menu div {
+            font-size: 150%;
+            display: block;
+            clear: both;
+            line-height: 200%;
+            font-family: "MS Mincho", "SimSong", serif;
+        }
+        
+        .tab {
+            color: #000;
+            display: inline-block;
+            width: 75%;
+            text-decoration: none;
+            transition: all 1000ms ease;
+        }
+        
+        #btn:hover,
+        .tab:hover,
+        .check b {
+            color: blue;
+            transition: all 500ms ease;
+        }
+        
+        .check {
+            float: left;
+            display: inline-block;
+            width: 4.5rem;
+            margin-right: 4.5rem;
+            text-align: center;
+        }
+        
+        .check:before {
+            content: '[';
+            opacity: 1;
+        }
+        
+        .check:after {
+            content: ']';
+            opacity: 1;
+        }
+        
+        .check b {
+            opacity: 0;
+            transition: all 1000ms ease;
+            font-family: Arial, sans-serif;
+        }
+        
+        a:hover+.check b {
+            opacity: 1;
+            transition: all 250ms ease;
+        }
+        
+        .open #menu {
+            display: block;
+        }
+        
+        .open #credit,
+        .open #motto,
+        .open #value,
+        #menu {
+            display: none;
+        }
+        
         @media screen and (max-width: 750px) {
             #credit {
                 margin-top: 10vw;
+            }
+            #header,
+            #inside {
+                font-size: 3vw;
+                margin: 3vw auto;
+            }
+            #menu div {
+                font-size: 125%;
+            }
+            .check {
+                width: 7.5vw;
+                margin-right: 7.5vw;
             }
         }
     </style>
@@ -35,7 +131,28 @@
 
 <body id="box">
 
-    <div id="index"></div>
+    <div id="menu">
+        <div id="inside">
+            <p><a id="btn" class="pehu" onclick="window.location.reload(true);">P E H U is</a></p>
+            <div>
+                <a href="/pehu/publication/" target="_parent" class="tab" onmouseover="this.innerText='Publication'" onmouseout="this.innerText='出版物'">出版物</a>
+                <span class="check"><b>✔</b></span>
+            </div>
+            <div>
+                <a href="/pehu/home/" target="_parent" class="tab" onmouseover="this.innerText='Entertainment'" onmouseout="this.innerText='活動'">活動</a>
+                <span class="check"><b>✔</b></span>
+            </div>
+            <div>
+                <a href="/pehu/schedule/" target="_parent" class="tab" onmouseover="this.innerText='Happenings'" onmouseout="this.innerText='出来事'">出来事</a>
+                <span class="check"><b>✔</b></span>
+            </div>
+            <div>
+                <a href="/pehu/update/" target="_parent" class="tab" onmouseover="this.innerText='Up till now'" onmouseout="this.innerText='今まで'">今まで</a>
+                <span class="check"><b>✔</b></span>
+            </div>
+        </div>
+    </div>
+
     <div id="credit"></div>
     <div id="motto"></div>
     <div id="value"><iframe src="/value/online/motto/"></iframe></div>
@@ -44,11 +161,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(function() {
-            $("#index").load("../menu.html");
             $("#credit").load("credit.html");
             $("#motto").load("motto.html");
             $("#link").load("../link.html");
         })
+
+        let btn = document.querySelector('#motto');
+        let box = document.querySelector('#box');
+
+        let btnToggleclass = function(el) {
+            el.classList.toggle('open');
+        }
+
+        btn.addEventListener('click', function() {
+            btnToggleclass(box);
+        }, false);
     </script>
 </body>
 

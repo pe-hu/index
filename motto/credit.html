@@ -21,7 +21,7 @@
             border-bottom: solid 1px;
             filter: blur(1vh);
             -webkit-filter: blur(1vh);
-            transition: all 1500ms ease;
+            transition: all 1000ms ease;
             overflow: hidden;
         }
         
@@ -29,7 +29,7 @@
             filter: blur(0);
             -webkit-filter: blur(0);
             transform: scale(1.5, 1.5);
-            transition: all 1000ms ease;
+            transition: all 500ms ease;
         }
         
         @media screen and (max-width: 750px) {
@@ -40,6 +40,10 @@
             .credit a {
                 filter: blur(0);
                 -webkit-filter: blur(0);
+            }
+            .credit a:hover {
+                color: blue;
+                transition: all 250ms ease;
             }
         }
     </style>
