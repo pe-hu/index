@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>∧° ┐ | Menu</title>
-    <link rel="stylesheet" type="text/css" href="menu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
     <style type="text/css">
         body {
             margin: 0;
@@ -22,32 +24,35 @@
             src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
         }
         
-        #inside {
+        #header,
+        #menu {
             font-size: 1.5rem;
             width: 90%;
-            margin: 1rem auto;
-            line-height: 200%;
-            font-family: Arial, sans-serif;
+            margin: 1rem auto 4.5rem;
         }
         
-        #inside div {
+        #btn {
+            transition: all 1000ms ease;
+            cursor: pointer;
+        }
+        
+        #menu div {
+            font-size: 150%;
             display: block;
             clear: both;
-        }
-        
-        #inside i {
-            float: right;
-            font-size: 90%;
-            text-decoration: underline;
-            font-family: 'Times New Roman', Times, serif;
+            line-height: 200%;
+            font-family: "MS Mincho", "SimSong", serif;
         }
         
         .tab {
             color: #000;
+            display: inline-block;
+            width: 75%;
             text-decoration: none;
-            transition: all 500ms ease;
+            transition: all 1000ms ease;
         }
         
+        #btn:hover,
         .tab:hover,
         .check b {
             color: blue;
@@ -57,10 +62,9 @@
         .check {
             float: left;
             display: inline-block;
-            width: 1.5rem;
-            margin-right: 1.5rem;
+            width: 4.5rem;
+            margin-right: 4.5rem;
             text-align: center;
-            margin-right: 1.5rem;
         }
         
         .check:before {
@@ -76,35 +80,52 @@
         .check b {
             opacity: 0;
             transition: all 1000ms ease;
+            font-family: Arial, sans-serif;
         }
         
         a:hover+.check b {
             opacity: 1;
-            transition: all 1000ms ease;
+            transition: all 250ms ease;
+        }
+        
+        .open #menu {
+            display: block;
+        }
+        
+        .open #credit,
+        .open #motto,
+        .open #value,
+        #menu {
+            display: none;
         }
         
         @media screen and (max-width: 750px) {
+            #header,
             #inside {
                 font-size: 3vw;
                 margin: 3vw auto;
             }
+            #menu div {
+                font-size: 125%;
+            }
             .check {
-                width: 3vw;
-                margin-right: 3vw;
-                margin-right: 3vw;
+                width: 7.5vw;
+                margin-right: 7.5vw;
             }
         }
     </style>
 </head>
+<style>
 
-<body>
+</style>
+</head>
+
+<body id="box">
+    <header id="header">
+        <a id="btn" class="pehu">∧°┐</a>
+    </header>
     <div id="menu">
         <div id="inside">
-            <div>
-                <a href="/pehu/" target="_parent" class="tab">
-                    <b class="pehu">∧° ┐</b>
-                </a>
-            </div>
             <div>
                 <a href="/pehu/publication/" target="_parent" class="tab" onmouseover="this.innerText='Publication'" onmouseout="this.innerText='出版物'">出版物</a>
                 <span class="check"><b>✔</b></span>
@@ -118,11 +139,25 @@
                 <span class="check"><b>✔</b></span>
             </div>
             <div>
-                <a href="/pehu/update/" target="_parent" class="tab" onmouseover="this.innerText='Up till now'" onmouseout="this.innerText='場所'">場所</a>
+                <a href="/pehu/update/" target="_parent" class="tab" onmouseover="this.innerText='Up till now'" onmouseout="this.innerText='今まで'">今まで</a>
                 <span class="check"><b>✔</b></span>
             </div>
         </div>
     </div>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    let btn = document.querySelector('#btn');
+    let box = document.querySelector('#box');
+
+    let btnToggleclass = function(el) {
+        el.classList.toggle('open');
+    }
+
+    btn.addEventListener('click', function() {
+        btnToggleclass(box);
+    }, false);
+</script>
 
 </html>
