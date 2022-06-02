@@ -9,7 +9,7 @@ body {
     top: 0;
     z-index: 100;
     margin: 1.25% 2.5%;
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -31,7 +31,7 @@ body {
 .check {
     float: left;
     display: inline-block;
-    margin-right: 1.5vw;
+    margin-right: 1vw;
     text-align: center;
 }
 
