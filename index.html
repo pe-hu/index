@@ -78,12 +78,9 @@
         }
         
         @media print {
-            .everyone {
-                display: none;
-            }
             #top {
                 width: 100%;
-                margin: 2.5vw auto 2.5vw;
+                margin: 0 auto 2.5vw;
             }
             #is {
                 max-height: 120vw;
@@ -92,13 +89,6 @@
             #header,
             .everyone {
                 display: none;
-            }
-            .jp_title p {
-                display: block;
-            }
-            #qr,
-            .printonly {
-                display: inline-block;
             }
         }
     </style>
@@ -118,8 +108,6 @@
         <hr/>
         <div id="link"></div>
     </div>
-
-    <div id="publication" class="change"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
