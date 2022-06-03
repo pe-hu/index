@@ -8,7 +8,7 @@ $type = (string)filter_input(INPUT_POST, 'type'); // $_POST['type']
 $info = (string)filter_input(INPUT_POST, 'onfo'); // $_POST['info']
 $url = (string)filter_input(INPUT_POST, 'url'); // $_POST['url']
 
-$fp = fopen('topic.csv', 'a+b');
+$fp = fopen('ver.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$type, $info, $url]);
@@ -45,7 +45,7 @@ $(function(){
   font-size: 2vw; padding:2.5% 0;
 }
 #cc .members {
-  border:1px solid #000;
+  border:0.75px solid #000;
   background:#fff;
 }
 #cc .project {
@@ -53,7 +53,7 @@ $(function(){
   background:#eee;
 }
 #cc .community {
-  border:1px solid #fff;
+  border:0.75px solid #fff;
   background:#fff;
 }
         
