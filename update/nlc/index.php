@@ -35,7 +35,13 @@ $(function(){
 <style>
 #nlc {
   font-size: 2vw; padding:2.5% 0;
-  font-family: "YuGothic","Yu Gothic","游ゴシック体";
+    font-family: 'Times New Roman', serif;
+    font-weight: 500;
+    font-stretch: condensed;
+    font-variant: common-ligatures tabular-nums;
+    transform: scale(1, 1.1);
+    letter-spacing: -0.1rem;
+    word-spacing: -0.1rem;
 }
 #nlc .popup,
 #nlc .project {
