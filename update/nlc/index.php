@@ -46,7 +46,7 @@ $(function(){
   font-size: 2vw; padding:2.5% 0;
 }
 #nlc .popup,
-#nlc .project {
+#nlc .event {
   background: linear-gradient(90deg, #B3CBF6, #FFC778, #EEE);
   background-size: 400% 400%;
 }
@@ -58,7 +58,7 @@ $(function(){
   -webkit-text-fill-color: transparent;
   animation: sky 5s ease infinite;
 }
-#nlc .project {
+#nlc .event {
   color:#fff;
   border:0.75px solid #fff;
 }
