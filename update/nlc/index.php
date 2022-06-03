@@ -39,7 +39,11 @@ $(function(){
 }
 #nlc .popup {
   border:1px solid #000;
-  background:#fff;
+    background: linear-gradient(90deg, #b3cbf6, #FFC778, #eee);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: sky 5s ease infinite;
 }
 #nlc .project {
   color:#fff;
@@ -65,12 +69,12 @@ $(function(){
         background-position: 0% 50%;
     }
 }
-        
-        @media screen and (max-width: 750px) {
-        #nlc {
-          font-size: 0.75rem;
-        }
-        }
+
+@media screen and (max-width: 750px) {
+  #nlc {
+    font-size: 0.75rem;
+  }
+}
 </style>
 </head>
 <body>
