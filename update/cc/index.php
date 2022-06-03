@@ -46,7 +46,7 @@ $(function(){
 }
 #cc .project {
   border:0.75px solid;
-  animation: project 1s ease infinite;
+  animation: project 2.5s ease infinite;
 }
 #cc .members {
   color:#000;
