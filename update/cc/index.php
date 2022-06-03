@@ -33,9 +33,16 @@ $(function(){
 </script>
 <title>Update | creative-community.space</title>
 <style>
+.ipag {
+    font-family: "ipag", monospace;
+    transform: scale(1, 1.25);
+}
+@font-face {
+  font-family: "ipag";
+  src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
+}
 #cc {
   font-size: 2vw; padding:2.5% 0;
-  font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
 #cc .show {
   border:1px solid #000;
@@ -58,7 +65,7 @@ $(function(){
 </style>
 </head>
 <body>
-<div id="cc">
+<div id="cc" class="ipag">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <span class="<?=h($row[0])?>">
