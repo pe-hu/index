@@ -43,17 +43,16 @@ $(function(){
   background-size: 400% 400%;
 }
 #nlc .popup {
-  border:1px solid #000;
+  border:1px solid;
+  border-image: linear-gradient(-90deg, #B3CBF6, #FFC778, #EEE);
+  border-image-slice: 1;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: sky 5s ease infinite;
 }
 #nlc .project {
   color:#fff;
-  border:1px solid;
-  border-image: linear-gradient(-90deg, #B3CBF6, #FFC778, #EEE);
-  border-image-slice: 1;
-  animation: sky 10s ease infinite;
+  border:1px solid #fff;
 }
 #nlc .website {
   color:#000;
