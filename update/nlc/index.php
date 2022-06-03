@@ -33,8 +33,7 @@ $(function(){
 </script>
 <title>Update | New Life Collection</title>
 <style>
-.nlc,
-#nlc {
+.nlc {
     font-family: 'Times New Roman', serif;
     font-weight: 500;
     font-stretch: condensed;
@@ -89,7 +88,7 @@ $(function(){
 </style>
 </head>
 <body>
-<div id="nlc">
+<div id="nlc" class="nlc">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <span class="<?=h($row[0])?>">
