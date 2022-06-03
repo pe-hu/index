@@ -45,10 +45,11 @@ $(function(){
   font-size: 2vw; padding:2.5% 0;
 }
 #cc .members {
-  border:0.75px solid #000;
+  border:0.75px solid;
   background:#fff;
 }
 #cc .project {
+  color:#000;
   border:0.75px solid;
 }
 #cc .community {
@@ -70,7 +71,7 @@ $(function(){
             });
         });
         $(function() {
-            jQuery('.project').css({
+            jQuery('.members').css({
                 'color': getRumRgba()
             });
         })
