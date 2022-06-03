@@ -64,6 +64,31 @@ $(function(){
 }
 }
 </style>
+<script src="https://creative-community.space/coding/js/randomrgba.js"></script>
+<script src="https://creative-community.space/coding/js/randomcolor.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                jQuery('.project').css({
+                    'background': getRumRgba()
+                });
+            });
+
+            $(function() {
+                $('.project').hover(function() {
+                    $(this).css({
+                        'background': getRumRgba()
+                    });
+                }, function() {
+                    $(this).css({
+                        'background': ''
+                    });
+                });
+            });
+
+            $(function() {
+                $("#").load("");
+            })
+        </script>
 </head>
 <body>
 <div id="cc" class="ipag">
