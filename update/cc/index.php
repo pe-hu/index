@@ -44,15 +44,15 @@ $(function(){
 #cc {
   font-size: 2vw; padding:2.5% 0;
 }
-#cc .show {
+#cc .members {
   border:1px solid #000;
   background:#fff;
 }
-#cc .program {
+#cc .project {
   color:#000;
   background:#eee;
 }
-#cc .online {
+#cc .community {
   border:1px solid #fff;
   background:#fff;
 }
