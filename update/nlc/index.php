@@ -47,6 +47,7 @@ $(function(){
   border:1px solid #fff;
 }
 #nlc .website {
+  color:#fff;
   border:1px solid #fff;
     background: linear-gradient(90deg, #B3CBF6, #FFC778, #EEE);
     background-size: 400% 400%;
