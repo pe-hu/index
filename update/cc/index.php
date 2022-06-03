@@ -50,6 +50,7 @@ $(function(){
 }
 #cc .project {
   color:#000;
+  background:#eee;
   border:0.75px solid #eee;
 }
 #cc .community {
@@ -65,27 +66,16 @@ $(function(){
 </style>
 <script src="https://creative-community.space/coding/js/randomrgba.js"></script>
         <script type="text/javascript">
-            $(function() {
-                jQuery('.members').css({
-                    'background': getRumRgba()
-                });
+        $(function() {
+            jQuery('.members').css({
+                'background': getRumRgba()
             });
-
-            $(function() {
-                $('.project').hover(function() {
-                    $(this).css({
-                        'background': getRumRgba()
-                    });
-                }, function() {
-                    $(this).css({
-                        'background': ''
-                    });
-                });
+        });
+        $(function() {
+            jQuery('.members').css({
+                'color': getRumRgba()
             });
-
-            $(function() {
-                $("#").load("");
-            })
+        })
         </script>
 </head>
 <body>
