@@ -46,7 +46,7 @@ $(function(){
 }
 #cc .project {
   border:0.75px solid;
-  animation: project 2.5s ease infinite;
+  animation: project 5s ease infinite;
 }
 #cc .members {
   color:#000;
@@ -61,8 +61,11 @@ $(function(){
     0% {
   filter: invert(0);
     }
-    100% {
+    50% {
   filter: invert(1);
+    }
+    100% {
+  filter: invert(0);
     }
 }
         
