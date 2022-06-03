@@ -44,11 +44,11 @@ $(function(){
 #cc {
   font-size: 2vw; padding:2.5% 0;
 }
-#cc .members {
-  border:0.75px solid;
-  animation: members .9s ease infinite;
-}
 #cc .project {
+  border:0.75px solid;
+  animation: project .9s ease infinite;
+}
+#cc .members {
   color:#000;
   border:0.75px solid;
 }
@@ -57,7 +57,7 @@ $(function(){
   background:#fff;
 }
 
-@keyframes members {
+@keyframes project {
     0% {
   filter: invert(0);
     }
