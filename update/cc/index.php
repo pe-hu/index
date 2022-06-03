@@ -47,6 +47,7 @@ $(function(){
 #cc .members {
   border:0.75px solid;
   background:#fff;
+    filter: invert();
 }
 #cc .project {
   color:#000;
