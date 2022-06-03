@@ -61,11 +61,8 @@ $(function(){
     0% {
   filter: invert(0);
     }
-    50% {
-  filter: invert(1);
-    }
     100% {
-  filter: invert(0);
+  filter: invert(1);
     }
 }
         
