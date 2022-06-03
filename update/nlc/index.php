@@ -50,7 +50,7 @@ $(function(){
 }
 #nlc .project {
   color:#fff;
-  border:1px solid #fff;
+  border:1px solid;
   border-image: linear-gradient(-90deg, #B3CBF6, #FFC778, #EEE);
   border-image-slice: 1;
   animation: sky 10s ease infinite;
