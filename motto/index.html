@@ -36,7 +36,7 @@
         #menu {
             font-size: 1.5rem;
             width: 90%;
-            margin: 0 auto 10vw;
+            margin: 0 auto 0;
         }
         
         #btn,
@@ -70,6 +70,14 @@
             clear: both;
             line-height: 200%;
             font-family: "MS Mincho", "SimSong", serif;
+        }
+        
+        #menu iframe {
+            border: none;
+            width: 100%;
+            height: 80vh;
+            max-height: 125vw;
+            margin-bottom: 2rem;
         }
         
         .everyone {
@@ -157,6 +165,7 @@
         .open #credit,
         .open #motto,
         .open #value,
+        .open .everyone,
         #menu {
             display: none;
         }
@@ -192,22 +201,7 @@
     <div id="menu">
         <div id="inside">
             <p><a id="btn" class="pehu" onclick="window.location.reload(true);">P E H U is</a></p>
-            <div>
-                <a href="/pehu/publication/" target="_parent" class="tab" onmouseover="this.innerText='Publication'" onmouseout="this.innerText='出版物'">出版物</a>
-                <span class="check"><b>✔</b></span>
-            </div>
-            <div>
-                <a href="/pehu/home/" target="_parent" class="tab" onmouseover="this.innerText='Entertainment'" onmouseout="this.innerText='活動'">活動</a>
-                <span class="check"><b>✔</b></span>
-            </div>
-            <div>
-                <a href="/pehu/schedule/" target="_parent" class="tab" onmouseover="this.innerText='Happenings'" onmouseout="this.innerText='出来事'">出来事</a>
-                <span class="check"><b>✔</b></span>
-            </div>
-            <div>
-                <a href="/pehu/update/" target="_parent" class="tab" onmouseover="this.innerText='Up till now'" onmouseout="this.innerText='今まで'">今まで</a>
-                <span class="check"><b>✔</b></span>
-            </div>
+            <iframe src="print.html"></iframe>
         </div>
     </div>
 
