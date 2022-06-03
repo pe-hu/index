@@ -37,19 +37,6 @@ $(function(){
   font-size: 2vw; padding:2.5% 0;
   font-family: "YuGothic","Yu Gothic","游ゴシック体";
 }
-#nlc span {
-  display:inline;
-  text-decoration:none;
-  padding:0.5vw 1vw;
-  filter: blur(1);
-  -webkit-filter: blur(1);
-  transition: all 1500ms ease;
-}
-
-#nlc span {
-  line-height:222%;
-  margin:0.5vw 1vw 0.5vw 0;
-}
 #nlc .popup {
   border:1px solid #000;
   background:#fff;
@@ -57,10 +44,25 @@ $(function(){
 #nlc .project {
   color:#000;
   background:#eee;
+  border:1px solid #fff;
 }
 #nlc .website {
   border:1px solid #fff;
-  background:#fff;
+    background: linear-gradient(90deg, #B3CBF6, #FFC778, #EEE);
+    background-size: 400% 400%;
+    animation: sky 10s ease infinite;
+}
+
+@keyframes sky {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
         
         @media screen and (max-width: 750px) {

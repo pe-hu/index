@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="/pehu/index.css" />
-    <link rel="icon" href="/pehu/logo.png">
+    <link rel="stylesheet" type="text/css" href="../index.css" />
+    <link rel="icon" href="../logo.png">
     <style type="text/css">
         #header {
             font-family: "MS Mincho", "SimSong", serif;
@@ -147,6 +147,22 @@
             -webkit-transform: translate(-50%, -50%);
         }
         
+        .more span {
+            display: inline;
+            text-decoration: none;
+            padding: 0.5vw 1vw;
+            filter: blur(1);
+            -webkit-filter: blur(1);
+            transition: all 1500ms ease;
+            line-height: 222%;
+            margin: 0.5vw 1vw 0.5vw 0;
+        }
+        
+        #complete span {
+            border: 1px solid #000;
+            background: #fff;
+        }
+        
         @media screen and (max-width: 750px) {
             #full li {
                 font-size: 75%;
@@ -229,7 +245,7 @@
                     </li>
                     <li class="more" id="complete">
                         <p>おおさか創造千島財団の創造的場づくり助成を受け、大阪・北加賀屋のシェアスタジオ「音ビル」にて「やりたいことを快適に実現するための方法」 を実施</p>
-                        <div id="cc">
+                        <div>
                             <span class="show">3.12 - 3.21.2022 LAST BAZAAR</span>
                             <span class="show">1.15 - 1.30.2022 1F</span>
                             <span class="show">12.25 - 12.26.2021 abi winter sale 2021</span>
@@ -253,7 +269,7 @@
                     <li class="more" id="complete">
                         <p>ギャラリー・コミュニティスペースの運営を通して出会った素晴らしい仲間たちを運営メンバーに加え、誰もが自由にやりたいことをやるクリエイティブ・コミュニティスペースを開業</p>
                         <p>カフェ・フリースペースでは38のコミュニティイベントなどを、ギャラリースペースでは12の展覧会を開催。加えて、7のレジデンスプログラム、会員制デジタルマガジンの発行などを実施</p>
-                        <div id="cc">
+                        <div>
                             <span class="show">5.30.2020 This USB Card is The Digital Magazine | Special Gift Box 2019 出版</span>
                         </div>
                         <a href="http://vg.pe.hu/jp/"></a>
@@ -267,7 +283,7 @@
                     <li class="more" id="complete">
                         <p>ギャラリー・コミュニティスペース ペフを設立</p>
                         <p>半年間に8の展覧会と28のコミュニティイベントなどを開催</p>
-                        <div id="cc">
+                        <div>
                             <span class="show">1.15.2022 1F BOX | 03 by Takamitsu Ohta, Muku Kobayashi, Shoji Funakawa, Soshi Matsunobe | 04 by Emeraldclitoris | 05 by Woopheadclrms 出版</span>
                             <span class="show">5.17.2018 快晴 | KAISEI 出版</span>
                         </div>
@@ -282,14 +298,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
-        $(function() {
-            $('.change').hide();
-            $('.tab').on('click', function() {
-                $('.change').not($($(this).attr('href'))).hide();
-                $($(this).attr('href')).fadeToggle(1000);
-            });
-        });
-
         $(function() {
             $("#header").load("../header.html");
             $("#nlc").load("nlc/index.php");
