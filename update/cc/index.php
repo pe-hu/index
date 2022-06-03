@@ -63,7 +63,7 @@ $(function(){
 }
 }
 </style>
-<script src="https://creative-community.space/coding/js/randomcolor.js"></script>
+<script src="https://creative-community.space/coding/js/randomrgba.js"></script>
         <script type="text/javascript">
             $(function() {
                 jQuery('.members').css({
