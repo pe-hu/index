@@ -33,8 +33,8 @@ $(function(){
 </script>
 <title>Update | New Life Collection</title>
 <style>
+.nlc,
 #nlc {
-  font-size: 2vw; padding:2.5% 0;
     font-family: 'Times New Roman', serif;
     font-weight: 500;
     font-stretch: condensed;
@@ -42,6 +42,9 @@ $(function(){
     transform: scale(1, 1.1);
     letter-spacing: -0.1rem;
     word-spacing: -0.1rem;
+}
+#nlc {
+  font-size: 2vw; padding:2.5% 0;
 }
 #nlc .popup,
 #nlc .project {
