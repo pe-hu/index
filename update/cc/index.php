@@ -46,8 +46,7 @@ $(function(){
 }
 #cc .members {
   border:0.75px solid;
-  background:#fff;
-    filter: invert();
+  filter: invert();
 }
 #cc .project {
   color:#000;
@@ -68,6 +67,11 @@ $(function(){
         <script type="text/javascript">
         $(function() {
             jQuery('.project').css({
+                'background': getRumRgba()
+            });
+        });
+        $(function() {
+            jQuery('.members').css({
                 'background': getRumRgba()
             });
         });
