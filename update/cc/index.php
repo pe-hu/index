@@ -46,7 +46,7 @@ $(function(){
 }
 #cc .members {
   border:0.75px solid;
-  filter: invert();
+  animation: members 5s ease infinite;
 }
 #cc .project {
   color:#000;
@@ -55,6 +55,18 @@ $(function(){
 #cc .community {
   border:0.75px solid #fff;
   background:#fff;
+}
+
+@keyframes members {
+    0% {
+  filter: invert();
+    }
+    50% {
+  filter: invert(1);
+    }
+    100% {
+  filter: invert();
+    }
 }
         
 @media screen and (max-width: 750px) {
