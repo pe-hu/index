@@ -68,7 +68,7 @@ $(function(){
 <script src="https://creative-community.space/coding/js/randomcolor.js"></script>
         <script type="text/javascript">
             $(function() {
-                jQuery('.project').css({
+                jQuery('.members').css({
                     'background': getRumRgba()
                 });
             });
