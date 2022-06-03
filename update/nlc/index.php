@@ -51,7 +51,7 @@ $(function(){
   background-size: 400% 400%;
 }
 #nlc .popup {
-  border:1px solid;
+  border:0.75px solid;
   border-image: linear-gradient(-90deg, #B3CBF6, #FFC778, #EEE);
   border-image-slice: 1;
   -webkit-background-clip: text;
@@ -60,12 +60,12 @@ $(function(){
 }
 #nlc .project {
   color:#fff;
-  border:1px solid #fff;
+  border:0.75px solid #fff;
 }
 #nlc .website {
   color:#000;
   background:#fff;
-  border:1px solid #fff;
+  border:0.75px solid #fff;
 }
 
 @keyframes sky {

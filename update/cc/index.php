@@ -51,6 +51,7 @@ $(function(){
 #cc .project {
   color:#000;
   background:#eee;
+  border:0.75px solid #eee;
 }
 #cc .community {
   border:0.75px solid #fff;
