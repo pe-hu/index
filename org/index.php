@@ -309,29 +309,11 @@ fclose($fp);
             return false;
         });
 
-$(document).on('mousemove', function(e){
-  var hueraw = parseInt(255 - Math.round((e.pageY + 0.1) / ($(window).height()) * 255));
-  var hue = '"srff"' + hueraw;
-
-    $('#huecount').text(hueraw);
-    $('#lightnesscount').text(hueraw + '%');
-    $('#saturationcount').text(hueraw + '%');
-
-    if((e.pageX <= $(window).width()/1)){
-    var sraw = parseInt(100 - Math.round((e.pageX + 0.1) / ($(window).width()) * 100));
-      var lraw = parseInt(Math.round((e.pageX + 0.1) / ($(window).width()) * 100));
-      $('#color').css({'background': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
-      $('#now, #mobile a').css({'color': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
-      $('#saturationcount').text(sraw + '%');
-      $('#lightnesscount').text(lraw + '%');
-  }
-});
-
 var COLOURS = [ '#EEE' ];
 var radius = 0;
 
 Sketch.create({
-  container: document.getElementById( 'images' ),
+  container: document.getElementById( 'main' ),
   autoclear: false,
   retina: 'auto',
 
