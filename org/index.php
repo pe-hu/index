@@ -171,12 +171,12 @@ fclose($fp);
         
         @media screen and (max-width: 550px) {
             #catalog {
-                top: 35%;
+                top: 45%;
             }
             #catalog .list_item {
                 position: relative;
                 padding: 0;
-                margin: 2vh 0;
+                margin: 12.5vh 0;
             }
         }
         
