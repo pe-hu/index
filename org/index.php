@@ -108,9 +108,9 @@ fclose($fp);
             text-decoration: double underline;
         }
         
-        .mousedragscrollable .list {
-            width: 15rem;
-            max-width: 75vw;
+        .mousedragscrollable .images {
+            width: 50rem;
+            max-width: 100vw;
             overflow-y: scroll;
         }
         
@@ -133,7 +133,7 @@ fclose($fp);
             #print {
                 display: block;
             }
-            .mousedragscrollable .list {
+            .mousedragscrollable .images {
                 overflow: hidden;
                 border-right: 1px solid #ccc;
             }
@@ -202,7 +202,7 @@ fclose($fp);
 
     <main id="main">
         <ul class="mousedragscrollable">
-            <li class="collection">
+            <li class="images">
                 <ol class="org">
                     <h2>New Life Collection</h2>
                     <?php if (!empty($rows)): ?>
