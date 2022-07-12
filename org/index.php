@@ -260,8 +260,7 @@ fclose($fp);
     <main id="main">
         <ul class="mousedragscrollable">
             <li id="images" class="collection">
-                <p class="nlc_style">
-                <span id="greeting"></span>
+                <p id="greeting" class="nlc_style">
                     <script>
                     $('#greeting').html(Greeting);
                     </script>
