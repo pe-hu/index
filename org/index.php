@@ -246,7 +246,6 @@ fclose($fp);
     <main id="main">
         <ul class="mousedragscrollable">
             <li id="images" class="collection">
-                <p></p>
                 <ol id="catalog" class="org">
                     <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
@@ -304,9 +303,9 @@ fclose($fp);
             var target = $(href == "# " || href == " " ? 'html' : href);
             return false;
         });
-        
-        var coding = document.getElementById("test")
-        $('#images p').html(coding.innerHTML);
+
+        var text = document.getElementById('main');
+        alert(test.innerHTML);
 
         var volume;
         var synth;
