@@ -163,6 +163,9 @@ fclose($fp);
                 padding: 0;
                 margin: 2.5vh 0;
             }
+            #catalog {
+                top: 33.333%;
+            }
         }
         
         @media print {
