@@ -109,7 +109,7 @@ fclose($fp);
             text-decoration: double underline;
         }
         
-        .mousedragscrollable .images {
+        .mousedragscrollable #images {
             width: 50rem;
             max-width: 100vw;
             overflow-y: scroll;
@@ -134,7 +134,7 @@ fclose($fp);
             #print {
                 display: block;
             }
-            .mousedragscrollable .images {
+            .mousedragscrollable #images {
                 overflow: hidden;
                 border-right: 1px solid #ccc;
             }
