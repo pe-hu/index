@@ -1,14 +1,24 @@
 #catalog {
-    text-align: center;
-    display: table;
-    table-layout: fixed;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 0 0.25rem 0;
     margin: 0;
     list-style-type: none;
 }
 
-#catalog li {
-    display: inline-block;
+#catalog .list_item {
+    margin: 2.5%;
+    position: relative;
+    filter: blur(0.25vw);
+    transition: all 500ms ease;
+}
+
+#catalog .list_item:hover {
+    filter: blur(0);
 }
 
 .a1 {
@@ -47,18 +57,10 @@
     width: 7.5vw;
 }
 
-.org .list_item {
-    margin: 2.5%;
-    vertical-align: middle;
-    position: relative;
-    border-radius: 50%;
-    border: solid #fff;
-}
-
 .org .list_item img {
+    width: 100%;
     pointer-events: none;
     user-select: none;
-    transition: all 500ms ease;
 }
 
 .org .what {
@@ -73,10 +75,6 @@
     right: 0.5rem;
     z-index: 1;
     text-decoration: double underline;
-}
-
-.org .list_item:hover .list_item {
-    border: solid red;
 }
 
 .org .list_item a {
