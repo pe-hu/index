@@ -11,10 +11,10 @@
 }
 
 #catalog .list_item {
-    margin: 2.5%;
     position: relative;
     filter: blur(0.25vw);
     transition: all 500ms ease;
+    margin: 2.5vw;
 }
 
 #catalog .list_item:hover {
@@ -22,39 +22,43 @@
 }
 
 .a1 {
-    width: 40vw;
-}
-
-.a2 {
-    width: 33.3vw;
+    width: 75vw;
+    max-width: 27.5rem;
 }
 
 .a3 {
-    width: 25vw;
+    width: 50vw;
+    max-width: 22.5rem;
 }
 
 .a4 {
-    width: 22vw;
+    width: 45vw;
+    max-width: 17.5rem;
 }
 
 .a5 {
-    width: 15.5vw;
+    width: 30vw;
+    max-width: 12rem;
 }
 
 .b5 {
-    width: 14.5vw;
+    width: 35vw;
+    max-width: 11rem;
 }
 
 .a6 {
-    width: 12.5vw;
+    width: 25vw;
+    max-width: 8rem;
 }
 
 .note {
-    width: 10vw;
+    width: 20vw;
+    max-width: 5rem;
 }
 
 .min {
-    width: 7.5vw;
+    width: 12.5vw;
+    max-width: 4.5rem;
 }
 
 .org .list_item img {
