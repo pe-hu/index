@@ -259,10 +259,9 @@ fclose($fp);
     <main id="main">
         <ul class="mousedragscrollable">
             <li id="images" class="collection">
-                <p id="greeting">
+                <p id="greeting" class="cc_style">
                     <script>
-                        var body = document.getElementById("body");
-                        console.log(body.innerHTML);
+                    $('#greeting').html(body);
                     </script>
                 </p>
                 <ol id="catalog" class="org">
