@@ -129,7 +129,10 @@ fclose($fp);
             transform: translate(-50%, -50%);
         }
         #images {
-            background-image: url(bna/001.jpeg);
+            background-image: url(bna/005.jpeg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         #catalog .list_item {
