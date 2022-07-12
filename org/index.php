@@ -258,9 +258,7 @@ fclose($fp);
         <ul class="mousedragscrollable">
             <li id="images" class="collection">
                 <p id="greeting">
-                    <script>
-                    $('#greeting').html(Greeting);
-                    </script>
+                    <script>$('#greeting').html(Greeting);</script>
                 </p>
                 <ol id="catalog" class="org">
                     <?php if (!empty($rows)): ?>
