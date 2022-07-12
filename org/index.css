@@ -10,12 +10,6 @@
     list-style-type: none;
 }
 
-#catalog .list_item {
-    position: relative;
-    padding: 0;
-    margin: 1.25vh 0;
-}
-
 .a1 {
     width: 75vw;
     max-width: 27.5rem;
