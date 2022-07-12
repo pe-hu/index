@@ -83,14 +83,18 @@ fclose($fp);
             transform: scale(1, 1.25);
         }
         
-        .vg_style {
-            font-family: 'Great Vibes', cursive;
-            transform: scale(1, 1.5);
-            display: inline-block;
-        }
-        
         #images {
             width: 100%;
+        }
+        
+        #catalog {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 0;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
         }
         
         .org .list_item img {
