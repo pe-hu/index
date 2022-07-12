@@ -46,7 +46,7 @@
 .org .list_item {
     margin: 2.5%;
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: middle;
     position: relative;
     border-radius: 50%;
     border: solid #fff;
