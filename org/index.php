@@ -142,7 +142,7 @@ fclose($fp);
             top: 0;
             left: 0;
             color: #333;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             line-height: 150%;
         }
         
