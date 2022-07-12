@@ -261,7 +261,8 @@ fclose($fp);
             <li id="images" class="collection">
                 <p id="greeting">
                     <script>
-                    $('#greeting').html(body);
+                        var body = document.getElementById("body");
+                        console.log(body.innerHTML);
                     </script>
                 </p>
                 <ol id="catalog" class="org">
