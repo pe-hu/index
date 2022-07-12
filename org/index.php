@@ -203,23 +203,7 @@ fclose($fp);
 
     <main id="main">
         <ul class="mousedragscrollable">
-            <li class="images">
-                <ol class="org">
-                    <?php if (!empty($rows)): ?>
-                    <?php foreach ($rows as $row): ?>
-                    <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
-                        <img src="<?=h($row[2])?>">
-                        <a class="<?=h($row[3])?>" href="<?=h($row[4])?>" target="_parent"></a>
-                    </li>
-                    <?php endforeach; ?>
-                    <?php else: ?>
-                    <li class="list_item list_toggle min" data-org="test">
-                        <img src="/pehu/logo.png">
-                        <a href="/pehu/"></a>
-                    </li>
-                    <?php endif; ?>
-                </ol>
-            </li>
+            <li id="images"></li>
         </ul>
     </main>
 
@@ -256,7 +240,7 @@ fclose($fp);
 
     <script type="text/javascript ">
         $(function() {
-            $("#").load("");
+            $("#images").load("images.html");
         })
 
         $('a[href^="# "]').click(function() {
