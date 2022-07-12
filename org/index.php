@@ -129,7 +129,7 @@ fclose($fp);
         
         .mousedragscrollable #images {
             width: 100%;
-            overflow-y: scroll;
+            overflow-y: auto;
         }
         
         header a:hover,
@@ -147,7 +147,7 @@ fclose($fp);
         @media screen and (max-width: 750px) {
             #catalog {
                 position: absolute;
-                top: 25%;
+                top: 20%;
             }
         }
         
