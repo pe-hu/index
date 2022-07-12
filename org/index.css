@@ -1,24 +1,18 @@
 #catalog {
     display: -webkit-flex;
     display: flex;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 0 0.25rem 0;
-    margin: 0;
     list-style-type: none;
 }
 
 #catalog .list_item {
     position: relative;
-    filter: blur(0.25vw);
-    transition: all 500ms ease;
-    margin: 2.5vw;
-}
-
-#catalog .list_item:hover {
-    filter: blur(0);
+    margin: 2.5vh 2.5vw;
 }
 
 .a1 {
@@ -28,7 +22,7 @@
 
 .a3 {
     width: 50vw;
-    max-width: 22.5rem;
+    max-width: 20rem;
 }
 
 .a4 {
@@ -65,20 +59,6 @@
     width: 100%;
     pointer-events: none;
     user-select: none;
-}
-
-.org .what {
-    position: relative;
-    z-index: 1;
-    margin: 0.5rem 0;
-}
-
-.org .date {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    z-index: 1;
-    text-decoration: double underline;
 }
 
 .org .list_item a {
