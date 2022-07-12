@@ -190,7 +190,6 @@ fclose($fp);
     <script src="https://creative-community.space/coding/js/tone/jquery-ui.min.js"></script>
     <script src="https://creative-community.space/coding/js/tone/Tone.min.js"></script>
     <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
-    <script src="https://creative-community.space/coding/js/p5/sketch/sketch.js"></script>
 </head>
 
 <body>
@@ -247,6 +246,7 @@ fclose($fp);
     <main id="main">
         <ul class="mousedragscrollable">
             <li id="images" class="collection">
+                <p></p>
                 <ol id="catalog" class="org">
                     <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
@@ -304,43 +304,9 @@ fclose($fp);
             var target = $(href == "# " || href == " " ? 'html' : href);
             return false;
         });
-
-var COLOURS = [ '#eee' ];
-var radius = 0;
-
-Sketch.create({
-  container: document.getElementById( 'images' ),
-  autoclear: false,
-  retina: 'auto',
-
-  setup: function() {
-    console.log( 'setup' );
-  },
-  update: function() {
-    radius = 5 + abs( sin( this.millis * 0.003 ) * 25 );
-  },
-
-  // Event handlers
-  keydown: function() {
-    if ( this.keys.C ) this.clear();
-  },
-
-  touchmove: function() {
-
-    for ( var i = this.touches.length - 1, touch; i >= 0; i-- ) {
-      touch = this.touches[i];
-      this.lineCap = 'round';
-      this.lineJoin = 'round';
-      this.fillStyle = this.strokeStyle = COLOURS[ i % COLOURS.length ];
-      this.lineWidth = radius;
-
-      this.beginPath();
-      this.moveTo( touch.ox, touch.oy );
-      this.lineTo( touch.x, touch.y );
-      this.stroke();
-    }
-  }
-});
+        
+        var coding = document.getElementById("test")
+        $('#images p').html(coding.innerHTML);
 
         var volume;
         var synth;
