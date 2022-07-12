@@ -136,7 +136,7 @@ fclose($fp);
             transform: translate(-50%, -50%);
         }
         #images {
-            background-image: url(bna/005.jpeg);
+            background-image: url(bought,a1,img/sign.png);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
