@@ -304,9 +304,6 @@ fclose($fp);
             return false;
         });
 
-        var text = document.getElementById('main');
-        alert(test.innerHTML);
-
         var volume;
         var synth;
         var notes;
