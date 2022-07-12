@@ -22,15 +22,21 @@
     transform: rotate3d(0, 1, -1, 5deg);
 }
 
+.b3 {
+    width: 47.5vw;
+    max-width: 17.5rem;
+    transform: rotate3d(0, 1, -1, 5deg);
+}
+
 .a4 {
     width: 45vw;
-    max-width: 17.5rem;
+    max-width: 15.5rem;
     transform: rotate3d(-1, 0, 1, 7deg);
 }
 
 .b4 {
     width: 37.5vw;
-    max-width: 15rem;
+    max-width: 14.5rem;
     transform: rotate3d(0, 1, -1, 5deg);
 }
 
