@@ -1,0 +1,89 @@
+#catalog {
+    text-align: center;
+    display: table;
+    table-layout: fixed;
+    padding: 0 0.25rem 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.a1 {
+    width: 40vw;
+}
+
+.a2 {
+    width: 33.3vw;
+}
+
+.a3 {
+    width: 25vw;
+}
+
+.a4 {
+    width: 22vw;
+}
+
+.a5 {
+    width: 15.5vw;
+}
+
+.b5 {
+    width: 14.5vw;
+}
+
+.a6 {
+    width: 12.5vw;
+}
+
+.note {
+    width: 10vw;
+}
+
+.min {
+    width: 7.5vw;
+}
+
+.org .list_item {
+    margin: 2.5%;
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    border-radius: 50%;
+    border: solid #fff;
+}
+
+.org .list_item img {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    user-select: none;
+    transition: all 500ms ease;
+}
+
+.org .what {
+    position: relative;
+    z-index: 1;
+    margin: 0.5rem 0;
+}
+
+.org .date {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 1;
+    text-decoration: double underline;
+}
+
+.org .list_item:hover .list_item {
+    border: solid red;
+}
+
+.org .list_item a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: -999px;
+}

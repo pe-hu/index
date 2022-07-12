@@ -30,6 +30,7 @@ fclose($fp);
     <title>Things that I (We) owned</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="images.css" />
     <link rel="stylesheet" href="/org/template/index.css" />
     <link rel="stylesheet" href="/org/css/searchBox.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -204,27 +205,17 @@ fclose($fp);
         <ul class="mousedragscrollable">
             <li class="images">
                 <ol class="org">
-                    <h2>New Life Collection</h2>
                     <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
-                    <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
-                        <p class="what">
-                            <?=h($row[1])?>
-                        </p>
-                        <sup class="date"><?=h($row[2])?></sup>
-                        <div class="info">
-                            <span class="cc_style"><?=h($row[3])?></span>
-                        </div>
-                        <a class="<?=h($row[4])?>" href="<?=h($row[4])?>" target="_parent"></a>
+                    <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
+                        <img src="<?=h($row[2])?>">
+                        <a class="<?=h($row[3])?>" href="<?=h($row[4])?>" target="_parent"></a>
                     </li>
                     <?php endforeach; ?>
                     <?php else: ?>
-                    <li class="list_item list_toggle" data-org="test">
-                        <p class="what">What</p>
-                        <sup class="date">date</sup>
-                        <div class="info">
-                            <span class="cc_style">Infomation</span>
-                        </div>
+                    <li class="list_item list_toggle min" data-org="test">
+                        <img src="/pehu/logo.png">
+                        <a href="/pehu/"></a>
                     </li>
                     <?php endif; ?>
                 </ol>
