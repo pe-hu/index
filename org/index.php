@@ -141,7 +141,8 @@ fclose($fp);
             padding: 1rem;
             top:0;
             left:0;
-            color:#eee;
+            color:#ccc;
+            font-size:0.75rem;
         }
         
         header a:hover,
