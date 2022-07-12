@@ -124,8 +124,7 @@ fclose($fp);
         }
         
         .mousedragscrollable #images {
-            width: 50rem;
-            max-width: 100vw;
+            width: 100%;
             overflow-y: scroll;
         }
         
