@@ -173,7 +173,7 @@ fclose($fp);
                 display: block;
             }
             #catalog {
-                top: 42.5%;
+                top: 33.333%;
             }
         }
     </style>
