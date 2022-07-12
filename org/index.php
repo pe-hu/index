@@ -142,7 +142,8 @@ fclose($fp);
             top:0;
             left:0;
             color:#ccc;
-            font-size:0.75rem;
+            font-size:1rem;
+            line-height:150%;
         }
         
         header a:hover,
