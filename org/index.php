@@ -135,6 +135,14 @@ fclose($fp);
             padding: 0;
             margin: 2.5vh 0;
         }
+
+        #greeting {
+            position: absolute;
+            padding: 1rem;
+            top:0;
+            left:0;
+            color:#eee;
+        }
         
         header a:hover,
         header label:hover,
@@ -251,7 +259,7 @@ fclose($fp);
             <li id="images" class="collection">
                 <p id="greeting">
                     <script>
-                    $('#greeting').html('#main');
+                    $('#greeting').html(Greeting);
                     </script>
                 </p>
                 <ol id="catalog" class="org">
