@@ -160,7 +160,7 @@ fclose($fp);
             display: none;
         }
         
-        @media screen and (max-width: 750px) {
+        @media screen and (max-width: 1000px) {
             #catalog {
                 top: 40%;
             }
@@ -168,6 +168,17 @@ fclose($fp);
                 position: relative;
                 padding: 0;
                 margin: 1.25vh 0;
+            }
+        }
+        
+        @media screen and (max-width: 550px) {
+            #catalog {
+                top: 35%;
+            }
+            #catalog .list_item {
+                position: relative;
+                padding: 0;
+                margin: 2vh 0;
             }
         }
         
