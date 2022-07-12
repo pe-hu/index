@@ -321,7 +321,7 @@ fclose($fp);
 
         $("._more").click(function(e) {
             let randNote = Math.floor(Math.random() * notes.length);
-            synth.triggerAttackRelease(notes[randNote], "2n");
+            synth.triggerAttackRelease(notes[randNote], "1n");
         });
 
         $(".label").click(function(e) {
