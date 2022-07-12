@@ -128,6 +128,9 @@ fclose($fp);
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
         }
+        #catalog {
+            background-image: url(bna/001.jpeg);
+        }
 
         #catalog .list_item {
             position: relative;
