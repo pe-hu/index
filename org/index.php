@@ -117,7 +117,6 @@ fclose($fp);
             width: 100%;
             height: 100%;
             margin: 0;
-            overflow: hidden;
             background-image: url(img/sign.png);
             background-position: center center;
             background-repeat: no-repeat;
