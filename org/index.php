@@ -249,7 +249,11 @@ fclose($fp);
     <main id="main">
         <ul class="mousedragscrollable">
             <li id="images" class="collection">
-                <p id="greeting"><script>$('#greeting').html(Greeting);</script></p>
+                <p id="greeting">
+                    <script>
+                    $('#greeting').html('#main');
+                    </script>
+                </p>
                 <ol id="catalog" class="org">
                     <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
