@@ -117,6 +117,7 @@ fclose($fp);
             width: 100%;
             height: 100%;
             margin: 0;
+            overflow: hidden;
             animation: colorchange 40s linear infinite;
         }
         
