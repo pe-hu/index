@@ -83,10 +83,6 @@ fclose($fp);
             transform: scale(1, 1.25);
         }
         
-        #images {
-            width: 100%;
-        }
-        
         #catalog {
             position: absolute;
             top: 50%;
@@ -128,9 +124,7 @@ fclose($fp);
         }
         
         .mousedragscrollable #images {
-            position: relative;
             width: 100%;
-            overflow-y: auto;
         }
         
         header a:hover,
@@ -157,9 +151,6 @@ fclose($fp);
             }
             #print {
                 display: block;
-            }
-            .mousedragscrollable #images {
-                overflow: hidden;
             }
         }
     </style>
