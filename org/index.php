@@ -127,7 +127,6 @@ fclose($fp);
         }
         
         #images {
-            width: 100%;
             overflow-y: auto;
         }
         
