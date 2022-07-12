@@ -193,6 +193,7 @@ fclose($fp);
     <script src="https://creative-community.space/coding/js/tone/jquery-ui.min.js"></script>
     <script src="https://creative-community.space/coding/js/tone/Tone.min.js"></script>
     <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
+    <script src="https://creative-community.space/coding/js/p5/sketch/sketch.js"></script>
 </head>
 
 <body>
@@ -306,6 +307,61 @@ fclose($fp);
             var target = $(href == "# " || href == " " ? 'html' : href);
             return false;
         });
+
+$(document).on('mousemove', function(e){
+  var hueraw = parseInt(255 - Math.round((e.pageY + 0.1) / ($(window).height()) * 255));
+  var hue = '"srff"' + hueraw;
+
+    $('#huecount').text(hueraw);
+    $('#lightnesscount').text(hueraw + '%');
+    $('#saturationcount').text(hueraw + '%');
+
+    if((e.pageX <= $(window).width()/1)){
+    var sraw = parseInt(100 - Math.round((e.pageX + 0.1) / ($(window).width()) * 100));
+      var lraw = parseInt(Math.round((e.pageX + 0.1) / ($(window).width()) * 100));
+      $('#color').css({'background': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
+      $('#now, #mobile a').css({'color': 'hsl(' + hueraw + ',' + sraw + '%,' + lraw + '%)'})
+      $('#saturationcount').text(sraw + '%');
+      $('#lightnesscount').text(lraw + '%');
+  }
+});
+
+var COLOURS = [ '#EEE' ];
+var radius = 0;
+
+Sketch.create({
+  container: document.getElementById( 'images' ),
+  autoclear: false,
+  retina: 'auto',
+
+  setup: function() {
+    console.log( 'setup' );
+  },
+  update: function() {
+    radius = 2 + abs( sin( this.millis * 0.003 ) * 25 );
+  },
+
+  // Event handlers
+  keydown: function() {
+    if ( this.keys.C ) this.clear();
+  },
+
+  touchmove: function() {
+
+    for ( var i = this.touches.length - 1, touch; i >= 0; i-- ) {
+      touch = this.touches[i];
+      this.lineCap = 'round';
+      this.lineJoin = 'round';
+      this.fillStyle = this.strokeStyle = COLOURS[ i % COLOURS.length ];
+      this.lineWidth = radius;
+
+      this.beginPath();
+      this.moveTo( touch.ox, touch.oy );
+      this.lineTo( touch.x, touch.y );
+      this.stroke();
+    }
+  }
+});
 
         var volume;
         var synth;
