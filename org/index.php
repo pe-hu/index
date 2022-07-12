@@ -330,7 +330,7 @@ fclose($fp);
             synth.triggerAttackRelease(notes[randNote], "2n");
         });
 
-        $(".list_toggle").hover(function() {
+        $(".list_item").hover(function() {
             let randNote = Math.floor(Math.random() * notes.length);
             synth.triggerAttackRelease(notes[randNote], "6n");
         });
