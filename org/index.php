@@ -205,7 +205,7 @@ fclose($fp);
     <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
 </head>
 
-<body id="body">
+<body>
 
     <header id="header">
         <a class="_more" onclick="more()">私（わたしたち）が所有するもの</a>
@@ -261,7 +261,7 @@ fclose($fp);
             <li id="images" class="collection">
                 <p id="greeting" class="cc_style">
                     <script>
-                    $('#greeting').html(body);
+                    $('#greeting').html(Greeting);
                     </script>
                 </p>
                 <ol id="catalog" class="org">
