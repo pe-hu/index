@@ -162,7 +162,7 @@ fclose($fp);
         
         @media screen and (max-width: 750px) {
             #catalog {
-                top: 27.5%;
+                top: 35%;
             }
             #catalog .list_item {
                 position: relative;
@@ -179,7 +179,7 @@ fclose($fp);
                 display: block;
             }
             #catalog {
-                top: 33.333%;
+                top: 40%;
             }
         }
     </style>
