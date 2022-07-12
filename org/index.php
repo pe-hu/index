@@ -176,7 +176,7 @@ fclose($fp);
             #catalog .list_item {
                 position: relative;
                 padding: 0;
-                margin: 12.5vh 0;
+                margin: 1.25vh 0;
             }
         }
         
