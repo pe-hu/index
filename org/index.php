@@ -305,7 +305,7 @@ fclose($fp);
             return false;
         });
 
-var COLOURS = [ '#fff' ];
+var COLOURS = [ '#aaa' ];
 var radius = 0;
 
 Sketch.create({
