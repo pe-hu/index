@@ -5,8 +5,7 @@ var Greeting = [
 ]
 
 function func1() {
-    var x = document.getElementById("greeting");
-    x.innerHTML = $('#greeting').html(Greeting);
+    $('#greeting').html(Greeting);
 }
 
 function more() {
