@@ -32,8 +32,8 @@ fclose($fp);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="/org/template/index.css" />
-    <link rel="stylesheet" href="/org/css/searchBox.css" />
+    <link rel="stylesheet" href="/org/style.css" />
+    <link rel="stylesheet" href="/org/searchBox.css" />
     <style>
         @font-face {
             font-family: "ipag";
@@ -165,7 +165,7 @@ fclose($fp);
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="greeting.js"></script>
-    <script src="/org/js/searchBox.js"></script>
+    <script src="/org/searchBox.js"></script>
     <script src="/www/scrollable.js"></script>
     <script src="https://creative-community.space/coding/js/tone/jquery.min.js"></script>
     <script src="https://creative-community.space/coding/js/tone/jquery-ui.min.js"></script>
