@@ -147,7 +147,7 @@ fclose($fp);
         @media screen and (max-width: 750px) {
             #catalog {
                 position: absolute;
-                top: 20%;
+                top: 22.5%;
             }
         }
         
