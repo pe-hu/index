@@ -273,7 +273,7 @@ fclose($fp);
             <?php
             $mod = filemtime('index.csv');
             date_default_timezone_set('Asia/Tokyo');
-            print "".date("c",$mod);
+            print "".date("r",$mod);
             ?>
           </span>
           <br/>
