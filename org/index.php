@@ -124,7 +124,7 @@ fclose($fp);
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 97.5%;
+            width: 95%;
             height: 0;
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
