@@ -156,7 +156,7 @@ fclose($fp);
         
         @media screen and (max-width: 750px) {
             #catalog {
-                top: 40%;
+                top: 37.5%;
             }
             #catalog .list_item {
                 position: relative;
