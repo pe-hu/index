@@ -259,8 +259,7 @@ fclose($fp);
             <li id="images" class="collection">
                 <p id="greeting">
                     <script>
-                        var images = document.getElementById("images");
-                        console.log(images.innerHTML);
+                    $('#greeting').html(Greeting);
                     </script>
                 </p>
                 <ol id="catalog" class="org">
