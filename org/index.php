@@ -124,7 +124,7 @@ fclose($fp);
             height: 100%;
             margin: 0;
             overflow: hidden;
-            background-image: url(bna/004.jpeg);
+            background-image: url(bna/005.jpeg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
