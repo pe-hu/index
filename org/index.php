@@ -257,8 +257,7 @@ fclose($fp);
     </main>
 
     <footer id="footer">
-        <address id="print">
-            <span class="cc_style" style="font-size:75%; line-height: 125%;">Website</span>
+        <address id="print"><span class="cc_style" style="font-size:75%; line-height: 125%;">Last Modified</span>
             <p style="float:right;"><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="250rem" alt="BnA Alter Museum"></p>
             <br/>
             <a class="cc_style" href="<?php echo $_SERVER['REQUEST_URI'];?>">
@@ -269,13 +268,14 @@ fclose($fp);
             </a>
         </address>
         <address id="address" class="cc_style">
-          <span>URL : </span>
-          <a href="<?php echo $_SERVER['REQUEST_URI'];?>">
-              <?php
-              echo $_SERVER['SERVER_NAME'];
-              echo $_SERVER['REQUEST_URI'];
-              ?>
-          </a>
+          <span>Last Modified : </span>
+          <span>
+            <?php
+            $mod = filemtime('index.csv');
+            date_default_timezone_set('Asia/Tokyo');
+            print "".date("g:i:s A T",$mod);
+            ?>
+          </span>
           <br/>
           <span>
               <?php
