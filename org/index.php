@@ -141,8 +141,8 @@ fclose($fp);
             padding: 1rem;
             top:0;
             left:0;
-            color:#ccc;
-            font-size:1rem;
+            color:#eee;
+            font-size:0.75rem;
             line-height:150%;
         }
         
