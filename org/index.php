@@ -138,6 +138,7 @@ fclose($fp);
         #greeting {
             position: absolute;
             padding: 1rem;
+            margin: 0.5rem 0;
             top: 0;
             left: 0;
             color: #333;
