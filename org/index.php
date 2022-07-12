@@ -141,8 +141,7 @@ fclose($fp);
             padding: 1rem;
             top:0;
             left:0;
-            color:#ccc;
-            font-size:1rem;
+            color:#eee;
         }
         
         header a:hover,
@@ -195,6 +194,7 @@ fclose($fp);
         }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
     <script src="/org/searchBox.js"></script>
     <script src="/www/scrollable.js"></script>
     <script src="https://creative-community.space/coding/js/tone/jquery.min.js"></script>
