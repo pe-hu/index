@@ -117,11 +117,7 @@ fclose($fp);
             width: 100%;
             height: 100%;
             margin: 0;
-            background-color: #ccc;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            overflow: hidden;
+            animation: colorchange 40s linear infinite;
         }
         
         #catalog {
@@ -150,6 +146,14 @@ fclose($fp);
         
         #print {
             display: none;
+        }
+
+        @keyframes colorchange {
+            0%   {background: rgba(255,255,255, .0);}
+            25%  {background: rgba(125, 125, 215, .25);}
+            50%  {background: rgba(0, 0, 0, .25);}
+            75%  {background: rgba(125, 125, 125, .25);}
+            100% {background: rgba(255,255,255, .0);}
         }
         
         @media screen and (max-width: 1000px) {
