@@ -162,12 +162,12 @@ fclose($fp);
         
         @media screen and (max-width: 1000px) {
             #catalog {
-                top: 50%;
+                top: 45%;
             }
             #catalog .list_item {
                 position: relative;
                 padding: 0;
-                margin: 1.25vh 0;
+                margin: 1.5vh 0;
             }
         }
         
