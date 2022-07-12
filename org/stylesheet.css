@@ -72,8 +72,6 @@
 
 .org .list_item img {
     width: 100%;
-    pointer-events: none;
-    user-select: none;
 }
 
 .org .list_item a {

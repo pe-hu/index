@@ -31,7 +31,7 @@ fclose($fp);
     <title>Things That I (We) Own, in 3D</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
     <link rel="stylesheet" href="/org/style.css" />
     <link rel="stylesheet" href="/org/searchBox.css" />
     <style>
@@ -329,7 +329,7 @@ fclose($fp);
             synth.triggerAttackRelease(notes[randNote], "2n");
         });
 
-        $(".list_item").hover(function() {
+        $(".list_item img").hover(function() {
             let randNote = Math.floor(Math.random() * notes.length);
             synth.triggerAttackRelease(notes[randNote], "6n");
         });
