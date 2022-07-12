@@ -28,7 +28,7 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>Things that I (We) own, in 3D</title>
+    <title>Things That I (We) Own, in 3D</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
@@ -190,7 +190,7 @@ fclose($fp);
         <a class="_more" onclick="more()">私（わたしたち）が所有するもの</a>
         <marquee>会期：2022年7月23日（土）〜 8月21日（日） | 会場：BnA Alter Museum</marquee>
         <nav id="nav">
-            <h1>Things that I (We) own, in 3D</h1>
+            <h1>Things That I (We) Own, in 3D</h1>
             <p id="presents">
                 <b class="cc_style">私（わたしたち）が所有するもの</b>
                 <br/><span class="cc_style">会期：2022年7月23日（土）〜 8月21日（日）</span>
