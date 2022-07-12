@@ -313,7 +313,7 @@ var COLOURS = [ '#EEE' ];
 var radius = 0;
 
 Sketch.create({
-  container: document.getElementById( 'main' ),
+  container: document.getElementById( 'images' ),
   autoclear: false,
   retina: 'auto',
 
