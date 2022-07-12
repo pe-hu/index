@@ -317,7 +317,7 @@ Sketch.create({
     console.log( 'setup' );
   },
   update: function() {
-    radius = 2 + abs( sin( this.millis * 0.003 ) * 25 );
+    radius = 5 + abs( sin( this.millis * 0.003 ) * 25 );
   },
 
   // Event handlers
