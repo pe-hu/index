@@ -125,6 +125,7 @@ fclose($fp);
         
         .mousedragscrollable #images {
             width: 100%;
+            overflow: hidden;
         }
         
         header a:hover,
