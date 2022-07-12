@@ -160,6 +160,9 @@ fclose($fp);
         }
         
         @media screen and (max-width: 550px) {
+            #footer {
+                padding:0.5rem 0;
+            }
             #catalog {
                 top: 50%;
             }
