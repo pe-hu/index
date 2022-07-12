@@ -39,14 +39,6 @@ fclose($fp);
             font-family: "ipag";
             src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
         }
-
-        body {
-            animation: colorchange 40s linear infinite;
-        }
-
-        #nav {
-            background:#fff;
-        }
         
         header,
         header marquee,
@@ -126,6 +118,7 @@ fclose($fp);
             height: 100%;
             margin: 0;
             overflow: hidden;
+            animation: colorchange 40s linear infinite;
         }
         
         #catalog {
