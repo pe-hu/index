@@ -205,7 +205,7 @@ fclose($fp);
     <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
 </head>
 
-<body>
+<body id="body">
 
     <header id="header">
         <a class="_more" onclick="more()">私（わたしたち）が所有するもの</a>
