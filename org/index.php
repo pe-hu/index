@@ -131,7 +131,7 @@ fclose($fp);
         #catalog .list_item {
             position: relative;
             padding: 0;
-            margin: 2.5vh 0;
+            margin: 3.33vh 0;
         }
         
         header a:hover,
