@@ -114,8 +114,8 @@ fclose($fp);
         }
         
         .mousedragscrollable #images {
-            width: 95%;
-            margin: 0 2.5%;
+            width: 100%;
+            margin: 0;
             overflow: hidden;
         }
         
@@ -123,7 +123,7 @@ fclose($fp);
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 100%;
+            width: 97.5%;
             height: 0;
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
