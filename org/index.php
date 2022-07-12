@@ -35,6 +35,12 @@ fclose($fp);
     <link rel="stylesheet" href="/org/style.css" />
     <link rel="stylesheet" href="/org/searchBox.css" />
     <style>
+
+.b4 {
+    width: 33.33vw;
+    max-width: 15rem;
+    transform: rotate3d(0, 1, -1, 5deg);
+}
         @font-face {
             font-family: "ipag";
             src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
