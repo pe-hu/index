@@ -261,7 +261,7 @@ fclose($fp);
             <li id="images" class="collection">
                 <p id="greeting">
                     <script>
-                    $('#greeting').html(Greeting);
+                    $('#greeting').html(body);
                     </script>
                 </p>
                 <ol id="catalog" class="org">
