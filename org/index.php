@@ -37,7 +37,7 @@ fclose($fp);
     <style>
 
 .b4 {
-    width: 33.33vw;
+    width: 37.5vw;
     max-width: 15rem;
     transform: rotate3d(0, 1, -1, 5deg);
 }
