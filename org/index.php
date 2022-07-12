@@ -139,11 +139,12 @@ fclose($fp);
         #greeting {
             position: absolute;
             padding: 1rem;
-            top:0;
-            left:0;
-            color:#eee;
-            font-size:0.75rem;
-            line-height:150%;
+            margin: 0;
+            top: 0;
+            left: 0;
+            color: #ddd;
+            font-size: 0.75rem;
+            line-height: 150%;
         }
         
         header a:hover,
