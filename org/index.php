@@ -124,6 +124,10 @@ fclose($fp);
             height: 100%;
             margin: 0;
             overflow: hidden;
+            background-image: url(img/sign.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         
         #catalog {
@@ -135,17 +139,11 @@ fclose($fp);
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
         }
-        #images {
-            background-image: url(img/sign.png);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
 
         #catalog .list_item {
             position: relative;
             padding: 0;
-            margin: 3.33vh 0;
+            margin: 2.5vh 0;
         }
         
         header a:hover,
