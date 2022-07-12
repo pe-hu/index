@@ -128,6 +128,7 @@ fclose($fp);
         }
         
         .mousedragscrollable #images {
+            position: relative;
             width: 100%;
             overflow-y: auto;
         }
