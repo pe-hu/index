@@ -142,7 +142,7 @@ fclose($fp);
             margin: 0;
             top: 0;
             left: 0;
-            color: #111;
+            color: #333;
             font-size: 0.75rem;
             line-height: 150%;
         }
@@ -260,7 +260,7 @@ fclose($fp);
     <main id="main">
         <ul class="mousedragscrollable">
             <li id="images" class="collection">
-                <p id="greeting" class="cc_style">
+                <p id="greeting" class="nlc_style">
                     <script>
                     $('#greeting').html(Greeting);
                     </script>
