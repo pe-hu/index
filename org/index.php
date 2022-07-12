@@ -160,7 +160,7 @@ fclose($fp);
         }
         
         @media screen and (max-width: 550px) {
-            #footer {
+            #address {
                 padding:0.5rem 0;
             }
             #catalog {
