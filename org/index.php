@@ -76,8 +76,7 @@ fclose($fp);
         
         .cc_style,
         form,
-        marquee,
-        .mousedragscrollable p {
+        marquee {
             display: inline-block;
             font-family: "ipag", monospace;
             transform: scale(1, 1.25);
@@ -127,7 +126,7 @@ fclose($fp);
             text-decoration: double underline;
         }
         
-        .mousedragscrollable #images {
+        #images {
             width: 100%;
             overflow-y: auto;
         }
@@ -158,7 +157,7 @@ fclose($fp);
             #print {
                 display: block;
             }
-            .mousedragscrollable #images {
+            #images {
                 overflow: hidden;
             }
         }
@@ -225,10 +224,9 @@ fclose($fp);
     </header>
 
     <main id="main">
-        <ul class="mousedragscrollable">
-            <li id="images" class="collection">
-                <ol id="catalog" class="org">
-                    <?php if (!empty($rows)): ?>
+        <div id="images" class="collection">
+            <ol id="catalog" class="org">
+                <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
                     <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
                     <img src="<?=h($row[2])?>">
@@ -239,10 +237,9 @@ fclose($fp);
                     <li class="list_item list_toggle min" data-org="test">
                     <img src="/logo.png">
                     </li>
-                    <?php endif; ?>
-                </ol>
-            </li>
-        </ul>
+                <?php endif; ?>
+            </ol>
+        </div>
     </main>
 
     <footer id="footer">
