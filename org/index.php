@@ -266,6 +266,7 @@ fclose($fp);
             <li id="images" class="collection">
                 <div id="greeting" class="nlc_style">
                     <p id="text"></p>
+                    <p><a>スプレッドシート</a></p>
                     <script>
                     $('#text').html(Greeting);
                     </script>
