@@ -209,7 +209,7 @@ fclose($fp);
 
         #server:hover p {
             color:#aaa;
-            background: rgba(255,255,255,0.75);
+            text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
         }
         
         #print,
