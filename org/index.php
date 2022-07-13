@@ -143,7 +143,12 @@ fclose($fp);
 
         #greeting {
             position: absolute;
+            top: 0;
+            left: 0;
             padding: 1rem;
+        }
+
+        #greeting p {
             margin: 0.5rem 0;
             top: 0;
             left: 0;
