@@ -150,14 +150,6 @@ fclose($fp);
             line-height: 150%;
         }
         
-        header a:hover,
-        header label:hover,
-        footer a:hover {
-            color: #aaa;
-            text-decoration: wavy underline;
-            cursor: pointer;
-        }
-        
         #print {
             display: none;
         }
