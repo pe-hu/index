@@ -365,15 +365,8 @@ fclose($fp);
 
     <footer id="footer">
         <address id="print">
-            <span class="cc_style" style="font-size:75%; line-height: 125%;">Website</span>
+            <span><img src="qr.png" width="75rem" alt="https://creative-community.space/pehu/org/"></span>
             <p style="float:right;"><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="250rem" alt="BnA Alter Museum"></p>
-            <br/>
-            <a class="cc_style" href="<?php echo $_SERVER['REQUEST_URI'];?>">
-            <?php
-            echo $_SERVER['SERVER_NAME'];
-            echo $_SERVER['REQUEST_URI'];
-            ?>
-            </a>
         </address>
         <address id="address" class="cc_style">
           <span>Last Modified : </span>
