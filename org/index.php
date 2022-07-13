@@ -285,7 +285,7 @@ fclose($fp);
                         <?php
                         echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
                         echo 'PORT : '. $_SERVER['REMOTE_PORT']."<br/>";
-                        echo 'YOU ARE '. $_SERVER['HTTP_USER_AGENT'].".";
+                        echo ''. $_SERVER['HTTP_USER_AGENT'].".";
                         ?>
                     </p>
                 </div>
