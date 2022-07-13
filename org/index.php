@@ -144,6 +144,10 @@ fclose($fp);
             padding: 0;
             margin: 2.5vh 0;
         }
+        
+        #catalog img {
+            filter: drop-shadow(1rem 1rem 1rem rgba(200, 200, 200, 0.75));
+        }
 
         #greeting,
         #server {
