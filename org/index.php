@@ -181,7 +181,7 @@ fclose($fp);
 
         #greeting p:hover,
         #server p:hover {
-            color:#aaa;
+            color:#333;
         }
         
         #print,
