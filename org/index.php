@@ -211,6 +211,9 @@ fclose($fp);
             #server {
                 display: none;
             }
+            #greeting p {
+                color:#333;
+            }
             #print {
                 display: block;
             }
