@@ -49,6 +49,7 @@ fclose($fp);
         marquee a {
             color:#111;
             text-decoration:none;
+            transition: all 1000ms ease;
         }
         
         ._more,
