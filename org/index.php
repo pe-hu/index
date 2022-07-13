@@ -365,7 +365,7 @@ fclose($fp);
 
     <footer id="footer">
         <address id="print">
-            <span><img src="qr.png" width="55rem" alt="https://creative-community.space/pehu/org/"></span>
+            <span><img src="qr.png" width="52.5rem" alt="https://creative-community.space/pehu/org/"></span>
             <p style="float:right;"><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="250rem" alt="BnA Alter Museum"></p>
         </address>
         <address id="address" class="cc_style">
