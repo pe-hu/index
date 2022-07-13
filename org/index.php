@@ -150,6 +150,7 @@ fclose($fp);
             top: 0;
             left: 0;
             padding: 1rem;
+            font-size: 0.9rem;
         }
 
         #server {
@@ -157,6 +158,7 @@ fclose($fp);
             bottom: 0;
             left: 0;
             padding: 1rem;
+            font-size: 0.75rem;
         }
 
         #greeting p,
@@ -165,7 +167,6 @@ fclose($fp);
             top: 0;
             left: 0;
             color: #333;
-            font-size: 0.9rem;
             line-height: 150%;
         }
         
