@@ -258,7 +258,7 @@ fclose($fp);
                         <label for="sale" class="label">$$$ FOR SALE $$$</label>
                     </li>
                     <li class="reset">
-                        <input type="reset" name="reset" value="View All" class="reset-button cc_style label">
+                        <input type="reset" name="reset" value="View All" class="reset-button cc_style label" onclick="greeting()">
                     </li>
                 </ol>
             </form>
@@ -270,9 +270,6 @@ fclose($fp);
             <li id="images" class="collection">
                 <div id="greeting" class="nlc_style">
                     <p id="text"></p>
-                    <script>
-                    $('#text').html(Greeting);
-                    </script>
                 </div>
                 <ol id="catalog" class="org">
                     <?php if (!empty($rows)): ?>
