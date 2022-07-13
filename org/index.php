@@ -44,7 +44,7 @@ fclose($fp);
     <meta property="og:image" content="https://creative-community.space/pehu/org/card.png"/>
     <meta property="og:locale" content="ja_JP"/>
 
-    <meta name="twitter:card" content="カードの種類"/>
+    <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:site" content="@NLC_update"/>
     <meta name="twitter:image" content="https://creative-community.space/pehu/org/card.png"/>
 
