@@ -161,12 +161,12 @@ fclose($fp);
         #greeting p,
         #server p {
             margin: 1.5rem 1rem;
-            line-height: 150%;
             transition: all 1000ms ease;
         }
         
         #greeting p {
             color:#333;
+            line-height: 200%;
             font-size: 0.9rem;
         }
 
@@ -177,6 +177,7 @@ fclose($fp);
         
         #server p {
             color:#eee;
+            line-height: 200%;
             font-size: 0.75rem;
         }
 
