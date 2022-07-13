@@ -164,6 +164,7 @@ fclose($fp);
             height: 100%;
             overflow: auto;
             background: rgba(255,255,255,0.55);
+            cursor: pointer;
         }
 
         #server {
