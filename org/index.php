@@ -166,8 +166,13 @@ fclose($fp);
             margin: 0.5rem 0;
             top: 0;
             left: 0;
-            color: #333;
+            color:#eee;
             line-height: 150%;
+        }
+
+        #greeting p:hover,
+        #server p:hover {
+            color:#333;
         }
         
         #print,
