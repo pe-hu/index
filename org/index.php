@@ -168,6 +168,7 @@ fclose($fp);
             left: 0;
             color:#eee;
             line-height: 150%;
+            transition: all 1000ms ease;
         }
 
         #greeting p:hover,
