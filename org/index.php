@@ -179,9 +179,8 @@ fclose($fp);
             color:#eee;
         }
 
-        #greeting p:hover,
         #server p:hover {
-            color:#333;
+            color:#aaa;
         }
         
         #print,
