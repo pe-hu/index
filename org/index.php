@@ -172,7 +172,7 @@ fclose($fp);
             z-index: 100;
             height: 100%;
             overflow: auto;
-            background: rgba(255,255,255,0.75);
+            background: rgba(255,255,255,0.55);
         }
 
         #greeting #hidden {
