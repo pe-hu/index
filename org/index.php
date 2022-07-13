@@ -46,7 +46,7 @@ fclose($fp);
             border-bottom: 1px dashed #ccc;
         }
         
-        header a,
+        ._more,
         header label,
         footer a {
             color: #ccc;
