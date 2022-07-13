@@ -31,6 +31,23 @@ fclose($fp);
     <title>The Things I (We) Own | ∧° ┐</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="∧° ┐">
+    <meta name="reply-to" content="pehu@creative-community.space">
+    <meta name="description" content="私（わたしたち）が所有する全てのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。">
+
+    <meta property="og:title" content="The Things I (We) Own | ∧° ┐"/>
+    <meta property="og:description" content="私（わたしたち）が所有する全てのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://creative-community.space/pehu/org/"/>
+    <meta property="og:site_name" content="creative-community.space"/>
+    <meta property="og:image" content="card.png"/>
+    <meta property="og:locale" content="ja_JP"/>
+
+    <meta name="twitter:card" content="カードの種類"/>
+    <meta name="twitter:site" content="@NLC_update"/>
+    <meta name="twitter:image" content="card.png"/>
+
     <link rel="stylesheet" href="stylesheet.css" />
     <link rel="stylesheet" href="/org/style.css" />
     <link rel="stylesheet" href="/org/searchBox.css" />
