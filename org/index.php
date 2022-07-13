@@ -268,8 +268,15 @@ fclose($fp);
     <main id="main">
         <ul class="mousedragscrollable">
             <li id="images" class="collection">
-                <div id="greeting" class="nlc_style">
-                    <p id="text"></p>
+                <div id="greeting">
+                    <p class="nlc_style" id="text"></p>
+                    <p>
+                        <?php
+                        echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
+                        echo 'PORT : '. $_SERVER['REMOTE_PORT']."<br/>";
+                        echo 'YOU ARE '. $_SERVER['HTTP_USER_AGENT'].".";
+                        ?>
+          </span>
                 </div>
                 <ol id="catalog" class="org">
                     <?php if (!empty($rows)): ?>
@@ -309,14 +316,6 @@ fclose($fp);
             date_default_timezone_set('Asia/Tokyo');
             print "".date("r",$mod);
             ?>
-          </span>
-          <br/>
-          <span>
-              <?php
-              echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
-              echo 'PORT : '. $_SERVER['REMOTE_PORT']." | ";
-              echo ''. $_SERVER['HTTP_USER_AGENT'].".";
-              ?>
           </span>
         </address>
     </footer>
