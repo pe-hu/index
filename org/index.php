@@ -152,13 +152,20 @@ fclose($fp);
             margin: 2.5vh 0;
         }
 
-        #greeting {
+        #greeting,
+        #server {
             position: absolute;
-            top: 0;
             left: 0;
-            height: auto;
+            width:100%;
             overflow: hidden;
         }
+
+        #greeting {
+            top: 0;
+            height: auto;
+            width:100%;
+        }
+            
 
         #greeting:hover {
             z-index: 100;
@@ -176,9 +183,7 @@ fclose($fp);
         }
 
         #server {
-            position: absolute;
             bottom: 0;
-            left: 0;
             z-index: 10;
         }
 
