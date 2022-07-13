@@ -150,14 +150,12 @@ fclose($fp);
             top: 0;
             left: 0;
             height: 100%;
-            font-size: 0.9rem;
         }
 
         #server {
             position: absolute;
             bottom: 0;
             left: 0;
-            font-size: 0.75rem;
         }
 
         #greeting p,
@@ -169,6 +167,7 @@ fclose($fp);
         
         #greeting p {
             color:#333;
+            font-size: 0.9rem;
         }
 
         #greeting:hover {
@@ -178,6 +177,7 @@ fclose($fp);
         
         #server p {
             color:#eee;
+            font-size: 0.75rem;
         }
 
         #server p:hover {
