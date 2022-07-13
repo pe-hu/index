@@ -265,7 +265,6 @@ fclose($fp);
         <ul class="mousedragscrollable">
             <li id="images" class="collection">
                 <div id="greeting" class="nlc_style">
-                    <p>これは、ペフが所有する全てのものを集めたコレクションです。</p>
                     <p id="text"></p>
                     <script>
                     $('#text').html(Greeting);
