@@ -174,6 +174,8 @@ fclose($fp);
         #greeting p,
         #server p {
             margin: 1.5rem 1rem;
+            pointer-events:none;
+            user-select:none;
         }
         
         #greeting p {
