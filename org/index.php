@@ -167,6 +167,14 @@ fclose($fp);
             background: rgba(255,255,255,0.75);
         }
 
+        #greeting #hidden {
+            display: none;
+        }
+
+        #greeting:hover #hidden {
+            display: block;
+        }
+
         #server {
             position: absolute;
             bottom: 0;
@@ -310,6 +318,7 @@ fclose($fp);
             <li id="images" class="collection">
                 <div id="greeting">
                     <p class="nlc_style" id="text"></p>
+                    <p class="nlc_style" id="hidden">More Info Soon</p>
                 </div>
                 <div id="server">
                     <p class="cc_style">
