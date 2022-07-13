@@ -152,7 +152,15 @@ fclose($fp);
             padding: 1rem;
         }
 
-        #greeting p {
+        #server {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+        }
+
+        #greeting p,
+        #server p {
             margin: 0.5rem 0;
             top: 0;
             left: 0;
@@ -270,13 +278,15 @@ fclose($fp);
             <li id="images" class="collection">
                 <div id="greeting">
                     <p class="nlc_style" id="text"></p>
-                    <p>
+                </div>
+                <div id="server">
+                    <p class="cc_style">
                         <?php
                         echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
                         echo 'PORT : '. $_SERVER['REMOTE_PORT']."<br/>";
                         echo 'YOU ARE '. $_SERVER['HTTP_USER_AGENT'].".";
                         ?>
-          </span>
+                    </p>
                 </div>
                 <ol id="catalog" class="org">
                     <?php if (!empty($rows)): ?>
