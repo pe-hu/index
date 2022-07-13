@@ -157,16 +157,12 @@ fclose($fp);
             position: absolute;
             bottom: 0;
             left: 0;
-            padding: 1rem;
             font-size: 0.75rem;
         }
 
         #greeting p,
         #server p {
-            margin: 1rem;
-            top: 0;
-            left: 0;
-            color:#eee;
+            margin: 1.5rem 1rem;
             line-height: 150%;
             transition: all 1000ms ease;
         }
