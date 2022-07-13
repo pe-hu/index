@@ -156,12 +156,12 @@ fclose($fp);
         #greeting {
             top: 0;
             height: auto;
-            width:100%;
         }
             
 
         #greeting:hover {
             z-index: 100;
+            width:100%;
             height: 100%;
             overflow: auto;
             background: rgba(255,255,255,0.55);
