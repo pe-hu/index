@@ -125,7 +125,7 @@ fclose($fp);
         #main {
             background-image: url(img/sign.png);
             background-repeat: no-repeat;
-            background-size: 200%;
+            background-size: 150%;
             background-position: center center;
         }
         
