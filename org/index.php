@@ -130,7 +130,7 @@ fclose($fp);
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-size: cover;
+            background-size: 100% 100% cover;
             overflow: hidden;
         }
         
