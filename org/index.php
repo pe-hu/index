@@ -368,7 +368,7 @@ fclose($fp);
             <p style="float: left;"><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="250rem" alt="BnA Alter Museum"></p>
             <img style="display: block; float: right;"  src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/">
         </address>
-        <address id="address" class="cc_style">
+        <address id="address" class="cc_style" style="text-align:right;">
           <span>Last Modified : </span>
           <span>
             <?php
