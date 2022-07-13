@@ -365,8 +365,8 @@ fclose($fp);
 
     <footer id="footer">
         <address id="print">
-            <img style="display: block; float: left;"  src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/">
-            <p style="float: right;"><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="250rem" alt="BnA Alter Museum"></p>
+            <p style="float: left;"><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="250rem" alt="BnA Alter Museum"></p>
+            <img style="display: block; float: right;"  src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/">
         </address>
         <address id="address" class="cc_style">
           <span>Last Modified : </span>
