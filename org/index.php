@@ -125,6 +125,7 @@ fclose($fp);
         #main {
             background-image: url(img/sign.png);
             background-size: cover;
+            background-attachment: fixed;
         }
         
         .mousedragscrollable #images {
