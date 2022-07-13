@@ -41,12 +41,12 @@ fclose($fp);
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://creative-community.space/pehu/org/"/>
     <meta property="og:site_name" content="creative-community.space"/>
-    <meta property="og:image" content="card.png"/>
+    <meta property="og:image" content="https://creative-community.space/pehu/org/card.png"/>
     <meta property="og:locale" content="ja_JP"/>
 
     <meta name="twitter:card" content="カードの種類"/>
     <meta name="twitter:site" content="@NLC_update"/>
-    <meta name="twitter:image" content="card.png"/>
+    <meta name="twitter:image" content="https://creative-community.space/pehu/org/card.png"/>
 
     <link rel="stylesheet" href="stylesheet.css" />
     <link rel="stylesheet" href="/org/style.css" />
