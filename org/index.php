@@ -56,7 +56,7 @@ fclose($fp);
             color: #ccc;
         }
         
-        header a:hover,
+        ._more:hover,
         header label:hover,
         footer a:hover {
             color: #aaa;
