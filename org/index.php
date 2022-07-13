@@ -157,10 +157,10 @@ fclose($fp);
             top: 0;
             left: 0;
             height: auto;
-            z-index: 100;
         }
 
         #greeting:hover {
+            z-index: 100;
             height: 100%;
             background: rgba(255,255,255,0.75);
         }
