@@ -57,6 +57,10 @@ fclose($fp);
         footer a {
             color: #ccc;
         }
+
+        footer {
+            font-size:0.75rem;
+        }
         
         header a:hover,
         header label:hover,
