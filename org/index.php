@@ -160,7 +160,6 @@ fclose($fp);
 
         #greeting p,
         #server p {
-            line-height: 175%;
             margin: 1rem;
             transition: all 1000ms ease;
         }
@@ -168,6 +167,7 @@ fclose($fp);
         #greeting p {
             color:#333;
             font-size: 0.9rem;
+            line-height: 200%;
         }
 
         #greeting:hover {
@@ -178,6 +178,7 @@ fclose($fp);
         #server p {
             color:#eee;
             font-size: 0.75rem;
+            line-height: 175%;
         }
 
         #server p:hover {
