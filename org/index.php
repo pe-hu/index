@@ -154,10 +154,13 @@ fclose($fp);
                 filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(50, 50, 50, 0.75));
             }
             25% {
-                filter: drop-shadow(1rem -0.5rem 2.5rem rgba(50, 50, 50, 0.75));
+                filter: drop-shadow(1rem -0.5rem 1rem rgba(50, 50, 50, 0.75));
             }
             50% {
-                filter: drop-shadow(-1rem -0.5rem 5rem rgba(50, 50, 50, 0.75));
+                filter: drop-shadow(-1rem -0.5rem 2.5rem rgba(50, 50, 50, 0.75));
+            }
+            75% {
+                filter: drop-shadow(-1rem 1rem 1rem rgba(50, 50, 50, 0.75));
             }
             100% {
                 filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(50, 50, 50, 0.75));
