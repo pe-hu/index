@@ -124,9 +124,6 @@ fclose($fp);
 
         #main {
             background-image: url(bna/005.jpeg);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
             background-size: cover;
         }
         
