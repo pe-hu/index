@@ -121,15 +121,13 @@ fclose($fp);
         #sale:checked~label {
             text-decoration: double underline;
         }
-        
+
         #main {
-            margin: 0;
             background-image: url(bna/005.jpeg);
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
-            overflow: hidden;
         }
         
         .mousedragscrollable #images {
