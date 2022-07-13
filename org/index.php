@@ -48,6 +48,7 @@ fclose($fp);
 
         marquee a {
             color:#111;
+            text-decoration:none;
         }
         
         ._more,
@@ -56,7 +57,7 @@ fclose($fp);
             color: #ccc;
         }
         
-        ._more:hover,
+        header a:hover,
         header label:hover,
         footer a:hover {
             color: #aaa;
