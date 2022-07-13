@@ -146,7 +146,7 @@ fclose($fp);
         }
         
         #catalog img {
-            filter: drop-shadow(0.2rem 1rem 1rem rgba(200, 200, 200, 0.75));
+            filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(100, 100, 100, 0.75));
         }
 
         #greeting,
