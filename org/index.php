@@ -212,7 +212,7 @@ fclose($fp);
                 display: none;
             }
             #greeting p {
-                color:#aaa;
+                color:#333;
             }
             #print {
                 display: block;
