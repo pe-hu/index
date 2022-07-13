@@ -173,7 +173,7 @@ fclose($fp);
 
         #greeting p:hover,
         #server p:hover {
-            color:#777;
+            color:#999;
         }
         
         #print,
@@ -212,7 +212,7 @@ fclose($fp);
                 display: none;
             }
             #greeting p {
-                color:#777;
+                color:#999;
             }
             #print {
                 display: block;
