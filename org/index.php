@@ -121,13 +121,6 @@ fclose($fp);
         #sale:checked~label {
             text-decoration: double underline;
         }
-
-        #main {
-            background-image: url(img/sign.png);
-            background-repeat: no-repeat;
-            background-size: 150%;
-            background-position: center center;
-        }
         
         .mousedragscrollable #images {
             width: 100%;
