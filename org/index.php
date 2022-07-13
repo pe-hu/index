@@ -160,7 +160,7 @@ fclose($fp);
 
         #greeting p,
         #server p {
-            margin: 1rem;
+            margin: 1.5rem 1rem;
             transition: all 1000ms ease;
         }
         
