@@ -153,13 +153,6 @@ fclose($fp);
             margin: 2.5vh 0;
         }
 
-        #greeting,
-        #greeting:hover,
-        #server p,
-        #server:hover p {
-            transition: all 1000ms ease;
-        }
-
         #greeting {
             position: absolute;
             top: 0;
@@ -205,6 +198,11 @@ fclose($fp);
             color:#eee;
             font-size: 0.75rem;
             line-height: 175%;
+        }
+
+        #server p,
+        #server:hover p {
+            transition: all 1000ms ease;
         }
 
         #server:hover p {
