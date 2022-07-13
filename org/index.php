@@ -146,7 +146,11 @@ fclose($fp);
         }
 
         #greeting,
-        #server {
+        #greeting:hover,
+        #server,
+        #server:hover,
+        #server p,
+        #server:hover p {
             transition: all 1000ms ease;
         }
 
@@ -172,11 +176,6 @@ fclose($fp);
             z-index: 100;
         }
 
-        #server:hover p {
-            color:#aaa;
-            background: rgba(255,255,255,0.75);
-        }
-
         #greeting p,
         #server p {
             margin: 1.5rem 1rem;
@@ -192,6 +191,11 @@ fclose($fp);
             color:#eee;
             font-size: 0.75rem;
             line-height: 175%;
+        }
+
+        #server:hover p {
+            color:#aaa;
+            background: rgba(255,255,255,0.75);
         }
         
         #print,
