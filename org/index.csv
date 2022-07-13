@@ -1,7 +1,11 @@
 made,a1,img/PEHU01.png
 made,a4,img/PEHU02.png
 bought,b4,img/tojitakun.png
+bought,a4,img/bbq.png
+bought,b4,img/helmet.png
 sale,a4,img/1F05.png
+free,b4,img/fan.png
+bought,b4,img/omikuzi.png
 made,a4,https://creative-community.space/pehu/weare/bookcover.png
 collaborations,note,https://creative-community.space/value/gallery/000.png
 bought,b4,img/VGCTLG.png
@@ -12,6 +16,7 @@ other,a3,https://creative-community.space/pehu/publication/5dition/5dition.png
 sale,min,https://creative-community.space/pehu/dm/this.png
 collaborations,b4,https://creative-community.space/pehu/diary/image.jpg
 bought,a5,img/ql800.png
+other,a6,img/tramp.png
 sale,min,https://creative-community.space/value/still/000.png
 sale,b5,https://creative-community.space/essay/book/004.png
 collaborations,a6,img/ezco.png
@@ -19,5 +24,8 @@ gift,note,https://creative-community.space/essay/thinknote/pr/cover.png
 gift,a5,img/kalanchoe_beauverdii.png
 other,a6,https://creative-community.space/pehu/31q/a.png
 sale,a5,https://creative-community.space/value/book/book.png
+free,note,img/pen.png
 free,min,img/KN01.png
+gift,min,img/pin.png
 free,min,img/KN00.png
+gift,min,img/horse.png
