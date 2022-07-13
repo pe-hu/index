@@ -365,10 +365,17 @@ fclose($fp);
 
     <footer id="footer">
         <address id="print">
-            <span><img src="qr.png" width="52.5rem" alt="https://creative-community.space/pehu/org/"></span>
+            <span><img src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/"></span>
             <p style="float:right;"><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="250rem" alt="BnA Alter Museum"></p>
         </address>
         <address id="address" class="cc_style">
+          <a class="cc_style" href="<?php echo $_SERVER['REQUEST_URI'];?>">
+          <?php
+          echo $_SERVER['SERVER_NAME'];
+          echo $_SERVER['REQUEST_URI'];
+          ?>
+          </a>
+          <br/>
           <span>Last Modified : </span>
           <span>
             <?php
@@ -377,13 +384,6 @@ fclose($fp);
             print "".date("r",$mod);
             ?>
           </span>
-          <br/>
-          <a class="cc_style" href="<?php echo $_SERVER['REQUEST_URI'];?>">
-          <?php
-          echo $_SERVER['SERVER_NAME'];
-          echo $_SERVER['REQUEST_URI'];
-          ?>
-          </a>
         </address>
     </footer>
 
