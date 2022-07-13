@@ -149,18 +149,19 @@ fclose($fp);
         #server {
             position: absolute;
             left: 0;
+            width:100%;
             overflow: hidden;
         }
 
         #greeting {
             top: 0;
             height: auto;
+            width:100%;
         }
             
 
         #greeting:hover {
             z-index: 100;
-            width:100%;
             height: 100%;
             overflow: auto;
             background: rgba(255,255,255,0.55);
@@ -310,7 +311,7 @@ fclose($fp);
     <main id="main">
         <ul class="mousedragscrollable">
             <li id="images" class="collection">
-                <div id="greeting" class="nlc_style">
+                <div id="greeting">
                     <p class="nlc_style" id="text"></p>
                 </div>
                 <div id="server">
