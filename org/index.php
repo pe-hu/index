@@ -146,7 +146,7 @@ fclose($fp);
         }
         
         #catalog img {
-            animation: 5s linear 2.5s infinite alternate spot;
+            animation: 5s ease infinite spot;
         }
         
         @keyframes spot {
