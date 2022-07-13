@@ -149,7 +149,7 @@ fclose($fp);
             position: absolute;
             top: 0;
             left: 0;
-            padding: 1rem;
+            height: 100%;
             font-size: 0.9rem;
         }
 
@@ -163,7 +163,7 @@ fclose($fp);
 
         #greeting p,
         #server p {
-            margin: 0.5rem 0;
+            margin: 1rem;
             top: 0;
             left: 0;
             color:#eee;
