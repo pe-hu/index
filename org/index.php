@@ -45,6 +45,10 @@ fclose($fp);
         #main {
             border-bottom: 1px dashed #ccc;
         }
+
+        marquee a {
+            color:#111;
+        }
         
         ._more,
         header label,
