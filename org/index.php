@@ -94,11 +94,11 @@ fclose($fp);
             transform: translate(-50%, -50%);
         }
         
-        header a:hover,
+        ._more:hover,
         header label:hover,
         footer a:hover {
             color: #aaa;
-            text-decoration: wavy underline;
+            text-decoration: wavy underline #aaa;
             cursor: pointer;
         }
         
