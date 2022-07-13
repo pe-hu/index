@@ -170,10 +170,18 @@ fclose($fp);
             line-height: 150%;
             transition: all 1000ms ease;
         }
+        
+        #greeting p {
+            color:#333;
+        }
+        
+        #server p {
+            color:#eee;
+        }
 
         #greeting p:hover,
         #server p:hover {
-            color:#999;
+            color:#aaa;
         }
         
         #print,
@@ -210,9 +218,6 @@ fclose($fp);
             #address,
             #server {
                 display: none;
-            }
-            #greeting p {
-                color:#aaa;
             }
             #print {
                 display: block;
