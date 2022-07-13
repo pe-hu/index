@@ -287,7 +287,7 @@ fclose($fp);
         <nav id="nav">
             <h1>The Things I (We) Own<span class="print">, in 3D</span></h1>
             <p id="presents">
-                <b class="cc_style">∧° ┐ が 所有するすべてのもの</b>
+                <b class="cc_style">∧° ┐ が 所有するもの</b>
                 <br/><span class="cc_style">会期：2022年7月23日（土）〜 8月21日（日）</span>
                 <br/><span class="cc_style">会場：BnA Alter Museum</span>
             </p>
