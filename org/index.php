@@ -246,7 +246,7 @@ fclose($fp);
                 display: inline-block;
             }
             #catalog {
-                top: 50%;
+                top: 47.5%;
             }
         }
     </style>
