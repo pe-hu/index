@@ -242,7 +242,7 @@ fclose($fp);
                 padding:0.5rem 0;
             }
             #catalog {
-                top: 50%;
+                top: 45%;
             }
             #catalog .list_item {
                 position: relative;
@@ -263,7 +263,7 @@ fclose($fp);
                 display: inline-block;
             }
             #catalog {
-                top: 47.5%;
+                top: 42.5%;
             }
         }
     </style>
