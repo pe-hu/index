@@ -263,7 +263,7 @@ fclose($fp);
                 display: inline-block;
             }
             #catalog {
-                top: 40%;
+                top: 37.5%;
             }
         }
     </style>
