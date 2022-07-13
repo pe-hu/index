@@ -28,7 +28,7 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>Things That I (We) Own, in 3D</title>
+    <title>The Things I (We) Own | ∧° ┐</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css" />
@@ -170,7 +170,8 @@ fclose($fp);
             line-height: 150%;
         }
         
-        #print {
+        #print,
+        .print {
             display: none;
         }
         
@@ -207,6 +208,9 @@ fclose($fp);
             #print {
                 display: block;
             }
+            .print {
+                display: inline-block;
+            }
             #catalog {
                 top: 45%;
             }
@@ -229,7 +233,7 @@ fclose($fp);
             <a href="https://bnaaltermuseum.com/">会期：2022年7月23日（土）〜 8月21日（日） | 会場：BnA Alter Museum</a>
         </marquee>
         <nav id="nav">
-            <h1>Things That I (We) Own, in 3D</h1>
+            <h1>The Things I (We) Own<span class="print">, in 3D</span></h1>
             <p id="presents">
                 <b class="cc_style">私（わたしたち）が所有するもの</b>
                 <br/><span class="cc_style">会期：2022年7月23日（土）〜 8月21日（日）</span>
@@ -323,7 +327,7 @@ fclose($fp);
           <span>Last Modified : </span>
           <span>
             <?php
-            $mod = filemtime('index.csv');
+            $mod = filemtime('index.php');
             date_default_timezone_set('Asia/Tokyo');
             print "".date("r",$mod);
             ?>
@@ -333,10 +337,18 @@ fclose($fp);
 
     <script type="text/javascript ">
     var Greeting = [
-        "２０２２年、夏休みの自由研究 ◎ ",
-        "これは、ペフが所有する全てのものを集めたコレクションです。",
-        "出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど、あらゆる形態・形式のものを、このコレクションに記録します。",
+        "BnA Alter Museum　◎　２０２２年の夏休み　◎　ペフの自由研究　◎　",
+        "私（わたしたち）が所有するすべてのものを発表する展覧会「The Things I (We) Own, in 3D」を開催します。",
+        "　◎　デジタル／フィジカル・販売品／非売品・新品／中古など、形態／状態を問わず所有するもの全てをここに発表します。　◎　",
+        "　※　",
+        ""
+    ]
+
+    var Index = [
+        "出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど、私（わたしたち）が所有するあらゆる形態・形式のものを、このページに記録します。",
+        "所有するものを、カテゴリー毎のCSVファイルに記録し、ページ内に埋め込んだPHPを使って表示します。",
         "Natalia Panzerのプロジェクト「The Things I Own」を真似て、所有するものを「購入物」「頂き物」「無料配布物」「制作物」「共同制作物」「その他」「販売物」に分類します。"
+        "このページは、Chiaのウェブサイト「ifyouknewmewouldyoulove.me」を真似て制作しました。"
     ]
 
     function greeting() {
@@ -344,7 +356,7 @@ fclose($fp);
     }
 
     function more() {
-        $("#header marquee").html(Greeting[Math.floor(Math.random() * Greeting.length)]);
+        $("#header marquee").html(Index[Math.floor(Math.random() * Index.length)]);
     }
 
         $('a[href^="# "]').click(function() {
