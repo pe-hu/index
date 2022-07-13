@@ -259,11 +259,12 @@ fclose($fp);
     <main id="main">
         <ul class="mousedragscrollable">
             <li id="images" class="collection">
-                <p id="greeting" class="nlc_style">
+                <div id="greeting" class="nlc_style">
+                    <p id="text"></p>
                     <script>
-                    $('#greeting').html(Greeting);
+                    $('#text').html(Greeting);
                     </script>
-                </p>
+                </div>
                 <ol id="catalog" class="org">
                     <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
