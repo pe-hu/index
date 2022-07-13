@@ -145,11 +145,21 @@ fclose($fp);
             margin: 2.5vh 0;
         }
 
+        #greeting,
+        #server {
+            transition: all 1000ms ease;
+        }
+
         #greeting {
             position: absolute;
             top: 0;
             left: 0;
             height: 100%;
+        }
+
+        #greeting:hover {
+            z-index: 100;
+            background: rgba(255,255,255,0.75);
         }
 
         #server {
@@ -158,10 +168,18 @@ fclose($fp);
             left: 0;
         }
 
+        #server:hover {
+            z-index: 100;
+        }
+
+        #server:hover p {
+            color:#aaa;
+            background: rgba(255,255,255,0.75);
+        }
+
         #greeting p,
         #server p {
             margin: 1.5rem 1rem;
-            transition: all 1000ms ease;
         }
         
         #greeting p {
@@ -169,20 +187,11 @@ fclose($fp);
             font-size: 0.9rem;
             line-height: 200%;
         }
-
-        #greeting:hover {
-            z-index: 100;
-            background: rgba(255,255,255,0.75);
-        }
         
         #server p {
             color:#eee;
             font-size: 0.75rem;
             line-height: 175%;
-        }
-
-        #server p:hover {
-            color:#aaa;
         }
         
         #print,
