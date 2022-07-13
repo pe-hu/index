@@ -378,13 +378,14 @@ fclose($fp);
             ?>
           </span>
           <br/>
-          <span><u>URL : </u></span>
+          <u>URL : 
           <a class="cc_style" href="<?php echo $_SERVER['REQUEST_URI'];?>">
           <?php
           echo $_SERVER['SERVER_NAME'];
           echo $_SERVER['REQUEST_URI'];
           ?>
           </a>
+          </u>
         </address>
     </footer>
 
