@@ -200,7 +200,8 @@ fclose($fp);
         }
         
         @media print {
-            #address {
+            #address,
+            #server {
                 display: none;
             }
             #print {
