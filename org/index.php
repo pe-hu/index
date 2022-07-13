@@ -123,7 +123,7 @@ fclose($fp);
         }
 
         #main {
-            background-image: url(image/sign.png);
+            background-image: url(img/sign.png);
             background-size: cover;
         }
         
