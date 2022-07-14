@@ -129,7 +129,7 @@ fclose($fp);
 
 <body>
     <p id="infomation">
-        <u>The Things I (We) Own, in 3D</u>
+        <u>The Things I (We) Own, in 3D</u><br/>
         <sup>※ メインビジュアルに掲載した、私（わたしたち）が所有するもの一覧</sup>
     </p>
         <ol id="collection" class="org">
