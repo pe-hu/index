@@ -239,7 +239,7 @@ fclose($fp);
         }
 
         #img,
-        .change #images
+        .change .mousedragscrollable
         #print,
         .print {
             display: none;
@@ -355,6 +355,7 @@ fclose($fp);
     </header>
 
     <main id="main">
+        <div id="img"></div>
         <ul class="mousedragscrollable">
             <li id="images" class="collection">
                 <div id="greeting">
