@@ -234,12 +234,12 @@ fclose($fp);
             text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
         }
         
-        .change #img {
+        .change .mousedragscrollable {
             display: block;
         }
 
-        #img,
-        .change .mousedragscrollable,
+        .mousedragscrollable,
+        .change #img,
         #print,
         .print {
             display: none;
@@ -355,9 +355,7 @@ fclose($fp);
     </header>
 
     <main id="main">
-        <div id="img"></div>
-        <ul class="mousedragscrollable">
-            <li id="images" class="collection">
+            <div id="images">
                 <div id="greeting">
                     <p class="nlc_style" id="text"></p>
                 </div>
@@ -383,7 +381,9 @@ fclose($fp);
                     </li>
                     <?php endif; ?>
                 </ol>
-            </li>
+            </div>
+        <ul class="mousedragscrollable">
+            <li id="img" class="collection"></li>
         </ul>
     </main>
 
