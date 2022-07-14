@@ -42,7 +42,7 @@ fclose($fp);
         
         #catalog li {
             color:#333;
-            text-shadow: 0.25rem 0.25rem 1px #fff;
+            text-shadow: 0.1rem 0.1rem 0.1rem #fff;
             font-size: 0.55rem;
             position: relative;
             padding: 0;
@@ -54,6 +54,7 @@ fclose($fp);
         }
         
         #catalog li:hover {
+            text-shadow: 0.25rem 0.25rem 0.25rem #fff;
             font-size: 2.5rem;
             width: 750px;
             max-width: 90vw;
