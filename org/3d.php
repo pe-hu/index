@@ -239,7 +239,7 @@ fclose($fp);
         }
 
         #img,
-        .change .mousedragscrollable
+        .change .mousedragscrollable,
         #print,
         .print {
             display: none;
