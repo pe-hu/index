@@ -227,37 +227,6 @@ fclose($fp);
                 filter: drop-shadow(1rem 1rem 1rem rgba(50, 50, 50, 0.75));
             }
         }
-
-        #server {
-            position: fixed;
-            left: 0;
-            overflow: hidden;
-        }
-
-        #server {
-            bottom: 0;
-            z-index: 10;
-        }
-
-        #server p {
-            margin: 1.5rem 1rem;
-        }
-        
-        #server p {
-            color:#eee;
-            font-size: 0.75rem;
-            line-height: 175%;
-        }
-
-        #server p,
-        #server:hover p {
-            transition: all 1000ms ease;
-        }
-
-        #server:hover p {
-            color:#aaa;
-            text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
-        }
         
         #print,
         .print {
@@ -354,31 +323,19 @@ fclose($fp);
         <ul class="mousedragscrollable">
             <li id="motto" class="collection"></li>
             <li id="images" class="collection">
-                <div id="server">
-                    <p class="cc_style">
-                        <?php
-                        echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
-                        echo 'PORT : '. $_SERVER['REMOTE_PORT']."<br/>";
-                        echo ''. $_SERVER['HTTP_USER_AGENT'].".";
-                        ?>
-                    </p>
-                </div>
                 <ol id="catalog" class="org">
-            <?php if (!empty($rows)): ?>
-            <?php foreach ($rows as $row): ?>
-            <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
-                <img src="<?=h($row[2])?>">
-                <p>
-                    <b><?=h($row[3])?></b>
-                    <br/><?=h($row[4])?>
-                </p>
-            </li>
-            <?php endforeach; ?>
-            <?php else: ?>
-            <li class="list_item list_toggle min" data-org="test">
-                <img src="/logo.png">
-            </li>
-            <?php endif; ?>
+                    <?php if (!empty($rows)): ?>
+                        <?php foreach ($rows as $row): ?>
+                            <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
+                            <img src="<?=h($row[2])?>">
+                            <p>
+                                <b><?=h($row[3])?></b>
+                                <br/><?=h($row[4])?>
+                            </p>
+                        </li>
+                        <?php endforeach; ?>
+                        <?php else: ?>
+                    <?php endif; ?>
                 </ol>
             </li>
         </ul>
