@@ -147,7 +147,7 @@ fclose($fp);
         }
         
         .mousedragscrollable #images {
-            width: 75%;
+            width: 95%;
             max-width:75rem;
             height: 100%;
             margin: 0;
