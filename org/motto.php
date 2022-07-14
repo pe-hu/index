@@ -56,9 +56,11 @@ fclose($fp);
     </head>
 
     <body>
-        <h3>P E H U is | Screen Print</h3>
-        <p>P E H U is | Screen Print</p>
         <ol class="org">
+            <li>
+                <h3>P E H U is | Screen Print</h3>
+                <p>P E H U is | Screen Print</p>
+            </li>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
