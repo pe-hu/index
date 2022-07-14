@@ -146,7 +146,7 @@ fclose($fp);
             overflow: hidden;
         }
         
-        #catalog {
+        #img {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -156,13 +156,13 @@ fclose($fp);
             transform: translate(-50%, -50%);
         }
 
-        #catalog .list_item {
+        #img .list_item {
             position: relative;
             padding: 0;
             margin: 2.5vh 0;
         }
         
-        #catalog img {
+        #img img {
             animation: 100s linear infinite spot;
         }
         
@@ -244,10 +244,10 @@ fclose($fp);
         }
         
         @media screen and (max-width: 1000px) {
-            #catalog {
+            #img {
                 top: 50%;
             }
-            #catalog .list_item {
+            #img .list_item {
                 position: relative;
                 padding: 0;
                 margin: 1.5vh 0;
@@ -258,10 +258,10 @@ fclose($fp);
             #address {
                 padding:0.5rem 0;
             }
-            #catalog {
+            #img {
                 top: 45%;
             }
-            #catalog .list_item {
+            #img .list_item {
                 position: relative;
                 padding: 0;
                 margin: 1.25vh 0;
@@ -283,7 +283,7 @@ fclose($fp);
             .print {
                 display: inline-block;
             }
-            #catalog {
+            #img {
                 top: 45%;
             }
         }
@@ -366,7 +366,7 @@ fclose($fp);
                         ?>
                     </p>
                 </div>
-                <ol id="catalog" class="org">
+                <ol id="img" class="org">
                     <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
                     <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
