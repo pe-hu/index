@@ -73,6 +73,10 @@ fclose($fp);
             border-bottom: 1px dashed #ccc;
         }
 
+        #main {
+            min-height: 90vh;
+        }
+
         marquee a {
             color:#111;
             text-decoration:none;
