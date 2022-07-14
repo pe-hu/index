@@ -312,7 +312,7 @@ fclose($fp);
         <nav id="nav">
             <h1>The Things I (We) Own</h1>
             <p id="presents">
-                <img style="display: block; float: right;" src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/">
+                <b class="cc_style">私（わたしたち）が所有する全てのもの</b>
             </p>
             <form>
                 <ol class="search-box">
@@ -388,7 +388,16 @@ fclose($fp);
 
     <footer id="footer">
         <address id="print">
-            <p style="float: left;"><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="250rem" alt="BnA Alter Museum"></p>
+            <p style="float: left;">
+                <b class="cc_style">私（わたしたち）が所有する全てのもの</b>
+                <br/>
+                <span class="cc_style">
+                    <?php
+                    echo $_SERVER['SERVER_NAME'];
+                    echo $_SERVER['REQUEST_URI'];
+                    ?>
+                </span>
+            </p>
             <img style="display: block; float: right;" src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/">
         </address>
         <address id="address" class="cc_style" style="text-align:right; width:100%;">
