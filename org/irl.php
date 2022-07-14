@@ -74,7 +74,7 @@ fclose($fp);
         }
 
         #main {
-            min-height: 90vh;
+            min-height: 85vh;
         }
 
         marquee a {
