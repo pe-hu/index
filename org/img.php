@@ -53,7 +53,7 @@ fclose($fp);
             }
             
             #collection {
-                padding: 1rem 0 2rem;
+                padding: 1rem 0 2.5rem;
             }
             
             #collection li {
