@@ -423,7 +423,7 @@ fclose($fp);
 
     <script type="text/javascript ">
 
-    let btn = document.querySelector('#text');
+    let btn = document.querySelector('#greeting');
     let box = document.querySelector('#main');
 
     let btnToggleclass = function(el) {
