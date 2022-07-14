@@ -313,12 +313,13 @@ fclose($fp);
         <nav id="nav">
             <h1>The Things I (We) Own</h1>
             <p id="presents">
+            <br/>
                 <b class="cc_style">最終更新日時</b><br/>
                 <span>
                     <?php
                     $mod = filemtime('index.php');
                     date_default_timezone_set('Asia/Tokyo');
-                    print ''.date('Y年n月j日<br/>g:i:s',$mod);
+                    print ''.date('Y年n月j日 g:i:s',$mod);
                     ?>
                 </span>
             </p>
