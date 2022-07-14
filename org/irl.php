@@ -313,13 +313,6 @@ fclose($fp);
             <h1>The Things I (We) Own</h1>
             <p id="presents">
                 <img style="display: block; float: right;" src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/">
-                <br/>
-                <span class="cc_style">
-                    <?php
-                    echo $_SERVER['SERVER_NAME'];
-                    echo $_SERVER['REQUEST_URI'];
-                    ?>
-                </span>
             </p>
             <form>
                 <ol class="search-box">
