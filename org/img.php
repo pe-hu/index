@@ -63,7 +63,6 @@ fclose($fp);
         #catalog li img {
             width: 75%;
             position: absolute;
-            z-index: 0;
             top: 50%;
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
@@ -76,7 +75,7 @@ fclose($fp);
             font-family: "ipag", monospace;
             transform: scale(1, 1.25);
             position: absolute;
-            z-index: 1;
+            z-index: 5;
             bottom: 0;
             left: 0;
         }
