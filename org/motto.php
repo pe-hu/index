@@ -28,7 +28,7 @@ fclose($fp);
     <html lang="ja">
 
     <head>
-        <title>P E H U is | Things that I (We) owned</title>
+        <title>P E H U is | The Things I (We) Own</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/org/template/index.css" />
@@ -57,6 +57,9 @@ fclose($fp);
 
     <body>
         <ol class="org">
+            <li>
+                <h3 style="text-align:center;">P E H U is</h3>
+            </li>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
