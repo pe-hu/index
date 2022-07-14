@@ -88,6 +88,8 @@ fclose($fp);
                 z-index: 5;
                 bottom: 0;
                 left: 0;
+                pointer-events: none;
+                user-select: none;
             }
             
             #collection li p b {
