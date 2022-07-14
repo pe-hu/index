@@ -239,11 +239,11 @@ fclose($fp);
                 text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
             }
             
-            .change #img {
+            .change #popup {
                 display: block;
             }
             
-            #img,
+            #popup,
             .change .mousedragscrollable,
             #print,
             .print {
@@ -361,7 +361,7 @@ fclose($fp);
         </header>
 
         <main id="main">
-            <div id="img"></div>
+            <div id="popup"></div>
             <ul class="mousedragscrollable">
                 <li id="images" class="collection">
                     <div id="greeting">
@@ -442,7 +442,7 @@ fclose($fp);
             });
 
             $(function() {
-                $("#img").load("img.php");
+                $("#popup").load("popup.php");
             })
 
             var volume;
