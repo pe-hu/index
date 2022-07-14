@@ -42,6 +42,7 @@ fclose($fp);
         
         #catalog li {
             color:#333;
+            text-shadow: 0.25rem 0.25rem 1px #fff;
             font-size: 0.55rem;
             position: relative;
             padding: 0;
