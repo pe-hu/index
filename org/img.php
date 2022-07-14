@@ -61,9 +61,9 @@ fclose($fp);
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
                 <img src="<?=h($row[2])?>">
-                <p><b><?=h($row[3])?></b></p>
                 <p>
-                    <?=h($row[4])?>
+                    <b><?=h($row[3])?></b>
+                    <br><?=h($row[4])?>
                 </p>
             </li>
             <?php endforeach; ?>
