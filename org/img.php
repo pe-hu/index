@@ -62,7 +62,7 @@ fclose($fp);
                 font-size: 0.55rem;
                 position: relative;
                 padding: 0;
-                margin: 1vw;
+                margin: 2.5vw;
                 width: 10rem;
                 height: 10rem;
                 max-width: 95vw;
