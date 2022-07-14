@@ -135,7 +135,8 @@ fclose($fp);
             text-decoration: double underline;
         }
         
-        .mousedragscrollable #images {
+        #images {
+            position: relative;
             width: 100%;
             height: 100%;
             margin: 0;
@@ -190,11 +191,11 @@ fclose($fp);
         #greeting {
             top: 0;
             height: auto;
+            z-index: 1;
         }
             
 
         #greeting:hover {
-            z-index: 100;
             width:100%;
             height: 100%;
             overflow: auto;
@@ -234,12 +235,12 @@ fclose($fp);
             text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
         }
         
-        .change #img {
+        .change .mousedragscrollable {
             display: block;
         }
 
-        #img,
-        .change .mousedragscrollable,
+        .change #images,
+        .mousedragscrollable,
         #print,
         .print {
             display: none;
@@ -299,14 +300,15 @@ fclose($fp);
     <script src="https://creative-community.space/coding/js/tone/Tone.min.js"></script>
     <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
     <script src="index.js"></script>
+    <script src="popup.js"></script>
 </head>
 
 <body>
 
     <header id="header">
         <a class="_more" onclick="more()">私（わたしたち）が所有するもの</a>
-        <marquee>
-            <a href="https://bnaaltermuseum.com/event/the-things-i-we-own/">会期：2022年7月23日（土）〜 8月21日（日） | 会場：BnA Alter Museum</a>
+        <marquee id="marquee">
+            会期：2022年7月23日（土）〜 8月21日（日） | 会場：BnA Alter Museum
         </marquee>
         <nav id="nav">
             <h1>The Things I (We) Own<span class="print">, in 3D</span></h1>
@@ -355,11 +357,9 @@ fclose($fp);
     </header>
 
     <main id="main">
-        <div id="img"></div>
-        <ul class="mousedragscrollable">
-            <li id="images" class="collection">
+        <div id="images">
                 <div id="greeting">
-                    <p class="nlc_style" id="text" class="tab"></p>
+                    <p class="nlc_style" id="text"></p>
                 </div>
                 <div id="server">
                     <p class="cc_style">
@@ -383,7 +383,9 @@ fclose($fp);
                     </li>
                     <?php endif; ?>
                 </ol>
-            </li>
+            </div>
+        <ul class="mousedragscrollable">
+            <li id="img" class="collection"></li>
         </ul>
     </main>
 
@@ -414,7 +416,8 @@ fclose($fp);
 
     <script type="text/javascript ">
 
-    let btn = document.querySelector('#text');
+    let btn = document.querySelector('#greeting');
+    let marquee = document.querySelector('#marquee');
     let box = document.querySelector('#main');
 
     let btnToggleclass = function(el) {
@@ -422,6 +425,10 @@ fclose($fp);
     }
 
     btn.addEventListener('click', function() {
+        btnToggleclass(box);
+    }, false);
+
+    marquee.addEventListener('click', function() {
         btnToggleclass(box);
     }, false);
 
