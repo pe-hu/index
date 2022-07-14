@@ -15,7 +15,7 @@ var Index = [
 ]
 
 function greeting() {
-    $("#text").html(Greeting);
+    $("#greeting #text").html(Greeting);
 }
 
 function more() {

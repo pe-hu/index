@@ -296,6 +296,7 @@ fclose($fp);
     <script src="https://creative-community.space/coding/js/tone/Tone.min.js"></script>
     <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
     <script src="index.js"></script>
+    <script src="popup.js"></script>
 </head>
 
 <body>

@@ -304,13 +304,14 @@ fclose($fp);
     <script src="https://creative-community.space/coding/js/tone/Tone.min.js"></script>
     <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
     <script src="index.js"></script>
+    <script src="popup.js"></script>
 </head>
 
 <body>
 
     <header id="header">
         <a class="_more" onclick="more()">私（わたしたち）が所有するもの</a>
-        <marquee>
+        <marquee id="text">
             会期：2022年7月23日（土）〜 8月21日（日） | 会場：BnA Alter Museum
         </marquee>
         <nav id="nav">
