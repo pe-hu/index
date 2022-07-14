@@ -239,12 +239,12 @@ fclose($fp);
                 text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
             }
             
-            .change .mousedragscrollable {
+            .change #img {
                 display: block;
             }
             
-            .change #img,
-            .mousedragscrollable,
+            #img,
+            .change .mousedragscrollable,
             #print,
             .print {
                 display: none;
