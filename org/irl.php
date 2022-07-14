@@ -64,7 +64,7 @@ fclose($fp);
         header marquee:hover {
             cursor: pointer;
             color: #fff;
-            background: #eee;
+            background: #ddd;
             font-style: italic;
         }
         
