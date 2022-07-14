@@ -15,16 +15,18 @@
         }
         
         #catalog li {
+            font-size: 0.55rem;
             position: relative;
             padding: 0;
             margin: 2.5vw;
-            width: 7.5rem;
-            height: 7.5rem;
+            width: 10rem;
+            height: 10rem;
             max-width: 90vw;
             transition: all 500ms ease;
         }
         
         #catalog li:hover {
+            font-size: 2.5vw;
             width: 750px;
             max-width: 90vw;
             height: 750px;
@@ -32,7 +34,9 @@
         }
         
         #catalog li img {
+            width: 75%;
             position: absolute;
+            z-index: 1;
             top: 50%;
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
@@ -40,9 +44,32 @@
         }
         
         #catalog li p {
+            padding: 0.25rem;
+            margin: 0;
+            font-family: "ipag", monospace;
+            transform: scale(1, 1.25);
             position: absolute;
+            z-index: 0;
             top: 0;
             left: 0;
+        }
+        
+        #catalog li p b {
+            font-size: 125%;
+            display: inline-block;
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+            font-stretch: condensed;
+            font-variant: common-ligatures tabular-nums;
+            transform: scale(1, 1.1);
+            letter-spacing: -0.1rem;
+            word-spacing: -.1ch;
+            padding: 0;
+            margin: 0.5rem 0;
+        }
+        
+        #catalog li:hover p {
+            display: block;
         }
     </style>
 </head>
@@ -50,160 +77,191 @@
 <body>
 
     <ol id="catalog" class="org">
-        <li class="list_item list_toggle a1" data-org="made">
+        <li class="list_item list_toggle" data-org="made">
             <img src="img/PEHU01.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b>P E H U is</b>
+                <br/>P E H U から始まるペフに似合うことばをスクリーン印刷したシャツ </p>
         </li>
-        <li class="list_item list_toggle a4" data-org="made">
+        <li class="list_item list_toggle" data-org="made">
             <img src="img/PEHU02.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b>P E H U is</b>
+                <br/>P E H U から始まるペフに似合うことばをスクリーン印刷したフェイスタオル </p>
         </li>
-        <li class="list_item list_toggle b4" data-org="bought">
+        <li class="list_item list_toggle" data-org="bought">
             <img src="img/tojitakun.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle a4" data-org="bought">
+        <li class="list_item list_toggle" data-org="bought">
             <img src="img/bbq.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle a4" data-org="sale">
+        <li class="list_item list_toggle" data-org="sale">
             <img src="img/1F05.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b>05 by woopheadclrms</b>
+                <br/>2018年3月に開催したLaurel SchwulstとWoopheadclrmsによる展覧会「05」に来場した方が適当にタイピングした文字をコンピューターに朗読させた音楽作品 </p>
         </li>
-        <li class="list_item list_toggle b4" data-org="free">
+        <li class="list_item list_toggle" data-org="free">
             <img src="img/fan.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b>天神祭りのうちわ</b>
+                <br/>2019年の夏、天神祭りに際し町内会から頂いた </p>
         </li>
-        <li class="list_item list_toggle b4" data-org="other">
+        <li class="list_item list_toggle" data-org="other">
             <img src="img/omikuzi.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle a4" data-org="made">
+        <li class="list_item list_toggle" data-org="made">
             <img src="https://creative-community.space/pehu/weare/bookcover.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle note" data-org="collaborations">
+        <li class="list_item list_toggle" data-org="collaborations">
             <img src="https://creative-community.space/value/gallery/000.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle b4" data-org="bought">
+        <li class="list_item list_toggle" data-org="bought">
             <img src="img/VGCTLG.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle a6" data-org="bought">
+        <li class="list_item list_toggle" data-org="bought">
             <img src="img/selpic.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle b5" data-org="sale">
+        <li class="list_item list_toggle" data-org="sale">
             <img src="img/1F04.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle a6" data-org="sale">
+        <li class="list_item list_toggle" data-org="sale">
             <img src="img/1F03.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle a3" data-org="collaborations">
+        <li class="list_item list_toggle" data-org="collaborations">
             <img src="https://creative-community.space/pehu/publication/5dition/5dition.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle b4" data-org="collaborations">
+        <li class="list_item list_toggle" data-org="collaborations">
             <img src="diary/image.jpg">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle a5" data-org="bought">
+        <li class="list_item list_toggle" data-org="bought">
             <img src="img/ql800.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle min" data-org="sale">
+        <li class="list_item list_toggle" data-org="sale">
             <img src="https://creative-community.space/value/still/000.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle b5" data-org="sale">
+        <li class="list_item list_toggle" data-org="sale">
             <img src="https://creative-community.space/essay/book/004.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle note" data-org="other">
+        <li class="list_item list_toggle" data-org="other">
             <img src="https://creative-community.space/essay/thinknote/pr/cover.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle a5" data-org="gift">
+        <li class="list_item list_toggle" data-org="gift">
             <img src="img/kalanchoe_beauverdii.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle a6" data-org="other">
+        <li class="list_item list_toggle" data-org="other">
             <img src="img/tramp.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle a6" data-org="made">
+        <li class="list_item list_toggle" data-org="made">
             <img src="https://creative-community.space/pehu/31q/a.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle a5" data-org="sale">
+        <li class="list_item list_toggle" data-org="sale">
             <img src="https://creative-community.space/value/book/book.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle a6" data-org="free">
+        <li class="list_item list_toggle" data-org="free">
             <img src="img/pen.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle min" data-org="sale">
+        <li class="list_item list_toggle" data-org="sale">
             <img src="https://creative-community.space/pehu/dm/this.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle a6" data-org="collaborations">
+        <li class="list_item list_toggle" data-org="collaborations">
             <img src="img/ezco.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle min" data-org="free">
+        <li class="list_item list_toggle" data-org="free">
             <img src="img/KN01.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle min" data-org="gift">
+        <li class="list_item list_toggle" data-org="gift">
             <img src="img/pin.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle min" data-org="bought">
+        <li class="list_item list_toggle" data-org="bought">
             <img src="img/dog.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b>金持ち犬</b>
+                <br/>2022年1月、初詣の際に購入した住吉大社の土人形・干支置物 </p>
         </li>
-        <li class="list_item list_toggle min" data-org="free">
+        <li class="list_item list_toggle" data-org="free">
             <img src="img/KN00.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
-        <li class="list_item list_toggle min" data-org="gift">
+        <li class="list_item list_toggle" data-org="gift">
             <img src="img/horse.png">
-            <p><b></b></p>
-            <p></p>
+            <p>
+                <b></b>
+                <br/> </p>
         </li>
     </ol>
 

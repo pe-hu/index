@@ -26,6 +26,7 @@ fclose($fp);
 
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <title>P E H U is | Things that I (We) owned</title>
     <meta charset="UTF-8">
@@ -40,16 +41,18 @@ fclose($fp);
         }
         
         #catalog li {
+            font-size: 0.55rem;
             position: relative;
             padding: 0;
             margin: 2.5vw;
-            width: 7.5rem;
-            height: 7.5rem;
+            width: 10rem;
+            height: 10rem;
             max-width: 90vw;
             transition: all 500ms ease;
         }
         
         #catalog li:hover {
+            font-size: 2.5vw;
             width: 750px;
             max-width: 90vw;
             height: 750px;
@@ -57,7 +60,9 @@ fclose($fp);
         }
         
         #catalog li img {
+            width: 75%;
             position: absolute;
+            z-index: 1;
             top: 50%;
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
@@ -65,9 +70,32 @@ fclose($fp);
         }
         
         #catalog li p {
+            padding: 0.25rem;
+            margin: 0;
+            font-family: "ipag", monospace;
+            transform: scale(1, 1.25);
             position: absolute;
+            z-index: 0;
             top: 0;
             left: 0;
+        }
+        
+        #catalog li p b {
+            font-size: 125%;
+            display: inline-block;
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+            font-stretch: condensed;
+            font-variant: common-ligatures tabular-nums;
+            transform: scale(1, 1.1);
+            letter-spacing: -0.1rem;
+            word-spacing: -.1ch;
+            padding: 0;
+            margin: 0.5rem 0;
+        }
+        
+        #catalog li:hover p {
+            display: block;
         }
     </style>
 </head>
