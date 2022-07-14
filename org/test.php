@@ -141,7 +141,7 @@ fclose($fp);
         
         .mousedragscrollable #images {
             width: 75%;
-            max-width:750px;
+            max-width:75rem;
             height: 100%;
             margin: 0;
         }
@@ -343,6 +343,7 @@ fclose($fp);
 
     <main id="main">
         <ul class="mousedragscrollable">
+            <li id="motto" class="collection"></li>
             <li id="images" class="collection">
                 <div id="server">
                     <p class="cc_style">
@@ -406,6 +407,10 @@ fclose($fp);
             var target = $(href == "# " || href == " " ? 'html' : href);
             return false;
         });
+    
+        $(function() {
+            $("#motto").load("motto.php");
+        })
 
         var volume;
         var synth;
