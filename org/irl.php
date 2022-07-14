@@ -384,7 +384,6 @@ fclose($fp);
 
     <footer id="footer">
         <address id="print">
-            <hr/>
             <b class="cc_style">私（わたしたち）が所有する全てのもの</b>
             <br/>
             <span class="cc_style">
