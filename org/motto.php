@@ -52,6 +52,11 @@ fclose($fp);
             transition: all 500ms ease;
         }
 
+        #screen p {
+            font-size: 0.75rem;
+            padding: 0 0.25rem;
+        }
+
         </style>
     </head>
 
@@ -59,12 +64,12 @@ fclose($fp);
         <ol id="screen" class="org">
             <li>
                 <h3>P E H U is | Screen Print</h3>
-                <p>これまでに制作したスクリーン版</p>
+                <p>P E H U から始まる言葉を印刷したオリジナルアイテムを制作します。</p>
             </li>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
-                <h3 style="text-align:center;"><?=h($row[2])?></h3>
+                <h3 class="<?=h($row[1])?>" style="text-align:center;"><?=h($row[2])?></h3>
                 <a class="<?=h($row[3])?>" href="<?=h($row[4])?>" target="_parent"></a>
            </li>
             <?php endforeach; ?>
