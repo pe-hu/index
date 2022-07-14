@@ -428,15 +428,11 @@ fclose($fp);
         el.classList.toggle('change');
     }
 
-    marquee.addEventListener('click', function() {
+    btn.addEventListener('click', function() {
         btnToggleclass(box);
     }, false);
 
-    let btnToggleclass = function(el) {
-        el.classList.toggle('change');
-    }
-
-    btn.addEventListener('click', function() {
+    marquee.addEventListener('click', function() {
         btnToggleclass(box);
     }, false);
 
