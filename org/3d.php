@@ -417,6 +417,10 @@ fclose($fp);
             var target = $(href == "# " || href == " " ? 'html' : href);
             return false;
         });
+        
+        $(function() {
+            $("#caption").load("img.php");
+        })
 
         $(function() {
             $('.change').hide();
