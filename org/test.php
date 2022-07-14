@@ -361,33 +361,6 @@ fclose($fp);
         </header>
 
         <main id="main">
-            <div id="images">
-                <div id="greeting">
-                    <p class="nlc_style" id="text"></p>
-                </div>
-                <div id="server">
-                    <p class="cc_style">
-                        <?php
-                        echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
-                        echo 'PORT : '. $_SERVER['REMOTE_PORT']."<br/>";
-                        echo ''. $_SERVER['HTTP_USER_AGENT'].".";
-                        ?>
-                    </p>
-                </div>
-                <ol id="catalog" class="org">
-                    <?php if (!empty($rows)): ?>
-                    <?php foreach ($rows as $row): ?>
-                    <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
-                        <img src="<?=h($row[2])?>">
-                    </li>
-                    <?php endforeach; ?>
-                    <?php else: ?>
-                    <li class="list_item list_toggle min" data-org="test">
-                        <img src="/logo.png">
-                    </li>
-                    <?php endif; ?>
-                </ol>
-            </div>
             <div id="img"></div>
             <ul class="mousedragscrollable">
                 <li id="images" class="collection">
