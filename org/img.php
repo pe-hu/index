@@ -41,6 +41,7 @@ fclose($fp);
         }
         
         #catalog li {
+            color:#aaa;
             font-size: 0.55rem;
             position: relative;
             padding: 0;
@@ -62,7 +63,7 @@ fclose($fp);
         #catalog li img {
             width: 75%;
             position: absolute;
-            z-index: 1;
+            z-index: 0;
             top: 50%;
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
@@ -75,7 +76,7 @@ fclose($fp);
             font-family: "ipag", monospace;
             transform: scale(1, 1.25);
             position: absolute;
-            z-index: 0;
+            z-index: 1;
             top: 0;
             left: 0;
         }
