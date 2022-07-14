@@ -151,6 +151,11 @@ fclose($fp);
             margin: 0;
             overflow: hidden;
         }
+
+        #motto {
+            width: 25rem;
+            max-width: 55%;
+        }
         
         #catalog {
             position: absolute;
@@ -391,7 +396,7 @@ fclose($fp);
                 </ol>
             </div>
         <ul class="mousedragscrollable">
-            <li id="img" class="collection"></li>
+            <li id="motto" class="collection"></li>
         </ul>
     </main>
 
@@ -454,7 +459,7 @@ fclose($fp);
         });
         
         $(function() {
-            $("#img").load("img.php");
+            $("#motto").load("motto.php");
         })
 
         var volume;
