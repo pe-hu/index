@@ -130,7 +130,7 @@ fclose($fp);
             cursor: pointer;
         }
 
-        #presents {padding: 0.25rem;}
+        #presents {padding: 0.5rem;}
         
         #bought:checked~label,
         #gift:checked~label,
