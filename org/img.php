@@ -130,8 +130,8 @@ fclose($fp);
 <body>
     <p id="infomation">
         <u>The Things I (We) Own, in 3D</u>
+        <sup>※ メインビジュアルに掲載した、私（わたしたち）が所有するもの一覧</sup>
     </p>
-    <sup id="infomation">※ このリストはまだ未完成です。<br/>会期終了までに発表／展示／販売するものを随時追加します。</sup>
         <ol id="collection" class="org">
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
