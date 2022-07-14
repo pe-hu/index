@@ -44,6 +44,7 @@
         
         #infomation {
             font-size: 0.75rem;
+            line-height: 150%;
             padding: 0 1rem;
         }
         
@@ -101,7 +102,7 @@
 </head>
 
 <body>
-    <p id="infomation">setumei</p>
+    <p id="infomation">The Things I (We) Own, in 3D のメインビジュアルに掲載した、私（わたしたち）が所有するもの</p>
     <ol id="collection" class="org">
         <li class="list_item list_toggle" data-org="made">
             <img src="img/PEHU01.png">
@@ -290,23 +291,7 @@
                 <br/> 2020年、友人がニューヨークで拾ったナイト（騎士） </p>
         </li>
     </ol>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript ">
-        $(function() {
-            var arr = [];
-            $("#collection li").each(function() {
-                arr.push($(this).html());
-            });
-            arr.sort(function() {
-                return Math.random() - Math.random();
-            });
-            $("#collection").empty();
-            for (i = 0; i < arr.length; i++) {
-                $("#collection").append('<li>' + arr[i] + '</li>');
-            }
-        });
-    </script>
+    <p id="infomation">The Things I (We) Own, in 3D のメインビジュアルに掲載した、私（わたしたち）が所有するもの</p>
 </body>
 
 </html>

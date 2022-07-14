@@ -70,6 +70,7 @@ fclose($fp);
         
         #infomation {
             font-size: 0.75rem;
+            line-height: 150%;
             padding: 0 1rem;
         }
         
