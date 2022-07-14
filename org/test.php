@@ -143,7 +143,6 @@ fclose($fp);
             width: 100%;
             height: 100%;
             margin: 0;
-            overflow: hidden;
         }
         
         #catalog {
@@ -220,42 +219,18 @@ fclose($fp);
             }
         }
 
-        #greeting,
         #server {
             position: absolute;
             left: 0;
             overflow: hidden;
         }
 
-        #greeting {
-            top: 0;
-            height: auto;
-        }
-            
-
-        #greeting:hover {
-            z-index: 100;
-            width:100%;
-            height: 100%;
-            overflow: auto;
-            background: rgba(255,255,255,0.55);
-            cursor: pointer;
-        }
-
         #server {
             bottom: 0;
             z-index: 10;
         }
-
-        #greeting p,
         #server p {
             margin: 1.5rem 1rem;
-        }
-        
-        #greeting p {
-            color:#333;
-            font-size: 0.9rem;
-            line-height: 200%;
         }
         
         #server p {
@@ -358,7 +333,7 @@ fclose($fp);
                         <label for="sale" class="label">$$$ FOR SALE $$$</label>
                     </li>
                     <li class="reset">
-                        <input type="reset" name="reset" value="View All" class="reset-button cc_style label" onclick="greeting()">
+                        <input type="reset" name="reset" value="View All" class="reset-button cc_style label">
                     </li>
                 </ol>
             </form>
@@ -368,9 +343,6 @@ fclose($fp);
     <main id="main">
         <ul class="mousedragscrollable">
             <li id="images" class="collection">
-                <div id="greeting">
-                    <p class="nlc_style" id="text"></p>
-                </div>
                 <div id="server">
                     <p class="cc_style">
                         <?php
