@@ -243,8 +243,8 @@ fclose($fp);
             display: block;
         }
 
-        #img,
-        .change #img,
+        .change #images,
+        .mousedragscrollable,
         #print,
         .print {
             display: none;
