@@ -15,8 +15,11 @@
         }
         
         #catalog li {
+            position: relative;
+            padding: 0;
             margin: 2.5vw;
             width: 7.5rem;
+            height: 7.5rem;
             max-width: 90vw;
             transition: all 500ms ease;
         }
@@ -24,11 +27,16 @@
         #catalog li:hover {
             width: 750px;
             max-width: 90vw;
+            height: 750px;
+            max-height: 90vw;
         }
         
         #catalog li img {
-            max-width: 100%;
-            max-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
