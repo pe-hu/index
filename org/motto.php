@@ -47,7 +47,7 @@ fclose($fp);
             transition: all 1000ms ease;
         }
 
-        .org li:hover h3 {
+        .org li a:hover h3 {
             color: #aaa;
             transition: all 500ms ease;
         }
