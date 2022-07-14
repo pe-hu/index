@@ -40,11 +40,11 @@ fclose($fp);
             margin: 0;
         }
         
-        #catalog {
+        #caption {
             padding: 1rem 0;
         }
         
-        #catalog li {
+        #caption li {
             color:#333;
             text-shadow: 0.1rem 0.1rem 0.1rem #fff;
             font-size: 0.55rem;
@@ -58,7 +58,7 @@ fclose($fp);
             transition: all 1000ms ease;
         }
         
-        #catalog li img {
+        #caption li img {
             width: 75%;
             position: absolute;
             top: 50%;
@@ -67,7 +67,7 @@ fclose($fp);
             transform: translate(-50%, -50%);
         }
         
-        #catalog li p {
+        #caption li p {
             padding: 0.25rem;
             margin: 0;
             font-family: "ipag", monospace;
@@ -78,7 +78,7 @@ fclose($fp);
             left: 0;
         }
         
-        #catalog li p b {
+        #caption li p b {
             font-size: 150%;
             display: inline-block;
             font-family: 'Times New Roman', serif;
@@ -92,7 +92,7 @@ fclose($fp);
             margin: 0.5rem 0;
         }
         
-        #catalog li:hover p {
+        #caption li:hover p {
             display: block;
         }
     </style>
@@ -100,7 +100,7 @@ fclose($fp);
 
     <body>
 
-        <ol id="catalog" class="org">
+        <ol id="caption" class="org">
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
