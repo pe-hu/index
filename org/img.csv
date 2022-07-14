@@ -1,9 +1,9 @@
-made,a1,img/PEHU01.png
-made,a4,img/PEHU02.png
+made,a1,img/PEHU01.png,P E H U is,P E H U から始まるペフに似合うことばをスクリーン印刷したシャツ
+made,a4,img/PEHU02.png,P E H U is,P E H U から始まるペフに似合うことばをスクリーン印刷したフェイスタオル
 bought,b4,img/tojitakun.png
 bought,a4,img/bbq.png
-sale,a4,img/1F05.png
-free,b4,img/fan.png
+sale,a4,img/1F05.png,05 by woopheadclrms,2018年3月に開催したLaurel SchwulstとWoopheadclrmsによる展覧会「05」に来場した方が適当にタイピングした文字をコンピューターに朗読させた音楽作品
+free,b4,img/fan.png,天神祭りのうちわ,2019年の夏、天神祭りに際し町内会から頂いた
 other,b4,img/omikuzi.png
 made,a4,https://creative-community.space/pehu/weare/bookcover.png
 collaborations,note,https://creative-community.space/value/gallery/000.png
@@ -26,6 +26,6 @@ sale,min,https://creative-community.space/pehu/dm/this.png
 collaborations,a6,img/ezco.png
 free,min,img/KN01.png
 gift,min,img/pin.png
-bought,min,img/dog.png
+bought,min,img/dog.png,金持ち犬,2022年1月、初詣の際に購入した住吉大社の土人形・干支置物
 free,min,img/KN00.png
 gift,min,img/horse.png
