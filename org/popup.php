@@ -71,7 +71,7 @@ fclose($fp);
         #infomation {
             font-size: 0.75rem;
             line-height: 150%;
-            padding: 0.5rem 1rem 0;
+            padding: 0.5rem 1rem;
         }
         
         #collection {
