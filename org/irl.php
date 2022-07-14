@@ -93,9 +93,9 @@ fclose($fp);
             font-size:0.75rem;
         }
 
-        footer p  {
+        footer  {
             padding: 0;
-            margin: 0.25rem 0;
+            margin: 0;
         }
         
         header a:hover,
