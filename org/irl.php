@@ -129,6 +129,8 @@ fclose($fp);
             text-decoration: wavy underline #aaa;
             cursor: pointer;
         }
+
+        #presents {padding: 0.25rem;}
         
         #bought:checked~label,
         #gift:checked~label,
@@ -313,7 +315,6 @@ fclose($fp);
         <nav id="nav">
             <h1>The Things I (We) Own</h1>
             <p id="presents">
-            <br/>
                 <b class="cc_style">最終更新日時</b><br/>
                 <span>
                     <?php
