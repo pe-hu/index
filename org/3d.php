@@ -311,7 +311,7 @@ fclose($fp);
 
     <header id="header">
         <a class="_more" onclick="more()">私（わたしたち）が所有するもの</a>
-        <marquee>
+        <marquee id="marquee">
             会期：2022年7月23日（土）〜 8月21日（日） | 会場：BnA Alter Museum
         </marquee>
         <nav id="nav">
@@ -421,9 +421,18 @@ fclose($fp);
     <script type="text/javascript ">
 
     let btn = document.querySelector('#greeting');
+    let marquee = document.querySelector('#marquee');
     let box = document.querySelector('#main');
 
-    let btnToggleclass = function(el) {
+    let marqueeToggleclass = function(el) {
+        el.classList.toggle('change');
+    }
+
+    marquee.addEventListener('click', function() {
+        btnToggleclass(box);
+    }, false);
+
+    let marqueeToggleclass = function(el) {
         el.classList.toggle('change');
     }
 
