@@ -135,23 +135,6 @@ fclose($fp);
             <?php endif; ?>
         </ol>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript ">
-        $(function() {
-            var arr = [];
-            $("#collection li").each(function() {
-                arr.push($(this).html());
-            });
-            arr.sort(function() {
-                return Math.random() - Math.random();
-            });
-            $("#collection").empty();
-            for (i = 0; i < arr.length; i++) {
-                $("#collection").append('<li class="list_item list_toggle" data-org="<?=h($row[0])?>">' + arr[i] + '</li>');
-            }
-        });
-    </script>
-
     </body>
 
     </html>
