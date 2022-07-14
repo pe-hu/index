@@ -150,5 +150,8 @@ fclose($fp);
             </li>
             <?php endif; ?>
         </ol>
+    <p id="infomation">
+        <sup>※ ポップアップ「The Things I (We) Own, in 3D」では、この一覧（メインビジュアル）に掲載したもの以外にも、たくさんのものを発表／展示／販売します。</sup>
+    </p>
 </body>
 </html>
