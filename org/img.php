@@ -41,7 +41,7 @@ fclose($fp);
         }
         
         #catalog li {
-            color:#aaa;
+            color:#333;
             font-size: 0.55rem;
             position: relative;
             padding: 0;
@@ -78,7 +78,7 @@ fclose($fp);
             position: absolute;
             z-index: 1;
             top: 0;
-            left: 0;
+            bottom: 0;
         }
         
         #catalog li p b {
