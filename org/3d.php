@@ -424,7 +424,7 @@ fclose($fp);
     let marquee = document.querySelector('#marquee');
     let box = document.querySelector('#main');
 
-    let marqueeToggleclass = function(el) {
+    let btnToggleclass = function(el) {
         el.classList.toggle('change');
     }
 
@@ -432,7 +432,7 @@ fclose($fp);
         btnToggleclass(box);
     }, false);
 
-    let marqueeToggleclass = function(el) {
+    let btnToggleclass = function(el) {
         el.classList.toggle('change');
     }
 
