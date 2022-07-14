@@ -371,8 +371,6 @@ fclose($fp);
                     <?php foreach ($rows as $row): ?>
                     <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
                     <img src="<?=h($row[2])?>">
-                    <p><b><?=h($row[3])?></b></p>
-                    <p><?=h($row[4])?></p>
                     </li>
                     <?php endforeach; ?>
                     <?php else: ?>
