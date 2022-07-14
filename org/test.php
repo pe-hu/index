@@ -228,7 +228,7 @@ fclose($fp);
         }
 
         #server {
-            position: absolute;
+            position: fixed;
             left: 0;
             overflow: hidden;
         }
