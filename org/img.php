@@ -50,11 +50,11 @@ fclose($fp);
             font-size: 0.55rem;
             position: relative;
             padding: 0;
-            margin: 2.5rem;
+            margin: 2.5vw;
             width: 10rem;
             height: 10rem;
-            max-width: 90vw;
-            max-height: 90vw;
+            max-width: 95vw;
+            max-height: 95vw;
             transition: all 1000ms ease;
         }
         
