@@ -124,6 +124,11 @@ fclose($fp);
             text-decoration: wavy underline #aaa;
             cursor: pointer;
         }
+
+        #main.change {
+            height: auto;
+            overflow: auto;
+        }
         
         #bought:checked~label,
         #gift:checked~label,
