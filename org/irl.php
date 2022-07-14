@@ -387,11 +387,12 @@ fclose($fp);
                 </div>
                 <div id="server">
                     <p class="cc_style">
-                        <?php
-                        echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
-                        echo 'PORT : '. $_SERVER['REMOTE_PORT']."<br/>";
-                        echo ''. $_SERVER['HTTP_USER_AGENT'].".";
-                        ?>
+                        Last Modified : 
+                            <?php
+                            $mod = filemtime('index.php');
+                            date_default_timezone_set('Asia/Tokyo');
+                            print "".date("r",$mod);
+                            ?>
                     </p>
                 </div>
                 <ol id="catalog" class="org">
@@ -423,16 +424,6 @@ fclose($fp);
             </span>
             </p>
             <img style="display: block; float: right;" src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/">
-        </address>
-        <address id="address" class="cc_style" style="text-align:right; width:100%;">
-          <span>Last Modified : </span>
-          <span>
-            <?php
-            $mod = filemtime('index.php');
-            date_default_timezone_set('Asia/Tokyo');
-            print "".date("r",$mod);
-            ?>
-          </span>
         </address>
     </footer>
 
