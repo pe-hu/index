@@ -147,23 +147,59 @@ fclose($fp);
         }
         
         #catalog {
+            padding: 1rem 0;
+        }
+        
+        #catalog li {
+            color:#333;
+            text-shadow: 0.1rem 0.1rem 0.1rem #fff;
+            font-size: 0.55rem;
+            position: relative;
+            padding: 0;
+            margin: 2.5rem;
+            width: 10rem;
+            height: 10rem;
+            max-width: 90vw;
+            max-height: 90vw;
+            transition: all 1000ms ease;
+        }
+        
+        #catalog li img {
+            width: 75%;
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 95%;
-            height: 0;
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
         }
-
-        #catalog .list_item {
-            position: relative;
-            padding: 0;
-            margin: 2.5vh 0;
+        
+        #catalog li p {
+            padding: 0.25rem;
+            margin: 0;
+            font-family: "ipag", monospace;
+            transform: scale(1, 1.25);
+            position: absolute;
+            z-index: 5;
+            bottom: 0;
+            left: 0;
         }
         
-        #catalog img {
-            animation: 100s linear infinite spot;
+        #catalog li p b {
+            font-size: 150%;
+            display: inline-block;
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+            font-stretch: condensed;
+            font-variant: common-ligatures tabular-nums;
+            transform: scale(1, 1.1);
+            letter-spacing: -0.1rem;
+            word-spacing: -.1ch;
+            padding: 0;
+            margin: 0.5rem 0;
+        }
+        
+        #catalog li:hover p {
+            display: block;
         }
         
         @keyframes spot {
@@ -243,28 +279,9 @@ fclose($fp);
             display: none;
         }
         
-        @media screen and (max-width: 1000px) {
-            #catalog {
-                top: 50%;
-            }
-            #catalog .list_item {
-                position: relative;
-                padding: 0;
-                margin: 1.5vh 0;
-            }
-        }
-        
         @media screen and (max-width: 550px) {
             #address {
                 padding:0.5rem 0;
-            }
-            #catalog {
-                top: 45%;
-            }
-            #catalog .list_item {
-                position: relative;
-                padding: 0;
-                margin: 1.25vh 0;
             }
         }
         
@@ -282,9 +299,6 @@ fclose($fp);
             }
             .print {
                 display: inline-block;
-            }
-            #catalog {
-                top: 45%;
             }
         }
     </style>
@@ -367,17 +381,21 @@ fclose($fp);
                     </p>
                 </div>
                 <ol id="catalog" class="org">
-                    <?php if (!empty($rows)): ?>
-                    <?php foreach ($rows as $row): ?>
-                    <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
-                    <img src="<?=h($row[2])?>">
-                    </li>
-                    <?php endforeach; ?>
-                    <?php else: ?>
-                    <li class="list_item list_toggle min" data-org="test">
-                    <img src="/logo.png">
-                    </li>
-                    <?php endif; ?>
+            <?php if (!empty($rows)): ?>
+            <?php foreach ($rows as $row): ?>
+            <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
+                <img src="<?=h($row[2])?>">
+                <p>
+                    <b><?=h($row[3])?></b>
+                    <br/><?=h($row[4])?>
+                </p>
+            </li>
+            <?php endforeach; ?>
+            <?php else: ?>
+            <li class="list_item list_toggle min" data-org="test">
+                <img src="/logo.png">
+            </li>
+            <?php endif; ?>
                 </ol>
             </li>
         </ul>
