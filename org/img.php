@@ -81,7 +81,7 @@ fclose($fp);
         }
         
         #catalog li p b {
-            font-size: 125%;
+            font-size: 150%;
             display: inline-block;
             font-family: 'Times New Roman', serif;
             font-weight: 500;
