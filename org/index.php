@@ -269,8 +269,7 @@ fclose($fp);
         }
         
         @media print {
-            body {border: 1px dashed #ccc;}
-            #images {
+            #body {
                 background-image: conic-gradient(
                     #fff 0deg,
                     #aaa 60deg,
