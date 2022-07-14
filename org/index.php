@@ -399,6 +399,14 @@ fclose($fp);
             <img style="display: block; float: right;" src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/">
         </address>
             <address id="address" class="cc_style" style="text-align:right; width:100%;">
+          <span>URL : </span>
+          <a class="cc_style" href="<?php echo $_SERVER['REQUEST_URI'];?>">
+          <?php
+          echo $_SERVER['SERVER_NAME'];
+          echo $_SERVER['REQUEST_URI'];
+          ?>
+          </a>
+          <br/>
           <span>Last Modified : </span>
           <span>
             <?php
