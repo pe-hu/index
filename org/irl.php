@@ -314,12 +314,12 @@ fclose($fp);
             <h1>The Things I (We) Own</h1>
             <p id="presents">
                 <b class="cc_style">私（わたしたち）が所有する全てのもの</b><br/>
-                <span>最終更新日</span>
+                <span>最終更新日時</span>
                 <span>
                     <?php
                     $mod = filemtime('index.php');
                     date_default_timezone_set('Asia/Tokyo');
-                    print ''.date('Y 年 n 月 j 日',$mod);
+                    print ''.date('Y年n月j日 g:i:s',$mod);
                     ?>
                 </span>
             </p>
