@@ -8,7 +8,7 @@ $img = (string)filter_input(INPUT_POST, 'img');
 $title = (string)filter_input(INPUT_POST, 'title');
 $text = (string)filter_input(INPUT_POST, 'text');
 
-$fp = fopen('index.csv', 'a+b');
+$fp = fopen('popup.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$org, $size, $img, $title, $text]);
@@ -48,7 +48,7 @@ fclose($fp);
     <meta name="twitter:site" content="@NLC_update"/>
     <meta name="twitter:image" content="https://creative-community.space/pehu/org/card.png"/>
 
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="popup.css" />
     <link rel="stylesheet" href="/org/style.css" />
     <link rel="stylesheet" href="/org/searchBox.css" />
     <style>
