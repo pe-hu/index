@@ -39,7 +39,7 @@ fclose($fp);
             src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
         }
 
-        h3 {
+        #screen h3 {
             font-family: "MS Mincho", serif;
             font-size:1.25rem;
             margin: 1.1rem 0.5rem;
@@ -48,7 +48,7 @@ fclose($fp);
             pointer-events: none;
         }
 
-        .org li a:hover h3 {
+        #screen li a:hover h3 {
             color: #aaa;
             transition: all 500ms ease;
         }
@@ -57,7 +57,7 @@ fclose($fp);
     </head>
 
     <body>
-        <ol class="org">
+        <ol id="screen" class="org">
             <li>
                 <h3>P E H U is | Screen Print</h3>
                 <p>P E H U is | Screen Print</p>
