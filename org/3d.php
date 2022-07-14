@@ -418,30 +418,35 @@ fclose($fp);
 
     <script type="text/javascript ">
 
-        $('a[href^="# "]').click(function() {
-            var href = $(this).attr("href ");
-            var target = $(href == "# " || href == " " ? 'html' : href);
-            return false;
-        });
-        
-        $(function() {
-            $("#motto").load("motto.php");
-        })
-
-    $(function() {
-        $('.change').hide();
-
-        $('.tab').on('click', function() {
-            $('.change').not($($(this).attr('href'))).hide();
-            $($(this).attr('href')).fadeToggle(1000);
-        });
-    });
-
     $('a[href^="#"]').click(function() {
         var href = $(this).attr("href");
         var target = $(href == "#" || href == "" ? 'html' : href);
         return false;
     });
+
+        $(function() {
+            $("#motto").load("motto.php");
+        })
+        
+        let btn = document.querySelector('#btn');
+        let box = document.querySelector('#open');
+    
+        let btnToggleclass = function(el) {
+            el.classList.toggle('open');
+        }
+    
+        btn.addEventListener('click', function() {
+            btnToggleclass(box);
+        }, false);
+    
+        $(function() {
+            $('.change').hide();
+    
+            $('.tab').on('click', function() {
+                $('.change').not($($(this).attr('href'))).hide();
+                $($(this).attr('href')).fadeToggle(1000);
+            });
+        });
 
         var volume;
         var synth;
