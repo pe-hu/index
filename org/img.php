@@ -128,7 +128,10 @@ fclose($fp);
 </head>
 
 <body>
-    <p id="infomation"><u>The Things I (We) Own, in 3D のメインビジュアルに掲載した、私（わたしたち）が所有するもの</u></p>
+    <p id="infomation">
+        <u>The Things I (We) Own, in 3D</u>
+        <br/>※ このリストに、The Things I (We) Own, in 3Dで発表／展示／販売するものを随時追加します。
+    </p>
         <ol id="collection" class="org">
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
