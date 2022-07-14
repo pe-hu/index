@@ -164,7 +164,7 @@ fclose($fp);
         }
 
         #motto {
-            width: 25rem;
+            width: 27.5rem;
             max-width: 55%;
         }
         
