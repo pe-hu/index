@@ -55,7 +55,7 @@ fclose($fp);
         #screen p {
             font-size: 0.75rem;
             padding: 0 0.5rem;
-            line-height: 125%;
+            line-height: 150%;
         }
 
         </style>
