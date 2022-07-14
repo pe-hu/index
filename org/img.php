@@ -77,8 +77,6 @@ fclose($fp);
                 left: 50%;
                 -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
-                pointer-events: none;
-                user-select: none;
             }
             
             #collection li p {
@@ -137,52 +135,4 @@ fclose($fp);
 
     </body>
 
-    <script type="text/javascript ">
-
-    let btn = document.querySelector('#greeting');
-    let marquee = document.querySelector('#marquee');
-    let box = document.querySelector('#main');
-
-    let btnToggleclass = function(el) {
-        el.classList.toggle('change');
-    }
-
-    btn.addEventListener('click', function() {
-        btnToggleclass(box);
-    }, false);
-
-    marquee.addEventListener('click', function() {
-        btnToggleclass(box);
-    }, false);
-
-        $('a[href^="# "]').click(function() {
-            var href = $(this).attr("href ");
-            var target = $(href == "# " || href == " " ? 'html' : href);
-            return false;
-        });
-        
-        $(function() {
-            $("#img").load("img.php");
-        })
-
-        var volume;
-        var synth;
-        var notes;
-
-        $(document).ready(function(event) {
-            // StartAudioContext(Tone.context, window);  
-            $(window).click(function() {
-                Tone.context.resume();
-            });
-
-            volume = new Tone.Volume(-20);
-            synth = new Tone.PolySynth(10, Tone.Synth).chain(volume, Tone.Master);
-            notes = Tone.Frequency("C6").harmonize([1, 4, 6, 9, 12, 14]);
-        });
-
-        $(".list_item").hover(function() {
-            let randNote = Math.floor(Math.random() * notes.length);
-            synth.triggerAttackRelease(notes[randNote], "8n");
-        });
-    </script>
     </html>
