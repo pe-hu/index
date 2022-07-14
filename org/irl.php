@@ -56,6 +56,12 @@ fclose($fp);
             font-family: "ipag";
             src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
         }
+
+        header marquee:hover {
+            cursor: pointer;
+            color: #aaa;
+            font-style: italic;
+        }
         
         header,
         header marquee,
