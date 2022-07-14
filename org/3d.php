@@ -355,7 +355,7 @@ fclose($fp);
     <main id="main">
         <ul class="mousedragscrollable">
             <li id="caption" class="change collection"></li>
-            <li id="images" class="collection">
+            <li id="images" class="change collection">
                 <div id="greeting">
                     <p class="nlc_style" id="text" class="tab" href="#caption"></p>
                 </div>
