@@ -139,6 +139,13 @@ fclose($fp);
             text-decoration: double underline;
         }
         
+        .mousedragscrollable #motto {
+            width: 25%;
+            max-width:25rem;
+            height: 100%;
+            margin: 0;
+        }
+        
         .mousedragscrollable #images {
             width: 75%;
             max-width:75rem;
