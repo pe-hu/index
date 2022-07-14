@@ -77,8 +77,8 @@ fclose($fp);
             transform: scale(1, 1.25);
             position: absolute;
             z-index: 1;
-            top: 0;
             bottom: 0;
+            left: 0;
         }
         
         #catalog li p b {
