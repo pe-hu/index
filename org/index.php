@@ -407,14 +407,6 @@ fclose($fp);
             print "".date("r",$mod);
             ?>
           </span>
-          <br/>
-          <span>URL : </span>
-          <a class="cc_style" href="<?php echo $_SERVER['REQUEST_URI'];?>">
-          <?php
-          echo $_SERVER['SERVER_NAME'];
-          echo $_SERVER['REQUEST_URI'];
-          ?>
-          </a>
         </address>
         </footer>
 
