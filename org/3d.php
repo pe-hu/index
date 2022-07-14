@@ -196,6 +196,7 @@ fclose($fp);
             top: 0;
             height: auto;
             z-index: 100;
+            background: rgba(255,255,255,0);
             transition: all 500ms ease;
         }
             
@@ -204,9 +205,8 @@ fclose($fp);
             width:100%;
             height: 100%;
             overflow: auto;
-            background: rgba(255,255,255,0.75);
+            background: rgba(255,255,255,0.55);
             cursor: pointer;
-            transition: all 1000ms ease;
         }
 
         #server {
