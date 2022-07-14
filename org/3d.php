@@ -135,7 +135,8 @@ fclose($fp);
             text-decoration: double underline;
         }
         
-        .mousedragscrollable #images {
+        #images {
+            position: relative;
             width: 100%;
             height: 100%;
             margin: 0;
