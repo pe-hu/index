@@ -41,7 +41,7 @@ fclose($fp);
         }
         
         #catalog {
-            padding: 2.5vw 0;
+            padding: 1rem 0;
         }
         
         #catalog li {
@@ -50,7 +50,7 @@ fclose($fp);
             font-size: 0.55rem;
             position: relative;
             padding: 0;
-            margin: 1rem;
+            margin: 2.5rem;
             width: 10rem;
             height: 10rem;
             max-width: 90vw;
