@@ -364,7 +364,7 @@ fclose($fp);
         <ul class="mousedragscrollable">
             <li id="images" class="collection">
                 <div id="greeting">
-                    <p class="nlc_style" id="text"></p>
+                    <p class="nlc_style"></p>
                 </div>
                 <div id="server">
                     <p class="cc_style">
