@@ -147,7 +147,7 @@ fclose($fp);
             });
             $("#collection").empty();
             for (i = 0; i < arr.length; i++) {
-                $("#collection").append('<li>' + arr[i] + '</li>');
+                $("#collection").append('<li class="list_item list_toggle" data-org="<?=h($row[0])?>">' + arr[i] + '</li>');
             }
         });
     </script>
