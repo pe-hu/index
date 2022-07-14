@@ -426,7 +426,6 @@ fclose($fp);
           echo $_SERVER['REQUEST_URI'];
           ?>
           </a>
-        <img style="display: block; float: right;" src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/">
         </address>
     </footer>
 
