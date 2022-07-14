@@ -150,6 +150,9 @@ fclose($fp);
             </li>
             <?php endif; ?>
         </ol>
-    <p id="infomation">The Things I (We) Own, in 3D</p>
+    <p id="infomation">
+        <u>The Things I (We) Own, IRL</u>
+        <br/><sup>※ more info soon</sup>
+    </p>
 </body>
 </html>
