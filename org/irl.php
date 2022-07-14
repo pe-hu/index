@@ -65,7 +65,6 @@ fclose($fp);
             cursor: pointer;
             color: #fff;
             background: #ccc;
-            font-style: italic;
         }
         
         header,
