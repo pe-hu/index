@@ -271,7 +271,7 @@ fclose($fp);
         @media print {
             #images {
                 background-image: conic-gradient(
-                    #999 0deg,
+                    #fff 0deg,
                     #aaa 60deg,
                     #bbb 120deg,
                     #ccc 180deg,
