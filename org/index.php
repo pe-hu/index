@@ -271,7 +271,7 @@ fclose($fp);
         @media print {
             body {
                 border: 1px dashed #ccc;
-                height:99.5vh;
+                height:99.7vh;
             }
             #images {
                 background-image: conic-gradient(
