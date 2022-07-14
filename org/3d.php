@@ -195,7 +195,7 @@ fclose($fp);
         #greeting {
             top: 0;
             height: auto;
-            z-index: 50;
+            z-index: 1;
         }
             
 
