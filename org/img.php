@@ -41,7 +41,7 @@ fclose($fp);
         }
         
         #catalog {
-            margin: 2.5vw 0;
+            padding: 2.5vw 0;
         }
         
         #catalog li {
