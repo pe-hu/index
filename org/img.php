@@ -59,7 +59,7 @@ fclose($fp);
         <ol id="catalog" class="org">
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
-            <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
+            <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
                 <img src="<?=h($row[2])?>">
                 <p><b><?=h($row[3])?></b></p>
                 <p>
