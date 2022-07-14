@@ -305,8 +305,8 @@ fclose($fp);
 
     <header id="header">
         <a class="_more" onclick="more()">私（わたしたち）が所有するもの</a>
-        <marquee>
-            <a href="https://bnaaltermuseum.com/event/the-things-i-we-own/">会期：2022年7月23日（土）〜 8月21日（日） | 会場：BnA Alter Museum</a>
+        <marquee id="marquee">
+            会期：2022年7月23日（土）〜 8月21日（日） | 会場：BnA Alter Museum
         </marquee>
         <nav id="nav">
             <h1>The Things I (We) Own<span class="print">, in 3D</span></h1>
@@ -359,7 +359,7 @@ fclose($fp);
         <ul class="mousedragscrollable">
             <li id="images" class="collection">
                 <div id="greeting">
-                    <p class="nlc_style" id="text" class="tab"></p>
+                    <p class="nlc_style" id="text"></p>
                 </div>
                 <div id="server">
                     <p class="cc_style">
@@ -414,7 +414,8 @@ fclose($fp);
 
     <script type="text/javascript ">
 
-    let btn = document.querySelector('#text');
+    let btn = document.querySelector('#greeting');
+    let marquee = document.querySelector('#marquee');
     let box = document.querySelector('#main');
 
     let btnToggleclass = function(el) {
@@ -422,6 +423,10 @@ fclose($fp);
     }
 
     btn.addEventListener('click', function() {
+        btnToggleclass(box);
+    }, false);
+
+    marquee.addEventListener('click', function() {
         btnToggleclass(box);
     }, false);
 
