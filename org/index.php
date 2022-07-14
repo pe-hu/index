@@ -5,13 +5,13 @@ function h($str) {
 $org = (string)filter_input(INPUT_POST, 'org');
 $size = (string)filter_input(INPUT_POST, 'size');
 $img = (string)filter_input(INPUT_POST, 'img');
-$link = (string)filter_input(INPUT_POST, 'link');
-$url = (string)filter_input(INPUT_POST, 'url');
+$title = (string)filter_input(INPUT_POST, 'title');
+$text = (string)filter_input(INPUT_POST, 'text');
 
 $fp = fopen('index.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$org, $size, $img, $link, $url]);
+    fputcsv($fp, [$org, $size, $img, $title, $text]);
     rewind($fp);
 }
 
@@ -371,7 +371,8 @@ fclose($fp);
                     <?php foreach ($rows as $row): ?>
                     <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
                     <img src="<?=h($row[2])?>">
-                    <a class="<?=h($row[3])?>" href="<?=h($row[4])?>" target="_parent"></a>
+                    <p><b><?=h($row[3])?></b></p>
+                    <p><?=h($row[4])?></p>
                     </li>
                     <?php endforeach; ?>
                     <?php else: ?>
