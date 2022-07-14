@@ -47,18 +47,19 @@ fclose($fp);
             position: relative;
             padding: 0;
             margin: 2.5vw;
-            width: 10rem;
-            height: 10rem;
+            width: 7.5rem;
+            height: 7.5rem;
             max-width: 90vw;
+            max-height: 90vw;
             transition: all 500ms ease;
         }
         
         #catalog li:hover {
             text-shadow: 0.25rem 0.25rem 0.25rem #fff;
             font-size: 2.5rem;
-            width: 750px;
+            width: 500px;
             max-width: 90vw;
-            height: 750px;
+            height: 500px;
             max-height: 90vw;
         }
         
