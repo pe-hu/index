@@ -42,7 +42,7 @@ fclose($fp);
             font-family: "MS Mincho", serif;
             font-size:1.25rem;
             line-height: 150%;
-            margin: 0.75rem 0.5rem;
+            margin: 1rem 0.5rem;
             font-weight: 500;
             transition: all 1000ms ease;
             pointer-events: none;
@@ -55,7 +55,7 @@ fclose($fp);
 
         #screen p {
             font-size: 0.75rem;
-            padding: 0 0.5rem 1.5rem;
+            padding: 0 0.5rem 1.75rem;
             line-height: 150%;
         }
 
