@@ -43,12 +43,12 @@ fclose($fp);
         #catalog li {
             color:#333;
             text-shadow: 0.1rem 0.1rem 0.1rem #fff;
-            font-size: 0.45rem;
+            font-size: 0.55rem;
             position: relative;
             padding: 0;
             margin: 2.5vw;
-            width: 7.5rem;
-            height: 7.5rem;
+            width: 10rem;
+            height: 10rem;
             max-width: 90vw;
             max-height: 90vw;
             transition: all 500ms ease;
