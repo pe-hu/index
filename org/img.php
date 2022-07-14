@@ -58,15 +58,6 @@ fclose($fp);
             transition: all 1000ms ease;
         }
         
-        #catalog li:hover {
-            text-shadow: 0.25rem 0.25rem 0.25rem #fff;
-            font-size: 2.5rem;
-            width: 550px;
-            max-width: 90vw;
-            height: 550px;
-            max-height: 90vw;
-        }
-        
         #catalog li img {
             width: 75%;
             position: absolute;
