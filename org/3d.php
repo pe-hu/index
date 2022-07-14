@@ -357,7 +357,7 @@ fclose($fp);
             <li id="motto" class="change collection"></li>
             <li id="images" class="collection">
                 <div id="greeting">
-                    <p class="nlc_style" id="text" class="tab" href="#motto"></p>
+                    <a class="nlc_style" id="text" class="tab" href="#motto"></a>
                 </div>
                 <div id="server">
                     <p class="cc_style">
