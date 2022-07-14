@@ -54,7 +54,7 @@ fclose($fp);
         }
         
         #catalog li:hover {
-            font-size: 2.5vw;
+            font-size: 2.5rem;
             width: 750px;
             max-width: 90vw;
             height: 750px;
