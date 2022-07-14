@@ -58,7 +58,8 @@ fclose($fp);
     <body>
         <ol class="org">
             <li>
-                <h3 style="text-align:center;">P E H U is</h3>
+                <h3>P E H U is | Screen Print</h3>
+                <p>P E H U is | Screen Print</p>
             </li>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
@@ -69,7 +70,7 @@ fclose($fp);
             <?php endforeach; ?>
             <?php else: ?>
             <li class="list_item list_toggle" data-org="test">
-                <h3 style="text-align:center;">P E H U is</h3>
+                <h3>P E H U is</h3>
             </li>
             <?php endif; ?>
         </ol>
