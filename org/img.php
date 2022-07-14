@@ -130,7 +130,7 @@ fclose($fp);
 <body>
     <p id="infomation">
         <u>The Things I (We) Own, in 3D</u>
-        <br/>※ このリストに、The Things I (We) Own, in 3Dで発表／展示／販売するものを随時追加します。
+        <br/><sup>※ このリストに、The Things I (We) Own, in 3Dで発表／展示／販売するものを随時追加します。</sup>
     </p>
         <ol id="collection" class="org">
             <?php if (!empty($rows)): ?>
