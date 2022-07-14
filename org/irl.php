@@ -307,14 +307,20 @@ fclose($fp);
     <header id="header">
         <a class="_more" onclick="more()">私（わたしたち）が所有するもの</a>
         <marquee id="marquee">
-            会期：2022年7月23日（土）〜 8月21日（日） | 会場：BnA Alter Museum
+            私（わたしたち）が所有する全てのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。
         </marquee>
         <nav id="nav">
-            <h1>The Things I (We) Own<span class="print">, in 3D</span></h1>
+            <h1>The Things I (We) Own</h1>
             <p id="presents">
-                <b class="cc_style">∧°┐ が 所有するもの in 3D</b>
-                <br/><span class="cc_style">会期：2022年7月23日（土）〜 8月21日（日）</span>
-                <br/><span class="cc_style">会場：BnA Alter Museum</span>
+                <b class="cc_style">私（わたしたち）が所有する全てのもの</b>
+                <br/>
+                <span class="cc_style">
+                    <?php
+                    echo $_SERVER['SERVER_NAME'];
+                    echo $_SERVER['REQUEST_URI'];
+                    ?>
+                </span>
+                <br/><img style="display: block; float: right;" src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/">
             </p>
             <form>
                 <ol class="search-box">
