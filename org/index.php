@@ -269,8 +269,7 @@ fclose($fp);
         }
         
         @media print {
-            body {
-                height:100vh;
+            #images {
                 background-image: linear-gradient(0deg, #aaa, #bbb, #ccc, #ddd, #eee, #fff);
             }
             #address,
