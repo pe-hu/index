@@ -31,7 +31,6 @@ fclose($fp);
         <title>P E H U is | The Things I (We) Own</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/org/template/index.css" />
         <link rel="stylesheet" href="/org/css/searchBox.css" />
         <style>
         @font-face {
@@ -61,7 +60,6 @@ fclose($fp);
             <li>
                 <h3>P E H U is | Screen Print</h3>
                 <p>これまでに制作したスクリーン版</p>
-                <a class="link" href="/pehu/motto/" target="_blank"></a>
             </li>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
