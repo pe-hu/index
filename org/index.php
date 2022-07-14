@@ -402,7 +402,7 @@ fclose($fp);
           <span>Last Modified : </span>
           <span>
             <?php
-            $mod = filemtime('index.php');
+            $mod = filemtime('img.csv');
             date_default_timezone_set('Asia/Tokyo');
             print "".date("r",$mod);
             ?>
