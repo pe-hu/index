@@ -312,7 +312,7 @@ fclose($fp);
         <nav id="nav">
             <h1>The Things I (We) Own</h1>
             <p id="presents">
-                <b class="cc_style">私（わたしたち）が所有する全てのもの</b>
+                <img style="display: block; float: right;" src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/">
                 <br/>
                 <span class="cc_style">
                     <?php
@@ -320,7 +320,6 @@ fclose($fp);
                     echo $_SERVER['REQUEST_URI'];
                     ?>
                 </span>
-                <br/><img style="display: block; float: right;" src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/">
             </p>
             <form>
                 <ol class="search-box">
