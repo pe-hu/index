@@ -147,6 +147,7 @@ fclose($fp);
         }
         
         .mousedragscrollable #images {
+            position: relative;
             width: 95%;
             max-width:75rem;
             height: 100%;
@@ -237,6 +238,7 @@ fclose($fp);
             bottom: 0;
             z-index: 10;
         }
+
         #server p {
             margin: 1.5rem 1rem;
         }
