@@ -243,7 +243,7 @@ fclose($fp);
                 display: block;
             }
             
-            .change #images,
+            .change #img,
             .mousedragscrollable,
             #print,
             .print {
