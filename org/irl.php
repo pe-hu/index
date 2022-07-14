@@ -131,7 +131,7 @@ fclose($fp);
         }
 
         #presents {
-            padding: 1rem 0;
+            padding: 2rem 0;
         }
         
         #bought:checked~label,
