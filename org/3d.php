@@ -354,10 +354,10 @@ fclose($fp);
 
     <main id="main">
         <ul class="mousedragscrollable">
-            <li id="caption" class="change collection"></li>
-            <li id="images" class="change collection">
+            <li id="motto" class="change collection"></li>
+            <li id="images" class="collection">
                 <div id="greeting">
-                    <p class="nlc_style" id="text" class="tab" href="#caption"></p>
+                    <p class="nlc_style" id="text" class="tab" href="#motto"></p>
                 </div>
                 <div id="server">
                     <p class="cc_style">
@@ -419,7 +419,7 @@ fclose($fp);
         });
         
         $(function() {
-            $("#caption").load("img.php");
+            $("#motto").load("motto.php");
         })
 
         $(function() {
