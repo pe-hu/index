@@ -71,7 +71,7 @@ fclose($fp);
         header,
         header marquee,
         #main {
-            border-bottom: 1px dashed #ccc;
+            border-bottom: 1px dashed #eee;
         }
 
         marquee a {
