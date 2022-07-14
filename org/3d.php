@@ -240,7 +240,7 @@ fclose($fp);
         }
 
         .mousedragscrollable,
-        .change #img,
+        .change #images,
         #print,
         .print {
             display: none;
