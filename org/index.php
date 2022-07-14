@@ -273,17 +273,6 @@ fclose($fp);
                 border: 1px dashed #ccc;
                 height:99.7vh;
             }
-            #images {
-                background-image: conic-gradient(
-                    #fff 0deg,
-                    #aaa 60deg,
-                    #bbb 120deg,
-                    #ccc 180deg,
-                    #ddd 240deg,
-                    #eee 300deg,
-                    #fff 360deg
-                    );
-            }
             #address,
             #server {
                 display: none;
