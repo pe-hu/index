@@ -125,10 +125,6 @@ fclose($fp);
             cursor: pointer;
         }
         
-        #print {
-            display: none;
-        }
-        
         #bought:checked~label,
         #gift:checked~label,
         #free:checked~label,
@@ -137,12 +133,6 @@ fclose($fp);
         #other:checked~label,
         #sale:checked~label {
             text-decoration: double underline;
-        }
-        
-        .mousedragscrollable #motto {
-            width: 100%;
-            height: 100%;
-            margin: 0;
         }
         
         .mousedragscrollable #images {
@@ -244,6 +234,12 @@ fclose($fp);
             text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
         }
         
+        .change #img {
+            display: block;
+        }
+
+        #img,
+        .change #images
         #print,
         .print {
             display: none;
@@ -360,10 +356,10 @@ fclose($fp);
 
     <main id="main">
         <ul class="mousedragscrollable">
-            <li id="motto" class="change collection"></li>
+            <li id="img" class="collection"></li>
             <li id="images" class="collection">
                 <div id="greeting">
-                    <a class="nlc_style" id="text" class="tab" href="#motto"></a>
+                    <p class="nlc_style" id="text" class="tab"></p>
                 </div>
                 <div id="server">
                     <p class="cc_style">
@@ -418,35 +414,26 @@ fclose($fp);
 
     <script type="text/javascript ">
 
-    $('a[href^="#"]').click(function() {
-        var href = $(this).attr("href");
-        var target = $(href == "#" || href == "" ? 'html' : href);
-        return false;
-    });
+    let btn = document.querySelector('#text');
+    let box = document.querySelector('#main');
 
-        $(function() {
-            $("#motto").load("motto.php");
-        })
-        
-        let btn = document.querySelector('#btn');
-        let box = document.querySelector('#open');
-    
-        let btnToggleclass = function(el) {
-            el.classList.toggle('open');
-        }
-    
-        btn.addEventListener('click', function() {
-            btnToggleclass(box);
-        }, false);
-    
-        $(function() {
-            $('.change').hide();
-    
-            $('.tab').on('click', function() {
-                $('.change').not($($(this).attr('href'))).hide();
-                $($(this).attr('href')).fadeToggle(1000);
-            });
+    let btnToggleclass = function(el) {
+        el.classList.toggle('change');
+    }
+
+    btn.addEventListener('click', function() {
+        btnToggleclass(box);
+    }, false);
+
+        $('a[href^="# "]').click(function() {
+            var href = $(this).attr("href ");
+            var target = $(href == "# " || href == " " ? 'html' : href);
+            return false;
         });
+        
+        $(function() {
+            $("#img").load("img.php");
+        })
 
         var volume;
         var synth;
