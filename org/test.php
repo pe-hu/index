@@ -140,7 +140,7 @@ fclose($fp);
         }
         
         .mousedragscrollable #motto {
-            width: 55%;
+            width: 45%;
             max-width:25rem;
             height: 100%;
             margin: 0;
