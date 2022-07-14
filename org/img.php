@@ -55,7 +55,7 @@ fclose($fp);
             height: 10rem;
             max-width: 90vw;
             max-height: 90vw;
-            transition: all 500ms ease;
+            transition: all 1000ms ease;
         }
         
         #catalog li:hover {
