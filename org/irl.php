@@ -313,7 +313,15 @@ fclose($fp);
         <nav id="nav">
             <h1>The Things I (We) Own</h1>
             <p id="presents">
-                <b class="cc_style">私（わたしたち）が所有する全てのもの</b>
+                <b class="cc_style">私（わたしたち）が所有する全てのもの</b><br/>
+                <span>最終更新日</span>
+                <span>
+                    <?php
+                    $mod = filemtime('index.php');
+                    date_default_timezone_set('Asia/Tokyo');
+                    print ''.date('Y 年 n 月 j 日',$mod);
+                    ?>
+                </span>
             </p>
             <form>
                 <ol class="search-box">
@@ -376,9 +384,6 @@ fclose($fp);
                     </li>
                     <?php endforeach; ?>
                     <?php else: ?>
-                    <li class="list_item list_toggle min" data-org="test">
-                    <img src="/logo.png">
-                    </li>
                     <?php endif; ?>
                 </ol>
             </div>
@@ -418,6 +423,7 @@ fclose($fp);
           echo $_SERVER['REQUEST_URI'];
           ?>
           </a>
+        <img style="display: block; float: right;" src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/">
         </address>
     </footer>
 
