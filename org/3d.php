@@ -196,6 +196,8 @@ fclose($fp);
             top: 0;
             height: auto;
             z-index: 100;
+            transition: all 1000ms ease;
+            background: rgba(255,255,255,0);
         }
             
 
