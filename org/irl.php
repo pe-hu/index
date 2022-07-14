@@ -78,6 +78,11 @@ fclose($fp);
         footer {
             font-size:0.75rem;
         }
+
+        footer p  {
+            padding: 0;
+            margin: 0.25rem 0;
+        }
         
         header a:hover,
         header label:hover,
