@@ -270,7 +270,15 @@ fclose($fp);
         
         @media print {
             #images {
-                background-image: linear-gradient(0deg, #aaa, #bbb, #ccc, #ddd, #eee, #fff);
+                background-image: conic-gradient(
+                    #fff 0deg,
+                    #aaa 60deg,
+                    #bbb 120deg,
+                    #ccc 180deg,
+                    #ddd 240deg,
+                    #eee 300deg,
+                    #fff 360deg
+                    );
             }
             #address,
             #server {
