@@ -45,6 +45,7 @@ fclose($fp);
             margin: 1.1rem 0.5rem;
             font-weight: 500;
             transition: all 1000ms ease;
+            pointer-events: none;
         }
 
         .org li a:hover h3 {
