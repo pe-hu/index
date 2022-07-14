@@ -40,6 +40,10 @@ fclose($fp);
             margin: 0;
         }
         
+        #catalog {
+            margin: 2.5vw 0;
+        }
+        
         #catalog li {
             color:#333;
             text-shadow: 0.1rem 0.1rem 0.1rem #fff;
