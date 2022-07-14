@@ -8,3 +8,7 @@ var Index = [
 function more() {
     $("#header marquee").html(Index[Math.floor(Math.random() * Index.length)]);
 }
+
+function greeting() {
+    $("#greeting #text").html(Index);
+}
