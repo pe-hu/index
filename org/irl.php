@@ -64,14 +64,14 @@ fclose($fp);
         header marquee:hover {
             cursor: pointer;
             color: #fff;
-            background: #ddd;
+            background: #ccc;
             font-style: italic;
         }
         
         header,
         header marquee,
         #main {
-            border-bottom: 1px dashed #eee;
+            border-bottom: 1px dashed #ccc;
         }
 
         marquee a {
