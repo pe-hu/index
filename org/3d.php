@@ -190,11 +190,11 @@ fclose($fp);
         #greeting {
             top: 0;
             height: auto;
+            z-index: 1;
         }
             
 
         #greeting:hover {
-            z-index: 100;
             width:100%;
             height: 100%;
             overflow: auto;
