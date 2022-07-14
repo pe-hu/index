@@ -419,17 +419,12 @@ fclose($fp);
 
     <footer id="footer">
         <address id="print">
-            <p style="float:left;">
-            <b class="cc_style">私（わたしたち）が所有する全てのもの</b>
-            <br/>
             <span class="cc_style">
                 <?php
                 echo $_SERVER['SERVER_NAME'];
                 echo $_SERVER['REQUEST_URI'];
                 ?>
             </span>
-            </p>
-            <img style="display: block; float: right;" src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/">
         </address>
     </footer>
 
