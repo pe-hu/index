@@ -41,6 +41,7 @@ fclose($fp);
         #screen h3 {
             font-family: "MS Mincho", serif;
             font-size:1.25rem;
+            line-height: 150%;
             margin: 1.1rem 0.5rem;
             font-weight: 500;
             transition: all 1000ms ease;
