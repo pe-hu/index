@@ -263,6 +263,7 @@ fclose($fp);
             display: block;
         }
 
+        #footer,
         .mousedragscrollable,
         .change #images,
         #print,
@@ -300,6 +301,7 @@ fclose($fp);
             #server {
                 display: none;
             }
+            #footer,
             #print {
                 display: block;
             }
