@@ -272,10 +272,6 @@ fclose($fp);
         }
         
         @media print {
-            body {
-                border: 1px dashed #ccc;
-                height:99.7vh;
-            }
             #address,
             #server {
                 display: none;
