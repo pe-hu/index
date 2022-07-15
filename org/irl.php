@@ -56,16 +56,6 @@ fclose($fp);
             font-family: "ipag";
             src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
         }
-
-        header marquee {
-            transition: all 1000ms ease;
-        }
-
-        header marquee:hover {
-            cursor: pointer;
-            color: #fff;
-            background: #ccc;
-        }
         
         header,
         header marquee,
@@ -77,10 +67,14 @@ fclose($fp);
             min-height: 85vh;
         }
 
-        marquee a {
-            color:#111;
-            text-decoration:none;
+        header marquee {
             transition: all 1000ms ease;
+        }
+
+        header marquee:hover {
+            cursor: pointer;
+            color: #fff;
+            background: #ccc;
         }
         
         ._more,
@@ -161,14 +155,6 @@ fclose($fp);
             height: 100%;
             margin: 0;
         }
-        
-        #images {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                overflow: hidden;
-            }
             
             #images {
                 position: absolute;

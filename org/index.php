@@ -62,12 +62,16 @@ fclose($fp);
             #main {
                 border-bottom: 1px dashed #ccc;
             }
-            
-            marquee a {
-                color: #111;
-                text-decoration: none;
-                transition: all 1000ms ease;
-            }
+
+        header marquee {
+            transition: all 1000ms ease;
+        }
+
+        header marquee:hover {
+            cursor: pointer;
+            color: #fff;
+            background: #ccc;
+        }
             
             ._more,
             header label,
