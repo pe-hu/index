@@ -31,7 +31,8 @@ fclose($fp);
         <title>P E H U is | The Things I (We) Own</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/org/css/searchBox.css" />
+        <link rel="stylesheet" href="/org/index.css" />
+        <link rel="stylesheet" href="/org/searchBox.css" />
         <style>
         @font-face {
             font-family: "MS Mincho";
