@@ -155,7 +155,7 @@ fclose($fp);
             text-decoration: double underline;
         }
         
-        #images {
+        #cover {
             position: relative;
             width: 100%;
             height: 100%;
@@ -321,7 +321,7 @@ fclose($fp);
 
         #footer,
         .mousedragscrollable,
-        .change #images,
+        .change #cover,
         #print,
         .print {
             display: none;
@@ -417,7 +417,7 @@ fclose($fp);
     </header>
 
     <main id="main">
-            <div id="images">
+            <div id="cover">
                 <div id="greeting">
                     <p class="nlc_style" id="text"></p>
                 </div>
