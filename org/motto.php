@@ -39,7 +39,7 @@ fclose($fp);
         }
 
         .Black {color:Black;}
-        .White {color:White; background:#ccc;}
+        .White {color:White; background:#eee;}
         .DarkGray {color:DarkGray;}
         .Red {color:red;}
         .DeepPink {color:DeepPink;}
