@@ -58,8 +58,8 @@ fclose($fp);
             pointer-events: none;
         }
 
-        #screen li a:hover h3 {
-            color: #aaa;
+        #screen li a:hover {
+            border-bottom: #eee solid 1px;
             transition: all 500ms ease;
         }
 
