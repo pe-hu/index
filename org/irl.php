@@ -168,24 +168,80 @@ fclose($fp);
             max-width: 55%;
         }
         
-        #catalog {
+        body,
+        ol,
+        li {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #collection {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 1rem 0 2.5rem;
+        }
+        
+        #collection li {
+            color: #333;
+            text-shadow: 0.1rem 0.1rem 0.1rem #fff;
+            font-size: 0.55rem;
+            position: relative;
+            padding: 0;
+            margin: 1vw;
+            width: 10rem;
+            height: 10rem;
+            max-width: 95vw;
+            max-height: 95vw;
+            transition: all 1000ms ease;
+        }
+        
+        #collection li p {
+            font-family: "ipag", monospace;
+            transform: scale(1, 1.25);
+            padding: 0.25rem;
+            margin: 0;
+            position: absolute;
+            z-index: 5;
+            bottom: 0;
+            left: 0;
+            pointer-events: none;
+            user-select: none;
+        }
+        
+        #collection li p b {
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+            font-stretch: condensed;
+            font-variant: common-ligatures tabular-nums;
+            transform: scale(1, 1.1);
+            letter-spacing: -0.1rem;
+            word-spacing: -.1ch;
+            font-size: 150%;
+            display: inline-block;
+            padding: 0;
+            margin: 0.5rem 0;
+        }
+        
+        #collection li img {
+            width: 75%;
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 95%;
-            height: 0;
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-        }
-
-        #catalog .list_item {
-            position: relative;
-            padding: 0;
-            margin: 2.5vh 0;
+            pointer-events: none;
+            user-select: none;
         }
         
-        #catalog img {
-            animation: 100s linear infinite spot;
+        #collection li:hover p {
+            display: block;
         }
         
         @keyframes spot {
@@ -272,28 +328,9 @@ fclose($fp);
             display: none;
         }
         
-        @media screen and (max-width: 1000px) {
-            #catalog {
-                top: 50%;
-            }
-            #catalog .list_item {
-                position: relative;
-                padding: 0;
-                margin: 1.5vh 0;
-            }
-        }
-        
         @media screen and (max-width: 550px) {
             #address {
                 padding:0.5rem 0;
-            }
-            #catalog {
-                top: 45%;
-            }
-            #catalog .list_item {
-                position: relative;
-                padding: 0;
-                margin: 1.25vh 0;
             }
         }
         
@@ -308,9 +345,6 @@ fclose($fp);
             }
             .print {
                 display: inline-block;
-            }
-            #catalog {
-                top: 45%;
             }
         }
     </style>
