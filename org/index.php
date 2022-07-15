@@ -49,7 +49,7 @@ fclose($fp);
         <meta name="twitter:image" content="https://creative-community.space/pehu/org/card.png" />
 
         <link rel="stylesheet" href="popup.css" />
-        <link rel="stylesheet" href="/org/style.css" />
+        <link rel="stylesheet" href="/org/index.css" />
         <link rel="stylesheet" href="/org/searchBox.css" />
         <style>
             @font-face {
@@ -239,11 +239,11 @@ fclose($fp);
                 text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
             }
             
-            .change #img {
+            .change #popup {
                 display: block;
             }
             
-            #img,
+            #popup,
             .change .mousedragscrollable,
             #print,
             .print {
@@ -303,7 +303,6 @@ fclose($fp);
         <script src="https://creative-community.space/coding/js/tone/jquery-ui.min.js"></script>
         <script src="https://creative-community.space/coding/js/tone/Tone.min.js"></script>
         <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
-        <script src="index.js"></script>
         <script src="popup.js"></script>
     </head>
 
@@ -361,7 +360,7 @@ fclose($fp);
         </header>
 
         <main id="main">
-            <div id="img"></div>
+            <div id="popup"></div>
             <ul class="mousedragscrollable">
                 <li id="images" class="collection">
                     <div id="greeting">
@@ -399,15 +398,6 @@ fclose($fp);
             <img style="display: block; float: right;" src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/">
         </address>
             <address id="address" class="cc_style" style="text-align:right; width:100%;">
-          <span>Last Modified : </span>
-          <span>
-            <?php
-            $mod = filemtime('img.csv');
-            date_default_timezone_set('Asia/Tokyo');
-            print "".date("r",$mod);
-            ?>
-          </span>
-          <br/>
           <span>URL : </span>
           <a class="cc_style" href="<?php echo $_SERVER['REQUEST_URI'];?>">
           <?php
@@ -415,6 +405,15 @@ fclose($fp);
           echo $_SERVER['REQUEST_URI'];
           ?>
           </a>
+          <br/>
+          <span>Last Modified : </span>
+          <span>
+            <?php
+            $mod = filemtime('index.php');
+            date_default_timezone_set('Asia/Tokyo');
+            print "".date("r",$mod);
+            ?>
+          </span>
         </address>
         </footer>
 
