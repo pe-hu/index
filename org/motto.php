@@ -38,6 +38,16 @@ fclose($fp);
             src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
         }
 
+        .Black {color:Black;}
+        .White {color:White; background:Black;}
+        .DarkGray {color:DarkGray;}
+        .Red {color:red;}
+        .DeepPink {color:DeepPink;}
+        .DodgerBlue {color:DodgerBlue;}
+        .Orange {color:Orange;}
+        .DarkGoldenRod {color:DarkGoldenRod;}
+        .Purple {color:Purple;}
+
         #screen h3 {
             font-family: "MS Mincho", serif;
             font-size:1.25rem;
