@@ -155,7 +155,7 @@ fclose($fp);
             text-decoration: double underline;
         }
         
-        #cover {
+        #images {
             position: relative;
             width: 100%;
             height: 100%;
@@ -168,7 +168,7 @@ fclose($fp);
             max-width: 55%;
         }
         
-        #images {
+        #catalog {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -178,13 +178,13 @@ fclose($fp);
             transform: translate(-50%, -50%);
         }
 
-        #images .list_item {
+        #catalog .list_item {
             position: relative;
             padding: 0;
             margin: 2.5vh 0;
         }
         
-        #images img {
+        #catalog img {
             animation: 100s linear infinite spot;
         }
         
@@ -266,17 +266,17 @@ fclose($fp);
 
         #footer,
         .mousedragscrollable,
-        .change #cover,
+        .change #images,
         #print,
         .print {
             display: none;
         }
         
         @media screen and (max-width: 1000px) {
-            #images {
+            #catalog {
                 top: 50%;
             }
-            #images .list_item {
+            #catalog .list_item {
                 position: relative;
                 padding: 0;
                 margin: 1.5vh 0;
@@ -287,10 +287,10 @@ fclose($fp);
             #address {
                 padding:0.5rem 0;
             }
-            #images {
+            #catalog {
                 top: 45%;
             }
-            #images .list_item {
+            #catalog .list_item {
                 position: relative;
                 padding: 0;
                 margin: 1.25vh 0;
@@ -309,7 +309,7 @@ fclose($fp);
             .print {
                 display: inline-block;
             }
-            #images {
+            #catalog {
                 top: 45%;
             }
         }
@@ -384,7 +384,7 @@ fclose($fp);
     </header>
 
     <main id="main">
-            <div id="cover">
+            <div id="images">
                 <div id="greeting">
                     <p class="nlc_style" id="text"></p>
                 </div>
@@ -398,7 +398,7 @@ fclose($fp);
                             ?>
                     </p>
                 </div>
-                <ol id="images" class="org">
+                <ol id="catalog" class="org">
                     <?php if (!empty($rows)): ?>
                     <?php foreach ($rows as $row): ?>
                     <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
