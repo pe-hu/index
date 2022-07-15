@@ -398,14 +398,21 @@ fclose($fp);
                             ?>
                     </p>
                 </div>
-                <ol id="catalog" class="org">
+                <ol id="collection" class="org">
                     <?php if (!empty($rows)): ?>
-                    <?php foreach ($rows as $row): ?>
-                    <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
-                    <img src="<?=h($row[2])?>">
-                    </li>
-                    <?php endforeach; ?>
+                        <?php foreach ($rows as $row): ?>
+                            <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
+                            <img src="<?=h($row[2])?>">
+                            <p>
+                                <b><?=h($row[3])?></b>
+                                <br/><?=h($row[4])?>
+                            </p>
+                        </li>
+                        <?php endforeach; ?>
                     <?php else: ?>
+                        <li class="list_item list_toggle min" data-org="test">
+                            <img src="/logo.png">
+                        </li>
                     <?php endif; ?>
                 </ol>
             </div>
