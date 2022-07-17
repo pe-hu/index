@@ -335,7 +335,7 @@ fclose($fp);
         .change #cover {
             position: fixed;
             left:0;
-            z-index: 0;
+            z-index: -1;
             height: 100%;
             overflow: hidden;
         }
