@@ -39,7 +39,7 @@ fclose($fp);
             width:20rem;
             font-size:2rem;
             line-height: 150%;
-            margin: 1rem auto 2rem;
+            margin: 1rem auto;
             font-weight: 500;
             transition: all 1000ms ease;
             pointer-events: none;
