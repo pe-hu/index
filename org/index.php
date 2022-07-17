@@ -369,10 +369,10 @@ fclose($fp);
                     <div id="server">
                         <p class="cc_style">
                             <?php
-                        echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
-                        echo 'PORT : '. $_SERVER['REMOTE_PORT']."<br/>";
-                        echo ''. $_SERVER['HTTP_USER_AGENT'].".";
-                        ?>
+                            echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
+                            echo 'PORT : '. $_SERVER['REMOTE_PORT']."<br/>";
+                            echo ''. $_SERVER['HTTP_USER_AGENT'].".";
+                            ?>
                         </p>
                     </div>
                     <ol id="images" class="org">

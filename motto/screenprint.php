@@ -323,7 +323,7 @@ fclose($fp);
             text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
         }
         
-        .change .mousedragscrollable {
+        .change .collection {
             display: block;
         }
 
@@ -332,7 +332,7 @@ fclose($fp);
         }
 
         #footer,
-        .mousedragscrollable,
+        .collection,
         .change #cover,
         #print,
         .print {
@@ -429,7 +429,8 @@ fclose($fp);
     </header>
 
     <main id="main">
-            <div id="cover">
+        <ul class="mousedragscrollable">
+            <li id="cover">
                 <div id="greeting">
                     <p class="nlc_style" id="text"></p>
                 </div>
@@ -443,27 +444,25 @@ fclose($fp);
                             ?>
                     </p>
                 </div>
-        <ol id="collection" class="org">
-            <?php if (!empty($rows)): ?>
-            <?php foreach ($rows as $row): ?>
-            <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
-                <img src="<?=h($row[3])?>">
-                <p>
-                    <b><?=h($row[1])?></b>
-                    <br/>
-                    <?=h($row[2])?>
-                </p>
-                <a class="<?=h($row[4])?>" href="<?=h($row[5])?>" target="_blank"></a>
+                <ol id="collection" class="org">
+                    <?php if (!empty($rows)): ?>
+                    <?php foreach ($rows as $row): ?>
+                        <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
+                        <img src="<?=h($row[3])?>">
+                        <p>
+                            <b><?=h($row[1])?></b><br/>
+                            <?=h($row[2])?>
+                        </p>
+                        <a class="<?=h($row[4])?>" href="<?=h($row[5])?>" target="_blank"></a>
+                        </li>
+                        <?php endforeach; ?>
+                        <?php else: ?>
+                            <li class="list_item list_toggle min" data-org="test">
+                                <img src="/logo.png">
+                            </li>
+                    <?php endif; ?>
+                </ol>
             </li>
-            <?php endforeach; ?>
-            <?php else: ?>
-            <li class="list_item list_toggle min" data-org="test">
-                <img src="/logo.png">
-            </li>
-            <?php endif; ?>
-        </ol>
-            </div>
-        <ul class="mousedragscrollable">
             <li id="p" class="collection"></li>
             <li id="e" class="collection"></li>
             <li id="h" class="collection"></li>
