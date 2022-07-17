@@ -37,9 +37,9 @@ fclose($fp);
         #screen h3 {
             font-family: 'Times New Roman', serif;
             width:20rem;
-            font-size:1.25rem;
+            font-size:2rem;
             line-height: 150%;
-            margin: 1rem auto;
+            margin: 1rem auto 2rem;
             font-weight: 500;
             transition: all 1000ms ease;
             pointer-events: none;
