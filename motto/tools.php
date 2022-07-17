@@ -32,12 +32,11 @@ fclose($fp);
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/org/index.css" />
         <link rel="stylesheet" href="/org/searchBox.css" />
-        <link rel="stylesheet" href="/www/preview.css" />
         <style>
 
         #tools h3 {
             font-family: 'Times New Roman', serif;
-            width:25rem;
+            width:45rem;
             max-width:90%;
             font-size:1.25rem;
             line-height: 150%;
