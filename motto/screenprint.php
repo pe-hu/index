@@ -160,6 +160,7 @@ fclose($fp);
             position: relative;
             width: 100%;
             height: auto;
+            overflow: hidden;
             margin: 0;
         }
         
