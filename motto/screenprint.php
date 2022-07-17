@@ -448,11 +448,13 @@ fclose($fp);
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
-                <img src="<?=h($row[2])?>">
+                <a class="<?=h($row[4])?>" href="<?=h($row[5])?>" target="_blank">
+                <img src="<?=h($row[3])?>">
+                </a>
                 <p>
-                    <b><?=h($row[3])?></b>
+                    <b><?=h($row[1])?></b>
                     <br/>
-                    <?=h($row[4])?>
+                    <?=h($row[2])?>
                 </p>
             </li>
             <?php endforeach; ?>
@@ -532,7 +534,7 @@ fclose($fp);
             synth.triggerAttackRelease(notes[randNote], "2n");
         });
 
-        $(".list_item img").hover(function() {
+        $(".list_item").hover(function() {
             let randNote = Math.floor(Math.random() * notes.length);
             synth.triggerAttackRelease(notes[randNote], "6n");
         });
