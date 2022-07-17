@@ -45,7 +45,7 @@ fclose($fp);
             pointer-events: none;
         }
 
-        #u span {
+        #u p {
             font-size: 0.75rem;
             padding: 0 2rem 2rem;
             line-height: 150%;
