@@ -28,7 +28,7 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>The Things I (We) Own | ∧° ┐</title>
+    <title>P E H U is | Screen Printing</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
@@ -36,7 +36,7 @@ fclose($fp);
     <meta name="reply-to" content="pehu@creative-community.space">
     <meta name="description" content="私（わたしたち）が所有する全てのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。">
 
-    <meta property="og:title" content="The Things I (We) Own | ∧° ┐"/>
+    <meta property="og:title" content="Screen Printing"/>
     <meta property="og:description" content="私（わたしたち）が所有する全てのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://creative-community.space/pehu/org/"/>
@@ -148,7 +148,7 @@ fclose($fp);
         #sale:checked~label {
             text-decoration: double underline;
         }
-        
+
         body,
         ol,
         li {
@@ -369,7 +369,7 @@ fclose($fp);
             私（わたしたち）が所有する全てのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。
         </marquee>
         <nav id="nav">
-            <h1>The Things I (We) Own</h1>
+            <h1>P E H U is | Screen Printing</h1>
             <p id="presents">
                 <b class="cc_style">最終更新日時</b><br/>
                 <span>
