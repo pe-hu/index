@@ -34,7 +34,7 @@ fclose($fp);
         <link rel="stylesheet" href="/org/searchBox.css" />
         <style>
 
-        #screen h3 {
+        #e h3 {
             font-family: 'Times New Roman', serif;
             width:20rem;
             font-size:2rem;
@@ -45,27 +45,24 @@ fclose($fp);
             pointer-events: none;
         }
 
-        #screen li a:hover {
-            border-bottom: #eee solid 1px;
-            transition: all 500ms ease;
-        }
-
-        #screen span {
+        #e p {
             font-size: 0.75rem;
             padding: 0 2rem 2rem;
             line-height: 150%;
+            margin: 0;
+            text-align: center;
         }
 
         </style>
     </head>
 
     <body>
-        <ol id="screen" class="org">
+        <ol id="e" class="org">
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
                 <h3 class="<?=h($row[1])?>" style="text-align:center;"><?=h($row[2])?></h3>
-                <span><?=h($row[3])?></span>
+                <p><?=h($row[3])?></p>
            </li>
             <?php endforeach; ?>
             <?php else: ?>
