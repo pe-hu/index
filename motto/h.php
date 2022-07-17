@@ -37,7 +37,7 @@ fclose($fp);
         #h h3 {
             font-family: 'Times New Roman', serif;
             width:20rem;
-            max-width:75%;
+            max-width:55%;
             font-size:2rem;
             line-height: 150%;
             margin: 1rem auto;
