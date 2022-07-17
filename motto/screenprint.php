@@ -427,7 +427,7 @@ fclose($fp);
                     </li>
                     <li>
                         <input type="radio" name="org" value="bought" id="bought">
-                        <label for="bought" class="label">ink/tools</label>
+                        <label for="bought" class="label">inks/tools</label>
                     </li>
                     <li class="reset">
                         <input type="reset" name="reset" value="View All" class="reset-button cc_style label" onclick="greeting()">
