@@ -373,9 +373,9 @@ fclose($fp);
 <body>
 
     <header id="header">
-        <a class="_more" onclick="more()">私（わたしたち）が所有するもの</a>
+        <a class="_more" onclick="more()">もっと詳しく</a>
         <marquee id="marquee">
-            私（わたしたち）が所有する全てのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。
+            P E H U から始まるペフに似合う言葉を集め、集まった言葉のスクリーン版を制作します。
         </marquee>
         <nav id="nav">
             <h1>P E H U is | Screen Printing</h1>
