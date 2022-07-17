@@ -465,7 +465,10 @@ fclose($fp);
         </ol>
             </div>
         <ul class="mousedragscrollable">
-            <li id="" class="collection"></li>
+            <li id="p" class="collection"></li>
+            <li id="e" class="collection"></li>
+            <li id="h" class="collection"></li>
+            <li id="u" class="collection"></li>
         </ul>
     </main>
 
@@ -505,7 +508,10 @@ fclose($fp);
         });
         
         $(function() {
-            $("#").load("");
+            $("#p").load("p.php");
+            $("#e").load("e.php");
+            $("#h").load("h.php");
+            $("#u").load("u.php");
         })
 
         var volume;
