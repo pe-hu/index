@@ -38,7 +38,7 @@ fclose($fp);
             font-family: 'Times New Roman', serif;
             width:20rem;
             max-width:75%;
-            font-size:2rem;
+            font-size:1.25rem;
             line-height: 150%;
             margin: 1rem auto;
             font-weight: 500;
