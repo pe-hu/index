@@ -63,6 +63,7 @@ fclose($fp);
         }
 
         #main {
+            position: relative;
             height: auto;
         }
 
