@@ -375,7 +375,7 @@ fclose($fp);
     <header id="header">
         <a class="_more" onclick="more()">もっと詳しく</a>
         <marquee id="marquee">
-            P E H U から始まるペフに似合う言葉を集め、集まった言葉のスクリーン版を制作します。
+            P E H U から始まるペフに似合う言葉のスクリーン版を制作した、オリジナルアイテムを制作します。
         </marquee>
         <nav id="nav">
             <h1>P E H U is | Screen Printing</h1>
