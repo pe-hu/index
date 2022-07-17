@@ -394,10 +394,6 @@ fclose($fp);
                 <ol class="search-box">
                     <li>index</li>
                     <li>
-                        <input type="radio" name="org" value="bought" id="bought">
-                        <label for="bought" class="label">inks/tools</label>
-                    </li>
-                    <li>
                         <input type="radio" name="org" value="gift" id="gift">
                         <label for="gift" class="label">gift</label>
                     </li>
@@ -420,6 +416,10 @@ fclose($fp);
                     <li>
                         <input type="radio" name="org" value="sale" id="sale">
                         <label for="sale" class="label">$$$ FOR SALE $$$</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="org" value="bought" id="bought">
+                        <label for="bought" class="label">ink/tools</label>
                     </li>
                     <li class="reset">
                         <input type="reset" name="reset" value="View All" class="reset-button cc_style label" onclick="greeting()">
