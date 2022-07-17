@@ -48,7 +48,7 @@ fclose($fp);
 
         #tools p {
             font-size: 0.75rem;
-            padding: 0 2rem 2rem;
+            padding: 0 0 1rem;
             line-height: 150%;
             margin: 0;
             text-align: center;
