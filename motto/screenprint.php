@@ -57,7 +57,7 @@ fclose($fp);
         }
 
         #ink {
-            min-width:5vw;
+            min-width:2.5rem;
             background-position: center;
             background-size: 75%;
             background-repeat: no-repeat;
@@ -254,11 +254,6 @@ fclose($fp);
         
         #collection li:hover p {
             display: block;
-        }
-
-        #motto {
-            width: 27.5rem;
-            max-width: 55%;
         }
         
         @keyframes spot {
