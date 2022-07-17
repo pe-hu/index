@@ -56,7 +56,7 @@ fclose($fp);
             src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
         }
 
-        #tools {
+        #ink {
             min-width:5vw;
             background-position: center;
             background-size: 100%;
@@ -478,7 +478,7 @@ fclose($fp);
             <li id="e" class="collection"></li>
             <li id="h" class="collection"></li>
             <li id="u" class="collection"></li>
-            <li id="tools" class="collection"></li>
+            <li id="ink" class="collection"></li>
         </ul>
     </main>
 
@@ -522,7 +522,7 @@ fclose($fp);
             $("#e").load("e.php");
             $("#h").load("h.php");
             $("#u").load("u.php");
-            $("#tools").load("tools.php");
+            $("#ink").load("tools.php");
         })
 
         var volume;
