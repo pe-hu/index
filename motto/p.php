@@ -50,7 +50,7 @@ fclose($fp);
             transition: all 500ms ease;
         }
 
-        #screen p {
+        #screen span {
             font-size: 0.75rem;
             padding: 0 2rem 2rem;
             line-height: 150%;
