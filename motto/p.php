@@ -5,10 +5,9 @@ function h($str) {
 $org = (string)filter_input(INPUT_POST, 'org');
 $is = (string)filter_input(INPUT_POST, 'is');
 $motto = (string)filter_input(INPUT_POST, 'motto');
-$link = (string)filter_input(INPUT_POST, 'link');
-$url = (string)filter_input(INPUT_POST, 'url');
+$by = (string)filter_input(INPUT_POST, 'by');
 
-$fp = fopen('motto.csv', 'a+b');
+$fp = fopen('p.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$org, $is, $motto, $link, $url]);
@@ -28,7 +27,7 @@ fclose($fp);
     <html lang="ja">
 
     <head>
-        <title>P E H U is | The Things I (We) Own</title>
+        <title>P | The Things I (We) Own</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/org/index.css" />
@@ -75,15 +74,11 @@ fclose($fp);
 
     <body>
         <ol id="screen" class="org">
-            <li>
-                <h3>P E H U is | Screen Print</h3>
-                <p>P E H U から始まる言葉を印刷したオリジナルアイテムを制作します。</p>
-            </li>
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
                 <h3 class="<?=h($row[1])?>" style="text-align:center;"><?=h($row[2])?></h3>
-                <a class="<?=h($row[3])?>" href="<?=h($row[4])?>" target="_blank"></a>
+                <span><?=h($row[3])?></span>
            </li>
             <?php endforeach; ?>
             <?php else: ?>
@@ -94,25 +89,6 @@ fclose($fp);
         </ol>
 
     <script type="text/javascript ">
-        var volume;
-        var synth;
-        var notes;
-
-        $(document).ready(function(event) {
-            // StartAudioContext(Tone.context, window);  
-            $(window).click(function() {
-                Tone.context.resume();
-            });
-
-            volume = new Tone.Volume(-10);
-            synth = new Tone.PolySynth(10, Tone.Synth).chain(volume, Tone.Master);
-            notes = Tone.Frequency("E6").harmonize([12, 14, 16, 19, 21, 24]);
-        });
-
-        $(".list_toggle").hover(function() {
-            let randNote = Math.floor(Math.random() * notes.length);
-            synth.triggerAttackRelease(notes[randNote], "6n");
-        });
     </script>
     </body>
 
