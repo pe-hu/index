@@ -64,7 +64,7 @@ fclose($fp);
         }
 
         #main {
-            min-height: 85vh;
+            height: auto;
         }
 
         header marquee {
@@ -320,6 +320,10 @@ fclose($fp);
         
         .change .mousedragscrollable {
             display: block;
+        }
+
+        .change #main {
+            min-height: 85vh;
         }
 
         #footer,
