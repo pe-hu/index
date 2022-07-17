@@ -450,9 +450,9 @@ fclose($fp);
             <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
                 <img src="<?=h($row[3])?>">
                 <p>
-                    <b><?=h($row[1])?></b>
+                    <?=h($row[1])?>
                     <br/>
-                    <?=h($row[2])?>
+                    <b><?=h($row[2])?></b>
                 </p>
                 <a class="<?=h($row[4])?>" href="<?=h($row[5])?>" target="_blank"></a>
             </li>
