@@ -55,6 +55,10 @@ fclose($fp);
             font-family: "ipag";
             src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
         }
+
+        #tools {
+            background-image:url(https://s3.amazonaws.com/arena_images-temp/uploads%2Fecd4bde9-6836-4571-8837-b65065c71dfa%2Fink.gif);
+        }
         
         header,
         header marquee,
