@@ -8,7 +8,7 @@ $img = (string)filter_input(INPUT_POST, 'img');
 $title = (string)filter_input(INPUT_POST, 'title');
 $text = (string)filter_input(INPUT_POST, 'text');
 
-$fp = fopen('popup.csv', 'a+b');
+$fp = fopen('motto.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$org, $size, $img, $title, $text]);
@@ -458,7 +458,7 @@ fclose($fp);
         </ol>
             </div>
         <ul class="mousedragscrollable">
-            <li id="motto" class="collection"></li>
+            <li id="" class="collection"></li>
         </ul>
     </main>
 
@@ -498,7 +498,7 @@ fclose($fp);
         });
         
         $(function() {
-            $("#motto").load("motto.php");
+            $("#").load("");
         })
 
         var volume;
