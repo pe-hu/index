@@ -156,6 +156,13 @@ fclose($fp);
             margin: 0;
         }
         
+        #cover {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        
         #collection {
             display: -webkit-flex;
             display: flex;
