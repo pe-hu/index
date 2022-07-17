@@ -57,7 +57,7 @@ fclose($fp);
         }
 
         #ink {
-            min-width:2.5rem;
+            min-width:5rem;
             background-position: center;
             background-size: 75%;
             background-repeat: no-repeat;
