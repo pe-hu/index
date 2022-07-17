@@ -33,26 +33,13 @@ fclose($fp);
         <link rel="stylesheet" href="/org/index.css" />
         <link rel="stylesheet" href="/org/searchBox.css" />
         <style>
-        @font-face {
-            font-family: "MS Mincho";
-            src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
-        }
-
-        .Black {color:Black;}
-        .White {color:White; background:#eee;}
-        .DarkGray {color:DarkGray;}
-        .Red {color:red;}
-        .DeepPink {color:DeepPink;}
-        .DodgerBlue {color:DodgerBlue;}
-        .Orange {color:Orange;}
-        .DarkGoldenRod {color:DarkGoldenRod;}
-        .Purple {color:Purple;}
 
         #screen h3 {
-            font-family: "MS Mincho", serif;
+            font-family: 'Times New Roman', serif;
+            width:20rem;
             font-size:1.25rem;
             line-height: 150%;
-            margin: 1rem 0.5rem;
+            margin: 1rem auto;
             font-weight: 500;
             transition: all 1000ms ease;
             pointer-events: none;
