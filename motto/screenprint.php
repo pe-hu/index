@@ -331,9 +331,14 @@ fclose($fp);
             min-height: 85vh;
         }
 
+        .change #cover {
+            position: absolute;
+            top:0;
+            left:0;
+        }
+
         #footer,
         .mousedragscrollable,
-        .change #cover,
         #print,
         .print {
             display: none;
