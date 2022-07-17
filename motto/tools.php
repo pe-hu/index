@@ -7,7 +7,7 @@ $is = (string)filter_input(INPUT_POST, 'is');
 $motto = (string)filter_input(INPUT_POST, 'motto');
 $by = (string)filter_input(INPUT_POST, 'by');
 
-$fp = fopen('u.csv', 'a+b');
+$fp = fopen('tools.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$org, $is, $motto, $link, $url]);
