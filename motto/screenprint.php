@@ -373,7 +373,7 @@ fclose($fp);
 <body>
 
     <header id="header">
-        <a class="_more" onclick="more()">P E H U is | Screen Printing</a>
+        <a class="_more" onclick="more()">もっと詳しく</a>
         <marquee id="marquee">
             P E H U から始まるペフに似合う言葉をスクリーン印刷したオリジナルアイテム
         </marquee>
