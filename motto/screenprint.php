@@ -57,6 +57,7 @@ fclose($fp);
         }
 
         #tools {
+            min-width:5vw;
             background-position: center;
             background-size: 100%;
             background-repeat: no-repeat;
