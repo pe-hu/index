@@ -469,6 +469,7 @@ fclose($fp);
             <li id="e" class="collection"></li>
             <li id="h" class="collection"></li>
             <li id="u" class="collection"></li>
+            <li id="tools" class="collection"></li>
         </ul>
     </main>
 
@@ -512,6 +513,7 @@ fclose($fp);
             $("#e").load("e.php");
             $("#h").load("h.php");
             $("#u").load("u.php");
+            $("#tools").load("tools.php");
         })
 
         var volume;
