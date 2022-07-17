@@ -395,7 +395,7 @@ fclose($fp);
                     <li>index</li>
                     <li>
                         <input type="radio" name="org" value="bought" id="bought">
-                        <label for="bought" class="label">bought</label>
+                        <label for="bought" class="label">inks/tools</label>
                     </li>
                     <li>
                         <input type="radio" name="org" value="gift" id="gift">
