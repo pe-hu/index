@@ -64,7 +64,10 @@ fclose($fp);
 
         #main {
             position: relative;
-            height: auto;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
         }
 
         header marquee {
