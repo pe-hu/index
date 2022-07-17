@@ -59,7 +59,7 @@ fclose($fp);
         #ink {
             min-width:5vw;
             background-position: center;
-            background-size: 100%;
+            background-size: 75%;
             background-repeat: no-repeat;
             background-image:url(https://s3.amazonaws.com/arena_images-temp/uploads%2Fecd4bde9-6836-4571-8837-b65065c71dfa%2Fink.gif);
         }
@@ -166,7 +166,7 @@ fclose($fp);
         
         #cover {
             position: relative;
-            width: 75%;
+            width: 100%;
             height: auto;
             overflow: hidden;
             margin: 0;
