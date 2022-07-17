@@ -299,7 +299,7 @@ fclose($fp);
 
         #greeting p,
         #server p {
-            margin: 1.5rem 1rem;
+            margin: 1rem;
         }
         
         #greeting p {
@@ -311,7 +311,6 @@ fclose($fp);
         #server p {
             color:#eee;
             font-size: 0.75rem;
-            line-height: 175%;
         }
 
         #server p,
