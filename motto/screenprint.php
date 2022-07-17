@@ -48,7 +48,6 @@ fclose($fp);
     <meta name="twitter:site" content="@NLC_update"/>
     <meta name="twitter:image" content="https://creative-community.space/pehu/org/card.png"/>
 
-    <link rel="stylesheet" href="/www/preview.css" />
     <link rel="stylesheet" href="/org/index.css" />
     <link rel="stylesheet" href="/org/searchBox.css" />
     <style>
