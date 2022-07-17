@@ -336,6 +336,8 @@ fclose($fp);
             position: fixed;
             left:0;
             z-index: 0;
+            height: 100%;
+            overflow: hidden;
         }
 
         #footer,
