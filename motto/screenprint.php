@@ -8,7 +8,7 @@ $img = (string)filter_input(INPUT_POST, 'img');
 $title = (string)filter_input(INPUT_POST, 'title');
 $text = (string)filter_input(INPUT_POST, 'text');
 
-$fp = fopen('popup.csv', 'a+b');
+$fp = fopen('screenprint.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$org, $size, $img, $title, $text]);
@@ -48,7 +48,6 @@ fclose($fp);
     <meta name="twitter:site" content="@NLC_update"/>
     <meta name="twitter:image" content="https://creative-community.space/pehu/org/card.png"/>
 
-    <link rel="stylesheet" href="popup.css" />
     <link rel="stylesheet" href="/org/index.css" />
     <link rel="stylesheet" href="/org/searchBox.css" />
     <style>
@@ -369,7 +368,7 @@ fclose($fp);
     <script src="https://creative-community.space/coding/js/tone/jquery-ui.min.js"></script>
     <script src="https://creative-community.space/coding/js/tone/Tone.min.js"></script>
     <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
-    <script src="index.js"></script>
+    <script src=""></script>
 </head>
 
 <body>
@@ -385,7 +384,7 @@ fclose($fp);
                 <b class="cc_style">最終更新日時</b><br/>
                 <span>
                     <?php
-                    $mod = filemtime('index.php');
+                    $mod = filemtime('screenprint.csv');
                     date_default_timezone_set('Asia/Tokyo');
                     print ''.date('Y年n月j日 g:i:s',$mod);
                     ?>
@@ -439,7 +438,7 @@ fclose($fp);
                     <p class="cc_style">
                         Last Modified : 
                             <?php
-                            $mod = filemtime('motto.csv');
+                            $mod = filemtime('screenprint.csv');
                             date_default_timezone_set('Asia/Tokyo');
                             print "".date("r",$mod);
                             ?>
