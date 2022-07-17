@@ -334,7 +334,6 @@ fclose($fp);
 
         .change #cover {
             position: fixed;
-            top:0;
             left:0;
             z-index: 0;
         }
