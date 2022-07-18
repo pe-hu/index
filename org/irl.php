@@ -176,9 +176,9 @@ fclose($fp);
                 animation: 100s linear infinite spot;
             }
 
-        #motto {
-            width: 27.5rem;
-            max-width: 55%;
+        #img {
+            width: 45rem;
+            max-width: 90%;
         }
         
         @keyframes spot {
@@ -384,6 +384,7 @@ fclose($fp);
                     </ol>
             </div>
         <ul class="mousedragscrollable">
+            <li id="img" class="collection"></li>
             <li id="otobuilding" class="collection"></li>
             <li id="nishitemma" class="collection"></li>
         </ul>
@@ -425,6 +426,7 @@ fclose($fp);
         });
         
         $(function() {
+            $("#img").load("img.php");
             $("#otobuilding").load("otobuilding.php");
             $("#nishitemma").load("nishitemma.php");
         })
