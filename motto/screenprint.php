@@ -352,7 +352,7 @@ fclose($fp);
         }
 
         #footer,
-        #nav,
+        .search-box,
         .change #cover,
         .mousedragscrollable,
         #print,
