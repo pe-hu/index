@@ -396,7 +396,7 @@ fclose($fp);
             Evelyn Bi, Emilio Algo, Angelina Nonaj, Stine, Chris Shields, ɐsɐʎɹoʞɐsoʇɐʎ, orchidvial, agirlcalledq, recordingblank, cc.___.cj, mkt∵, Ibuki Kakita, urilgelmo, Temra Pavlovic, Feréstec, Shotaro Taguchi, Tipode, Jean-Philippe Bretin, Jordan Chesnut, aoosya, Lavenderkettle, Rina Cho, Ana Martínez Fernández, Clem Hepburn, Qr07497998, Anna, Jerónimo Jiménez, Marcel Sletten, Laurel Schwulst and Pehu.
         </marquee>
         <nav id="nav">
-            <h1>P E H U is | Motto</h1>
+            <h1>P E H U is</h1>
             <p id="presents">
                 <b class="cc_style">最終更新日時</b><br/>
                 <span>
