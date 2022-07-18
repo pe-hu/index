@@ -108,17 +108,12 @@ fclose($fp);
             left:0 ;
             z-index:10;
             padding: 0 1rem;
-            background:#fff;
         }
 
         header marquee:hover {
             cursor: pointer;
             color: #fff;
             background: #ccc;
-        }
-
-        header marquee:hover marquee::before {
-            background: #000;
         }
         
         ._more,
