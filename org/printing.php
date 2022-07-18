@@ -78,7 +78,7 @@ fclose($fp);
 
 <body>
     <ol id="printing" class="org">
-        <h2>出版・制作関連</h2>
+        <h2>印刷物 | Printed Matters</h2>
         <p class="update cc_style">
         Last Modified : 
             <?php
