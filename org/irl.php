@@ -384,7 +384,7 @@ fclose($fp);
                     </ol>
             </div>
         <ul class="mousedragscrollable">
-            <li id="printing" class="collection"></li>
+            <li id="nishitemma" class="collection"></li>
         </ul>
     </main>
 
@@ -424,7 +424,7 @@ fclose($fp);
         });
         
         $(function() {
-            $("#printing").load("printing.php");
+            $("#nishitemma").load("nishitemma.php");
         })
 
         var volume;
