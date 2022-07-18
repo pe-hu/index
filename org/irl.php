@@ -384,6 +384,7 @@ fclose($fp);
                     </ol>
             </div>
         <ul class="mousedragscrollable">
+            <li id="otobuilding" class="collection"></li>
             <li id="nishitemma" class="collection"></li>
         </ul>
     </main>
@@ -424,6 +425,7 @@ fclose($fp);
         });
         
         $(function() {
+            $("#otobuilding").load("otobuilding.php");
             $("#nishitemma").load("nishitemma.php");
         })
 

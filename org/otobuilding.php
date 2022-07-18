@@ -8,7 +8,7 @@ $motto = (string)filter_input(INPUT_POST, 'motto');
 $link = (string)filter_input(INPUT_POST, 'link');
 $url = (string)filter_input(INPUT_POST, 'url');
 
-$fp = fopen('nishitemma.csv', 'a+b');
+$fp = fopen('otobuilding.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$org, $is, $motto, $link, $url]);
@@ -34,20 +34,20 @@ fclose($fp);
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="searchBox.css" />
     <style>
-        #nishitemma {
+        #otobuilding {
             position: relative;
         }
 
-        #nishitemma h2,
-        #nishitemma p {
+        #otobuilding h2,
+        #otobuilding p {
             max-width: 20rem;
         }
 
-        #nishitemma h2 {
+        #otobuilding h2 {
             padding: 1rem 1rem 0.25rem;
         }
 
-        #nishitemma p {
+        #otobuilding p {
             font-size: 0.75rem;
             margin: 0;
             padding: 0.25rem 0.5rem;
@@ -56,12 +56,12 @@ fclose($fp);
             transform: scale(1, 1.25);
         }
         
-        #nishitemma p b {
+        #otobuilding p b {
             font-size: 150%;
             display: inline-block;
         }
         
-        #nishitemma p u {
+        #otobuilding p u {
             float: right;
             font-size: 75%;
             margin: 0;
@@ -74,7 +74,7 @@ fclose($fp);
             display: block;
         }
         
-        #nishitemma .update {
+        #otobuilding .update {
             color:#eee;
             padding: 0.25rem 1rem 1.25rem;
         }
@@ -82,12 +82,12 @@ fclose($fp);
 </head>
 
 <body>
-    <ol id="nishitemma" class="org">
-        <h2>西天満のペフ | 2019</h2>
+    <ol id="otobuilding" class="org">
+        <h2>音ビル | 2019 - 2021</h2>
         <p class="update cc_style">
         Last Modified : 
             <?php
-            $mod = filemtime('nishitemma.csv');
+            $mod = filemtime('otobuilding.csv');
             date_default_timezone_set('Asia/Tokyo');
             print "".date("r",$mod);
             ?>
