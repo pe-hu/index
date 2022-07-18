@@ -104,7 +104,8 @@ fclose($fp);
 
         header marquee::before {
             content:'The Words for P E H U by ';
-            position: inherit;
+            position: absolute;
+            left:0 ;
         }
 
         header marquee:hover {
