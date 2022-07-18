@@ -486,6 +486,14 @@ fclose($fp);
             </li>
             <?php endif; ?>
         </ol>
+                    <p class="cc_style">
+                        Last Modified : 
+                            <?php
+                            $mod = filemtime('index.csv');
+                            date_default_timezone_set('Asia/Tokyo');
+                            print "".date("r",$mod);
+                            ?>
+                    </p>
             </li>
         </ul>
     </main>
