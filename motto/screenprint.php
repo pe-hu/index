@@ -56,12 +56,9 @@ fclose($fp);
             src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
         }
 
-        #ink {
-            min-width:5rem;
-            background-position: center;
-            background-size: 75%;
-            background-repeat: no-repeat;
-            background-image:url(https://s3.amazonaws.com/arena_images-temp/uploads%2Fecd4bde9-6836-4571-8837-b65065c71dfa%2Fink.gif);
+        #screenprint {
+            width:50rem;
+            max-width:90%;
         }
         
         header,
