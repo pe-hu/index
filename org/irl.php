@@ -269,6 +269,16 @@ fclose($fp);
             #address {
                 padding:0.5rem 0;
             }
+            
+            #images {
+                top: 45%;
+            }
+            
+            #images .list_item {
+                position: relative;
+                padding: 0;
+                margin: 1.25vh 0;
+            }
         }
         
         @media print {
