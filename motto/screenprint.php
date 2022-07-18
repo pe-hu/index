@@ -354,8 +354,8 @@ fclose($fp);
                 padding:0.5rem 0;
             }
             .change #main {
-                min-height: 75vh;
-                max-height: 75vh;
+                min-height: 80vh;
+                max-height: 80vh;
             }
         }
         
