@@ -36,7 +36,7 @@ fclose($fp);
     <meta name="reply-to" content="pehu@creative-community.space">
     <meta name="description" content="私（わたしたち）が所有する全てのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。">
 
-    <meta property="og:title" content="Screen Printing"/>
+    <meta property="og:title" content="P E H U is"/>
     <meta property="og:description" content="私（わたしたち）が所有する全てのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://creative-community.space/pehu/org/"/>
@@ -352,7 +352,7 @@ fclose($fp);
         }
 
         #footer,
-        .search-box,
+        #nav,
         .change #cover,
         .mousedragscrollable,
         #print,
@@ -399,7 +399,7 @@ fclose($fp);
             P E H U から始まるペフに似合う言葉をスクリーン印刷したオリジナルアイテムを制作します。
         </marquee>
         <nav id="nav">
-            <h1>P E H U is | Motto</h1>
+            <h1>P E H U is | Screen Print</h1>
             <p id="presents">
                 <b class="cc_style">最終更新日時</b><br/>
                 <span>
