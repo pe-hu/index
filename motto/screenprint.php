@@ -392,9 +392,7 @@ fclose($fp);
 
     <header id="header">
         <a class="_more" onclick="more()">もっと詳しく</a>
-        <marquee id="marquee">
-            Evelyn Bi, Emilio Algo, Angelina Nonaj, Stine, Chris Shields, ɐsɐʎɹoʞɐsoʇɐʎ, orchidvial, agirlcalledq, recordingblank, cc.___.cj, mkt∵, Ibuki Kakita, urilgelmo, Temra Pavlovic, Feréstec, Shotaro Taguchi, Tipode, Jean-Philippe Bretin, Jordan Chesnut, aoosya, Lavenderkettle, Rina Cho, Ana Martínez Fernández, Clem Hepburn, Qr07497998, Anna, Jerónimo Jiménez, Marcel Sletten, Laurel Schwulst and Pehu.
-        </marquee>
+        <marquee id="marquee">P E H U から始まるペフに似合う言葉を集めています。 ペフに似合う言葉が思い付いたら、ぜひ私たちにご連絡ください。</marquee>
         <nav id="nav">
             <h1>P E H U is</h1>
             <p id="presents">
