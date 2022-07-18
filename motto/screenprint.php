@@ -106,6 +106,9 @@ fclose($fp);
             content:'The Words for P E H U by ';
             position: absolute;
             left:0 ;
+            z-index:10;
+            padding: 0 1rem;
+            background:#fff;
         }
 
         header marquee:hover {
