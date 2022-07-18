@@ -411,7 +411,7 @@ fclose($fp);
                 <b class="cc_style">最終更新日時</b><br/>
                 <span>
                     <?php
-                    $mod = filemtime('screenprint.csv');
+                    $mod = filemtime('all.html');
                     date_default_timezone_set('Asia/Tokyo');
                     print ''.date('Y年n月j日 g:i:s',$mod);
                     ?>
@@ -461,7 +461,7 @@ fclose($fp);
                     <p class="cc_style">
                         Last Modified : 
                             <?php
-                            $mod = filemtime('screenprint.csv');
+                            $mod = filemtime('all.html');
                             date_default_timezone_set('Asia/Tokyo');
                             print "".date("r",$mod);
                             ?>
