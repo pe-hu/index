@@ -116,6 +116,10 @@ fclose($fp);
             color: #fff;
             background: #ccc;
         }
+
+        header marquee:hover marquee::before {
+            background: #000;
+        }
         
         ._more,
         header label,
