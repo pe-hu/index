@@ -40,7 +40,7 @@ fclose($fp);
 
         #printing h2,
         #printing p {
-            max-width: 55%;
+            max-width: 20rem;
         }
 
         #printing h2 {
