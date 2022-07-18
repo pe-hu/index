@@ -8,7 +8,7 @@ $img = (string)filter_input(INPUT_POST, 'img');
 $title = (string)filter_input(INPUT_POST, 'title');
 $text = (string)filter_input(INPUT_POST, 'text');
 
-$fp = fopen('screenprint.csv', 'a+b');
+$fp = fopen('index.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$org, $size, $img, $title, $text]);
@@ -82,7 +82,7 @@ fclose($fp);
             width: 100%;
         }
 
-        #screenprint {
+        #images {
             width:50rem;
             max-width:90%;
         }
@@ -135,7 +135,8 @@ fclose($fp);
         }
         
         .nlc_style,
-        h2 {
+        h2,
+        #collection li p b {
             font-family: 'Times New Roman', serif;
             font-weight: 500;
             font-stretch: condensed;
@@ -149,9 +150,12 @@ fclose($fp);
             display: inline-block;
         }
         
+        
         .cc_style,
         form,
-        marquee {
+        marquee,
+        #infomation,
+        #collection li p {
             display: inline-block;
             font-family: "ipag", monospace;
             transform: scale(1, 1.25);
@@ -202,6 +206,7 @@ fclose($fp);
         }
         
         #collection {
+            padding: 1rem 0 2.5rem;
             display: -webkit-flex;
             display: flex;
             -webkit-justify-content: center;
@@ -211,32 +216,6 @@ fclose($fp);
             -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
             list-style-type: none;
-        }
-        
-        #collection li p b {
-            font-family: 'Times New Roman', serif;
-            font-weight: 500;
-            font-stretch: condensed;
-            font-variant: common-ligatures tabular-nums;
-            transform: scale(1, 1.1);
-            letter-spacing: -0.1rem;
-            word-spacing: -.1ch;
-        }
-        
-        #infomation,
-        #collection li p {
-            font-family: "ipag", monospace;
-            transform: scale(1, 1.25);
-        }
-        
-        #infomation {
-            font-size: 0.75rem;
-            line-height: 150%;
-            padding: 0 1rem;
-        }
-        
-        #collection {
-            padding: 1rem 0 2.5rem;
         }
         
         #collection li {
@@ -271,8 +250,10 @@ fclose($fp);
             z-index: 5;
             bottom: 0;
             left: 0;
-            pointer-events: none;
-            user-select: none;
+        }
+        
+        #collection li:hover p {
+            display: block;
         }
         
         #collection li p b {
@@ -282,8 +263,10 @@ fclose($fp);
             margin: 0.5rem 0;
         }
         
-        #collection li:hover p {
-            display: block;
+        #infomation {
+            font-size: 0.75rem;
+            line-height: 150%;
+            padding: 0 1rem;
         }
         
         @keyframes spot {
@@ -479,7 +462,12 @@ fclose($fp);
                 <div id="value"><iframe src="/value/online/motto/"></iframe></div>
             </div>
         <ul class="mousedragscrollable">
-            <li id="screenprint" class="collection">
+            <li id="p" class="collection"></li>
+            <li id="e" class="collection"></li>
+            <li id="h" class="collection"></li>
+            <li id="u" class="collection"></li>
+            <li id="ink" class="collection"></li>
+            <li id="images" class="collection">
         <ol id="collection" class="org">
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
@@ -500,11 +488,6 @@ fclose($fp);
             <?php endif; ?>
         </ol>
             </li>
-            <li id="p" class="collection"></li>
-            <li id="e" class="collection"></li>
-            <li id="h" class="collection"></li>
-            <li id="u" class="collection"></li>
-            <li id="ink" class="collection"></li>
         </ul>
     </main>
 
