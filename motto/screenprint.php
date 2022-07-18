@@ -64,7 +64,7 @@ fclose($fp);
         }
         
         #value {
-            height: 75vh;
+            height: 55vh;
             padding: 0;
         }
         
