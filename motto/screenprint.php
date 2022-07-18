@@ -103,7 +103,7 @@ fclose($fp);
         }
 
         header marquee::before {
-            content:'The Words for P E H U by';
+            content:'The Words for P E H U by ';
         }
 
         header marquee:hover {
