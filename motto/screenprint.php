@@ -52,8 +52,16 @@ fclose($fp);
     <link rel="stylesheet" href="/org/searchBox.css" />
     <style>
         @font-face {
+            font-family: "MS Mincho";
+            src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
+        }
+        @font-face {
             font-family: "ipag";
             src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
+        }
+        
+        h1 {
+            font-family: "MS Mincho";
         }
 
         #motto {
@@ -119,7 +127,6 @@ fclose($fp);
         }
         
         .nlc_style,
-        h1,
         h2 {
             font-family: 'Times New Roman', serif;
             font-weight: 500;
@@ -399,7 +406,7 @@ fclose($fp);
             P E H U から始まるペフに似合う言葉をスクリーン印刷したオリジナルアイテムを制作します。
         </marquee>
         <nav id="nav">
-            <h1>P E H U is | Screen Print</h1>
+            <h1>P E H U is | Motto</h1>
             <p id="presents">
                 <b class="cc_style">最終更新日時</b><br/>
                 <span>
