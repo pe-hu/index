@@ -28,7 +28,7 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>印刷物 | Things that I (We) owned</title>
+    <title>西天満のペフ | Things that I (We) owned</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
@@ -83,11 +83,11 @@ fclose($fp);
 
 <body>
     <ol id="printing" class="org">
-        <h2>印刷物 | Printed Matters</h2>
+        <h2>西天満のペフ | 2019</h2>
         <p class="update cc_style">
         Last Modified : 
             <?php
-            $mod = filemtime('printing.csv');
+            $mod = filemtime('nishitemma.csv');
             date_default_timezone_set('Asia/Tokyo');
             print "".date("r",$mod);
             ?>
