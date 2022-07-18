@@ -62,6 +62,17 @@ fclose($fp);
             margin: 0;
             padding: 0;
         }
+        
+        #value {
+            height: 90vh;
+            padding: 0;
+        }
+        
+        #value iframe {
+            border: none;
+            height: 100%;
+            width: 100%;
+        }
 
         #screenprint {
             width:50rem;
@@ -450,6 +461,7 @@ fclose($fp);
                     </p>
                 </div>
                 <div id="motto"></div>
+                <div id="value"><iframe src="/value/online/motto/"></iframe></div>
             </div>
         <ul class="mousedragscrollable">
             <li id="screenprint" class="collection">
