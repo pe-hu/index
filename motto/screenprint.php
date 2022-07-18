@@ -171,7 +171,7 @@ fclose($fp);
         #cover {
             position: relative;
             width: 100%;
-            height: auto;
+            height: 95vh;
             margin: 0;
         }
         
