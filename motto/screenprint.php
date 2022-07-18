@@ -102,14 +102,6 @@ fclose($fp);
             transition: all 1000ms ease;
         }
 
-        header marquee::before {
-            content:'The Words for P E H U by ';
-            position: absolute;
-            left:0 ;
-            z-index:10;
-            padding: 0 1rem;
-        }
-
         header marquee:hover {
             cursor: pointer;
             color: #fff;
