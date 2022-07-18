@@ -423,10 +423,6 @@ fclose($fp);
                         <label for="collaborations" class="label">collaborations</label>
                     </li>
                     <li>
-                        <input type="radio" name="org" value="other" id="other">
-                        <label for="other" class="label">other</label>
-                    </li>
-                    <li>
                         <input type="radio" name="org" value="sale" id="sale">
                         <label for="sale" class="label">$$$ FOR SALE $$$</label>
                     </li>
