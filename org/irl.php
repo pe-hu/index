@@ -384,7 +384,7 @@ fclose($fp);
                     </ol>
             </div>
         <ul class="mousedragscrollable">
-            <li id="motto" class="collection"></li>
+            <li id="printing" class="collection"></li>
         </ul>
     </main>
 
@@ -424,7 +424,7 @@ fclose($fp);
         });
         
         $(function() {
-            $("#motto").load("motto.php");
+            $("#printing").load("printing.php");
         })
 
         var volume;
