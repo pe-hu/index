@@ -177,8 +177,8 @@ fclose($fp);
             }
 
         #img {
-            width: 45rem;
-            max-width: 90%;
+            width: 55rem;
+            max-width: 95%;
         }
         
         @keyframes spot {
