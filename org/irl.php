@@ -293,6 +293,9 @@ fclose($fp);
             .print {
                 display: inline-block;
             }
+            #images {
+                top: 45%;
+            }
         }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
