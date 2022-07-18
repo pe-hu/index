@@ -403,7 +403,7 @@ fclose($fp);
     <header id="header">
         <a class="_more" onclick="more()">もっと詳しく</a>
         <marquee id="marquee">
-            P E H U から始まるペフに似合う言葉をスクリーン印刷したオリジナルアイテムを制作します。
+        P E H U から始まるペフに似合う言葉を集めています。ペフに似合う言葉が思い付いたら、ぜひ私たちにご連絡ください。 | Please Contact Us If You Found Some Words for P E H U :) 
         </marquee>
         <nav id="nav">
             <h1>P E H U is | Motto</h1>
