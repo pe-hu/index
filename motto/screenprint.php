@@ -206,7 +206,6 @@ fclose($fp);
         }
         
         #collection {
-            padding: 1rem 0 2.5rem;
             display: -webkit-flex;
             display: flex;
             -webkit-justify-content: center;
