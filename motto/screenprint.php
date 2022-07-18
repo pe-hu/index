@@ -353,6 +353,10 @@ fclose($fp);
             #address {
                 padding:0.5rem 0;
             }
+            .change #main {
+                min-height: 75vh;
+                max-height: 75vh;
+            }
         }
         
         @media print {
