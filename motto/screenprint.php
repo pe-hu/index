@@ -440,6 +440,7 @@ fclose($fp);
                             ?>
                     </p>
                 </div>
+                <div id="motto"></div>
             </div>
         <ul class="mousedragscrollable">
             <li id="screenprint" class="collection">
@@ -512,6 +513,7 @@ fclose($fp);
             $("#h").load("h.php");
             $("#u").load("u.php");
             $("#ink").load("tools.php");
+            $("#motto").load("all.html");
         })
 
         var volume;
