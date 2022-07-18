@@ -28,7 +28,7 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>P E H U is | Screen Printing</title>
+    <title>P E H U is | Motto</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
@@ -382,7 +382,7 @@ fclose($fp);
             P E H U から始まるペフに似合う言葉をスクリーン印刷したオリジナルアイテムを制作します。
         </marquee>
         <nav id="nav">
-            <h1>P E H U is | Screen Printing</h1>
+            <h1>P E H U is | Motto</h1>
             <p id="presents">
                 <b class="cc_style">最終更新日時</b><br/>
                 <span>
@@ -397,16 +397,12 @@ fclose($fp);
                 <ol class="search-box">
                     <li>index</li>
                     <li>
-                        <input type="radio" name="org" value="gift" id="gift">
-                        <label for="gift" class="label">gift</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="org" value="free" id="free">
-                        <label for="free" class="label">free or found</label>
-                    </li>
-                    <li>
                         <input type="radio" name="org" value="made" id="made">
                         <label for="made" class="label">made</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="org" value="gift" id="gift">
+                        <label for="gift" class="label">gift</label>
                     </li>
                     <li>
                         <input type="radio" name="org" value="collaborations" id="collaborations">
@@ -422,7 +418,7 @@ fclose($fp);
                     </li>
                     <li>
                         <input type="radio" name="org" value="bought" id="bought">
-                        <label for="bought" class="label">inks/tools</label>
+                        <label for="bought" class="label">screen print</label>
                     </li>
                     <li class="reset">
                         <input type="reset" name="reset" value="View All" class="reset-button cc_style label" onclick="greeting()">
