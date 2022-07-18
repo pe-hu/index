@@ -38,6 +38,11 @@ fclose($fp);
             position: relative;
         }
 
+        #printing h2,
+        #printing p {
+            max-width: 55%;
+        }
+
         #printing h2 {
             padding: 1rem 1rem 0.25rem;
         }
