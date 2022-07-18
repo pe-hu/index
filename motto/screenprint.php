@@ -287,7 +287,7 @@ fclose($fp);
         }
 
         #greeting,
-        .server {
+        #server {
             position: fixed;
             left: 0;
             overflow: hidden;
@@ -308,13 +308,13 @@ fclose($fp);
             cursor: pointer;
         }
 
-        .server {
+        #server {
             bottom: 0;
             z-index: 10;
         }
 
         #greeting p,
-        .server p {
+        #server p {
             margin: 1rem;
         }
         
@@ -324,17 +324,17 @@ fclose($fp);
             line-height: 200%;
         }
         
-        .server p {
+        #server p {
             color:#eee;
             font-size: 0.75rem;
         }
 
-        .server p,
-        .server:hover p {
+        #server p,
+        #server:hover p {
             transition: all 1000ms ease;
         }
 
-        .server:hover p {
+        #server:hover p {
             color:#aaa;
             text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
         }
@@ -365,7 +365,7 @@ fclose($fp);
         
         @media print {
             #address,
-            .server {
+            #server {
                 display: none;
             }
             #footer,
@@ -447,7 +447,7 @@ fclose($fp);
                 <div id="greeting">
                     <p class="nlc_style" id="text"></p>
                 </div>
-                <div class="server">
+                <div id="server">
                     <p class="cc_style">
                         Last Modified : 
                             <?php
@@ -486,14 +486,6 @@ fclose($fp);
             </li>
             <?php endif; ?>
         </ol>
-                    <p class="cc_style server">
-                        Last Modified : 
-                            <?php
-                            $mod = filemtime('index.csv');
-                            date_default_timezone_set('Asia/Tokyo');
-                            print "".date("r",$mod);
-                            ?>
-                    </p>
             </li>
         </ul>
     </main>
