@@ -56,6 +56,11 @@ fclose($fp);
             src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
         }
 
+        #motto {
+            overflow:hidden;
+            max-height:100%;
+        }
+
         #screenprint {
             width:50rem;
             max-width:90%;
