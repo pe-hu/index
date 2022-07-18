@@ -443,6 +443,9 @@ fclose($fp);
                             ?>
                     </p>
                 </div>
+            </div>
+        <ul class="mousedragscrollable">
+            <li id="screenprint" class="collection">
         <ol id="collection" class="org">
             <?php if (!empty($rows)): ?>
             <?php foreach ($rows as $row): ?>
@@ -462,8 +465,7 @@ fclose($fp);
             </li>
             <?php endif; ?>
         </ol>
-            </div>
-        <ul class="mousedragscrollable">
+            </li>
             <li id="p" class="collection"></li>
             <li id="e" class="collection"></li>
             <li id="h" class="collection"></li>
