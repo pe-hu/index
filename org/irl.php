@@ -55,7 +55,7 @@ fclose($fp);
     <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
 
     <script src="/org/searchBox.js"></script>
-    <script src="index.js"></script>
+    <script src="cover.js"></script>
 
     <link rel="stylesheet" href="/org/cover.css" />
     <link rel="stylesheet" href="/org/index.css" />
@@ -412,7 +412,7 @@ fclose($fp);
         });
 
         $(function() {
-            $("#img").load("img.php");
+            $("#img").load("cover.php");
             $("#otobuilding").load("otobuilding.php");
             $("#nishitemma").load("nishitemma.php");
         })
