@@ -376,7 +376,7 @@ fclose($fp);
             </p>
         </div>
         <ul class="mousedragscrollable">
-            <li id="collection" class="collection"></li>
+            <li id="img" class="collection"></li>
             <li id="otobuilding" class="collection"></li>
             <li id="nishitemma" class="collection"></li>
         </ul>
@@ -417,7 +417,7 @@ fclose($fp);
         });
 
         $(function() {
-            $("#collection").load("collection.php");
+            $("#img").load("collection.php");
             $("#otobuilding").load("otobuilding.php");
             $("#nishitemma").load("nishitemma.php");
         })
