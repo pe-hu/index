@@ -431,6 +431,20 @@ fclose($fp);
             $("#nishitemma").load("nishitemma.php");
         })
 
+        $(function() {
+            var arr = [];
+            $("#images li").each(function() {
+                arr.push($(this).html());
+            });
+            arr.sort(function() {
+                return Math.random() - Math.random();
+            });
+            $("#images").empty();
+            for(i=0; i < arr.length; i++) {
+                $("#images").append('<li>' + arr[i] + '</li>');
+            }
+        });
+
         var volume;
         var synth;
         var notes;
