@@ -87,7 +87,6 @@ fclose($fp);
             margin: 1rem;
             width: 10rem;
             height: 10rem;
-            max-width: 95vw;
             max-height: 95vw;
             transition: all 1000ms ease;
         }
