@@ -33,10 +33,10 @@ fclose($fp);
     <meta name="format-detection" content="telephone=no">
     <meta name="author" content="∧° ┐"">
     <meta name="reply-to" content="pehu@creative-community.space">
-    <meta name="description" content="∧° ┐ が所有する全てのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。">
+    <meta name="description" content="∧° ┐ が 所有するすべてのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。">
 
     <meta property="og:title" content="The Things ∧° ┐ Own" />
-    <meta property="og:description" content="∧° ┐ が所有する全てのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。" />
+    <meta property="og:description" content="∧° ┐ が 所有するすべてのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://creative-community.space/pehu/org/" />
     <meta property="og:site_name" content="creative-community.space" />
@@ -308,7 +308,7 @@ fclose($fp);
 <body id="open">
 
     <header id="header">
-        <a class="_more" onclick="more()"><span class="pehu">∧°┐</span> が 所有するもの</a>
+        <a class="_more" onclick="more()"><span class="pehu">∧°┐</span> が 所有するすべてのもの</a>
         <marquee id="marquee">
             ここをクリックすると、<span class="pehu">∧°┐</span> が 所有するすべてのもの一覧が表示されます。
         </marquee>

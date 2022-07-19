@@ -28,7 +28,7 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>∧° ┐ | The Things I (We) Own</title>
+    <title>The Things ∧° ┐ Own</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css" />
@@ -129,7 +129,7 @@ fclose($fp);
 
 <body>
     <p id="infomation">
-        <u><span class="pehu">∧°┐</span> が 所有する全てのもの</u><br/>
+        <u><span class="pehu">∧°┐</span> が 所有するすべてのもの</u><br/>
         <sup>※ 説明</sup>
     </p>
     <ol id="collection" class="org">
