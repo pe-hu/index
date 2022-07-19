@@ -130,28 +130,22 @@ fclose($fp);
 <body>
     <p id="infomation">
         <u>∧° ┐ が所有する全てのもの</u><br/>
-        <sup>※ メインビジュアルに掲載した 私（わたしたち）が所有するもの 一覧</sup>
+        <sup>※ 説明</sup>
     </p>
-        <ol id="collection" class="org">
-            <?php if (!empty($rows)): ?>
-            <?php foreach ($rows as $row): ?>
-            <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
-                <img src="<?=h($row[2])?>">
-                <p>
-                    <b><?=h($row[3])?></b>
-                    <br/>
-                    <?=h($row[4])?>
-                </p>
-            </li>
-            <?php endforeach; ?>
-            <?php else: ?>
-            <li class="list_item list_toggle min" data-org="test">
-                <img src="/logo.png">
-            </li>
-            <?php endif; ?>
-        </ol>
-    <p id="infomation">
-        <sup>※ ポップアップ「The Things I (We) Own, in 3D」では、この一覧（メインビジュアル）に掲載したもの以外にも、たくさんのものを発表／展示／販売します。</sup>
-    </p>
+    <ol id="collection" class="org">
+        <?php if (!empty($rows)): ?>
+        <?php foreach ($rows as $row): ?>
+        <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
+            <img src="<?=h($row[2])?>">
+            <p>
+                <b><?=h($row[3])?></b>
+                <br/><?=h($row[4])?>
+            </p>
+        </li>
+        <?php endforeach; ?>
+        <?php else: ?>
+        <li class="list_item list_toggle min" data-org="test"><img src="/logo.png"></li>
+        <?php endif; ?>
+    </ol>
 </body>
 </html>
