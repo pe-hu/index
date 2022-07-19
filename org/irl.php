@@ -313,7 +313,7 @@ fclose($fp);
             ここをクリックすると、私（わたしたち）が所有するすべてのもの一覧が表示されます。
         </marquee>
         <nav id="nav">
-            <h1>The Things <span class="pehu">∧°┐</span> Own</h1>
+            <h1>The Things <span class="pehu"> ∧°┐</span> Own</h1>
             <span id="presents">
                 <img src="qr.png" width="50rem">
             </span>
