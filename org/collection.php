@@ -43,8 +43,8 @@ fclose($fp);
         #collection {
             display: -webkit-flex;
             display: flex;
-            -webkit-justify-content: center;
-            justify-content: center;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
             -webkit-align-items: center;
             align-items: center;
             -webkit-flex-wrap: wrap;
@@ -75,7 +75,7 @@ fclose($fp);
         }
         
         #collection {
-            padding: 1rem 0 2.5rem;
+            padding: 0 0 2rem;
         }
         
         #collection li {
