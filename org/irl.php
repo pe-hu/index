@@ -138,6 +138,11 @@ fclose($fp);
             width: 25rem;
             max-width: 75%;
         }
+
+        #img {
+            width: 45rem;
+            max-width: 95%;
+        }
         
         #cover {
             background-image: url("shopping/background.png");
