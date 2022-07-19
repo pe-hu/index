@@ -161,7 +161,7 @@ fclose($fp);
             transform: translate(-50%, -50%);
         }
 
-        #images:nth-child(n+25) {
+        #images li:nth-child(n+25) {
             display: none;
         }
         
