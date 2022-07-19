@@ -87,12 +87,13 @@ fclose($fp);
             margin: 1rem;
             width: 10rem;
             height: 10rem;
-            max-height: 95vw;
+            max-width: 100%;
+            max-height: 100%;
             transition: all 1000ms ease;
         }
         
         #collection li img {
-            width: 75%;
+            width: 100%;
             position: absolute;
             top: 50%;
             left: 50%;
