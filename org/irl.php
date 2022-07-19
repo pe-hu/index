@@ -140,7 +140,7 @@ fclose($fp);
         }
 
         #img {
-            width: 60rem;
+            width: 50rem;
             max-width: 95%;
         }
         
