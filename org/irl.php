@@ -271,8 +271,8 @@ fclose($fp);
                 margin: 1.25vh 0;
             }
             #main {
-                min-height: 75vh;
-                max-height: 75vh;
+                min-height: 77.5vh;
+                max-height: 77.5vh;
             }
         }
         
