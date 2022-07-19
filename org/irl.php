@@ -8,7 +8,7 @@ $img = (string)filter_input(INPUT_POST, 'img');
 $title = (string)filter_input(INPUT_POST, 'title');
 $text = (string)filter_input(INPUT_POST, 'text');
 
-$fp = fopen('cover.csv', 'a+b');
+$fp = fopen('collection.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$org, $size, $img, $title, $text]);
@@ -376,7 +376,7 @@ fclose($fp);
             </p>
         </div>
         <ul class="mousedragscrollable">
-            <li id="img" class="collection"></li>
+            <li id="collection" class="collection"></li>
             <li id="otobuilding" class="collection"></li>
             <li id="nishitemma" class="collection"></li>
         </ul>
@@ -417,7 +417,7 @@ fclose($fp);
         });
 
         $(function() {
-            $("#img").load("cover.php");
+            $("#collection").load("collection.php");
             $("#otobuilding").load("otobuilding.php");
             $("#nishitemma").load("nishitemma.php");
         })

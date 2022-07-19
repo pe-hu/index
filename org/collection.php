@@ -28,7 +28,7 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>Things that I (We) owned, in 3D</title>
+    <title>∧° ┐ | The Things I (We) Own</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css" />
@@ -129,7 +129,7 @@ fclose($fp);
 
 <body>
     <p id="infomation">
-        <u>The Things I (We) Own, in 3D</u><br/>
+        <u>∧° ┐ が所有する全てのもの</u><br/>
         <sup>※ メインビジュアルに掲載した 私（わたしたち）が所有するもの 一覧</sup>
     </p>
         <ol id="collection" class="org">
