@@ -54,12 +54,12 @@ fclose($fp);
     <script src="https://creative-community.space/coding/js/tone/Tone.min.js"></script>
     <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
 
-    <script src="searchBox.js"></script>
+    <script src="/org/searchBox.js"></script>
     <script src="index.js"></script>
 
-    <link rel="stylesheet" href="cover.css" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="searchBox.css" />
+    <link rel="stylesheet" href="/org/cover.css" />
+    <link rel="stylesheet" href="/org/index.css" />
+    <link rel="stylesheet" href="/org/searchBox.css" />
     <style>
         #bought:checked~label,
         #gift:checked~label,
