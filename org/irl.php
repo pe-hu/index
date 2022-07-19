@@ -228,6 +228,15 @@ fclose($fp);
             display: inline-block;
         }
         
+        @font-face {
+            font-family: "MS Mincho";
+            src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
+        }
+
+        .pehu {
+            font-family: "MS Mincho", "SimSong", serif;
+        }
+        
         .change .mousedragscrollable {
             display: block;
         }
@@ -304,7 +313,7 @@ fclose($fp);
             ここをクリックすると、私（わたしたち）が所有するすべてのもの一覧が表示されます。
         </marquee>
         <nav id="nav">
-            <h1>∧° ┐ | The Things I (We) Own</h1>
+            <h1><span class="pehu">∧°┐</span> | The Things I (We) Own</h1>
             <span id="presents">
                 <img src="qr.png" width="50rem">
             </span>
