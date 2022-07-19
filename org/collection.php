@@ -47,8 +47,8 @@ fclose($fp);
             justify-content: space-between;
             -webkit-align-items: stretch;
             align-items: stretch;
-            -webkit-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+            -webkit-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
             list-style-type: none;
         }
         
