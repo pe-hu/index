@@ -27,7 +27,7 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>∧° ┐ | The Things I (We) Own</title>
+    <title>The Things ∧° ┐ Own</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
@@ -35,7 +35,7 @@ fclose($fp);
     <meta name="reply-to" content="pehu@creative-community.space">
     <meta name="description" content="∧° ┐ が所有する全てのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。">
 
-    <meta property="og:title" content="∧° ┐ | The Things I (We) Own" />
+    <meta property="og:title" content="The Things ∧° ┐ Own" />
     <meta property="og:description" content="∧° ┐ が所有する全てのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://creative-community.space/pehu/org/" />
@@ -308,9 +308,9 @@ fclose($fp);
 <body id="open">
 
     <header id="header">
-        <a class="_more" onclick="more()">私（わたしたち）が所有するもの</a>
+        <a class="_more" onclick="more()"><span class="pehu">∧°┐</span> が 所有するもの</a>
         <marquee id="marquee">
-            ここをクリックすると、<span class="pehu">∧°┐</span> が所有するすべてのもの一覧が表示されます。
+            ここをクリックすると、<span class="pehu">∧°┐</span> が 所有するすべてのもの一覧が表示されます。
         </marquee>
         <nav id="nav">
             <h1>The Things <span class="pehu">∧°┐</span> Own</h1>
