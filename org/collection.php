@@ -124,6 +124,13 @@ fclose($fp);
         #collection li:hover p {
             display: block;
         }
+        
+        @media screen and (max-width: 750px) {
+            #collection {
+                -webkit-justify-content: center;
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 
