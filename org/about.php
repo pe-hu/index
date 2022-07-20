@@ -78,7 +78,7 @@ fclose($fp);
 
 <body>
     <ol id="about" class="org">
-        <h2 id="more"></h2>
+        <p id="more"></p>
         <p class="update cc_style">
         Last Modified : 
             <?php
