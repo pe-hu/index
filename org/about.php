@@ -79,6 +79,8 @@ fclose($fp);
 <body>
     <ol id="about" class="org">
         <h2><span class="pehu">∧°┐</span> が 所有するすべてのもの</h2>
+        <p>このページに私（わたしたち）がペフのために所有するすべてのものを掲載します。
+            <br/>※ ページは、所有するものの変化に応じて随時更新します。</p>
         <?php if (!empty($rows)): ?>
         <?php foreach ($rows as $row): ?>
         <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
