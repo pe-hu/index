@@ -157,10 +157,13 @@ fclose($fp);
         .collection .popup::before {
             position: absolute;
             top: 0;
-            left: 0;
+            right: 0;
             content:'in 3D';
             color: red;
-            font-size:2rem;
+            font-size: 1rem;
+            border: solid;
+            padding: 0.25rem;
+            border-radius: 0.25rem;
         }
 
         #img {
