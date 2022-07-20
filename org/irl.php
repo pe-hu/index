@@ -139,6 +139,10 @@ fclose($fp);
             max-width: 75%;
         }
 
+        #about {
+            max-width: 95%;
+        }
+
         #img {
             width: 55rem;
             max-width: 95%;
@@ -389,10 +393,11 @@ fclose($fp);
             </p>
         </div>
         <ul class="mousedragscrollable">
-            <li id="img" class="collection"></li>
+            <li id="about" class="collection"><p id="more"></p></li>
             <li id="otobuilding" class="collection"></li>
             <li id="nishitemma" class="collection"></li>
             <li id="niceshopsu" class="collection"></li>
+            <li id="img" class="collection"></li>
         </ul>
     </main>
 
