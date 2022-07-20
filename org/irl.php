@@ -141,11 +141,9 @@ fclose($fp);
             max-width: 75%;
         }
 
-        #about {
+        #infomation {
             width: 55rem;
             max-width: 95%;
-            padding:0 1rem;
-            font-size:1.25rem;
         }
 
         #img {
@@ -399,7 +397,7 @@ fclose($fp);
             </p>
         </div>
         <ul class="mousedragscrollable">
-            <li id="about" class="collection"></li>
+            <li id="infomation" class="collection"></li>
             <li id="otobuilding" class="collection"></li>
             <li id="nishitemma" class="collection"></li>
             <li id="niceshopsu" class="collection"></li>
@@ -442,7 +440,7 @@ fclose($fp);
     });
 
     $(function() {
-        $("#about").load("about.php");
+        $("#infomation").load("about.php");
         $("#img").load("collection.php");
         $("#otobuilding").load("otobuilding.php");
         $("#nishitemma").load("nishitemma.php");
