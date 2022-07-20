@@ -392,6 +392,7 @@ fclose($fp);
             <li id="img" class="collection"></li>
             <li id="otobuilding" class="collection"></li>
             <li id="nishitemma" class="collection"></li>
+            <li id="niceshopsu" class="collection"></li>
         </ul>
     </main>
 
@@ -433,6 +434,7 @@ fclose($fp);
             $("#img").load("collection.php");
             $("#otobuilding").load("otobuilding.php");
             $("#nishitemma").load("nishitemma.php");
+            $("#niceshopsu").load("niceshopsu.php");
         })
 
             var volume;
