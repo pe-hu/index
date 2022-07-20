@@ -38,11 +38,6 @@ fclose($fp);
             position: relative;
         }
 
-        #about h2,
-        #about p {
-            max-width: 20rem;
-        }
-
         #about h2 {
             padding: 1rem 1rem 0.25rem;
         }
