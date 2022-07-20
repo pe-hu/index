@@ -135,7 +135,7 @@ fclose($fp);
         }
         
         #about {
-            width: 40rem;
+            width: 35rem;
             max-width: 95%;
         }
         
