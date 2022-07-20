@@ -89,13 +89,12 @@ fclose($fp);
         </p>
         <?php if (!empty($rows)): ?>
         <?php foreach ($rows as $row): ?>
-        <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
+        <li class="list_item list_toggle <?=h($row[4])?>" data-org="<?=h($row[0])?>">
             <p>
                 <u><?=h($row[2])?></u>
                 <b><?=h($row[1])?></b>
             </p>
             <p><?=h($row[3])?></p>
-            <a class="<?=h($row[4])?>"></a>
         </li>
         <?php endforeach; ?>
         <?php else: ?>
