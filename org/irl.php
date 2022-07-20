@@ -179,7 +179,8 @@ fclose($fp);
         }
         
         #images {
-            position: absolute;
+            position: relative;
+            display: inline-block;
             top: 40%;
             left: 50%;
             width: 90%;
