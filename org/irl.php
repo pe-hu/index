@@ -145,6 +145,7 @@ fclose($fp);
             width: 55rem;
             max-width: 95%;
             padding:0 1rem;
+            font-size:1.25rem;
         }
 
         #img {
