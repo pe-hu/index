@@ -49,7 +49,7 @@ fclose($fp);
 
 <body>
     <ul class="mousedragscrollable">
-        <li id="ctlg" class="collection"></li>
+        <li id="art" class="collection"></li>
         <li id="img" class="collection"></li>
     </ul>
 
