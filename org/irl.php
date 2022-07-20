@@ -442,6 +442,7 @@ fclose($fp);
     });
 
     $(function() {
+        $("#about").load("about.php");
         $("#img").load("collection.php");
         $("#otobuilding").load("otobuilding.php");
         $("#nishitemma").load("nishitemma.php");
