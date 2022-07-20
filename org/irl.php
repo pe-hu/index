@@ -136,7 +136,7 @@ fclose($fp);
         
         #about {
             width: 55rem;
-            max-width: 75%;
+            max-width: 90%;
         }
         
         .collection {
