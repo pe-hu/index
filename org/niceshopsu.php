@@ -38,11 +38,6 @@ fclose($fp);
             position: relative;
         }
 
-        #niceshopsu h2,
-        #niceshopsu p {
-            max-width: 20rem;
-        }
-
         #niceshopsu h2 {
             padding: 1rem 1rem 0.25rem;
         }

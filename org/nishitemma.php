@@ -38,11 +38,6 @@ fclose($fp);
             position: relative;
         }
 
-        #nishitemma h2,
-        #nishitemma p {
-            max-width: 20rem;
-        }
-
         #nishitemma h2 {
             padding: 1rem 1rem 0.25rem;
         }

@@ -38,11 +38,6 @@ fclose($fp);
             position: relative;
         }
 
-        #otobuilding h2,
-        #otobuilding p {
-            max-width: 20rem;
-        }
-
         #otobuilding h2 {
             padding: 1rem 1rem 0.25rem;
         }
