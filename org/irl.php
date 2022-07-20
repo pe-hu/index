@@ -435,20 +435,20 @@ fclose($fp);
             $("#nishitemma").load("nishitemma.php");
         })
 
-        var volume;
-        var synth;
-        var notes;
+            var volume;
+            var synth;
+            var notes;
 
-        $(document).ready(function(event) {
-            // StartAudioContext(Tone.context, window);  
-            $(window).click(function() {
-                Tone.context.resume();
+            $(document).ready(function(event) {
+                // StartAudioContext(Tone.context, window);  
+                $(window).click(function() {
+                    Tone.context.resume();
+                });
+
+                volume = new Tone.Volume(-20);
+                synth = new Tone.PolySynth(10, Tone.Synth).chain(volume, Tone.Master);
+                notes = Tone.Frequency("E6").harmonize([12, 14, 16, 19, 21, 24]);
             });
-
-            volume = new Tone.Volume(-10);
-            synth = new Tone.PolySynth(10, Tone.Synth).chain(volume, Tone.Master);
-            notes = Tone.Frequency("F2").harmonize([12, 14, 16, 19, 21, 24]);
-        });
 
         $("#marquee").click(function(e) {
             let randNote = Math.floor(Math.random() * notes.length);
