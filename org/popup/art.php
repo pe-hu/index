@@ -8,7 +8,7 @@ $motto = (string)filter_input(INPUT_POST, 'motto');
 $link = (string)filter_input(INPUT_POST, 'link');
 $url = (string)filter_input(INPUT_POST, 'url');
 
-$fp = fopen('ctlg.csv', 'a+b');
+$fp = fopen('art.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$org, $is, $motto, $link, $url]);
@@ -28,30 +28,27 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>VG CTLG | Things that I (We) owned</title>
+    <title>Artworks | Things that I (We) owned</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/org/index.css" />
     <link rel="stylesheet" href="/org/searchBox.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 <style type="text/css">
     <style>
-        #ctlg {
+        #art {
             position: relative;
-            font-family:'Great Vibes', "MS Mincho", serif, cursive;
         }
 
-        #ctlg h2,
-        #ctlg p {
+        #art h2,
+        #art p {
             max-width: 20rem;
         }
 
-        #ctlg h2 {
+        #art h2 {
             padding: 1rem 1rem 0.25rem;
         }
 
-        #ctlg p {
+        #art p {
             font-size: 0.75rem;
             margin: 0;
             padding: 0.25rem 0.5rem;
@@ -60,12 +57,12 @@ fclose($fp);
             transform: scale(1, 1.25);
         }
         
-        #ctlg p b {
+        #art p b {
             font-size: 150%;
             display: inline-block;
         }
         
-        #ctlg p u {
+        #art p u {
             float: right;
             font-size: 75%;
             margin: 0;
@@ -78,7 +75,7 @@ fclose($fp);
             display: block;
         }
         
-        #ctlg .update {
+        #art .update {
             color:#eee;
             padding: 0.25rem 1rem 1.25rem;
         }
@@ -86,12 +83,12 @@ fclose($fp);
 </head>
 
 <body>
-    <ol id="ctlg" class="org">
-        <h2>VG CTLG</h2>
+    <ol id="art" class="org">
+        <h2>Artworks</h2>
         <p class="update cc_style">
         Last Modified : 
             <?php
-            $mod = filemtime('ctlg.csv');
+            $mod = filemtime('art.csv');
             date_default_timezone_set('Asia/Tokyo');
             print "".date("r",$mod);
             ?>
