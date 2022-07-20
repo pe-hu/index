@@ -134,7 +134,7 @@ fclose($fp);
             margin: 0.5rem 0;
         }
         
-        #infomation {
+        #about {
             width: 50rem;
             max-width: 90%;
         }
@@ -394,7 +394,7 @@ fclose($fp);
             </p>
         </div>
         <ul class="mousedragscrollable">
-            <li id="infomation" class="collection"></li>
+            <li id="about" class="collection"></li>
             <li id="otobuilding" class="collection"></li>
             <li id="nishitemma" class="collection"></li>
             <li id="niceshopsu" class="collection"></li>
@@ -437,7 +437,7 @@ fclose($fp);
     });
 
     $(function() {
-        $("#infomation").load("about.php");
+        $("#about").load("about.php");
         $("#img").load("collection.php");
         $("#otobuilding").load("otobuilding.php");
         $("#nishitemma").load("nishitemma.php");
