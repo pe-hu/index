@@ -155,7 +155,8 @@ fclose($fp);
         }
         
         .collection .popup::before {
-            position: absolute;
+            position: relative;
+            display: inline-block;
             top: 0.5rem;
             left: 1rem;
             content:'in 3D';
@@ -179,8 +180,7 @@ fclose($fp);
         }
         
         #images {
-            position: relative;
-            display: inline-block;
+            position: absolute;
             top: 40%;
             left: 50%;
             width: 90%;
