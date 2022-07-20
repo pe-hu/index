@@ -142,7 +142,7 @@ fclose($fp);
         }
 
         #about {
-            max-width: 95%;
+            max-width: 75%;
         }
 
         #img {
