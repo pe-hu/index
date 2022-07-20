@@ -156,8 +156,8 @@ fclose($fp);
         
         .collection .popup::before {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 0.5rem;
+            left: 1rem;
             content:'in 3D';
             color: red;
             font-size: 0.75rem;
