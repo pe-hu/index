@@ -135,8 +135,8 @@ fclose($fp);
         }
         
         #about {
-            width: 45rem;
-            max-width: 90%;
+            width: 40rem;
+            max-width: 95%;
         }
         
         .collection {
