@@ -3,15 +3,15 @@ function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 $org = (string)filter_input(INPUT_POST, 'org');
-$is = (string)filter_input(INPUT_POST, 'is');
-$motto = (string)filter_input(INPUT_POST, 'motto');
+$title = (string)filter_input(INPUT_POST, 'title');
+$format = (string)filter_input(INPUT_POST, 'format');
+$text = (string)filter_input(INPUT_POST, 'text');
 $link = (string)filter_input(INPUT_POST, 'link');
-$url = (string)filter_input(INPUT_POST, 'url');
 
 $fp = fopen('niceshopsu.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$org, $is, $motto, $link, $url]);
+    fputcsv($fp, [$org, $title, $format, $text, $link]);
     rewind($fp);
 }
 
@@ -95,6 +95,7 @@ fclose($fp);
                 <b><?=h($row[1])?></b>
             </p>
             <p><?=h($row[3])?></p>
+            <a class="<?=h($row[4])?>"></a>
         </li>
         <?php endforeach; ?>
         <?php else: ?>

@@ -143,6 +143,25 @@ fclose($fp);
             width: 25rem;
             max-width: 75%;
         }
+        
+        .collection .list_item a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            text-indent: -999px;
+        }
+        
+        .collection .list_item .popup::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content:'in 3D';
+            color: red;
+            font-size:2rem;
+        }
 
         #img {
             width: 75rem;
