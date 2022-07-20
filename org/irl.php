@@ -159,7 +159,7 @@ fclose($fp);
             display: inline-block;
             top: 0;
             left: 0;
-            margin: 1rem;
+            margin: 0 1rem;
             content:'in 3D';
             color: red;
             font-size: 0.75rem;
