@@ -83,7 +83,7 @@ fclose($fp);
 
 <body>
     <ol id="otobuilding" class="org">
-        <h2>音ビル | 2019 - 2021</h2>
+        <h2>OTO Building | 2019 - 2021</h2>
         <p class="update cc_style">
         Last Modified : 
             <?php
