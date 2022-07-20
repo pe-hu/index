@@ -156,6 +156,7 @@ fclose($fp);
         
         .collection .popup::before {
             position: absolute;
+            z-index: 3;
             display: inline-block;
             top: 0.5rem;
             left: 1rem;
