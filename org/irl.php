@@ -407,71 +407,71 @@ fclose($fp);
         </address>
     </footer>
 
-    <script type="text/javascript ">
-        let btn = document.querySelector('#greeting');
-        let marquee = document.querySelector('#marquee');
-        let box = document.querySelector('#open');
+<script type="text/javascript ">
+    let btn = document.querySelector('#greeting');
+    let marquee = document.querySelector('#marquee');
+    let box = document.querySelector('#open');
 
-        let btnToggleclass = function(el) {
-            el.classList.toggle('change');
-        }
+    let btnToggleclass = function(el) {
+        el.classList.toggle('change');
+    }
 
-        btn.addEventListener('click', function() {
-            btnToggleclass(box);
-        }, false);
+    btn.addEventListener('click', function() {
+        btnToggleclass(box);
+    }, false);
 
-        marquee.addEventListener('click', function() {
-            btnToggleclass(box);
-        }, false);
+    marquee.addEventListener('click', function() {
+        btnToggleclass(box);
+    }, false);
 
-        $('a[href^="# "]').click(function() {
-            var href = $(this).attr("href ");
-            var target = $(href == "#" || href == " " ? 'html' : href);
-            return false;
-        });
+    $('a[href^="# "]').click(function() {
+        var href = $(this).attr("href ");
+        var target = $(href == "#" || href == " " ? 'html' : href);
+        return false;
+    });
 
-        $(function() {
-            $("#img").load("collection.php");
-            $("#otobuilding").load("otobuilding.php");
-            $("#nishitemma").load("nishitemma.php");
-            $("#niceshopsu").load("niceshopsu.php");
-        })
+    $(function() {
+        $("#img").load("collection.php");
+        $("#otobuilding").load("otobuilding.php");
+        $("#nishitemma").load("nishitemma.php");
+        $("#niceshopsu").load("niceshopsu.php");
+    })
 
-            var volume;
-            var synth;
-            var notes;
+        var volume;
+        var synth;
+        var notes;
 
-            $(document).ready(function(event) {
-                // StartAudioContext(Tone.context, window);  
-                $(window).click(function() {
-                    Tone.context.resume();
-                });
-
-                volume = new Tone.Volume(-20);
-                synth = new Tone.PolySynth(10, Tone.Synth).chain(volume, Tone.Master);
-                notes = Tone.Frequency("E6").harmonize([12, 14, 16, 19, 21, 24]);
+        $(document).ready(function(event) {
+            // StartAudioContext(Tone.context, window);  
+            $(window).click(function() {
+                Tone.context.resume();
             });
 
-        $("#marquee").click(function(e) {
-            let randNote = Math.floor(Math.random() * notes.length);
-            synth.triggerAttackRelease(notes[randNote], "1");
+            volume = new Tone.Volume(-20);
+            synth = new Tone.PolySynth(10, Tone.Synth).chain(volume, Tone.Master);
+            notes = Tone.Frequency("E6").harmonize([12, 14, 16, 19, 21, 24]);
         });
 
-        $("._more").click(function(e) {
-            let randNote = Math.floor(Math.random() * notes.length);
-            synth.triggerAttackRelease(notes[randNote], "1");
-        });
+    $("#marquee").click(function(e) {
+        let randNote = Math.floor(Math.random() * notes.length);
+        synth.triggerAttackRelease(notes[randNote], "1");
+    });
 
-        $(".label").click(function(e) {
-            let randNote = Math.floor(Math.random() * notes.length);
-            synth.triggerAttackRelease(notes[randNote], "2n");
-        });
+    $("._more").click(function(e) {
+        let randNote = Math.floor(Math.random() * notes.length);
+        synth.triggerAttackRelease(notes[randNote], "1");
+    });
 
-        $(".list_item img").hover(function() {
-            let randNote = Math.floor(Math.random() * notes.length);
-            synth.triggerAttackRelease(notes[randNote], "6n");
-        });
-    </script>
+    $(".label").click(function(e) {
+        let randNote = Math.floor(Math.random() * notes.length);
+        synth.triggerAttackRelease(notes[randNote], "2n");
+    });
+
+    $(".list_item img").hover(function() {
+        let randNote = Math.floor(Math.random() * notes.length);
+        synth.triggerAttackRelease(notes[randNote], "6n");
+    });
+</script>
 </body>
 
 </html>
