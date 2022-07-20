@@ -28,7 +28,7 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>ナイスショップスー | Things that I (We) owned</title>
+    <title>gallery, community space | Things that I (We) owned</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
