@@ -78,7 +78,7 @@ fclose($fp);
 
 <body>
     <ol id="about" class="org">
-        <p id="more"></p>
+        <h2></h2>
         <p class="update cc_style">
         Last Modified : 
             <?php
@@ -102,6 +102,14 @@ fclose($fp);
             <p>Title</p>
         </li>
         <?php endif; ?>
+        <p class="update cc_style">
+        Last Modified : 
+            <?php
+            $mod = filemtime('about.csv');
+            date_default_timezone_set('Asia/Tokyo');
+            print "".date("r",$mod);
+            ?>
+        </p>
     </ol>
 
     <script type="text/javascript ">
