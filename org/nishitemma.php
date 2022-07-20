@@ -83,7 +83,7 @@ fclose($fp);
 
 <body>
     <ol id="nishitemma" class="org">
-        <h2>西天満のペフ | 2018 - 2019</h2>
+        <h2>creative, community space | 2018 - 2019</h2>
         <p class="update cc_style">
         Last Modified : 
             <?php

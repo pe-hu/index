@@ -83,7 +83,7 @@ fclose($fp);
 
 <body>
     <ol id="niceshopsu" class="org">
-        <h2>ナイスショップスー | - 2018</h2>
+        <h2>gallery, community space | - 2018</h2>
         <p class="update cc_style">
         Last Modified : 
             <?php
