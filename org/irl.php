@@ -399,7 +399,7 @@ fclose($fp);
             </p>
         </div>
         <ul class="mousedragscrollable">
-            <li id="about" class="collection"><p id="more"></p></li>
+            <li id="about" class="collection"></li>
             <li id="otobuilding" class="collection"></li>
             <li id="nishitemma" class="collection"></li>
             <li id="niceshopsu" class="collection"></li>
