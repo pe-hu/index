@@ -219,7 +219,7 @@ fclose($fp);
         
         .cc_style,
         form,
-        marquee,,,,
+        marquee,
         #about p {
             font-family: "ipag", monospace;
             transform: scale(1, 1.25);
