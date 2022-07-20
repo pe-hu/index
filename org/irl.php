@@ -134,6 +134,11 @@ fclose($fp);
             margin: 0.5rem 0;
         }
         
+        #about {
+            width: 55rem;
+            max-width: 95%;
+        }
+        
         #about,
         #otobuilding,
         #nishitemma,
