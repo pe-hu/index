@@ -13,7 +13,3 @@ function more() {
 function greeting() {
     $("#greeting #text").html(Greeting);
 }
-
-function about() {
-    $("#about #more").html(Greeting);
-}
