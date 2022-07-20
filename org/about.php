@@ -28,7 +28,7 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>About | Things that I (We) owned</title>
+    <title>About | The Things ∧° ┐ Own</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
@@ -78,14 +78,9 @@ fclose($fp);
 
 <body>
     <ol id="about" class="org">
-        <h2><span class="pehu">∧°┐</span> が 所有するすべてのもの</h2>
-        <p>このページに私（わたしたち）が <span class="pehu">∧°┐</span> のために所有するすべてのものを掲載します。
-            <br/>※ ページは、所有するものの増減に応じて随時更新します。</p>
+        <h2><span class="pehu">∧°┐</span> が 所有するもの</h2>
+        <p>このページに、∧° ┐ が 所有するもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、記録します。</p>
             <br/>
-        <p><span class="pehu">∧°┐</span> の活動形態の変化（入手した年代）ごとにリストを作成します。
-            <br/>※ それぞれのリストの冒頭に、リストを更新した日時を表示します。</p>
-        <p>すべてのリスト内の項目は、統一のカテゴリーによって絞り込むことができます。
-            <br/>※ カテゴリーについては、このリスト内の項目で詳しく説明します。</p>
         <?php if (!empty($rows)): ?>
         <?php foreach ($rows as $row): ?>
         <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
@@ -101,14 +96,6 @@ fclose($fp);
             <p>Title</p>
         </li>
         <?php endif; ?>
-        <p class="update cc_style">
-        Last Modified : 
-            <?php
-            $mod = filemtime('about.csv');
-            date_default_timezone_set('Asia/Tokyo');
-            print "".date("r",$mod);
-            ?>
-        </p>
     </ol>
 
     <script type="text/javascript ">
