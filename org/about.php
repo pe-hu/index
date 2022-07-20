@@ -45,7 +45,7 @@ fclose($fp);
         #about p {
             font-size: 0.75rem;
             margin: 0;
-            padding: 0.25rem 0.5rem;
+            padding: 1rem;
             font-weight: 500;
             display: block;
             transform: scale(1, 1.25);
@@ -80,7 +80,10 @@ fclose($fp);
     <ol id="about" class="org">
         <h2><span class="pehu">∧°┐</span> が 所有するもの</h2>
         <p>このページに、∧° ┐ が 所有するもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、記録します。</p>
-            <br/>
+        <br>
+        <p>すべてのリスト内の項目は、統一のカテゴリーによって絞り込むことができます。
+            <br/>※ カテゴリーについては、このリスト内の項目で詳しく説明します。</p>
+        <br/>
         <?php if (!empty($rows)): ?>
         <?php foreach ($rows as $row): ?>
         <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
