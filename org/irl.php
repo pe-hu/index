@@ -136,7 +136,7 @@ fclose($fp);
         
         #about {
             width: 55rem;
-            max-width: 95%;
+            max-width: 75%;
         }
         
         .collection {
@@ -146,7 +146,7 @@ fclose($fp);
 
         #img {
             width: 55rem;
-            max-width: 95%;
+            max-width: 75%;
         }
         
         #cover {
