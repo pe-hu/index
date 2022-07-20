@@ -134,7 +134,9 @@ fclose($fp);
             margin: 0.5rem 0;
         }
         
-        .collection {
+        #otobuilding,
+        #nishitemma,
+        #niceshopsu {
             width: 25rem;
             max-width: 75%;
         }
