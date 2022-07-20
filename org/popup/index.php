@@ -309,12 +309,12 @@ fclose($fp);
     <body>
 
         <header id="header">
-            <a class="_more" onclick="more()">私（わたしたち）が所有するもの</a>
+            <a class="_more" onclick="more()">∧°┐ が 所有するもの in 3D</a>
             <marquee id="marquee">
                 会期：2022年7月23日（土）〜 8月21日（日） | 会場：BnA Alter Museum
             </marquee>
             <nav id="nav">
-                <h1>The Things I (We) Own<span class="print">, in 3D</span></h1>
+                <h1>The Things I (We) Own, in 3D</h1>
                 <p id="presents">
                     <b class="cc_style">∧°┐ が 所有するもの in 3D</b>
                     <br/><span class="cc_style">会期：2022年7月23日（土）〜 8月21日（日）</span>
