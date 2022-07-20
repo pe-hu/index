@@ -78,7 +78,7 @@ fclose($fp);
 
 <body>
     <ol id="about" class="org">
-        <h2></h2>
+        <h2><span class="pehu">∧°┐</span> が 所有するすべてのもの</h2>
         <p class="update cc_style">
         Last Modified : 
             <?php
