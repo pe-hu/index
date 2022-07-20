@@ -55,7 +55,7 @@ fclose($fp);
     <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
 
     <script src="/org/searchBox.js"></script>
-    <script src="cover.js"></script>
+    <script src="3d.js"></script>
 
     <link rel="stylesheet" href="/org/cover.css" />
     <link rel="stylesheet" href="/org/index.css" />
@@ -312,7 +312,7 @@ fclose($fp);
 <body id="open">
 
     <header id="header">
-        <a class="_more" onclick="more()"><span class="pehu">∧°┐</span> が 所有するすべてのもの</a>
+        <a class="_more" onclick="more()"><span class="pehu">∧°┐</span> が 所有するすべてのもの in 3D</a>
         <marquee id="marquee">
             ここをクリックすると、<span class="pehu">∧°┐</span> が 所有するすべてのもの一覧が表示されます。
         </marquee>

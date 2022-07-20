@@ -9,7 +9,3 @@ var Greeting = [
 function more() {
     $("#header marquee").html(Greeting[Math.floor(Math.random() * Greeting.length)]);
 }
-
-function greeting() {
-    $("#greeting #text").html(Greeting);
-}

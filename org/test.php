@@ -145,11 +145,10 @@ fclose($fp);
         }
         
         #cover {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            overflow: hidden;
+            background-image: url("");
+            background-position: center;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
         }
         
         #images {
