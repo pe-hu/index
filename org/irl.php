@@ -154,7 +154,7 @@ fclose($fp);
             text-indent: -999px;
         }
         
-        .collection .list_item .popup::before {
+        .collection .popup::before {
             position: absolute;
             top: 0;
             left: 0;

@@ -94,6 +94,7 @@ fclose($fp);
                 <u><?=h($row[2])?></u>
                 <b><?=h($row[1])?></b>
             </p>
+            <p><?=h($row[3])?></p>
         </li>
         <?php endforeach; ?>
         <?php else: ?>
