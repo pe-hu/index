@@ -79,14 +79,6 @@ fclose($fp);
 <body>
     <ol id="about" class="org">
         <h2><span class="pehu">∧°┐</span> が 所有するすべてのもの</h2>
-        <p class="update cc_style">
-        Last Modified : 
-            <?php
-            $mod = filemtime('about.csv');
-            date_default_timezone_set('Asia/Tokyo');
-            print "".date("r",$mod);
-            ?>
-        </p>
         <?php if (!empty($rows)): ?>
         <?php foreach ($rows as $row): ?>
         <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
