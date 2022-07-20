@@ -139,7 +139,6 @@ fclose($fp);
             max-width: 95%;
         }
         
-        #about,
         #otobuilding,
         #nishitemma,
         #niceshopsu {
