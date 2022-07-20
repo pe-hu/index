@@ -10,6 +10,6 @@ function more() {
     $("#header marquee").html(Greeting[Math.floor(Math.random() * Greeting.length)]);
 }
 
-function greeting() {
+function about() {
     $("#about #more").html(Greeting);
 }

@@ -142,7 +142,9 @@ fclose($fp);
         }
 
         #about {
-            max-width: 75%;
+            width: 55rem;
+            max-width: 95%;
+            padding:0 1rem;
         }
 
         #img {
@@ -216,7 +218,8 @@ fclose($fp);
         
         .cc_style,
         form,
-        marquee {
+        marquee,,,,
+        #about p {
             font-family: "ipag", monospace;
             transform: scale(1, 1.25);
         }
@@ -319,7 +322,7 @@ fclose($fp);
 
     <header id="header">
         <a class="_more" onclick="more()"><span class="pehu">∧°┐</span> が 所有するすべてのもの in 3D</a>
-        <marquee id="marquee">
+        <marquee id="marquee" onclick="about()">
             ここをクリックすると、<span class="pehu">∧°┐</span> が 所有するすべてのもの一覧が表示されます。
         </marquee>
         <nav id="nav">
