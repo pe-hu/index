@@ -392,6 +392,7 @@ fclose($fp);
             </p>
         </div>
             <ul class="mousedragscrollable">
+                <li id="ctlg" class="collection"></li>
                 <li id="img" class="collection"></li>
             </ul>
         </main>
@@ -445,6 +446,7 @@ fclose($fp);
     });
 
     $(function() {
+        $("#ctlg").load("ctlg.php");
         $("#img").load("collection.php");
     })
 
