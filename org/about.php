@@ -90,10 +90,10 @@ fclose($fp);
         <?php foreach ($rows as $row): ?>
         <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
             <p>
-                <u><?=h($row[2])?></u>
+                <u style="text-transform: capitalize;"><?=h($row[0])?></u>
                 <b><?=h($row[1])?></b>
             </p>
-            <p><?=h($row[3])?></p>
+            <p><?=h($row[2])?></p>
         </li>
         <?php endforeach; ?>
         <?php else: ?>
