@@ -128,6 +128,7 @@ fclose($fp);
         #main {
             min-height: 77.5vh;
             max-height: 77.5vh;
+            overflow: none;
         }
         
         #presents {
@@ -268,6 +269,10 @@ fclose($fp);
 
         .pehu {
             font-family: "MS Mincho", "SimSong", serif;
+        }
+        
+        .change #main {
+            overflow: auto;
         }
         
         .change .mousedragscrollable {
