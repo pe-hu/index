@@ -113,7 +113,7 @@ fclose($fp);
         <hr/>
         <br/>
         <h2><span class="pehu">∧°┐</span> が 所有するもの in 3D</h2>
-        <p class="popup">このページに記録したリストのうち、in 3D の 表記があるものは、BnA Alter Meuseum に 展示しています。</p>
+        <p>このページに記録したリストのうち、<span class="popup"></span> の 表記があるものは、BnA Alter Meuseum に 展示しています。</p>
         <br/>
     </ol>
 
