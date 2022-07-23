@@ -115,6 +115,8 @@ fclose($fp);
         <h2><span class="pehu">∧°┐</span> が 所有するもの in 3D</h2>
         <p>このページに記録したリストのうち、<span class="popup"></span> の 表記があるものは、BnA Alter Meuseum に 展示しています。</p>
         <br/>
+        <p><a href="https://bnaaltermuseum.com/event/the-things-i-we-own/" target="_blank">詳細</a></p>
+
     </ol>
 
     <script type="text/javascript ">
