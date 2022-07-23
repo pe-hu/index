@@ -73,6 +73,18 @@ fclose($fp);
             color:#eee;
             padding: 0.25rem 1rem 1.25rem;
         }
+        
+        #about .popup::before {
+            position: relative;
+            z-index: 3;
+            display: inline-block;
+            content:'in 3D';
+            color: red;
+            font-size: 0.75rem;
+            border: solid 1px;
+            padding: 0.25rem;
+            border-radius: 0.25rem;
+        }
     </style>
 </head>
 
@@ -98,6 +110,11 @@ fclose($fp);
             <p>Title</p>
         </li>
         <?php endif; ?>
+        <hr/>
+        <br/>
+        <h2><span class="pehu">∧°┐</span> が 所有するもの in 3D</h2>
+        <p class="popup">このページに記録したリストのうち、in 3D の 表記があるものは、BnA Alter Meuseum に 展示しています。</p>
+        <br/>
     </ol>
 
     <script type="text/javascript ">
