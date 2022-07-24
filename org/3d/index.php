@@ -168,70 +168,6 @@ fclose($fp);
             padding: 0.25rem;
             border-radius: 0.25rem;
         }
-
-        #img {
-            width: 55rem;
-            max-width: 75%;
-        }
-        
-        #cover {
-            background-image: url("shopping/background.png");
-            background-position: center;
-            background-size: auto 100%;
-            background-repeat: no-repeat;
-        }
-        
-        #images {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            width: 90%;
-            height: 0;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
-
-        #images li:nth-child(n+26) {
-            display: none;
-        }
-        
-        #images .list_item {
-            position: relative;
-            padding: 0;
-            margin: 2.5vh 0;
-        }
-        
-        #images .list_item a {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 0;
-            width: 100%;
-            height: 100%;
-            text-indent: -999px;
-        }
-        
-        #images img {
-            animation: 100s linear infinite spot;
-        }
-        
-        @keyframes spot {
-            0% {
-                filter: drop-shadow(1rem 1rem 1rem rgba(50, 50, 50, 0.75));
-            }
-            25% {
-                filter: drop-shadow(1rem -0.5rem 1rem rgba(50, 50, 50, 0.75));
-            }
-            50% {
-                filter: drop-shadow(-1rem -1rem 1.5rem rgba(50, 50, 50, 0.75));
-            }
-            75% {
-                filter: drop-shadow(-0.5rem 2rem 2rem rgba(50, 50, 50, 0.75));
-            }
-            100% {
-                filter: drop-shadow(1rem 1rem 1rem rgba(50, 50, 50, 0.75));
-            }
-        }
         
         @font-face {
             font-family: "ipag";
@@ -271,19 +207,15 @@ fclose($fp);
             font-family: "MS Mincho", "SimSong", serif;
         }
         
-        .change #main {
+        #main {
             overflow: auto;
         }
         
-        .change .mousedragscrollable {
+        .mousedragscrollable {
             display: block;
         }
         
         #footer,
-        .mousedragscrollable,
-        .change #cover,
-        .change #greeting,
-        .change #server,
         #print {
             display: none;
         }
