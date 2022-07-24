@@ -28,7 +28,7 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>Cassette and CD | The Things I (We) Own</title>
+    <title>Cassette, CD and etc, | The Things I (We) Own</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
@@ -90,7 +90,7 @@ fclose($fp);
 
 <body>
     <ol id="music" class="org">
-        <h2>Cassette and CD</h2>
+        <h2>Cassette, CD and etc,</h2>
         <p class="update cc_style">
         Last Modified : 
             <?php
