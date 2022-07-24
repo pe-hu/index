@@ -368,11 +368,8 @@ fclose($fp);
         </li>
         <?php endif; ?>
     </ol>
-    </li>
+</li>
             <li id="books" class="collection"></li>
-            <li id="" class="collection"></li>
-            <li id="" class="collection"></li>
-            <li id="img" class="collection"></li>
         </ul>
     </main>
 
