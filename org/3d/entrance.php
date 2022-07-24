@@ -90,7 +90,7 @@ fclose($fp);
 
 <body>
     <ol id="entrance" class="org">
-        <h2>The Things I (We) Made</h2>
+        <h2><span class="pehu">∧°┐</span> Presents</h2>
         <p class="update cc_style">
         Last Modified : 
             <?php
