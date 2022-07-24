@@ -34,6 +34,57 @@ fclose($fp);
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="searchBox.css" />
     <style>
+        #entrance {
+            position: relative;
+        }
+
+        #entrance h2 {
+            padding: 1rem 1rem 0.25rem;
+        }
+
+        #entrance p {
+            font-size: 0.75rem;
+            margin: 0;
+            padding: 1rem;
+            font-weight: 500;
+            display: block;
+            transform: scale(1, 1.25);
+        }
+        
+        #entrance p b {
+            font-size: 150%;
+            display: inline-block;
+        }
+        
+        #entrance p u {
+            float: right;
+            font-size: 75%;
+            margin: 0;
+            padding: 0.125rem 0.25rem;
+            text-decoration: none;
+            color: #000;
+            background: #fff;
+            border: solid 1px #aaa;
+            border-radius: 0.25rem;
+            display: block;
+        }
+        
+        #entrance .update {
+            color:#eee;
+            padding: 0.25rem 1rem 1.25rem;
+        }
+        
+        #entrance .popup::before {
+            position: relative;
+            z-index: 3;
+            display: inline-block;
+            content:'in 3D';
+            color: red;
+            font-size: 0.75rem;
+            border: solid 1px;
+            padding: 0.25rem;
+            border-radius: 0.25rem;
+        }
     </style>
 </head>
 
