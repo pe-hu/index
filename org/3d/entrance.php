@@ -90,7 +90,7 @@ fclose($fp);
 
 <body>
     <ol id="entrance" class="org">
-        <h2>,in 3D</h2>
+        <h2>in 3D | Featured</h2>
         <p class="update cc_style">
         Last Modified : 
             <?php
