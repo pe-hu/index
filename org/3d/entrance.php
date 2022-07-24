@@ -28,7 +28,7 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>The Things I (We) Own</title>
+    <title>The Things I (We) Own, in 3D</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
@@ -90,7 +90,7 @@ fclose($fp);
 
 <body>
     <ol id="entrance" class="org">
-        <h2><span class="pehu">∧°┐</span> Presents</h2>
+        <h2>,in 3D</h2>
         <p class="update cc_style">
         Last Modified : 
             <?php
