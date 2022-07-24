@@ -8,7 +8,7 @@ $format = (string)filter_input(INPUT_POST, 'format');
 $text = (string)filter_input(INPUT_POST, 'text');
 $link = (string)filter_input(INPUT_POST, 'link');
 
-$fp = fopen('collection.csv', 'a+b');
+$fp = fopen('entrance.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$org, $title, $format, $text, $link]);
@@ -38,12 +38,12 @@ fclose($fp);
 </head>
 
 <body>
-    <ol id="niceshopsu" class="org">
+    <ol id="entrance" class="org">
         <h2>The Things I (We) Made</h2>
         <p class="update cc_style">
         Last Modified : 
             <?php
-            $mod = filemtime('collection.csv');
+            $mod = filemtime('entrance.csv');
             date_default_timezone_set('Asia/Tokyo');
             print "".date("r",$mod);
             ?>

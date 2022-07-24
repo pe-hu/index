@@ -38,7 +38,7 @@ fclose($fp);
 </head>
 
 <body>
-    <ol id="niceshopsu" class="org">
+    <ol id="collection" class="org">
         <h2>Collection</h2>
         <p class="update cc_style">
         Last Modified : 

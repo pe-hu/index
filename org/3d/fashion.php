@@ -8,7 +8,7 @@ $format = (string)filter_input(INPUT_POST, 'format');
 $text = (string)filter_input(INPUT_POST, 'text');
 $link = (string)filter_input(INPUT_POST, 'link');
 
-$fp = fopen('books.csv', 'a+b');
+$fp = fopen('fashion.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$org, $title, $format, $text, $link]);
@@ -28,7 +28,7 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>Books and Zines | The Things I (We) Own</title>
+    <title>Fashion | The Things I (We) Own</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
@@ -38,12 +38,12 @@ fclose($fp);
 </head>
 
 <body>
-    <ol id="books" class="org">
-        <h2>Books and Zines</h2>
+    <ol id="fashion" class="org">
+        <h2>Fashion</h2>
         <p class="update cc_style">
         Last Modified : 
             <?php
-            $mod = filemtime('books.csv');
+            $mod = filemtime('fashion.csv');
             date_default_timezone_set('Asia/Tokyo');
             print "".date("r",$mod);
             ?>

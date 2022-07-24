@@ -38,7 +38,7 @@ fclose($fp);
 </head>
 
 <body>
-    <ol id="niceshopsu" class="org">
+    <ol id="music" class="org">
         <h2>Cassette and CD</h2>
         <p class="update cc_style">
         Last Modified : 
