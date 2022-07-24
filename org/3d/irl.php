@@ -240,13 +240,13 @@ fclose($fp);
             font-family: "MS Mincho", "SimSong", serif;
         }
         
-        .change .mousedragscrollable {
+        .mousedragscrollable {
             display: block;
         }
         
         #footer,
         .mousedragscrollable,
-        .change #about,
+        #about,
         #print {
             display: none;
         }
