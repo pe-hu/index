@@ -1,28 +1,3 @@
-<?php
-function h($str) {
-    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
-}
-$org = (string)filter_input(INPUT_POST, 'org');
-$size = (string)filter_input(INPUT_POST, 'size');
-$img = (string)filter_input(INPUT_POST, 'img');
-$title = (string)filter_input(INPUT_POST, 'title');
-$text = (string)filter_input(INPUT_POST, 'text');
-
-$fp = fopen('collection.csv', 'a+b');
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    flock($fp, LOCK_EX);
-    fputcsv($fp, [$org, $size, $img, $title, $text]);
-    rewind($fp);
-}
-
-flock($fp, LOCK_SH);
-while ($row = fgetcsv($fp)) {
-    $rows[] = $row;
-}
-flock($fp, LOCK_UN);
-fclose($fp);
-
-?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -31,7 +6,7 @@ fclose($fp);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <meta name="author" content="∧° ┐"">
+    <meta name="author" content="∧° ┐">
     <meta name="reply-to" content="pehu@creative-community.space">
     <meta name="description" content="∧° ┐ が 所有するもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。">
 
@@ -341,36 +316,6 @@ fclose($fp);
 
     <main id="main">
         <ul class="mousedragscrollable">
-            <!--
-            <li id="about" class="collection">
-    <ol id="entrance" class="org">
-        <h2>Things That Made by <span class="pehu">∧°┐</span></h2>
-        <p class="update cc_style">
-        Last Modified : 
-            <?php
-            $mod = filemtime('entrance.csv');
-            date_default_timezone_set('Asia/Tokyo');
-            print "".date("r",$mod);
-            ?>
-        </p>
-        <?php if (!empty($rows)): ?>
-        <?php foreach ($rows as $row): ?>
-        <li class="list_item list_toggle <?=h($row[4])?>" data-org="<?=h($row[0])?>">
-            <p>
-                <u><?=h($row[2])?></u>
-                <b><?=h($row[1])?></b>
-            </p>
-            <p><?=h($row[3])?></p>
-        </li>
-        <?php endforeach; ?>
-        <?php else: ?>
-        <li class="list_item list_toggle" data-org="test">
-            <p>Title</p>
-        </li>
-        <?php endif; ?>
-    </ol>
-</li>
-        -->
             <li id="books" class="collection"></li>
             <li id="collection" class="collection"></li>
         </ul>
