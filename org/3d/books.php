@@ -28,7 +28,7 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>Books and Zines | The Things ∧° ┐ Own</title>
+    <title>Books and Zines | The Things I (We) Own</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
