@@ -500,7 +500,7 @@ fclose($fp);
     });
 
     $(function() {
-        $("#books").load("boooks.php");
+        $("#books").load("books.php");
         $("#collection").load("collection.php");
         $("#entrance").load("entrance.php");
         $("#fashion").load("fashion.php");
