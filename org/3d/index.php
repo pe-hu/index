@@ -359,9 +359,9 @@ fclose($fp);
 
             </li>
             <li id="collection" class="collection"></li>
-            <li id="nishitemma" class="collection"></li>
-            <li id="niceshopsu" class="collection"></li>
-            <li id="img" class="collection"></li>
+            <li id="fashion" class="collection"></li>
+            <li id="books" class="collection"></li>
+            <li id="music" class="collection"></li>
         </ul>
     </main>
 
