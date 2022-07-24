@@ -3,15 +3,15 @@ function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 $org = (string)filter_input(INPUT_POST, 'org');
+$size = (string)filter_input(INPUT_POST, 'size');
+$img = (string)filter_input(INPUT_POST, 'img');
 $title = (string)filter_input(INPUT_POST, 'title');
-$format = (string)filter_input(INPUT_POST, 'format');
 $text = (string)filter_input(INPUT_POST, 'text');
-$link = (string)filter_input(INPUT_POST, 'link');
 
-$fp = fopen('about.csv', 'a+b');
+$fp = fopen('cover.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$org, $title, $format, $text, $link]);
+    fputcsv($fp, [$org, $size, $img, $title, $text]);
     rewind($fp);
 }
 
@@ -23,7 +23,6 @@ flock($fp, LOCK_UN);
 fclose($fp);
 
 ?>
-
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -161,7 +160,7 @@ fclose($fp);
             display: inline-block;
             top: 0.5rem;
             left: 1rem;
-            content:'in 3D';
+            content:'On Sale';
             color: red;
             font-size: 0.75rem;
             border: solid 1px;
@@ -316,7 +315,9 @@ fclose($fp);
         
         #footer,
         .mousedragscrollable,
-        .change #about,
+        .change #cover,
+        .change #greeting,
+        .change #server,
         #print {
             display: none;
         }
@@ -380,7 +381,7 @@ fclose($fp);
 
     <header id="header">
         <a class="_more" onclick="more()"><span class="pehu">∧°┐</span> が 所有するもの in 3D</a>
-        <marquee id="marquee">
+        <marquee id="marquee" onclick="about()">
             ここをクリックすると、<span class="pehu">∧°┐</span> が 所有するもの一覧が表示されます。
         </marquee>
         <nav id="nav">
@@ -428,23 +429,33 @@ fclose($fp);
     </header>
 
     <main id="main">
-    <ol id="about" class="org">
-        <?php if (!empty($rows)): ?>
-        <?php foreach ($rows as $row): ?>
-        <li class="list_item list_toggle <?=h($row[4])?>" data-org="<?=h($row[0])?>">
-            <p>
-                <u><?=h($row[2])?></u>
-                <b><?=h($row[1])?></b>
+        <div id="cover">
+            <ol id="images" class="org">
+                <?php if (!empty($rows)): ?>
+                <?php foreach ($rows as $row): ?>
+                <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
+                    <img src="<?=h($row[2])?>">
+                </li>
+                <?php endforeach; ?>
+                <?php else: ?>
+                <li class="list_item list_toggle min" data-org="test">
+                    <img src="/logo.png">
+                </li>
+                <?php endif; ?>
+            </ol>
+        </div>
+        <div id="greeting">
+            <p class="nlc_style" id="text"></p>
+        </div>
+        <div id="server">
+            <p class="cc_style">
+                <?php
+                echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
+                echo 'PORT : '. $_SERVER['REMOTE_PORT']."<br/>";
+                echo ''. $_SERVER['HTTP_USER_AGENT'].".";
+                ?>
             </p>
-            <p><?=h($row[3])?></p>
-        </li>
-        <?php endforeach; ?>
-        <?php else: ?>
-        <li class="list_item list_toggle" data-org="test">
-            <p>Title</p>
-        </li>
-        <?php endif; ?>
-    </ol>
+        </div>
         <ul class="mousedragscrollable">
             <li id="entrance" class="collection"></li>
             <li id="books" class="collection"></li>
