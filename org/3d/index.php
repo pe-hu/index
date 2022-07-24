@@ -316,9 +316,7 @@ fclose($fp);
         
         #footer,
         .mousedragscrollable,
-        .change #cover,
-        .change #greeting,
-        .change #server,
+        .change #about,
         #print {
             display: none;
         }
