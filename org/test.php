@@ -31,7 +31,7 @@ fclose($fp);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <meta name="author" content="∧° ┐"">
+    <meta name="author" content="∧° ┐">
     <meta name="reply-to" content="pehu@creative-community.space">
     <meta name="description" content="∧° ┐ が 所有するすべてのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。">
 
