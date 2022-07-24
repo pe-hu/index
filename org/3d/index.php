@@ -408,7 +408,7 @@ fclose($fp);
     });
 
     $(function() {
-        $("#books").load("books.php");
+        $("#collection").load("collection.php");
     })
 
         var volume;
