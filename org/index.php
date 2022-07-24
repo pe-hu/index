@@ -470,7 +470,7 @@ fclose($fp);
     });
 
     $(function() {
-        $("#about").load("3d/about.php");
+        $("#about").load("about.php");
         $("#entrance").load("3d/entrance.php");
         $("#books").load("3d/books.php");
         $("#fashion").load("3d/fashion.php");
