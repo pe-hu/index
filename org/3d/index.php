@@ -341,6 +341,7 @@ fclose($fp);
 
     <main id="main">
         <ul class="mousedragscrollable">
+            <!--
             <li id="about" class="collection">
     <ol id="entrance" class="org">
         <h2>Things That Made by <span class="pehu">∧°┐</span></h2>
@@ -369,7 +370,9 @@ fclose($fp);
         <?php endif; ?>
     </ol>
 </li>
+        -->
             <li id="books" class="collection"></li>
+            <li id="collection" class="collection"></li>
         </ul>
     </main>
 
@@ -408,6 +411,7 @@ fclose($fp);
     });
 
     $(function() {
+        $("#books").load("books.php");
         $("#collection").load("collection.php");
     })
 
