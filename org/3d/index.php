@@ -380,7 +380,7 @@ fclose($fp);
 
     <header id="header">
         <a class="_more" onclick="more()"><span class="pehu">∧°┐</span> が 所有するもの in 3D</a>
-        <marquee id="marquee" onclick="about()">
+        <marquee id="marquee">
             ここをクリックすると、<span class="pehu">∧°┐</span> が 所有するもの一覧が表示されます。
         </marquee>
         <nav id="nav">
