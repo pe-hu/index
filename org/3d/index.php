@@ -368,7 +368,7 @@ fclose($fp);
         </li>
         <?php endif; ?>
     </ol></li>
-            <li id="" class="collection"></li>
+            <li id="books" class="collection"></li>
             <li id="" class="collection"></li>
             <li id="" class="collection"></li>
             <li id="img" class="collection"></li>
@@ -410,7 +410,7 @@ fclose($fp);
     });
 
     $(function() {
-        $("#").load("");
+        $("#books").load("books.php");
     })
 
         var volume;
