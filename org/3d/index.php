@@ -168,68 +168,44 @@ fclose($fp);
             border-radius: 0.25rem;
         }
 
-        #img {
-            width: 55rem;
-            max-width: 75%;
-        }
-        
-        #cover {
-            background-image: url("shopping/background.png");
-            background-position: center;
-            background-size: auto 100%;
-            background-repeat: no-repeat;
-        }
-        
-        #images {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            width: 90%;
-            height: 0;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+        .org {
+            position: relative;
         }
 
-        #images li:nth-child(n+26) {
-            display: none;
+        .org h2 {
+            padding: 1rem 1rem 0.25rem;
+        }
+
+        .org p {
+            font-size: 0.75rem;
+            margin: 0;
+            padding: 0.25rem 0.5rem;
+            font-weight: 500;
+            display: block;
+            transform: scale(1, 1.25);
         }
         
-        #images .list_item {
-            position: relative;
-            padding: 0;
-            margin: 2.5vh 0;
+        .org p b {
+            font-size: 150%;
+            display: inline-block;
         }
         
-        #images .list_item a {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 0;
-            width: 100%;
-            height: 100%;
-            text-indent: -999px;
+        .org p u {
+            float: right;
+            font-size: 75%;
+            margin: 0;
+            padding: 0.125rem 0.25rem;
+            text-decoration: none;
+            color: #000;
+            background: #fff;
+            border: solid 1px #aaa;
+            border-radius: 0.25rem;
+            display: block;
         }
         
-        #images img {
-            animation: 100s linear infinite spot;
-        }
-        
-        @keyframes spot {
-            0% {
-                filter: drop-shadow(1rem 1rem 1rem rgba(50, 50, 50, 0.75));
-            }
-            25% {
-                filter: drop-shadow(1rem -0.5rem 1rem rgba(50, 50, 50, 0.75));
-            }
-            50% {
-                filter: drop-shadow(-1rem -1rem 1.5rem rgba(50, 50, 50, 0.75));
-            }
-            75% {
-                filter: drop-shadow(-0.5rem 2rem 2rem rgba(50, 50, 50, 0.75));
-            }
-            100% {
-                filter: drop-shadow(1rem 1rem 1rem rgba(50, 50, 50, 0.75));
-            }
+        .org .update {
+            color:#eee;
+            padding: 0.25rem 1rem 1.25rem;
         }
         
         @font-face {
@@ -279,12 +255,6 @@ fclose($fp);
         }
         
         @media screen and (max-width: 1250px) {
-            #images {
-                top: 45%;
-            }
-            #images .list_item {
-                margin: 1.75vh 0;
-            }
             #main {
                 min-height: 77.5vh;
                 max-height: 77.5vh;
@@ -292,12 +262,6 @@ fclose($fp);
         }
         
         @media screen and (max-width: 750px) {
-            #images {
-                top: 40%;
-            }
-            #images .list_item {
-                margin: 1.25vh 0;
-            }
             #main {
                 min-height: 77.5vh;
                 max-height: 77.5vh;
@@ -305,12 +269,6 @@ fclose($fp);
         }
         
         @media print {
-            #images {
-                top: 42.5%;
-            }
-            #images .list_item {
-                margin: 2.5vh 0;
-            }
             #address,
             #server {
                 display: none;
