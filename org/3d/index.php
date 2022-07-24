@@ -3,15 +3,15 @@ function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 $org = (string)filter_input(INPUT_POST, 'org');
-$size = (string)filter_input(INPUT_POST, 'size');
-$img = (string)filter_input(INPUT_POST, 'img');
 $title = (string)filter_input(INPUT_POST, 'title');
+$format = (string)filter_input(INPUT_POST, 'format');
 $text = (string)filter_input(INPUT_POST, 'text');
+$link = (string)filter_input(INPUT_POST, 'link');
 
-$fp = fopen('entrance.csv', 'a+b');
+$fp = fopen('about.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$org, $size, $img, $title, $text]);
+    fputcsv($fp, [$org, $title, $format, $text, $link]);
     rewind($fp);
 }
 
@@ -128,7 +128,6 @@ fclose($fp);
         #main {
             min-height: 77.5vh;
             max-height: 77.5vh;
-            overflow: none;
         }
         
         #presents {
@@ -167,6 +166,109 @@ fclose($fp);
             border: solid 1px;
             padding: 0.25rem;
             border-radius: 0.25rem;
+        }
+        #nishitemma {
+            position: relative;
+        }
+
+        #nishitemma h2 {
+            padding: 1rem 1rem 0.25rem;
+        }
+
+        #nishitemma p {
+            font-size: 0.75rem;
+            margin: 0;
+            padding: 0.25rem 0.5rem;
+            font-weight: 500;
+            display: block;
+            transform: scale(1, 1.25);
+        }
+        
+        .org p b {
+            font-size: 150%;
+            display: inline-block;
+        }
+        
+        .org p u {
+            float: right;
+            font-size: 75%;
+            margin: 0;
+            padding: 0.125rem 0.25rem;
+            text-decoration: none;
+            color: #000;
+            background: #fff;
+            border: solid 1px #aaa;
+            border-radius: 0.25rem;
+            display: block;
+        }
+        
+        .org .update {
+            color:#eee;
+            padding: 0.25rem 1rem 1.25rem;
+        }
+
+        #img {
+            width: 55rem;
+            max-width: 75%;
+        }
+        
+        #cover {
+            background-image: url("shopping/background.png");
+            background-position: center;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+        }
+        
+        #images {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            width: 90%;
+            height: 0;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        #images li:nth-child(n+26) {
+            display: none;
+        }
+        
+        #images .list_item {
+            position: relative;
+            padding: 0;
+            margin: 2.5vh 0;
+        }
+        
+        #images .list_item a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            text-indent: -999px;
+        }
+        
+        #images img {
+            animation: 100s linear infinite spot;
+        }
+        
+        @keyframes spot {
+            0% {
+                filter: drop-shadow(1rem 1rem 1rem rgba(50, 50, 50, 0.75));
+            }
+            25% {
+                filter: drop-shadow(1rem -0.5rem 1rem rgba(50, 50, 50, 0.75));
+            }
+            50% {
+                filter: drop-shadow(-1rem -1rem 1.5rem rgba(50, 50, 50, 0.75));
+            }
+            75% {
+                filter: drop-shadow(-0.5rem 2rem 2rem rgba(50, 50, 50, 0.75));
+            }
+            100% {
+                filter: drop-shadow(1rem 1rem 1rem rgba(50, 50, 50, 0.75));
+            }
         }
         
         @font-face {
@@ -207,15 +309,15 @@ fclose($fp);
             font-family: "MS Mincho", "SimSong", serif;
         }
         
-        #main {
-            overflow: auto;
-        }
-        
-        .mousedragscrollable {
+        .change .mousedragscrollable {
             display: block;
         }
         
         #footer,
+        .mousedragscrollable,
+        .change #cover,
+        .change #greeting,
+        .change #server,
         #print {
             display: none;
         }
@@ -327,19 +429,7 @@ fclose($fp);
     </header>
 
     <main id="main">
-        <ul class="mousedragscrollable">
-            <li id="about" class="collection">
-
-            <ol id="entrance" class="org">
-        <h2>The Things I (We) Made</h2>
-        <p class="update cc_style">
-        Last Modified : 
-            <?php
-            $mod = filemtime('entrance.csv');
-            date_default_timezone_set('Asia/Tokyo');
-            print "".date("r",$mod);
-            ?>
-        </p>
+    <ol id="about" class="org">
         <?php if (!empty($rows)): ?>
         <?php foreach ($rows as $row): ?>
         <li class="list_item list_toggle <?=h($row[4])?>" data-org="<?=h($row[0])?>">
@@ -356,12 +446,12 @@ fclose($fp);
         </li>
         <?php endif; ?>
     </ol>
-
-            </li>
-            <li id="collection" class="collection"></li>
-            <li id="fashion" class="collection"></li>
+        <ul class="mousedragscrollable">
+            <li id="entrance" class="collection"></li>
             <li id="books" class="collection"></li>
             <li id="music" class="collection"></li>
+            <li id="fashion" class="collection"></li>
+            <li id="collection" class="collection"></li>
         </ul>
     </main>
 
@@ -400,9 +490,10 @@ fclose($fp);
     });
 
     $(function() {
-        $("#collection").load("collection.php");
-        $("#fashion").load("fashion.php");
         $("#books").load("books.php");
+        $("#collection").load("collection.php");
+        $("#entrance").load("entrance.php");
+        $("#fashion").load("fashion.php");
         $("#music").load("music.php");
     })
 
