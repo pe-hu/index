@@ -367,7 +367,8 @@ fclose($fp);
             <p>Title</p>
         </li>
         <?php endif; ?>
-    </ol></li>
+    </ol>
+    </li>
             <li id="books" class="collection"></li>
             <li id="" class="collection"></li>
             <li id="" class="collection"></li>
