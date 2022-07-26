@@ -351,7 +351,7 @@ fclose($fp);
             ここをクリックすると、<span class="pehu">∧°┐</span> が 所有するもの一覧が表示されます。
         </marquee>
         <nav id="nav">
-            <h1>The Things <span class="pehu">∧°┐</span> Own</h1>
+            <h1>The Things I (We) Own, in 3D</h1>
             <span id="presents">
                 <img src="qr.png" width="50rem">
             </span>
@@ -470,7 +470,7 @@ fclose($fp);
     });
 
     $(function() {
-        $("#about").load("about.php");
+        $("#about").load("3d.php");
         $("#entrance").load("3d/entrance.php");
         $("#books").load("3d/books.php");
         $("#fashion").load("3d/fashion.php");
