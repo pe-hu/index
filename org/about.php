@@ -114,7 +114,7 @@ fclose($fp);
         <br/>
         <h2><span class="pehu">∧°┐</span> が 所有するもの in 3D</h2>
         <p>2022.7.23 - 8.21</p>
-        <p>このページに記録したリストのうち、<span class="popup"></span> の 表記があるものは、BnA Alter Meuseum で 展示・販売しています。</p>
+        <p>このページに記録したリストのうち、<span class="popup"></span> の 表記があるものを、BnA Alter Meuseum で 展示・販売しています。</p>
         <br/>
         <p>詳細 : <a href="https://bnaaltermuseum.com/event/the-things-i-we-own/" target="_blank">https://bnaaltermuseum.com/event/the-things-i-we-own/</a></p>
 
