@@ -8,7 +8,7 @@ $img = (string)filter_input(INPUT_POST, 'img');
 $title = (string)filter_input(INPUT_POST, 'title');
 $text = (string)filter_input(INPUT_POST, 'text');
 
-$fp = fopen('popup.csv', 'a+b');
+$fp = fopen('collection.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$org, $size, $img, $title, $text]);
@@ -23,457 +23,499 @@ flock($fp, LOCK_UN);
 fclose($fp);
 
 ?>
+<!DOCTYPE html>
+<html lang="ja">
 
-    <!DOCTYPE html>
-    <html lang="ja">
+<head>
+    <title>The Things ∧° ┐ Own</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="∧° ┐"">
+    <meta name="reply-to" content="pehu@creative-community.space">
+    <meta name="description" content="∧° ┐ が 所有するもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。">
 
-    <head>
-        <title>The Things I (We) Own | ∧° ┐</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="author" content="∧° ┐">
-        <meta name="reply-to" content="pehu@creative-community.space">
-        <meta name="description" content="私（わたしたち）が所有する全てのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。">
+    <meta property="og:title" content="The Things ∧° ┐ Own" />
+    <meta property="og:description" content="∧° ┐ が 所有するもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://creative-community.space/pehu/org/" />
+    <meta property="og:site_name" content="creative-community.space" />
+    <meta property="og:image" content="card.png" />
+    <meta property="og:locale" content="ja_JP" />
 
-        <meta property="og:title" content="The Things I (We) Own | ∧° ┐" />
-        <meta property="og:description" content="私（わたしたち）が所有する全てのもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、このページに記録します。" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://creative-community.space/pehu/org/" />
-        <meta property="og:site_name" content="creative-community.space" />
-        <meta property="og:image" content="https://creative-community.space/pehu/org/card.png" />
-        <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@NLC_update" />
+    <meta name="twitter:image" content="card.png" />
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@NLC_update" />
-        <meta name="twitter:image" content="https://creative-community.space/pehu/org/card.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://creative-community.space/coding/js/tone/jquery.min.js"></script>
+    <script src="https://creative-community.space/coding/js/tone/jquery-ui.min.js"></script>
+    <script src="https://creative-community.space/coding/js/tone/Tone.min.js"></script>
+    <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
 
-        <link rel="stylesheet" href="popup.css" />
-        <link rel="stylesheet" href="/org/index.css" />
-        <link rel="stylesheet" href="/org/searchBox.css" />
-        <style>
-            @font-face {
-                font-family: "ipag";
-                src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
-            }
-            
-            header,
-            header marquee,
-            #main {
-                border-bottom: 1px dashed #ccc;
-            }
+    <script src="/org/searchBox.js"></script>
+    <script src="3d.js"></script>
 
-        header marquee {
-            transition: all 1000ms ease;
+    <link rel="stylesheet" href="/org/cover.css" />
+    <link rel="stylesheet" href="/org/index.css" />
+    <link rel="stylesheet" href="/org/searchBox.css" />
+    <style>
+        #bought:checked~label,
+        #gift:checked~label,
+        #free:checked~label,
+        #made:checked~label,
+        #collaborations:checked~label,
+        #other:checked~label,
+        #sale:checked~label {
+            text-decoration: double underline;
         }
-
+        
+        body,
+        ._more:hover,
+        header label:hover,
+        footer a:hover,
+        #greeting p,
+        #server:hover p {
+            color: #111;
+        }
+        
+        header,
+        header marquee {
+            border-bottom: 1px dashed #ccc;
+        }
+        
+        footer {
+            border-top: 1px dashed #ccc;
+        }
+        
+        ._more,
+        header label,
+        footer a {
+            color: #ccc;
+        }
+        
         header marquee:hover {
-            cursor: pointer;
             color: #fff;
             background: #ccc;
         }
-            
-            ._more,
-            header label,
-            footer a {
-                color: #ccc;
+        
+        ._more:hover,
+        header label:hover,
+        footer a:hover {
+            text-decoration: #ccc wavy underline;
+            cursor: pointer;
+        }
+        
+        #server p {
+            color: #eee;
+        }
+        
+        #server:hover p {
+            text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
+        }
+        
+        .change .mousedragscrollable::-webkit-scrollbar-thumb,
+        .change .mousedragscrollable li::-webkit-scrollbar-thumb {
+            background: #ccc;
+        }
+        
+        .change .mousedragscrollable::-webkit-scrollbar-track,
+        .change .mousedragscrollable li::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        
+        #main {
+            min-height: 77.5vh;
+            max-height: 77.5vh;
+            overflow: none;
+        }
+        
+        #presents {
+            margin: 0.5rem 0;
+        }
+        
+        #about {
+            width: 35rem;
+            max-width: 95%;
+        }
+        
+        .collection {
+            width: 25rem;
+            max-width: 75%;
+        }
+        
+        .collection .list_item a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            text-indent: -999px;
+        }
+        
+        .collection .popup::before {
+            position: absolute;
+            z-index: 3;
+            display: inline-block;
+            top: 0.5rem;
+            left: 1rem;
+            content:'in 3D';
+            color: red;
+            font-size: 0.75rem;
+            border: solid 1px;
+            padding: 0.25rem;
+            border-radius: 0.25rem;
+        }
+
+        #img {
+            width: 55rem;
+            max-width: 75%;
+        }
+        
+        #cover {
+            background-image: url("shopping/background.png");
+            background-position: center;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+        }
+        
+        #images {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            width: 90%;
+            height: 0;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        #images li:nth-child(n+26) {
+            display: none;
+        }
+        
+        #images .list_item {
+            position: relative;
+            padding: 0;
+            margin: 2.5vh 0;
+        }
+        
+        #images .list_item a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            text-indent: -999px;
+        }
+        
+        #images img {
+            animation: 100s linear infinite spot;
+        }
+        
+        @keyframes spot {
+            0% {
+                filter: drop-shadow(1rem 1rem 1rem rgba(50, 50, 50, 0.75));
             }
-            
-            footer {
-                font-size: 0.75rem;
+            25% {
+                filter: drop-shadow(1rem -0.5rem 1rem rgba(50, 50, 50, 0.75));
             }
-            
-            header a:hover,
-            header label:hover,
-            footer a:hover {
-                color: #aaa;
+            50% {
+                filter: drop-shadow(-1rem -1rem 1.5rem rgba(50, 50, 50, 0.75));
             }
-            
-            .nlc_style,
-            h1,
-            h2 {
-                font-family: 'Times New Roman', serif;
-                font-weight: 500;
-                font-stretch: condensed;
-                font-variant: common-ligatures tabular-nums;
-                transform: scale(1, 1.1);
-                letter-spacing: -0.1rem;
-                word-spacing: -.1ch;
+            75% {
+                filter: drop-shadow(-0.5rem 2rem 2rem rgba(50, 50, 50, 0.75));
             }
-            
-            .nlc_style {
-                display: inline-block;
+            100% {
+                filter: drop-shadow(1rem 1rem 1rem rgba(50, 50, 50, 0.75));
             }
-            
-            .cc_style,
-            form,
-            marquee {
-                display: inline-block;
-                font-family: "ipag", monospace;
-                transform: scale(1, 1.25);
-            }
-            
-            .org .list_item img {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-            }
-            
-            ._more:hover,
-            header label:hover,
-            footer a:hover {
-                color: #aaa;
-                text-decoration: wavy underline #aaa;
-                cursor: pointer;
-            }
-            
-            #main.change {
-                height: auto;
-                overflow: auto;
-            }
-            
-            #bought:checked~label,
-            #gift:checked~label,
-            #free:checked~label,
-            #made:checked~label,
-            #collaborations:checked~label,
-            #other:checked~label,
-            #sale:checked~label {
-                text-decoration: double underline;
-            }
-            
-            #cover {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                overflow: hidden;
-            }
-            
+        }
+        
+        @font-face {
+            font-family: "ipag";
+            src: url("https://creative-community.space/coding/fontbook/family/IPA/ipag.ttf");
+        }
+        
+        .cc_style,
+        form,
+        marquee {
+            font-family: "ipag", monospace;
+            transform: scale(1, 1.25);
+        }
+        
+        .nlc_style,
+        h1,
+        h2 {
+            font-family: 'Times New Roman', serif;
+            font-weight: 500;
+            font-stretch: condensed;
+            font-variant: common-ligatures tabular-nums;
+            transform: scale(1, 1.1);
+            letter-spacing: -0.1rem;
+            word-spacing: -.1ch;
+        }
+        
+        .cc_style,
+        .nlc_style {
+            display: inline-block;
+        }
+        
+        @font-face {
+            font-family: "MS Mincho";
+            src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
+        }
+
+        .pehu {
+            font-family: "MS Mincho", "SimSong", serif;
+        }
+        
+        .change #main {
+            overflow: auto;
+        }
+        
+        .change .mousedragscrollable {
+            display: block;
+        }
+        
+        #footer,
+        .mousedragscrollable,
+        .change #cover,
+        .change #greeting,
+        .change #server,
+        #print {
+            display: none;
+        }
+        
+        @media screen and (max-width: 1250px) {
             #images {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 95%;
-                height: 0;
-                -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
+                top: 45%;
             }
-            
             #images .list_item {
-                position: relative;
-                padding: 0;
+                margin: 1.75vh 0;
+            }
+            #main {
+                min-height: 77.5vh;
+                max-height: 77.5vh;
+            }
+        }
+        
+        @media screen and (max-width: 750px) {
+            #images {
+                top: 40%;
+            }
+            #images .list_item {
+                margin: 1.25vh 0;
+            }
+            #main {
+                min-height: 77.5vh;
+                max-height: 77.5vh;
+            }
+        }
+        
+        @media print {
+            #images {
+                top: 42.5%;
+            }
+            #images .list_item {
                 margin: 2.5vh 0;
             }
-            
-            #images img {
-                animation: 100s linear infinite spot;
-            }
-            
-            @keyframes spot {
-                0% {
-                    filter: drop-shadow(1rem 1rem 1rem rgba(50, 50, 50, 0.75));
-                }
-                25% {
-                    filter: drop-shadow(1rem -0.5rem 1rem rgba(50, 50, 50, 0.75));
-                }
-                50% {
-                    filter: drop-shadow(-1rem -1rem 1.5rem rgba(50, 50, 50, 0.75));
-                }
-                75% {
-                    filter: drop-shadow(-0.5rem 2rem 2rem rgba(50, 50, 50, 0.75));
-                }
-                100% {
-                    filter: drop-shadow(1rem 1rem 1rem rgba(50, 50, 50, 0.75));
-                }
-            }
-            
-            #greeting,
+            #address,
             #server {
-                position: absolute;
-                left: 0;
-                overflow: hidden;
-            }
-            
-            #greeting {
-                top: 0;
-                height: auto;
-                z-index: 1;
-            }
-            
-            #greeting:hover {
-                width: 100%;
-                height: 100%;
-                overflow: auto;
-                background: rgba(255, 255, 255, 0.55);
-                cursor: pointer;
-            }
-            
-            #server {
-                bottom: 0;
-                z-index: 10;
-            }
-            
-            #greeting p,
-            #server p {
-                margin: 1.5rem 1rem;
-            }
-            
-            #greeting p {
-                color: #333;
-                font-size: 0.9rem;
-                line-height: 200%;
-            }
-            
-            #server p {
-                color: #eee;
-                font-size: 0.75rem;
-                line-height: 175%;
-            }
-            
-            #server p,
-            #server:hover p {
-                transition: all 1000ms ease;
-            }
-            
-            #server:hover p {
-                color: #aaa;
-                text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
-            }
-            
-            .change #popup {
-                display: block;
-            }
-            
-            #popup,
-            .change .mousedragscrollable,
-            #print,
-            .print {
                 display: none;
             }
-            
-            @media screen and (max-width: 1000px) {
-                #images {
-                    top: 50%;
-                }
-                #images .list_item {
-                    position: relative;
-                    padding: 0;
-                    margin: 1.5vh 0;
-                }
+            #footer,
+            #print {
+                display: block;
             }
-            
-            @media screen and (max-width: 550px) {
-                #address {
-                    padding: 0.5rem 0;
-                }
-                #images {
-                    top: 45%;
-                }
-                #images .list_item {
-                    position: relative;
-                    padding: 0;
-                    margin: 1.25vh 0;
-                }
+            #greeting {
+                z-index: -1;
             }
-            
-            @media print {
-                #address,
-                #server {
-                    display: none;
-                }
-                #print {
-                    display: block;
-                }
-                .print {
-                    display: inline-block;
-                }
-                #images {
-                    top: 45%;
-                }
+            #greeting p {
+                font-size: 1rem;
             }
-        </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="/org/searchBox.js"></script>
-        <script src="/www/scrollable.js"></script>
-        <script src="https://creative-community.space/coding/js/tone/jquery.min.js"></script>
-        <script src="https://creative-community.space/coding/js/tone/jquery-ui.min.js"></script>
-        <script src="https://creative-community.space/coding/js/tone/Tone.min.js"></script>
-        <script src="https://creative-community.space/coding/js/tone/StartAudioContext.js"></script>
-        <script src="popup.js"></script>
-    </head>
+            #main {
+                min-height: 87vh;
+                max-height: 87vh;
+            }
+        }
+    </style>
+</head>
 
-    <body>
+<body id="open">
 
-        <header id="header">
-            <a class="_more" onclick="more()">∧°┐ が 所有するもの in 3D</a>
-            <marquee id="marquee">
-                会期：2022年7月23日（土）〜 8月21日（日） | 会場：BnA Alter Museum
-            </marquee>
-            <nav id="nav">
-                <h1>The Things I (We) Own<span class="print">, in 3D</span></h1>
-                <p id="presents">
-                    <b class="cc_style">∧°┐ が 所有するもの in 3D</b>
-                    <br/><span class="cc_style">会期：2022年7月23日（土）〜 8月21日（日）</span>
-                    <br/><span class="cc_style">会場：BnA Alter Museum</span>
-                </p>
-                <form>
-                    <ol class="search-box">
-                        <li>index</li>
-                        <li>
-                            <input type="radio" name="org" value="bought" id="bought">
-                            <label for="bought" class="label">bought</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="org" value="gift" id="gift">
-                            <label for="gift" class="label">gift</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="org" value="free" id="free">
-                            <label for="free" class="label">free or found</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="org" value="made" id="made">
-                            <label for="made" class="label">made</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="org" value="collaborations" id="collaborations">
-                            <label for="collaborations" class="label">collaborations</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="org" value="other" id="other">
-                            <label for="other" class="label">other</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="org" value="sale" id="sale">
-                            <label for="sale" class="label">$$$ FOR SALE $$$</label>
-                        </li>
-                        <li class="reset">
-                            <input type="reset" name="reset" value="View All" class="reset-button cc_style label" onclick="greeting()">
-                        </li>
-                    </ol>
-                </form>
-            </nav>
-        </header>
+    <header id="header">
+        <a class="_more" onclick="more()"><span class="pehu">∧°┐</span> が 所有するもの in 3D</a>
+        <marquee id="marquee" onclick="about()">
+            ここをクリックすると、<span class="pehu">∧°┐</span> が 所有するもの一覧が表示されます。
+        </marquee>
+        <nav id="nav">
+            <h1>The Things <span class="pehu">∧°┐</span> Own</h1>
+            <span id="presents">
+                <img src="qr.png" width="50rem">
+            </span>
+            <form>
+                <ol class="search-box">
+                    <li>index</li>
+                    <li>
+                        <input type="radio" name="org" value="bought" id="bought">
+                        <label for="bought" class="label">bought</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="org" value="gift" id="gift">
+                        <label for="gift" class="label">gift</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="org" value="free" id="free">
+                        <label for="free" class="label">free or found</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="org" value="made" id="made">
+                        <label for="made" class="label">made</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="org" value="collaborations" id="collaborations">
+                        <label for="collaborations" class="label">collaborations</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="org" value="other" id="other">
+                        <label for="other" class="label">other</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="org" value="sale" id="sale">
+                        <label for="sale" class="label">$$$ FOR SALE $$$</label>
+                    </li>
+                    <li class="reset">
+                        <input type="reset" name="reset" value="View All" class="reset-button cc_style label" onclick="greeting()">
+                    </li>
+                </ol>
+            </form>
+        </nav>
+    </header>
 
-        <main id="main">
-            <div id="popup"></div>
-            <ul class="mousedragscrollable">
-                <li id="cover" class="collection">
-                    <div id="greeting">
-                        <p class="nlc_style" id="text"></p>
-                    </div>
-                    <div id="server">
-                        <p class="cc_style">
-                            <?php
-                            echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
-                            echo 'PORT : '. $_SERVER['REMOTE_PORT']."<br/>";
-                            echo ''. $_SERVER['HTTP_USER_AGENT'].".";
-                            ?>
-                        </p>
-                    </div>
-                    <ol id="images" class="org">
-                        <?php if (!empty($rows)): ?>
-                        <?php foreach ($rows as $row): ?>
-                        <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
-                            <img src="<?=h($row[2])?>">
-                        </li>
-                        <?php endforeach; ?>
-                        <?php else: ?>
-                        <li class="list_item list_toggle min" data-org="test">
-                            <img src="/logo.png">
-                        </li>
-                        <?php endif; ?>
-                    </ol>
+    <main id="main">
+        <div id="cover">
+            <ol id="images" class="org">
+                <?php if (!empty($rows)): ?>
+                <?php foreach ($rows as $row): ?>
+                <li class="list_item list_toggle <?=h($row[1])?>" data-org="<?=h($row[0])?>">
+                    <img src="<?=h($row[2])?>">
                 </li>
-            </ul>
-        </main>
+                <?php endforeach; ?>
+                <?php else: ?>
+                <li class="list_item list_toggle min" data-org="test">
+                    <img src="/logo.png">
+                </li>
+                <?php endif; ?>
+            </ol>
+        </div>
+        <div id="greeting">
+            <p class="nlc_style" id="text"></p>
+        </div>
+        <div id="server">
+            <p class="cc_style">
+                <?php
+                echo 'IP : '. $_SERVER['REMOTE_ADDR']." | ";
+                echo 'PORT : '. $_SERVER['REMOTE_PORT']."<br/>";
+                echo ''. $_SERVER['HTTP_USER_AGENT'].".";
+                ?>
+            </p>
+        </div>
+        <ul class="mousedragscrollable">
+            <li id="about" class="collection"></li>
+            <li id="entrance" class="collection"></li>
+            <li id="books" class="collection"></li>
+            <li id="music" class="collection"></li>
+            <li id="fashion" class="collection"></li>
+            <li id="otobuilding" class="collection"></li>
+            <li id="nishitemma" class="collection"></li>
+            <li id="niceshopsu" class="collection"></li>
+            <li id="img" class="collection"></li>
+        </ul>
+    </main>
 
-        <footer id="footer">
-            <address id="print">
-            <p style="float: left;"><img src="https://bnaaltermuseum.com/wp-content/themes/bna_kyoto/img/logo_bam.svg" width="250rem" alt="BnA Alter Museum"></p>
-            <img style="display: block; float: right;" src="qr.png" width="50rem" alt="https://creative-community.space/pehu/org/">
+    <footer id="footer">
+        <address id="print">
+            <span class="cc_style">
+                <?php
+                echo $_SERVER['SERVER_NAME'];
+                echo $_SERVER['REQUEST_URI'];
+                ?>
+            </span>
         </address>
-            <address id="address" class="cc_style" style="text-align:right; width:100%;">
-          <span>URL : </span>
-          <a class="cc_style" href="<?php echo $_SERVER['REQUEST_URI'];?>">
-          <?php
-          echo $_SERVER['SERVER_NAME'];
-          echo $_SERVER['REQUEST_URI'];
-          ?>
-          </a>
-          <br/>
-          <span>Last Modified : </span>
-          <span>
-            <?php
-            $mod = filemtime('index.php');
-            date_default_timezone_set('Asia/Tokyo');
-            print "".date("r",$mod);
-            ?>
-          </span>
-        </address>
-        </footer>
+    </footer>
 
-        <script type="text/javascript ">
-            let btn = document.querySelector('#greeting');
-            let marquee = document.querySelector('#marquee');
-            let box = document.querySelector('#main');
+<script type="text/javascript ">
+    let btn = document.querySelector('#greeting');
+    let marquee = document.querySelector('#marquee');
+    let box = document.querySelector('#open');
 
-            let btnToggleclass = function(el) {
-                el.classList.toggle('change');
-            }
+    let btnToggleclass = function(el) {
+        el.classList.toggle('change');
+    }
 
-            btn.addEventListener('click', function() {
-                btnToggleclass(box);
-            }, false);
+    btn.addEventListener('click', function() {
+        btnToggleclass(box);
+    }, false);
 
-            marquee.addEventListener('click', function() {
-                btnToggleclass(box);
-            }, false);
+    marquee.addEventListener('click', function() {
+        btnToggleclass(box);
+    }, false);
 
-            $('a[href^="# "]').click(function() {
-                var href = $(this).attr("href ");
-                var target = $(href == "# " || href == " " ? 'html' : href);
-                return false;
+    $('a[href^="# "]').click(function() {
+        var href = $(this).attr("href ");
+        var target = $(href == "#" || href == " " ? 'html' : href);
+        return false;
+    });
+
+    $(function() {
+        $("#about").load("about.php");
+        $("#entrance").load("3d/entrance.php");
+        $("#books").load("3d/books.php");
+        $("#fashion").load("3d/fashion.php");
+        $("#music").load("3d/music.php");
+        $("#img").load("collection.php");
+        $("#otobuilding").load("otobuilding.php");
+        $("#nishitemma").load("nishitemma.php");
+        $("#niceshopsu").load("niceshopsu.php");
+    })
+
+        var volume;
+        var synth;
+        var notes;
+
+        $(document).ready(function(event) {
+            // StartAudioContext(Tone.context, window);  
+            $(window).click(function() {
+                Tone.context.resume();
             });
 
-            $(function() {
-                $("#popup").load("popup.php");
-            })
+            volume = new Tone.Volume(-20);
+            synth = new Tone.PolySynth(10, Tone.Synth).chain(volume, Tone.Master);
+            notes = Tone.Frequency("E6").harmonize([12, 14, 16, 19, 21, 24]);
+        });
 
-            var volume;
-            var synth;
-            var notes;
+    $("#marquee").click(function(e) {
+        let randNote = Math.floor(Math.random() * notes.length);
+        synth.triggerAttackRelease(notes[randNote], "1");
+    });
 
-            $(document).ready(function(event) {
-                // StartAudioContext(Tone.context, window);  
-                $(window).click(function() {
-                    Tone.context.resume();
-                });
+    $("._more").click(function(e) {
+        let randNote = Math.floor(Math.random() * notes.length);
+        synth.triggerAttackRelease(notes[randNote], "1");
+    });
 
-                volume = new Tone.Volume(-20);
-                synth = new Tone.PolySynth(10, Tone.Synth).chain(volume, Tone.Master);
-                notes = Tone.Frequency("E6").harmonize([12, 14, 16, 19, 21, 24]);
-            });
+    $(".label").click(function(e) {
+        let randNote = Math.floor(Math.random() * notes.length);
+        synth.triggerAttackRelease(notes[randNote], "2n");
+    });
 
-            $("._more").click(function(e) {
-                let randNote = Math.floor(Math.random() * notes.length);
-                synth.triggerAttackRelease(notes[randNote], "1");
-            });
+    $(".list_item img").hover(function() {
+        let randNote = Math.floor(Math.random() * notes.length);
+        synth.triggerAttackRelease(notes[randNote], "6n");
+    });
+</script>
+</body>
 
-            $(".label").click(function(e) {
-                let randNote = Math.floor(Math.random() * notes.length);
-                synth.triggerAttackRelease(notes[randNote], "2n");
-            });
-
-            $(".list_item img").hover(function() {
-                let randNote = Math.floor(Math.random() * notes.length);
-                synth.triggerAttackRelease(notes[randNote], "6n");
-            });
-        </script>
-    </body>
-
-    </html>
+</html>

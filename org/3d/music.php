@@ -3,15 +3,15 @@ function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 $org = (string)filter_input(INPUT_POST, 'org');
-$is = (string)filter_input(INPUT_POST, 'is');
-$motto = (string)filter_input(INPUT_POST, 'motto');
+$title = (string)filter_input(INPUT_POST, 'title');
+$format = (string)filter_input(INPUT_POST, 'format');
+$text = (string)filter_input(INPUT_POST, 'text');
 $link = (string)filter_input(INPUT_POST, 'link');
-$url = (string)filter_input(INPUT_POST, 'url');
 
-$fp = fopen('about.csv', 'a+b');
+$fp = fopen('music.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$org, $is, $motto, $link, $url]);
+    fputcsv($fp, [$org, $title, $format, $text, $link]);
     rewind($fp);
 }
 
@@ -28,21 +28,21 @@ fclose($fp);
 <html lang="ja">
 
 <head>
-    <title>About | The Things ∧° ┐ Own</title>
+    <title>Cassette, CD and etc, | The Things I (We) Own</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="searchBox.css" />
     <style>
-        #about {
+        #music {
             position: relative;
         }
 
-        #about h2 {
+        #music h2 {
             padding: 1rem 1rem 0.25rem;
         }
 
-        #about p {
+        #music p {
             font-size: 0.75rem;
             margin: 0;
             padding: 1rem;
@@ -51,12 +51,12 @@ fclose($fp);
             transform: scale(1, 1.25);
         }
         
-        #about p b {
+        #music p b {
             font-size: 150%;
             display: inline-block;
         }
         
-        #about p u {
+        #music p u {
             float: right;
             font-size: 75%;
             margin: 0;
@@ -69,12 +69,12 @@ fclose($fp);
             display: block;
         }
         
-        #about .update {
+        #music .update {
             color:#eee;
             padding: 0.25rem 1rem 1.25rem;
         }
         
-        #about .popup::before {
+        #music .popup::before {
             position: relative;
             z-index: 3;
             display: inline-block;
@@ -89,20 +89,24 @@ fclose($fp);
 </head>
 
 <body>
-    <ol id="about" class="org">
-        <h2><span class="pehu">∧°┐</span> が 所有するもの</h2>
-        <p>このページに、∧° ┐ が 所有するもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、記録します。
-        <br/>右にスワイプし閲覧できるすべてのリスト内の項目は、統一のカテゴリーによって絞り込むことができます。</p>
-        <p><i>リスト内の品目を絞り込むカテゴリーについて</i></p>
-        <br/>
+    <ol id="music" class="org">
+        <h2>Cassette, CD and etc,</h2>
+        <p class="update cc_style">
+        Last Modified : 
+            <?php
+            $mod = filemtime('music.csv');
+            date_default_timezone_set('Asia/Tokyo');
+            print "".date("r",$mod);
+            ?>
+        </p>
         <?php if (!empty($rows)): ?>
         <?php foreach ($rows as $row): ?>
-        <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
+        <li class="list_item list_toggle <?=h($row[4])?>" data-org="<?=h($row[0])?>">
             <p>
-                <u style="text-transform: capitalize;"><?=h($row[0])?></u>
+                <u><?=h($row[2])?></u>
                 <b><?=h($row[1])?></b>
             </p>
-            <p><?=h($row[2])?></p>
+            <p><?=h($row[3])?></p>
         </li>
         <?php endforeach; ?>
         <?php else: ?>
@@ -110,13 +114,6 @@ fclose($fp);
             <p>Title</p>
         </li>
         <?php endif; ?>
-        <hr/>
-        <br/>
-        <h2><span class="pehu">∧°┐</span> が 所有するもの in 3D</h2>
-        <p>このページに記録したリストのうち、<span class="popup"></span> の 表記があるものは、BnA Alter Meuseum に 展示しています。</p>
-        <br/>
-        <p>詳細 : <a href="https://bnaaltermuseum.com/event/the-things-i-we-own/" target="_blank">https://bnaaltermuseum.com/event/the-things-i-we-own/</a></p>
-
     </ol>
 
     <script type="text/javascript ">
