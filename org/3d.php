@@ -64,7 +64,7 @@ fclose($fp);
             font-size: 75%;
             margin: 0;
             text-decoration: #ccc wavy underline;
-            color: #000;
+            color: #ccc;
         }
         
         #about p b {
