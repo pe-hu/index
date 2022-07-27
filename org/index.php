@@ -57,6 +57,7 @@ fclose($fp);
     <script src="/org/searchBox.js"></script>
     <script src="3d.js"></script>
 
+    <link rel="icon" href="3d/logo.png">
     <link rel="stylesheet" href="/org/cover.css" />
     <link rel="stylesheet" href="/org/index.css" />
     <link rel="stylesheet" href="/org/searchBox.css" />
