@@ -179,6 +179,7 @@ fclose($fp);
             background-position: center;
             background-size: auto 100%;
             background-repeat: no-repeat;
+            overflow: none;
         }
         
         #images {
@@ -189,6 +190,7 @@ fclose($fp);
             height: 0;
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+            overflow: none;
         }
 
         #images li:nth-child(n+26) {
