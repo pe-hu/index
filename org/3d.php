@@ -116,7 +116,7 @@ fclose($fp);
         <a href="https://g.page/BnAAlterMuseum?share" target="_blank">Google Map</a>
         <u>入場無料／会期中無休</u></p>
         <hr/>
-        <p>左にスクロールし閲覧できるすべてのリスト内の項目は、統一のカテゴリーによって絞り込むことができます。</p>
+        <p>横にスクロールし閲覧できるすべてのリスト内の項目は、統一のカテゴリーによって絞り込むことができます。</p>
         <p><i>リスト内の品目を絞り込むカテゴリーについて</i></p>
         <?php if (!empty($rows)): ?>
         <?php foreach ($rows as $row): ?>
