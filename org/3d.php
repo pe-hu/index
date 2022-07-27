@@ -97,11 +97,9 @@ fclose($fp);
     <ol id="about" class="org">
         <p>2022.7.23 - 8.21<u>BnA Alter Meuseum</u></p>
         <h2><span class="pehu">∧°┐</span> が 所有するもの in 3D</h2>
-        <p>このページに、∧° ┐ が 所有するもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、記録します。</p>
-        <p>品目に、<span class="bna"></span> の 表記があるもの を BnA Alter Meuseum で 展示・販売しています。</p>
-        <p>会場：BnA Alter Museum
+        <p>このページに掲載する、∧° ┐ が 所有するもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）のうち品目に、<span class="bna"></span> の 表記があるもの を BnA Alter Meuseum で 展示・販売します。</p>
+        <p>会場：BnA Alter Museum <u>入場無料／会期中無休</u>
             <br/><a href="https://g.page/BnAAlterMuseum?share" target="_blank">〒600-8024 京都府京都市下京区天満町２６７−１</a></p>
-        <p>入場無料／会期中無休</p>
         <hr/>
         <p>左にスワイプし閲覧できるすべてのリスト内の項目は、統一のカテゴリーによって絞り込むことができます。</p>
         <p><i>リスト内の品目を絞り込むカテゴリーについて</i></p>
