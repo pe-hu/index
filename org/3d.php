@@ -69,7 +69,6 @@ fclose($fp);
             background: #fff;
             border: solid 1px #aaa;
             border-radius: 0.25rem;
-            display: block;
         }
         
         #about p b {
@@ -113,7 +112,7 @@ fclose($fp);
     <ol id="about" class="org">
         <p>2022.7.23 - 8.21<u>BnA Alter Meuseum</u></p>
         <h2><span class="pehu">∧°┐</span> が 所有するもの in 3D</h2>
-        <p><a href="https://bnaaltermuseum.com/event/the-things-i-we-own/" target="_blank"><img src="3d/logo.png" width="100%"></a></p>
+        <a href="https://bnaaltermuseum.com/event/the-things-i-we-own/" target="_blank"><img src="3d/logo.png" width="100%"></a>
         <br/>
         <p>このページに掲載する <span class="pehu">∧°┐</span> が 所有するもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）のうち、品目に <span class="bna"></span> の 表記があるもの を BnA Alter Meuseum で 展示・販売します。</p>
         <p>会場：BnA Alter Museum 
