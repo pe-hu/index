@@ -81,7 +81,7 @@ fclose($fp);
             color: red;
             font-size: 0.75rem;
             border: solid 1px;
-            padding: 0.25rem;
+            padding: 0 0.25rem;
             border-radius: 0.25rem;
         }
     </style>
