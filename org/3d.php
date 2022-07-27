@@ -96,7 +96,6 @@ fclose($fp);
         <p>詳細 : <a href="https://bnaaltermuseum.com/event/the-things-i-we-own/" target="_blank">bnaaltermuseum.com/event/the-things-i-we-own/</a></p>
         <br/>
         <p>左にスワイプし閲覧できるすべてのリスト内の項目は、統一のカテゴリーによって絞り込むことができます。</p>
-        <br/>
         <p><i>リスト内の品目を絞り込むカテゴリーについて</i></p>
         <?php if (!empty($rows)): ?>
         <?php foreach ($rows as $row): ?>
