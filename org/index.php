@@ -179,7 +179,6 @@ fclose($fp);
             background-position: center;
             background-size: 100% auto;
             background-repeat: no-repeat;
-            overflow: hidden;
         }
         
         #images {
