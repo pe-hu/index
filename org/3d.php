@@ -55,6 +55,10 @@ fclose($fp);
             border: none;
             border-bottom: solid 1px #aaa;
         }
+
+        #about img {
+            padding-bottom: 2rem;
+        }
         
         #about p b {
             font-size: 150%;
