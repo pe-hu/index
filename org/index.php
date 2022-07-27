@@ -174,7 +174,7 @@ fclose($fp);
             max-width: 75%;
         }
         
-        #cover {
+        #main {
             background-image: url("3d/logo.png");
             background-position: center;
             background-size: auto 100%;
@@ -302,7 +302,7 @@ fclose($fp);
         }
         
         @media screen and (max-width: 750px) {
-            #cover {
+            #main {
                 background-size: 100% auto;
             }
             #images {
