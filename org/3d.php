@@ -3,15 +3,14 @@ function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 $org = (string)filter_input(INPUT_POST, 'org');
-$is = (string)filter_input(INPUT_POST, 'is');
-$motto = (string)filter_input(INPUT_POST, 'motto');
-$link = (string)filter_input(INPUT_POST, 'link');
-$url = (string)filter_input(INPUT_POST, 'url');
+$jp = (string)filter_input(INPUT_POST, 'jp');
+$en = (string)filter_input(INPUT_POST, 'en');
+$text = (string)filter_input(INPUT_POST, 'text');
 
 $fp = fopen('about.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$org, $is, $motto, $link, $url]);
+    fputcsv($fp, [$org, $jp, $en, $text,]);
     rewind($fp);
 }
 
@@ -103,10 +102,10 @@ fclose($fp);
         <?php foreach ($rows as $row): ?>
         <li class="list_item list_toggle" data-org="<?=h($row[0])?>">
             <p>
-                <u style="text-transform: capitalize;"><?=h($row[0])?></u>
+                <u><?=h($row[2])?></u>
                 <b><?=h($row[1])?></b>
             </p>
-            <p><?=h($row[2])?></p>
+            <p><?=h($row[3])?></p>
         </li>
         <?php endforeach; ?>
         <?php else: ?>
