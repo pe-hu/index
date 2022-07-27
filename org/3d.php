@@ -61,8 +61,9 @@ fclose($fp);
         }
         
         #about p a {
+            display: inline-block;
             font-size: 75%;
-            margin: 0;
+            margin: 0 0.75rem;
             text-decoration: #ccc wavy underline;
             color: #ccc;
         }
