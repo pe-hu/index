@@ -51,7 +51,7 @@ fclose($fp);
         }
 
         #about hr {
-            margin: 1rem;
+            margin: 2rem 1rem;
             border: none;
             border-bottom: solid 1px #aaa;
         }
