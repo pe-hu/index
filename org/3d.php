@@ -60,6 +60,18 @@ fclose($fp);
             padding-bottom: 2rem;
         }
         
+        #about p a {
+            font-size: 75%;
+            margin: 0;
+            padding: 0.125rem 0.25rem;
+            text-decoration: none;
+            color: #000;
+            background: #fff;
+            border: solid 1px #aaa;
+            border-radius: 0.25rem;
+            display: block;
+        }
+        
         #about p b {
             font-size: 150%;
             display: inline-block;
