@@ -93,7 +93,7 @@ fclose($fp);
         <h2><span class="pehu">∧°┐</span> が 所有するもの in 3D</h2>
         <p>このページに、∧° ┐ が 所有するもの（出版物・制作物、ウェブドメイン・デジタルツール、メディアファイルなど）を、記録します。
         <br/>左にスワイプし閲覧できるすべてのリスト内の項目は、統一のカテゴリーによって絞り込むことができます。</p>
-        <p>品目に、<span class="bna"></span> の 表記があるものを、BnA Alter Meuseum で 展示・販売しているものです。</p>
+        <p>品目に、<span class="bna"></span> の 表記があるもの を、BnA Alter Meuseum で 展示・販売しているものです。</p>
         <p>詳細 : <a href="https://bnaaltermuseum.com/event/the-things-i-we-own/" target="_blank">bnaaltermuseum.com/event/the-things-i-we-own/</a></p>
         <br/>
         <p><i>リスト内の品目を絞り込むカテゴリーについて</i></p>
