@@ -113,13 +113,6 @@ fclose($fp);
             <p>Title</p>
         </li>
         <?php endif; ?>
-        <hr/>
-        <br/>
-        <h2>The Things I (We) Own</h2>
-        <p>このページに、私（わたしたち）が所有するもの（機材・機器、日用品、道具・工具、什器など）を記録します。</p>
-        <br/>
-        <p>詳細 : <a href="https://creative-community.space/org/" target="_blank">creative-community.space/org/</a></p>
-
     </ol>
 
     <script type="text/javascript ">
