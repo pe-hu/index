@@ -175,7 +175,7 @@ fclose($fp);
         }
         
         #cover {
-            background-image: url("shopping/background.png");
+            background-image: url("3d/logo.png");
             background-position: center;
             background-size: auto 100%;
             background-repeat: no-repeat;
@@ -352,7 +352,7 @@ fclose($fp);
             ここをクリックすると、<span class="pehu">∧°┐</span> が 所有するもの一覧が表示されます。
         </marquee>
         <nav id="nav">
-            <h1>The Things I (We) Own, in 3D</h1>
+            <h1>The Things <span class="pehu">∧°┐</span> Own</h1>
             <span id="presents">
                 <img src="qr.png" width="50rem">
             </span>
