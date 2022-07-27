@@ -128,7 +128,7 @@ fclose($fp);
         #main {
             min-height: 77.5vh;
             max-height: 77.5vh;
-            overflow: none;
+            overflow: hidden;
         }
         
         #presents {
@@ -179,7 +179,7 @@ fclose($fp);
             background-position: center;
             background-size: auto 100%;
             background-repeat: no-repeat;
-            overflow: none;
+            overflow: hidden;
         }
         
         #images {
@@ -190,7 +190,6 @@ fclose($fp);
             height: 0;
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-            overflow: none;
         }
 
         #images li:nth-child(n+26) {
