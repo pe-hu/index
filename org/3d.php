@@ -63,12 +63,8 @@ fclose($fp);
         #about p a {
             font-size: 75%;
             margin: 0;
-            padding: 0.125rem 0.25rem;
-            text-decoration: none;
+            text-decoration: #ccc double underline;
             color: #000;
-            background: #fff;
-            border: solid 1px #aaa;
-            border-radius: 0.25rem;
         }
         
         #about p b {
