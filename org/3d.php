@@ -53,7 +53,7 @@ fclose($fp);
         #about hr {
             margin: 2rem 0.5rem;
             border: none;
-            border-bottom: solid 1px #aaa;
+            border-bottom: dashed 1px #aaa;
         }
 
         #about img {
