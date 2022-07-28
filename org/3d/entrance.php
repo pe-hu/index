@@ -31,8 +31,8 @@ fclose($fp);
     <title>The Things I (We) Own, in 3D</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="searchBox.css" />
+    <link rel="stylesheet" href="/org/index.css" />
+    <link rel="stylesheet" href="/org/searchBox.css" />
     <style>
         #entrance {
             position: relative;
